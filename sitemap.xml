@@ -1,174 +1,174 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
-     <loc>https://docs.photoprism.org/en/latest/</loc>
+     <loc>http://docs.photoprism.org/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/team/</loc>
+     <loc>http://docs.photoprism.org/team/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/funding/</loc>
+     <loc>http://docs.photoprism.org/funding/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/credits/</loc>
+     <loc>http://docs.photoprism.org/credits/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/license/</loc>
+     <loc>http://docs.photoprism.org/license/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/contact/</loc>
+     <loc>http://docs.photoprism.org/contact/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/getting-started/</loc>
+     <loc>http://docs.photoprism.org/getting-started/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/getting-started/docker-compose/</loc>
+     <loc>http://docs.photoprism.org/getting-started/docker-compose/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/getting-started/docker/</loc>
+     <loc>http://docs.photoprism.org/getting-started/docker/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/getting-started/raspberry-pi/</loc>
+     <loc>http://docs.photoprism.org/getting-started/raspberry-pi/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/getting-started/demo/</loc>
+     <loc>http://docs.photoprism.org/getting-started/demo/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/getting-started/kubernetes/</loc>
+     <loc>http://docs.photoprism.org/getting-started/kubernetes/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/getting-started/scalability/</loc>
+     <loc>http://docs.photoprism.org/getting-started/scalability/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/getting-started/updates/</loc>
+     <loc>http://docs.photoprism.org/getting-started/updates/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/getting-started/caching/</loc>
+     <loc>http://docs.photoprism.org/getting-started/caching/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/getting-started/support/</loc>
+     <loc>http://docs.photoprism.org/getting-started/support/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/getting-started/faq/</loc>
+     <loc>http://docs.photoprism.org/getting-started/faq/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/user-guide/</loc>
+     <loc>http://docs.photoprism.org/user-guide/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/user-guide/navigate/</loc>
+     <loc>http://docs.photoprism.org/user-guide/navigate/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/user-guide/import-vs-index/</loc>
+     <loc>http://docs.photoprism.org/user-guide/import-vs-index/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/user-guide/browse/</loc>
+     <loc>http://docs.photoprism.org/user-guide/browse/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/user-guide/review/</loc>
+     <loc>http://docs.photoprism.org/user-guide/review/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/user-guide/private/</loc>
+     <loc>http://docs.photoprism.org/user-guide/private/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/user-guide/archive/</loc>
+     <loc>http://docs.photoprism.org/user-guide/archive/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/user-guide/albums/</loc>
+     <loc>http://docs.photoprism.org/user-guide/albums/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/user-guide/labels/</loc>
+     <loc>http://docs.photoprism.org/user-guide/labels/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/user-guide/places/</loc>
+     <loc>http://docs.photoprism.org/user-guide/places/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/user-guide/video/</loc>
+     <loc>http://docs.photoprism.org/user-guide/video/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/user-guide/download/</loc>
+     <loc>http://docs.photoprism.org/user-guide/download/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/user-guide/edit/</loc>
+     <loc>http://docs.photoprism.org/user-guide/edit/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/user-guide/settings/library/</loc>
+     <loc>http://docs.photoprism.org/user-guide/settings/library/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/user-guide/settings/ui/</loc>
+     <loc>http://docs.photoprism.org/user-guide/settings/ui/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/user-guide/settings/places/</loc>
+     <loc>http://docs.photoprism.org/user-guide/settings/places/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/user-guide/settings/thumbnails/</loc>
+     <loc>http://docs.photoprism.org/user-guide/settings/thumbnails/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/developer-guide/</loc>
+     <loc>http://docs.photoprism.org/developer-guide/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/developer-guide/setup/</loc>
+     <loc>http://docs.photoprism.org/developer-guide/setup/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/developer-guide/directories/</loc>
+     <loc>http://docs.photoprism.org/developer-guide/directories/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/developer-guide/configuration/</loc>
+     <loc>http://docs.photoprism.org/developer-guide/configuration/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/developer-guide/tests/</loc>
+     <loc>http://docs.photoprism.org/developer-guide/tests/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/developer-guide/issues/</loc>
+     <loc>http://docs.photoprism.org/developer-guide/issues/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/developer-guide/pull-requests/</loc>
+     <loc>http://docs.photoprism.org/developer-guide/pull-requests/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/developer-guide/code-quality/</loc>
+     <loc>http://docs.photoprism.org/developer-guide/code-quality/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/en/latest/developer-guide/documentation/</loc>
+     <loc>http://docs.photoprism.org/developer-guide/documentation/</loc>
      <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
