@@ -11,23 +11,23 @@
         <meta name="description" content="User Guide">
       
       
-        <link rel="canonical" href="http://docs.photoprism.org/user-guide/video/">
+        <link rel="canonical" href="https://docs.photoprism.org/user-guide/organize/labels/">
       
       
         <meta name="author" content="PhotoPrism.org">
       
-      <link rel="shortcut icon" href="../../img/favicon.png">
+      <link rel="shortcut icon" href="../../../img/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.2">
     
     
       
-        <title>Videos - PhotoPrism</title>
+        <title>Labels - PhotoPrism</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.a2408e81.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.a2408e81.min.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.a46bcfb3.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.a46bcfb3.min.css">
       
       
         
@@ -49,6 +49,22 @@
       
     
     
+  
+  
+    
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PhotoPrism - Labels">
+  <meta property="og:description" content="User Guide">
+  <meta property="og:url" content="https://docs.photoprism.org/user-guide/organize/labels/">
+  <meta property="og:image" content="https://dl.photoprism.org/assets/img/preview.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@browseyourlife">
+  <meta name="twitter:creator" content="@browseyourlife">
+  <meta name="twitter:title" content="PhotoPrism - Labels">
+  <meta name="twitter:description" content="User Guide">
+  <meta name="twitter:image" content="https://dl.photoprism.org/assets/img/preview.jpg">
+
   </head>
   
   
@@ -63,21 +79,38 @@
     <div data-md-component="skip">
       
         
-        <a href="#videos" class="md-skip">
+        <a href="#view-all-photos-with-a-certain-label" class="md-skip">
           Skip to content
         </a>
       
     </div>
     <div data-md-component="announce">
       
+        <aside class="md-announce">
+          <div class="md-announce__inner md-grid md-typeset">
+            
+  <style>.md-announce a,.md-announce a:focus,.md-announce a:hover{color:currentColor}.md-announce strong{white-space:nowrap}.md-announce .twitter{margin-left:.2em;color:#00acee}</style>
+  <a href="https://github.com/sponsors/lastzero">
+    You're welcome to support us via <strong>GitHub
+    <span class="twemoji">
+      <svg viewBox="0 2 12 16">
+        <path fill="#ea4aaa" d="M8.727 3C7.091 3 6.001 4.65 6.001 4.65S4.909 3 3.273 3C1.636 3 0 4.1 0 6.3 0 9.6 6 14 6 14s6-4.4 6-7.7C12 4.1 10.364 3 8.727 3z"></path>
+      </svg>
+    </span>
+    Sponsors</strong>, especially if you have feature requests or need help with using our software.
+  </a>
+
+          </div>
+        </aside>
+      
     </div>
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="http://docs.photoprism.org/" title="PhotoPrism" class="md-header-nav__button md-logo" aria-label="PhotoPrism">
+    <a href="https://docs.photoprism.org/" title="PhotoPrism" class="md-header-nav__button md-logo" aria-label="PhotoPrism">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.73 15l-3.9 6.76a9.984 9.984 0 008.49-2.01l-3.66-6.35M2.46 15c.92 2.92 3.15 5.26 5.99 6.34L12.12 15m-3.58-3l-3.9-6.75A9.855 9.855 0 002 12c0 .68.07 1.35.2 2h7.49m12.11-4h-7.49l.29.5 4.76 8.25A9.93 9.93 0 0022 12c0-.69-.07-1.36-.2-2m-.26-1c-.92-2.93-3.15-5.26-5.99-6.34L11.88 9M9.4 10.5l4.77-8.26C13.47 2.09 12.75 2 12 2c-2.4 0-4.6.84-6.32 2.25l3.66 6.35.06-.1z"/></svg>
+  <svg id="b01a508d-b59d-44f0-8be5-eca2aadd9bc2" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 253.78 224.78"><defs><style>.abae6701-d59a-4183-bf31-f7ca6639fed3,.e9c06423-71c9-47d7-ac4f-57ab05968afa{fill:none;}.e9270bc6-2df5-4c14-bf42-90cfc87d474b{clip-path:url(#ba383851-496a-4a7b-95ff-56b7a97252c7);}.e9c06423-71c9-47d7-ac4f-57ab05968afa{stroke:#000;stroke-miterlimit:10;stroke-width:3px;}</style><clipPath id="ba383851-496a-4a7b-95ff-56b7a97252c7"><rect class="abae6701-d59a-4183-bf31-f7ca6639fed3" x="-47.38" y="5.33" width="370.54" height="215.11"/></clipPath></defs><g class="e9270bc6-2df5-4c14-bf42-90cfc87d474b"><path class="e9c06423-71c9-47d7-ac4f-57ab05968afa" d="M248.26,187.21l-5.79,32m-236.15-31,19.06,18.88M152.54,24.27,25.43,206.59a.13.13,0,0,0,.09.2l216.74,12.43a.13.13,0,0,0,.12-.18L152.76,24.29A.13.13,0,0,0,152.54,24.27ZM126.35,6.64,5.74,188a.16.16,0,0,0,.14.25l241.63-1a.16.16,0,0,0,.14-.25L126.63,6.64A.17.17,0,0,0,126.35,6.64Zm.15-.21,26.17,17.66"/></g></svg>
 
     </a>
     <label class="md-header-nav__button md-icon" for="__drawer">
@@ -91,7 +124,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Videos
+              Labels
             
           </span>
         </div>
@@ -162,7 +195,7 @@
         
   <li class="md-tabs__item">
     
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         Introduction
       </a>
     
@@ -184,7 +217,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../getting-started/" class="md-tabs__link">
+        <a href="../../../getting-started/" class="md-tabs__link">
           Getting Started
         </a>
       
@@ -197,7 +230,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../" class="md-tabs__link md-tabs__link--active">
+        <a href="../../" class="md-tabs__link md-tabs__link--active">
           User Guide
         </a>
       
@@ -210,7 +243,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../developer-guide/" class="md-tabs__link">
+        <a href="../../../developer-guide/" class="md-tabs__link">
           Developer Guide
         </a>
       
@@ -232,10 +265,10 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="http://docs.photoprism.org/" title="PhotoPrism" class="md-nav__button md-logo" aria-label="PhotoPrism">
+    <a href="https://docs.photoprism.org/" title="PhotoPrism" class="md-nav__button md-logo" aria-label="PhotoPrism">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.73 15l-3.9 6.76a9.984 9.984 0 008.49-2.01l-3.66-6.35M2.46 15c.92 2.92 3.15 5.26 5.99 6.34L12.12 15m-3.58-3l-3.9-6.75A9.855 9.855 0 002 12c0 .68.07 1.35.2 2h7.49m12.11-4h-7.49l.29.5 4.76 8.25A9.93 9.93 0 0022 12c0-.69-.07-1.36-.2-2m-.26-1c-.92-2.93-3.15-5.26-5.99-6.34L11.88 9M9.4 10.5l4.77-8.26C13.47 2.09 12.75 2 12 2c-2.4 0-4.6.84-6.32 2.25l3.66 6.35.06-.1z"/></svg>
+  <svg id="b01a508d-b59d-44f0-8be5-eca2aadd9bc2" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 253.78 224.78"><defs><style>.abae6701-d59a-4183-bf31-f7ca6639fed3,.e9c06423-71c9-47d7-ac4f-57ab05968afa{fill:none;}.e9270bc6-2df5-4c14-bf42-90cfc87d474b{clip-path:url(#ba383851-496a-4a7b-95ff-56b7a97252c7);}.e9c06423-71c9-47d7-ac4f-57ab05968afa{stroke:#000;stroke-miterlimit:10;stroke-width:3px;}</style><clipPath id="ba383851-496a-4a7b-95ff-56b7a97252c7"><rect class="abae6701-d59a-4183-bf31-f7ca6639fed3" x="-47.38" y="5.33" width="370.54" height="215.11"/></clipPath></defs><g class="e9270bc6-2df5-4c14-bf42-90cfc87d474b"><path class="e9c06423-71c9-47d7-ac4f-57ab05968afa" d="M248.26,187.21l-5.79,32m-236.15-31,19.06,18.88M152.54,24.27,25.43,206.59a.13.13,0,0,0,.09.2l216.74,12.43a.13.13,0,0,0,.12-.18L152.76,24.29A.13.13,0,0,0,152.54,24.27ZM126.35,6.64,5.74,188a.16.16,0,0,0,.14.25l241.63-1a.16.16,0,0,0,.14-.25L126.63,6.64A.17.17,0,0,0,126.35,6.64Zm.15-.21,26.17,17.66"/></g></svg>
 
     </a>
     PhotoPrism
@@ -262,7 +295,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../.." title="Introduction" class="md-nav__link">
+    <a href="../../.." title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -274,7 +307,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../team/" title="Team" class="md-nav__link">
+    <a href="../../../team/" title="Team" class="md-nav__link">
       Team
     </a>
   </li>
@@ -286,7 +319,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../funding/" title="Funding" class="md-nav__link">
+    <a href="../../../funding/" title="Funding" class="md-nav__link">
       Funding
     </a>
   </li>
@@ -298,7 +331,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../credits/" title="Credits" class="md-nav__link">
+    <a href="../../../credits/" title="Credits" class="md-nav__link">
       Credits
     </a>
   </li>
@@ -310,7 +343,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../license/" title="License" class="md-nav__link">
+    <a href="../../../license/" title="License" class="md-nav__link">
       License
     </a>
   </li>
@@ -322,7 +355,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../contact/" title="Contact" class="md-nav__link">
+    <a href="../../../contact/" title="Contact" class="md-nav__link">
       Contact
     </a>
   </li>
@@ -359,7 +392,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/" title="Introduction" class="md-nav__link">
+    <a href="../../../getting-started/" title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -371,7 +404,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/docker-compose/" title="Docker Compose" class="md-nav__link">
+    <a href="../../../getting-started/docker-compose/" title="Docker Compose" class="md-nav__link">
       Docker Compose
     </a>
   </li>
@@ -383,7 +416,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/docker/" title="Docker" class="md-nav__link">
+    <a href="../../../getting-started/docker/" title="Docker" class="md-nav__link">
       Docker
     </a>
   </li>
@@ -395,7 +428,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/raspberry-pi/" title="Raspberry Pi" class="md-nav__link">
+    <a href="../../../getting-started/raspberry-pi/" title="Raspberry Pi" class="md-nav__link">
       Raspberry Pi
     </a>
   </li>
@@ -407,7 +440,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/demo/" title="Demo Image" class="md-nav__link">
+    <a href="../../../getting-started/demo/" title="Demo Image" class="md-nav__link">
       Demo Image
     </a>
   </li>
@@ -419,7 +452,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/kubernetes/" title="Kubernetes" class="md-nav__link">
+    <a href="../../../getting-started/kubernetes/" title="Kubernetes" class="md-nav__link">
       Kubernetes
     </a>
   </li>
@@ -431,7 +464,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/scalability/" title="Scalability" class="md-nav__link">
+    <a href="../../../getting-started/scalability/" title="Scalability" class="md-nav__link">
       Scalability
     </a>
   </li>
@@ -443,7 +476,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/updates/" title="Updates" class="md-nav__link">
+    <a href="../../../getting-started/updates/" title="Updates" class="md-nav__link">
       Updates
     </a>
   </li>
@@ -455,7 +488,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/caching/" title="Caching" class="md-nav__link">
+    <a href="../../../getting-started/caching/" title="Caching" class="md-nav__link">
       Caching
     </a>
   </li>
@@ -467,7 +500,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/support/" title="Support" class="md-nav__link">
+    <a href="../../../getting-started/support/" title="Support" class="md-nav__link">
       Support
     </a>
   </li>
@@ -479,7 +512,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/faq/" title="FAQ" class="md-nav__link">
+    <a href="../../../getting-started/faq/" title="FAQ" class="md-nav__link">
       FAQ
     </a>
   </li>
@@ -523,7 +556,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="Introduction" class="md-nav__link">
+    <a href="../../" title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -535,7 +568,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../navigate/" title="Navigate" class="md-nav__link">
+    <a href="../../navigate/" title="Navigate" class="md-nav__link">
       Navigate
     </a>
   </li>
@@ -547,7 +580,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../import-vs-index/" title="Import vs Index" class="md-nav__link">
+    <a href="../../import-vs-index/" title="Import vs Index" class="md-nav__link">
       Import vs Index
     </a>
   </li>
@@ -644,11 +677,70 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../labels/" title="Labels" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Labels
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Labels" class="md-nav__link md-nav__link--active">
       Labels
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#view-all-photos-with-a-certain-label" class="md-nav__link">
+    View all photos with a certain label
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-label-to-a-photovideo" class="md-nav__link">
+    Add label to a photo/video
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#removedelete-label-from-a-photovideo" class="md-nav__link">
+    Remove/delete label from a photo/video
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rename-a-label" class="md-nav__link">
+    Rename a label
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -668,56 +760,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Videos
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Videos" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../video/" title="Videos" class="md-nav__link">
       Videos
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#videos" class="md-nav__link">
-    Videos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#live-photos" class="md-nav__link">
-    Live photos
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -781,7 +828,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/library/" title="Library" class="md-nav__link">
+    <a href="../../settings/library/" title="Library" class="md-nav__link">
       Library
     </a>
   </li>
@@ -793,7 +840,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/ui/" title="User Interface" class="md-nav__link">
+    <a href="../../settings/ui/" title="User Interface" class="md-nav__link">
       User Interface
     </a>
   </li>
@@ -805,7 +852,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/places/" title="Places" class="md-nav__link">
+    <a href="../../settings/places/" title="Places" class="md-nav__link">
       Places
     </a>
   </li>
@@ -817,7 +864,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/thumbnails/" title="Thumbnails" class="md-nav__link">
+    <a href="../../settings/thumbnails/" title="Thumbnails" class="md-nav__link">
       Thumbnails
     </a>
   </li>
@@ -864,7 +911,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developer-guide/" title="Introduction" class="md-nav__link">
+    <a href="../../../developer-guide/" title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -876,7 +923,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developer-guide/setup/" title="Setup" class="md-nav__link">
+    <a href="../../../developer-guide/setup/" title="Setup" class="md-nav__link">
       Setup
     </a>
   </li>
@@ -888,7 +935,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developer-guide/directories/" title="Directories" class="md-nav__link">
+    <a href="../../../developer-guide/directories/" title="Directories" class="md-nav__link">
       Directories
     </a>
   </li>
@@ -900,7 +947,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developer-guide/configuration/" title="Configuration" class="md-nav__link">
+    <a href="../../../developer-guide/configuration/" title="Configuration" class="md-nav__link">
       Configuration
     </a>
   </li>
@@ -912,7 +959,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developer-guide/tests/" title="Tests" class="md-nav__link">
+    <a href="../../../developer-guide/tests/" title="Tests" class="md-nav__link">
       Tests
     </a>
   </li>
@@ -924,7 +971,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developer-guide/issues/" title="Issues" class="md-nav__link">
+    <a href="../../../developer-guide/issues/" title="Issues" class="md-nav__link">
       Issues
     </a>
   </li>
@@ -936,7 +983,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developer-guide/pull-requests/" title="Pull Requests" class="md-nav__link">
+    <a href="../../../developer-guide/pull-requests/" title="Pull Requests" class="md-nav__link">
       Pull Requests
     </a>
   </li>
@@ -948,7 +995,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developer-guide/code-quality/" title="Code Quality" class="md-nav__link">
+    <a href="../../../developer-guide/code-quality/" title="Code Quality" class="md-nav__link">
       Code Quality
     </a>
   </li>
@@ -960,7 +1007,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developer-guide/documentation/" title="Documentation" class="md-nav__link">
+    <a href="../../../developer-guide/documentation/" title="Documentation" class="md-nav__link">
       Documentation
     </a>
   </li>
@@ -995,15 +1042,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#videos" class="md-nav__link">
-    Videos
+  <a href="#view-all-photos-with-a-certain-label" class="md-nav__link">
+    View all photos with a certain label
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#live-photos" class="md-nav__link">
-    Live photos
+  <a href="#add-label-to-a-photovideo" class="md-nav__link">
+    Add label to a photo/video
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#removedelete-label-from-a-photovideo" class="md-nav__link">
+    Remove/delete label from a photo/video
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rename-a-label" class="md-nav__link">
+    Rename a label
   </a>
   
 </li>
@@ -1024,23 +1085,84 @@
                   
                 
                 
-                  <h1>Videos</h1>
+                  <h1>Labels</h1>
                 
-                <h3 id="videos">Videos<a class="headerlink" href="#videos" title="Permanent link">&para;</a></h3>
-<p>PhotoPrism currently supports mp4 videos + @Micha.</p>
-<p>Of course there are a lot more formats to come!</p>
-<p>In Videos you find all your videos. To play a video click play.</p>
-<p><img alt="Screenshot" src="../../img/video1.png" /></p>
-<p>To play videos in fullscreen mode click play on the video or next to the videos title.</p>
-<p><img alt="Screenshot" src="../../img/video.png" /></p>
-<h3 id="live-photos">Live photos<a class="headerlink" href="#live-photos" title="Permanent link">&para;</a></h3>
-<p>Live photos are treated as photos.
-They are marked with ICON in the upper left corner.</p>
-<p>You can filter for them using <code>type:live</code>.</p>
-<p><img alt="Screenshot" src="../../img/livePhoto.png" /></p>
-<p>To play a live photo just hover over it.</p>
-<p>The following formats are currently supported:
-@Micha</p>
+                <p>PhotoPrism uses labels to classify images.
+Other tools use the term tags instead of labels.
+Labels are set automatically when adding new photos. 
+You can manually add new labels or edit/remove the ones that have been created by us.</p>
+<p>In Labels you find all labels of your photos and videos. 
+You can star labels by clicking on the star. Stared labels will be listed first.</p>
+<p>To see only labels with a high priority click on the eye button in the upper right corner.</p>
+<p><img alt="Screenshot" src="../../../img/labels1.png" /></p>
+<h3 id="view-all-photos-with-a-certain-label">View all photos with a certain label<a class="headerlink" href="#view-all-photos-with-a-certain-label" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Go to Labels.</li>
+<li>
+<p>Click on the label you are interested in.</p>
+<p><img alt="Screenshot" src="../../../img/labels2.png" />
+<img alt="Screenshot" src="../../../img/labels3.png" /></p>
+</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Alternatively you can use the search field in Photos/Videos. You search for photos with a special label like this: <code>label:dog</code>.</p>
+</div>
+<h3 id="add-label-to-a-photovideo">Add label to a photo/video<a class="headerlink" href="#add-label-to-a-photovideo" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Go to the photo <a href="../edit/">edit dialogue</a>.</li>
+<li>Go to Labels tab.</li>
+<li>Click on the label field in the last row of the label table.</li>
+<li>Enter a label name.</li>
+<li>
+<p>Click add on the right side of this row.</p>
+<p><img alt="Screenshot" src="../../../img/addLabel.png" /></p>
+</li>
+</ol>
+<h3 id="removedelete-label-from-a-photovideo">Remove/delete label from a photo/video<a class="headerlink" href="#removedelete-label-from-a-photovideo" title="Permanent link">&para;</a></h3>
+<p>Labels that have been set automatically can be removed.
+Manually added labels can be deleted.</p>
+<ol>
+<li>Go to the photo <a href="../edit/">edit dialogue</a>.</li>
+<li>Go to Labels tab.</li>
+<li>
+<p>Click the remove/delete button of the label you want to remove/delete.</p>
+<p><img alt="Screenshot" src="../../../img/removeLabel1.png" /></p>
+</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Removed labels have a confidence of 0% and can be activated again at any time by clicking add.</p>
+</div>
+<p><img alt="Screenshot" src="../../../img/removeLabel2.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>You can hide Labels in the <a href="../../settings/ui/">settings</a></p>
+</div>
+<h3 id="rename-a-label">Rename a label<a class="headerlink" href="#rename-a-label" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>Go to the photo <a href="../edit/">edit dialogue</a> of any photo that has the label you want to rename.</p>
+<p><img alt="Screenshot" src="../../../img/editLabel1.png" /></p>
+</li>
+<li>
+<p>Go to Labels tab.</p>
+</li>
+<li>Click on the label name you want to change.</li>
+<li>
+<p>Change the name and click enter.</p>
+<p><img alt="Screenshot" src="../../../img/editLabel2.png" /></p>
+<p><img alt="Screenshot" src="../../../img/editLabel3.png" /></p>
+</li>
+<li>
+<p>The changes will be applied to all photos with this label after the next  <a href="../../">indexing</a></p>
+<p><img alt="Screenshot" src="../../../img/editLabel4.png" /></p>
+</li>
+</ol>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Be aware this change applies to all photos that have this label.</p>
+</div>
                 
               
               
@@ -1059,7 +1181,7 @@ They are marked with ICON in the upper left corner.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../places/" title="Places" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../albums/" title="Albums" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1068,19 +1190,19 @@ They are marked with ICON in the upper left corner.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Places
+                Albums
               </div>
             </div>
           </a>
         
         
-          <a href="../download/" title="Download photos" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../places/" title="Places" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Download photos
+                Places
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -1169,15 +1291,15 @@ They are marked with ICON in the upper left corner.</p>
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
-          base: "../..",
+          base: "../../..",
           features: ["tabs"],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.27c6a5e6.min.js"
+            worker: "../../../assets/javascripts/worker/search.27c6a5e6.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

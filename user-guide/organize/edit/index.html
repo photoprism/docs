@@ -11,23 +11,23 @@
         <meta name="description" content="User Guide">
       
       
-        <link rel="canonical" href="http://docs.photoprism.org/user-guide/private/">
+        <link rel="canonical" href="https://docs.photoprism.org/user-guide/organize/edit/">
       
       
         <meta name="author" content="PhotoPrism.org">
       
-      <link rel="shortcut icon" href="../../img/favicon.png">
+      <link rel="shortcut icon" href="../../../img/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.2">
     
     
       
-        <title>Private - PhotoPrism</title>
+        <title>Edit photos - PhotoPrism</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.a2408e81.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.a2408e81.min.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.a46bcfb3.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.a46bcfb3.min.css">
       
       
         
@@ -49,6 +49,22 @@
       
     
     
+  
+  
+    
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PhotoPrism - Edit photos">
+  <meta property="og:description" content="User Guide">
+  <meta property="og:url" content="https://docs.photoprism.org/user-guide/organize/edit/">
+  <meta property="og:image" content="https://dl.photoprism.org/assets/img/preview.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@browseyourlife">
+  <meta name="twitter:creator" content="@browseyourlife">
+  <meta name="twitter:title" content="PhotoPrism - Edit photos">
+  <meta name="twitter:description" content="User Guide">
+  <meta name="twitter:image" content="https://dl.photoprism.org/assets/img/preview.jpg">
+
   </head>
   
   
@@ -63,21 +79,38 @@
     <div data-md-component="skip">
       
         
-        <a href="#what-does-private-mean" class="md-skip">
+        <a href="#open-the-edit-dialogue" class="md-skip">
           Skip to content
         </a>
       
     </div>
     <div data-md-component="announce">
       
+        <aside class="md-announce">
+          <div class="md-announce__inner md-grid md-typeset">
+            
+  <style>.md-announce a,.md-announce a:focus,.md-announce a:hover{color:currentColor}.md-announce strong{white-space:nowrap}.md-announce .twitter{margin-left:.2em;color:#00acee}</style>
+  <a href="https://github.com/sponsors/lastzero">
+    You're welcome to support us via <strong>GitHub
+    <span class="twemoji">
+      <svg viewBox="0 2 12 16">
+        <path fill="#ea4aaa" d="M8.727 3C7.091 3 6.001 4.65 6.001 4.65S4.909 3 3.273 3C1.636 3 0 4.1 0 6.3 0 9.6 6 14 6 14s6-4.4 6-7.7C12 4.1 10.364 3 8.727 3z"></path>
+      </svg>
+    </span>
+    Sponsors</strong>, especially if you have feature requests or need help with using our software.
+  </a>
+
+          </div>
+        </aside>
+      
     </div>
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="http://docs.photoprism.org/" title="PhotoPrism" class="md-header-nav__button md-logo" aria-label="PhotoPrism">
+    <a href="https://docs.photoprism.org/" title="PhotoPrism" class="md-header-nav__button md-logo" aria-label="PhotoPrism">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.73 15l-3.9 6.76a9.984 9.984 0 008.49-2.01l-3.66-6.35M2.46 15c.92 2.92 3.15 5.26 5.99 6.34L12.12 15m-3.58-3l-3.9-6.75A9.855 9.855 0 002 12c0 .68.07 1.35.2 2h7.49m12.11-4h-7.49l.29.5 4.76 8.25A9.93 9.93 0 0022 12c0-.69-.07-1.36-.2-2m-.26-1c-.92-2.93-3.15-5.26-5.99-6.34L11.88 9M9.4 10.5l4.77-8.26C13.47 2.09 12.75 2 12 2c-2.4 0-4.6.84-6.32 2.25l3.66 6.35.06-.1z"/></svg>
+  <svg id="b01a508d-b59d-44f0-8be5-eca2aadd9bc2" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 253.78 224.78"><defs><style>.abae6701-d59a-4183-bf31-f7ca6639fed3,.e9c06423-71c9-47d7-ac4f-57ab05968afa{fill:none;}.e9270bc6-2df5-4c14-bf42-90cfc87d474b{clip-path:url(#ba383851-496a-4a7b-95ff-56b7a97252c7);}.e9c06423-71c9-47d7-ac4f-57ab05968afa{stroke:#000;stroke-miterlimit:10;stroke-width:3px;}</style><clipPath id="ba383851-496a-4a7b-95ff-56b7a97252c7"><rect class="abae6701-d59a-4183-bf31-f7ca6639fed3" x="-47.38" y="5.33" width="370.54" height="215.11"/></clipPath></defs><g class="e9270bc6-2df5-4c14-bf42-90cfc87d474b"><path class="e9c06423-71c9-47d7-ac4f-57ab05968afa" d="M248.26,187.21l-5.79,32m-236.15-31,19.06,18.88M152.54,24.27,25.43,206.59a.13.13,0,0,0,.09.2l216.74,12.43a.13.13,0,0,0,.12-.18L152.76,24.29A.13.13,0,0,0,152.54,24.27ZM126.35,6.64,5.74,188a.16.16,0,0,0,.14.25l241.63-1a.16.16,0,0,0,.14-.25L126.63,6.64A.17.17,0,0,0,126.35,6.64Zm.15-.21,26.17,17.66"/></g></svg>
 
     </a>
     <label class="md-header-nav__button md-icon" for="__drawer">
@@ -91,7 +124,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Private
+              Edit photos
             
           </span>
         </div>
@@ -162,7 +195,7 @@
         
   <li class="md-tabs__item">
     
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         Introduction
       </a>
     
@@ -184,7 +217,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../getting-started/" class="md-tabs__link">
+        <a href="../../../getting-started/" class="md-tabs__link">
           Getting Started
         </a>
       
@@ -197,7 +230,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../" class="md-tabs__link md-tabs__link--active">
+        <a href="../../" class="md-tabs__link md-tabs__link--active">
           User Guide
         </a>
       
@@ -210,7 +243,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../developer-guide/" class="md-tabs__link">
+        <a href="../../../developer-guide/" class="md-tabs__link">
           Developer Guide
         </a>
       
@@ -232,10 +265,10 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="http://docs.photoprism.org/" title="PhotoPrism" class="md-nav__button md-logo" aria-label="PhotoPrism">
+    <a href="https://docs.photoprism.org/" title="PhotoPrism" class="md-nav__button md-logo" aria-label="PhotoPrism">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.73 15l-3.9 6.76a9.984 9.984 0 008.49-2.01l-3.66-6.35M2.46 15c.92 2.92 3.15 5.26 5.99 6.34L12.12 15m-3.58-3l-3.9-6.75A9.855 9.855 0 002 12c0 .68.07 1.35.2 2h7.49m12.11-4h-7.49l.29.5 4.76 8.25A9.93 9.93 0 0022 12c0-.69-.07-1.36-.2-2m-.26-1c-.92-2.93-3.15-5.26-5.99-6.34L11.88 9M9.4 10.5l4.77-8.26C13.47 2.09 12.75 2 12 2c-2.4 0-4.6.84-6.32 2.25l3.66 6.35.06-.1z"/></svg>
+  <svg id="b01a508d-b59d-44f0-8be5-eca2aadd9bc2" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 253.78 224.78"><defs><style>.abae6701-d59a-4183-bf31-f7ca6639fed3,.e9c06423-71c9-47d7-ac4f-57ab05968afa{fill:none;}.e9270bc6-2df5-4c14-bf42-90cfc87d474b{clip-path:url(#ba383851-496a-4a7b-95ff-56b7a97252c7);}.e9c06423-71c9-47d7-ac4f-57ab05968afa{stroke:#000;stroke-miterlimit:10;stroke-width:3px;}</style><clipPath id="ba383851-496a-4a7b-95ff-56b7a97252c7"><rect class="abae6701-d59a-4183-bf31-f7ca6639fed3" x="-47.38" y="5.33" width="370.54" height="215.11"/></clipPath></defs><g class="e9270bc6-2df5-4c14-bf42-90cfc87d474b"><path class="e9c06423-71c9-47d7-ac4f-57ab05968afa" d="M248.26,187.21l-5.79,32m-236.15-31,19.06,18.88M152.54,24.27,25.43,206.59a.13.13,0,0,0,.09.2l216.74,12.43a.13.13,0,0,0,.12-.18L152.76,24.29A.13.13,0,0,0,152.54,24.27ZM126.35,6.64,5.74,188a.16.16,0,0,0,.14.25l241.63-1a.16.16,0,0,0,.14-.25L126.63,6.64A.17.17,0,0,0,126.35,6.64Zm.15-.21,26.17,17.66"/></g></svg>
 
     </a>
     PhotoPrism
@@ -262,7 +295,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../.." title="Introduction" class="md-nav__link">
+    <a href="../../.." title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -274,7 +307,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../team/" title="Team" class="md-nav__link">
+    <a href="../../../team/" title="Team" class="md-nav__link">
       Team
     </a>
   </li>
@@ -286,7 +319,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../funding/" title="Funding" class="md-nav__link">
+    <a href="../../../funding/" title="Funding" class="md-nav__link">
       Funding
     </a>
   </li>
@@ -298,7 +331,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../credits/" title="Credits" class="md-nav__link">
+    <a href="../../../credits/" title="Credits" class="md-nav__link">
       Credits
     </a>
   </li>
@@ -310,7 +343,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../license/" title="License" class="md-nav__link">
+    <a href="../../../license/" title="License" class="md-nav__link">
       License
     </a>
   </li>
@@ -322,7 +355,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../contact/" title="Contact" class="md-nav__link">
+    <a href="../../../contact/" title="Contact" class="md-nav__link">
       Contact
     </a>
   </li>
@@ -359,7 +392,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/" title="Introduction" class="md-nav__link">
+    <a href="../../../getting-started/" title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -371,7 +404,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/docker-compose/" title="Docker Compose" class="md-nav__link">
+    <a href="../../../getting-started/docker-compose/" title="Docker Compose" class="md-nav__link">
       Docker Compose
     </a>
   </li>
@@ -383,7 +416,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/docker/" title="Docker" class="md-nav__link">
+    <a href="../../../getting-started/docker/" title="Docker" class="md-nav__link">
       Docker
     </a>
   </li>
@@ -395,7 +428,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/raspberry-pi/" title="Raspberry Pi" class="md-nav__link">
+    <a href="../../../getting-started/raspberry-pi/" title="Raspberry Pi" class="md-nav__link">
       Raspberry Pi
     </a>
   </li>
@@ -407,7 +440,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/demo/" title="Demo Image" class="md-nav__link">
+    <a href="../../../getting-started/demo/" title="Demo Image" class="md-nav__link">
       Demo Image
     </a>
   </li>
@@ -419,7 +452,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/kubernetes/" title="Kubernetes" class="md-nav__link">
+    <a href="../../../getting-started/kubernetes/" title="Kubernetes" class="md-nav__link">
       Kubernetes
     </a>
   </li>
@@ -431,7 +464,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/scalability/" title="Scalability" class="md-nav__link">
+    <a href="../../../getting-started/scalability/" title="Scalability" class="md-nav__link">
       Scalability
     </a>
   </li>
@@ -443,7 +476,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/updates/" title="Updates" class="md-nav__link">
+    <a href="../../../getting-started/updates/" title="Updates" class="md-nav__link">
       Updates
     </a>
   </li>
@@ -455,7 +488,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/caching/" title="Caching" class="md-nav__link">
+    <a href="../../../getting-started/caching/" title="Caching" class="md-nav__link">
       Caching
     </a>
   </li>
@@ -467,7 +500,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/support/" title="Support" class="md-nav__link">
+    <a href="../../../getting-started/support/" title="Support" class="md-nav__link">
       Support
     </a>
   </li>
@@ -479,7 +512,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/faq/" title="FAQ" class="md-nav__link">
+    <a href="../../../getting-started/faq/" title="FAQ" class="md-nav__link">
       FAQ
     </a>
   </li>
@@ -523,7 +556,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="Introduction" class="md-nav__link">
+    <a href="../../" title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -535,7 +568,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../navigate/" title="Navigate" class="md-nav__link">
+    <a href="../../navigate/" title="Navigate" class="md-nav__link">
       Navigate
     </a>
   </li>
@@ -547,7 +580,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../import-vs-index/" title="Import vs Index" class="md-nav__link">
+    <a href="../../import-vs-index/" title="Import vs Index" class="md-nav__link">
       Import vs Index
     </a>
   </li>
@@ -608,90 +641,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Private
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Private" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../private/" title="Private" class="md-nav__link">
       Private
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-does-private-mean" class="md-nav__link">
-    What does private mean?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mark-photos-as-private" class="md-nav__link">
-    Mark photos as private
-  </a>
-  
-    <nav class="md-nav" aria-label="Mark photos as private">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#mark-single-photosvideos-as-private" class="md-nav__link">
-    Mark single photos/videos as private
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#mark-multiple-photos-as-private" class="md-nav__link">
-    Mark multiple photos as private
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#remove-the-private-flag-from-single-photo" class="md-nav__link">
-    Remove the private flag from single photo
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#remove-the-private-flag-from-multiple-photosvideos" class="md-nav__link">
-    Remove the private flag from multiple photos/videos
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -771,11 +725,97 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../edit/" title="Edit photos" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Edit photos
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Edit photos" class="md-nav__link md-nav__link--active">
       Edit photos
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#open-the-edit-dialogue" class="md-nav__link">
+    Open the edit dialogue
+  </a>
+  
+    <nav class="md-nav" aria-label="Open the edit dialogue">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#from-card-view" class="md-nav__link">
+    From card view
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from-full-screen-mode" class="md-nav__link">
+    From full screen mode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from-any-view" class="md-nav__link">
+    From any view
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edit-details" class="md-nav__link">
+    Edit Details
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edit-labels" class="md-nav__link">
+    Edit Labels
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edit-files" class="md-nav__link">
+    Edit Files
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -815,7 +855,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/library/" title="Library" class="md-nav__link">
+    <a href="../../settings/library/" title="Library" class="md-nav__link">
       Library
     </a>
   </li>
@@ -827,7 +867,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/ui/" title="User Interface" class="md-nav__link">
+    <a href="../../settings/ui/" title="User Interface" class="md-nav__link">
       User Interface
     </a>
   </li>
@@ -839,7 +879,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/places/" title="Places" class="md-nav__link">
+    <a href="../../settings/places/" title="Places" class="md-nav__link">
       Places
     </a>
   </li>
@@ -851,7 +891,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/thumbnails/" title="Thumbnails" class="md-nav__link">
+    <a href="../../settings/thumbnails/" title="Thumbnails" class="md-nav__link">
       Thumbnails
     </a>
   </li>
@@ -898,7 +938,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developer-guide/" title="Introduction" class="md-nav__link">
+    <a href="../../../developer-guide/" title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -910,7 +950,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developer-guide/setup/" title="Setup" class="md-nav__link">
+    <a href="../../../developer-guide/setup/" title="Setup" class="md-nav__link">
       Setup
     </a>
   </li>
@@ -922,7 +962,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developer-guide/directories/" title="Directories" class="md-nav__link">
+    <a href="../../../developer-guide/directories/" title="Directories" class="md-nav__link">
       Directories
     </a>
   </li>
@@ -934,7 +974,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developer-guide/configuration/" title="Configuration" class="md-nav__link">
+    <a href="../../../developer-guide/configuration/" title="Configuration" class="md-nav__link">
       Configuration
     </a>
   </li>
@@ -946,7 +986,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developer-guide/tests/" title="Tests" class="md-nav__link">
+    <a href="../../../developer-guide/tests/" title="Tests" class="md-nav__link">
       Tests
     </a>
   </li>
@@ -958,7 +998,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developer-guide/issues/" title="Issues" class="md-nav__link">
+    <a href="../../../developer-guide/issues/" title="Issues" class="md-nav__link">
       Issues
     </a>
   </li>
@@ -970,7 +1010,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developer-guide/pull-requests/" title="Pull Requests" class="md-nav__link">
+    <a href="../../../developer-guide/pull-requests/" title="Pull Requests" class="md-nav__link">
       Pull Requests
     </a>
   </li>
@@ -982,7 +1022,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developer-guide/code-quality/" title="Code Quality" class="md-nav__link">
+    <a href="../../../developer-guide/code-quality/" title="Code Quality" class="md-nav__link">
       Code Quality
     </a>
   </li>
@@ -994,7 +1034,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developer-guide/documentation/" title="Documentation" class="md-nav__link">
+    <a href="../../../developer-guide/documentation/" title="Documentation" class="md-nav__link">
       Documentation
     </a>
   </li>
@@ -1029,50 +1069,57 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-does-private-mean" class="md-nav__link">
-    What does private mean?
+  <a href="#open-the-edit-dialogue" class="md-nav__link">
+    Open the edit dialogue
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mark-photos-as-private" class="md-nav__link">
-    Mark photos as private
-  </a>
-  
-    <nav class="md-nav" aria-label="Mark photos as private">
+    <nav class="md-nav" aria-label="Open the edit dialogue">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#mark-single-photosvideos-as-private" class="md-nav__link">
-    Mark single photos/videos as private
+  <a href="#from-card-view" class="md-nav__link">
+    From card view
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#mark-multiple-photos-as-private" class="md-nav__link">
-    Mark multiple photos as private
+  <a href="#from-full-screen-mode" class="md-nav__link">
+    From full screen mode
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#remove-the-private-flag-from-single-photo" class="md-nav__link">
-    Remove the private flag from single photo
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#remove-the-private-flag-from-multiple-photosvideos" class="md-nav__link">
-    Remove the private flag from multiple photos/videos
+  <a href="#from-any-view" class="md-nav__link">
+    From any view
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edit-details" class="md-nav__link">
+    Edit Details
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edit-labels" class="md-nav__link">
+    Edit Labels
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edit-files" class="md-nav__link">
+    Edit Files
+  </a>
   
 </li>
       
@@ -1092,59 +1139,80 @@
                   
                 
                 
-                  <h1>Private</h1>
+                  <h1>Edit photos</h1>
                 
-                <h3 id="what-does-private-mean">What does private mean?<a class="headerlink" href="#what-does-private-mean" title="Permanent link">&para;</a></h3>
-<p>Some of your photos might be private for personal reasons. 
-Our private functionality provides you with a solution to hide private photos or videos from some sections.
-This way you can let family and friends browse through your photos without risking that they see photos you do not want them to see.</p>
-<p>By default, photos marked as private will not appear in the following sections:</p>
+                <p>PhotoPrisms edit dialogue enables you to add/edit various types of metadata related to your photos/videos.</p>
+<p>During <a href="../../">indexing</a> PhotoPrism collects as much data as possible from sidecar files and the photo itself.</p>
+<h3 id="open-the-edit-dialogue">Open the edit dialogue<a class="headerlink" href="#open-the-edit-dialogue" title="Permanent link">&para;</a></h3>
+<h4 id="from-card-view">From card view<a class="headerlink" href="#from-card-view" title="Permanent link">&para;</a></h4>
+<ol>
+<li>
+<p>Click on the photos title, time or camera information.</p>
+<p><img alt="Screenshot" src="../../../img/editopen1.png" /></p>
+</li>
+</ol>
+<h4 id="from-full-screen-mode">From full screen mode<a class="headerlink" href="#from-full-screen-mode" title="Permanent link">&para;</a></h4>
+<ol>
+<li>
+<p>In the upper right corner click edit.</p>
+<p><img alt="Screenshot" src="../../../img/editopen2.png" /></p>
+</li>
+</ol>
+<h4 id="from-any-view">From any view<a class="headerlink" href="#from-any-view" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Select one or multiple photos.</li>
+<li>Click on context menu.</li>
+<li>Click on edit.</li>
+</ol>
+<p><img alt="Screenshot" src="../../../img/editopen3.png" /></p>
+<h3 id="edit-details">Edit Details<a class="headerlink" href="#edit-details" title="Permanent link">&para;</a></h3>
+<p>In the edit dialogue's Detail tab you can view and edit the following data:</p>
 <ul>
-<li>Photos</li>
-<li>Videos</li>
-<li>Labels</li>
-<li>Places</li>
-<li>Favorites</li>
-<li>Shared albums</li>
+<li>Title</li>
+<li>Local time</li>
+<li>UTC time</li>
+<li>UTC date</li>
+<li>Time zone</li>
+<li>Latitude</li>
+<li>Longitude</li>
+<li>Altitude</li>
+<li>Country</li>
+<li>Camera</li>
+<li>ISO</li>
+<li>Exposure</li>
+<li>Lens</li>
+<li>F Number</li>
+<li>Focal Length</li>
+<li>Subject</li>
+<li>Artist</li>
+<li>Copyright</li>
+<li>License</li>
+<li>Description</li>
+<li>Keywords</li>
+<li>Notes</li>
 </ul>
+<p><img alt="Screenshot" src="../../img/editDetails.png" /></p>
+<p>"Apply" saves changes. "Ok" saves changes and closes edit dialogue.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>In case you want private content to appear everywhere you can configure that in the <a href="../settings/ui/">settings</a>.</p>
+<p>Lots of metadata like labels, keywords, title, location, camera details are generated by PhotoPrism itself during indexing. 
+Once you change data manually PhotoPrism always keeps your data even if you index again.</p>
 </div>
-<h3 id="mark-photos-as-private">Mark photos as private<a class="headerlink" href="#mark-photos-as-private" title="Permanent link">&para;</a></h3>
-<p>When adding/indexing new photos potentially private photos are marked as private automatically.
-Be aware this algorithm is still in beta mode.</p>
-<p>@Micha Können wir das optional machen? Also dem Nutzer die möglichkeit geben die private Funktion zu nutzen, aber ausschließlich manuell das private flag setzen?</p>
-<h4 id="mark-single-photosvideos-as-private">Mark single photos/videos as private<a class="headerlink" href="#mark-single-photosvideos-as-private" title="Permanent link">&para;</a></h4>
-<ol>
-<li>Go to Photos.</li>
-<li>Make sure you are in list view.</li>
-<li>Click private on the right.</li>
-</ol>
-<p><img alt="Screenshot" src="../../img/privateOnList.png" /></p>
-<h4 id="mark-multiple-photos-as-private">Mark multiple photos as private<a class="headerlink" href="#mark-multiple-photos-as-private" title="Permanent link">&para;</a></h4>
-<ol>
-<li>Go to Photos.</li>
-<li>Select photos/videos.</li>
-<li>Click context menu.</li>
-<li>Click private.</li>
-</ol>
-<p><img alt="Screenshot" src="../../img/privateOnContextMenu.png" /></p>
-<h4 id="remove-the-private-flag-from-single-photo">Remove the private flag from single photo<a class="headerlink" href="#remove-the-private-flag-from-single-photo" title="Permanent link">&para;</a></h4>
-<ol>
-<li>Go to Private.</li>
-<li>Make sure you are in list view.</li>
-<li>Click the private on the right.</li>
-</ol>
-<p><img alt="Screenshot" src="../../img/removePrivateList.png" /></p>
-<h4 id="remove-the-private-flag-from-multiple-photosvideos">Remove the private flag from multiple photos/videos<a class="headerlink" href="#remove-the-private-flag-from-multiple-photosvideos" title="Permanent link">&para;</a></h4>
-<ol>
-<li>Go to Private.</li>
-<li>Select photos/videos.</li>
-<li>Click context menu.</li>
-<li>Click private.</li>
-</ol>
-<p><img alt="Screenshot" src="../../img/removePrivateContextMenu.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Every keyword can be used in PhotoPrisms search to find photos or videos.</p>
+</div>
+<h3 id="edit-labels">Edit Labels<a class="headerlink" href="#edit-labels" title="Permanent link">&para;</a></h3>
+<p>In the edit dialogue's Label tab you can view and edit <a href="../labels/">labels</a>.</p>
+<h3 id="edit-files">Edit Files<a class="headerlink" href="#edit-files" title="Permanent link">&para;</a></h3>
+<p>In the edit dialogue's Files tab you see all files that belong to a photo.</p>
+<p>In PhotoPrism a photo can consist of multiple files like a raw file + a jpeg version of this raw file + a related xmp or json file.</p>
+<p><img alt="Screenshot" src="../../img/files.png" /></p>
+<p><img alt="Screenshot" src="../../img/filesVideo.png" /></p>
+<p>In case you have "Grouped Sequentials" enabled in <a href="../../settings/ui/">settings</a> you might have photos that consist of more than one JPEG file.
+In this case you can decide which one to use as primary by clicking the radio button in the files table.
+The primary JPEG file is used in our views.</p>
+<p><img alt="Screenshot" src="../../img/sequential2.png" /></p>
                 
               
               
@@ -1163,7 +1231,7 @@ Be aware this algorithm is still in beta mode.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../review/" title="Review" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../download/" title="Download photos" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1172,19 +1240,19 @@ Be aware this algorithm is still in beta mode.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Review
+                Download photos
               </div>
             </div>
           </a>
         
         
-          <a href="../archive/" title="Archive" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../settings/library/" title="Library" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Archive
+                Library
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -1273,15 +1341,15 @@ Be aware this algorithm is still in beta mode.</p>
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
-          base: "../..",
+          base: "../../..",
           features: ["tabs"],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.27c6a5e6.min.js"
+            worker: "../../../assets/javascripts/worker/search.27c6a5e6.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
