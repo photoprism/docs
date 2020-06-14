@@ -17,7 +17,7 @@
         <meta name="author" content="PhotoPrism.org">
       
       <link rel="shortcut icon" href="../../../img/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.2">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.3">
     
     
       
@@ -25,7 +25,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.a2408e81.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6e35a1a6.min.css">
       
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.a46bcfb3.min.css">
       
@@ -79,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#view-all-photos-with-a-certain-label" class="md-skip">
+        <a href="#labels" class="md-skip">
           Skip to content
         </a>
       
@@ -579,10 +579,100 @@
           
 
 
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-3" type="checkbox" id="nav-8-3">
+    
+    <label class="md-nav__link" for="nav-8-3">
+      Files & Folders
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Files & Folders" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Files & Folders
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
   <li class="md-nav__item">
-    <a href="../../import-vs-index/" title="Import vs Index" class="md-nav__link">
+    <a href="../../library/import-vs-index/" title="Import vs Index" class="md-nav__link">
       Import vs Index
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../library/import/" title="Import" class="md-nav__link">
+      Import
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../library/indexing/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../library/upload/" title="Upload via Web UI" class="md-nav__link">
+      Upload via Web UI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../library/webdav/" title="WebDAV Upload" class="md-nav__link">
+      WebDAV Upload
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../library/files/" title="Files" class="md-nav__link">
+      Files
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -677,12 +767,26 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../folders/" title="Folders" class="md-nav__link">
+      Folders
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
   <li class="md-nav__item md-nav__item--active">
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
@@ -699,6 +803,8 @@
       
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
@@ -764,6 +870,30 @@
   <li class="md-nav__item">
     <a href="../video/" title="Videos" class="md-nav__link">
       Videos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../moments/" title="Moments" class="md-nav__link">
+      Moments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../calendar/" title="Calendar" class="md-nav__link">
+      Calendar
     </a>
   </li>
 
@@ -1032,6 +1162,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon">
@@ -1085,23 +1217,22 @@
                   
                 
                 
-                  <h1>Labels</h1>
-                
-                <p>PhotoPrism uses labels to classify images.
+                <h1 id="labels">Labels<a class="headerlink" href="#labels" title="Permanent link">&para;</a></h1>
+<p>PhotoPrism uses labels to classify images.
 Other tools use the term tags instead of labels.
 Labels are set automatically when adding new photos. 
 You can manually add new labels or edit/remove the ones that have been created by us.</p>
 <p>In Labels you find all labels of your photos and videos. 
-You can star labels by clicking on the star. Stared labels will be listed first.</p>
-<p>To see only labels with a high priority click on the eye button in the upper right corner.</p>
-<p><img alt="Screenshot" src="../../../img/labels1.png" /></p>
+You can star labels by clicking <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.45 4.73L5.82 21 12 17.27z"/></svg></span>. Stared labels will be listed first.</p>
+<p>To see only labels with high priority click <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 00-3 3 3 3 0 003 3 3 3 0 003-3 3 3 0 00-3-3m0 8a5 5 0 01-5-5 5 5 0 015-5 5 5 0 015 5 5 5 0 01-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5z"/></svg></span> in the upper right corner.</p>
+<p><img alt="Screenshot" src="../img/labels-1.png" /></p>
 <h3 id="view-all-photos-with-a-certain-label">View all photos with a certain label<a class="headerlink" href="#view-all-photos-with-a-certain-label" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Go to Labels.</li>
 <li>
 <p>Click on the label you are interested in.</p>
-<p><img alt="Screenshot" src="../../../img/labels2.png" />
-<img alt="Screenshot" src="../../../img/labels3.png" /></p>
+<p><img alt="Screenshot" src="../img/labels-2.png" />
+<img alt="Screenshot" src="../img/labels-3.png" /></p>
 </li>
 </ol>
 <div class="admonition info">
@@ -1115,8 +1246,8 @@ You can star labels by clicking on the star. Stared labels will be listed first.
 <li>Click on the label field in the last row of the label table.</li>
 <li>Enter a label name.</li>
 <li>
-<p>Click add on the right side of this row.</p>
-<p><img alt="Screenshot" src="../../../img/addLabel.png" /></p>
+<p>Click <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></span> on the right side of this row.</p>
+<p><img alt="Screenshot" src="../img/add-label.png" /></p>
 </li>
 </ol>
 <h3 id="removedelete-label-from-a-photovideo">Remove/delete label from a photo/video<a class="headerlink" href="#removedelete-label-from-a-photovideo" title="Permanent link">&para;</a></h3>
@@ -1126,15 +1257,15 @@ Manually added labels can be deleted.</p>
 <li>Go to the photo <a href="../edit/">edit dialogue</a>.</li>
 <li>Go to Labels tab.</li>
 <li>
-<p>Click the remove/delete button of the label you want to remove/delete.</p>
-<p><img alt="Screenshot" src="../../../img/removeLabel1.png" /></p>
+<p>Click the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 13H5v-2h14v2z"/></svg></span>/<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 002 2h8a2 2 0 002-2V7H6v12z"/></svg></span> button of the label you want to remove/delete.</p>
+<p><img alt="Screenshot" src="../img/remove-label-1.png" /></p>
 </li>
 </ol>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Removed labels have a confidence of 0% and can be activated again at any time by clicking add.</p>
 </div>
-<p><img alt="Screenshot" src="../../../img/removeLabel2.png" /></p>
+<p><img alt="Screenshot" src="../img/remove-label-2.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>You can hide Labels in the <a href="../../settings/ui/">settings</a></p>
@@ -1143,7 +1274,7 @@ Manually added labels can be deleted.</p>
 <ol>
 <li>
 <p>Go to the photo <a href="../edit/">edit dialogue</a> of any photo that has the label you want to rename.</p>
-<p><img alt="Screenshot" src="../../../img/editLabel1.png" /></p>
+<p><img alt="Screenshot" src="../img/edit-label-1.png" /></p>
 </li>
 <li>
 <p>Go to Labels tab.</p>
@@ -1151,12 +1282,12 @@ Manually added labels can be deleted.</p>
 <li>Click on the label name you want to change.</li>
 <li>
 <p>Change the name and click enter.</p>
-<p><img alt="Screenshot" src="../../../img/editLabel2.png" /></p>
-<p><img alt="Screenshot" src="../../../img/editLabel3.png" /></p>
+<p><img alt="Screenshot" src="../img/edit-label-2.png" /></p>
+<p><img alt="Screenshot" src="../img/edit-label-3.png" /></p>
 </li>
 <li>
 <p>The changes will be applied to all photos with this label after the next  <a href="../../">indexing</a></p>
-<p><img alt="Screenshot" src="../../../img/editLabel4.png" /></p>
+<p><img alt="Screenshot" src="../img/edit-label-4.png" /></p>
 </li>
 </ol>
 <div class="admonition attention">
@@ -1181,7 +1312,7 @@ Manually added labels can be deleted.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../albums/" title="Albums" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../folders/" title="Folders" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1190,7 +1321,7 @@ Manually added labels can be deleted.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Albums
+                Folders
               </div>
             </div>
           </a>
@@ -1292,14 +1423,14 @@ Manually added labels can be deleted.</p>
     </div>
     
       <script src="../../../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../assets/javascripts/bundle.a45f732b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "../../..",
           features: ["tabs"],
           search: Object.assign({
-            worker: "../../../assets/javascripts/worker/search.27c6a5e6.min.js"
+            worker: "../../../assets/javascripts/worker/search.c03f0417.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
