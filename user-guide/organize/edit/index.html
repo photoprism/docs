@@ -17,7 +17,7 @@
         <meta name="author" content="PhotoPrism.org">
       
       <link rel="shortcut icon" href="../../../img/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.2">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.3">
     
     
       
@@ -25,7 +25,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.a2408e81.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6e35a1a6.min.css">
       
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.a46bcfb3.min.css">
       
@@ -940,6 +940,39 @@
     Edit Files
   </a>
   
+    <nav class="md-nav" aria-label="Edit Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grouped-files" class="md-nav__link">
+    Grouped Files
+  </a>
+  
+    <nav class="md-nav" aria-label="Grouped Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#change-primary-file" class="md-nav__link">
+    Change primary file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ungroup-files" class="md-nav__link">
+    Ungroup files
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1041,6 +1074,18 @@
   <li class="md-nav__item">
     <a href="../../settings/ui/" title="User Interface" class="md-nav__link">
       User Interface
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../settings/account/" title="Account" class="md-nav__link">
+      Account
     </a>
   </li>
 
@@ -1295,6 +1340,39 @@
     Edit Files
   </a>
   
+    <nav class="md-nav" aria-label="Edit Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grouped-files" class="md-nav__link">
+    Grouped Files
+  </a>
+  
+    <nav class="md-nav" aria-label="Grouped Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#change-primary-file" class="md-nav__link">
+    Change primary file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ungroup-files" class="md-nav__link">
+    Ungroup files
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1380,12 +1458,37 @@ Once you change data manually PhotoPrism always keeps your data even if you inde
 <h3 id="edit-files">Edit Files<a class="headerlink" href="#edit-files" title="Permanent link">&para;</a></h3>
 <p>In the edit dialogue's Files tab you see all files that belong to a photo.</p>
 <p>In PhotoPrism a photo can consist of multiple files like a raw file + a jpeg version of this raw file + a related xmp or json file.</p>
-<p><img alt="Screenshot" src="../img/files.png" /></p>
-<p><img alt="Screenshot" src="../img/files-video.png" /></p>
-<p>In case you have "Grouped Sequentials" enabled in <a href="../../settings/ui/">settings</a> you might have photos that consist of more than one JPEG file.
-In this case you can decide which one to use as primary by clicking the radio button in the files table.
-The primary JPEG file is used in our views.</p>
-<p><img alt="Screenshot" src="../img/sequential-2.png" /></p>
+<p><img alt="Screenshot" src="../img/files-1.png" /></p>
+<p>To open file details click <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6-6-6 1.41-1.42z"/></svg></span>.</p>
+<p><img alt="Screenshot" src="../img/group-2.png" /></p>
+<h4 id="grouped-files">Grouped Files<a class="headerlink" href="#grouped-files" title="Permanent link">&para;</a></h4>
+<p>In case you have "Grouped Sequentials" enabled in <a href="../../settings/ui/">settings</a> you might have photos that consist of more than one JPEG file.</p>
+<p><img alt="Screenshot" src="../img/group-1.png" /></p>
+<h5 id="change-primary-file">Change primary file<a class="headerlink" href="#change-primary-file" title="Permanent link">&para;</a></h5>
+<p>The JPEG file marked as primary is used in our views. It is listed first in the files section.
+To change the primary file:</p>
+<ol>
+<li>
+<p>Click <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6-6-6 1.41-1.42z"/></svg></span> of the file you want to set as primary.</p>
+</li>
+<li>
+<p>Click Primary.</p>
+<p><img alt="Screenshot" src="../img/group-3.png" /> </p>
+</li>
+</ol>
+<h5 id="ungroup-files">Ungroup files<a class="headerlink" href="#ungroup-files" title="Permanent link">&para;</a></h5>
+<p>To ungroup files:</p>
+<ol>
+<li>
+<p>Click <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6-6-6 1.41-1.42z"/></svg></span> of the JPEG file that is not marked as primary.</p>
+</li>
+<li>
+<p>Click Ungroup.</p>
+<p><img alt="Screenshot" src="../img/group-3.png" /></p>
+</li>
+</ol>
+<p>Now, both files appear in our views.</p>
+<p><img alt="Screenshot" src="../img/group-4.png" /></p>
                 
               
               
@@ -1515,14 +1618,14 @@ The primary JPEG file is used in our views.</p>
     </div>
     
       <script src="../../../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../assets/javascripts/bundle.a45f732b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "../../..",
           features: ["tabs"],
           search: Object.assign({
-            worker: "../../../assets/javascripts/worker/search.27c6a5e6.min.js"
+            worker: "../../../assets/javascripts/worker/search.c03f0417.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
