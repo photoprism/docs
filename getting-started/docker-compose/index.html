@@ -1296,7 +1296,9 @@ thumbnails. You can enable read-only mode to prevent this completely, but you wi
 <div class="highlight"><pre><span></span><code>docker-compose up -d
 </code></pre></div>
 
-<p>Now open <a href="http://localhost:2342/">http://localhost:2342/</a> in a Web browser to see the user interface. The default password is "photoprism".</p>
+<p>Now open <a href="http://localhost:2342/">http://localhost:2342/</a> in a Web browser to see the user interface.</p>
+<p>The initial password is "photoprism". You can change it in Settings or using the 
+the <code>photoprism passwd</code> command in a terminal.</p>
 <p>The port and other basic settings can be changed in <code>docker-compose.yml</code>.
 Remember to stop and re-create the container whenever configuration values changed:</p>
 <div class="highlight"><pre><span></span><code>docker-compose stop photoprism
