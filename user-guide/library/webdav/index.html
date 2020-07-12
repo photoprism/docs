@@ -17,7 +17,7 @@
         <meta name="author" content="PhotoPrism.org">
       
       <link rel="shortcut icon" href="../../../img/favicon-16.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.2">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.3">
     
     
       
@@ -25,7 +25,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.a2408e81.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6e35a1a6.min.css">
       
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.a46bcfb3.min.css">
       
@@ -663,56 +663,9 @@
       
     
     
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        WebDAV Upload
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
     <a href="./" title="WebDAV Upload" class="md-nav__link md-nav__link--active">
       WebDAV Upload
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#add-photos-via-webdav-on-macos" class="md-nav__link">
-    Add photos via WebDAV on MacOS
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#add-photos-via-webdav-on-windows" class="md-nav__link">
-    Add photos via WebDAV on Windows
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#add-photos-via-webdav-from-mobile-device" class="md-nav__link">
-    Add photos via WebDAV from mobile device
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
     
   </li>
 
@@ -1266,37 +1219,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#add-photos-via-webdav-on-macos" class="md-nav__link">
-    Add photos via WebDAV on MacOS
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#add-photos-via-webdav-on-windows" class="md-nav__link">
-    Add photos via WebDAV on Windows
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#add-photos-via-webdav-from-mobile-device" class="md-nav__link">
-    Add photos via WebDAV from mobile device
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1313,79 +1235,68 @@
                 
                 <h1 id="add-files-using-webdav">Add files using WebDAV<a class="headerlink" href="#add-files-using-webdav" title="Permanent link">&para;</a></h1>
 <p>In case you have PhotoPrism running on a server you can use WebDAV to add files to your <code>import</code> or <code>originals</code> folder.</p>
-<h3 id="add-photos-via-webdav-on-macos">Add photos via WebDAV on MacOS<a class="headerlink" href="#add-photos-via-webdav-on-macos" title="Permanent link">&para;</a></h3>
-<ol>
-<li>On your computer, open the Finder.</li>
-<li>
-<p>In the Finder menu click "Go" and then "Connect to Server". </p>
-<p><img alt="Screenshot" src="../img/webdav-1.png" /></p>
-</li>
-<li>
-<p>Enter </p>
-<ul>
-<li><a href="http://servername/originals/">http://servername/originals/</a></li>
-</ul>
-<p>or </p>
-<ul>
-<li><a href="http://servername/import/">http://servername/import/</a></li>
-</ul>
-<p><img alt="Screenshot" src="../img/webdav-2.png" /></p>
-</li>
-<li>
-<p>Click "Connect".</p>
-</li>
-<li>
-<p>Enter your username and password. The username is photoprism. You can change your password in the <a href="../../settings/account/">account settings</a>.</p>
-</li>
-<li>
-<p>Now you can move photos to the <code>import</code> or <code>originals</code> folder.</p>
-</li>
-</ol>
+<p>Just follow those <a href="../../backup/webdav/">instructions</a>.</p>
 <p>Once all files are added you can start <a href="../import-vs-index/">importing or indexing</a> your files.</p>
+<!--### Add photos via WebDAV on MacOS ###
+1. On your computer, open the Finder.
+2. In the Finder menu click "Go" and then "Connect to Server".
+
+      ![Screenshot](img/webdav-1.png)
+
+3. Enter 
+
+    * http://servername/originals/
+
+    or 
+
+    * http://servername/import/
+
+      ![Screenshot](img/webdav-2.png)
+
+4. Click "Connect".
+
+5. Enter your username and password. The username is photoprism. You can change your password in the [account settings](../settings/account.md).
+
+6. Now you can move photos to the `import` or `originals` folder.
+
+ -->
+
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>You can use WebDAV to download photos from the server as well. 
 Just connect to <a href="http://servername/originals/">http://servername/originals/</a> and copy the files to your preferred destination.</p>
 </div>
-<h3 id="add-photos-via-webdav-on-windows">Add photos via WebDAV on Windows<a class="headerlink" href="#add-photos-via-webdav-on-windows" title="Permanent link">&para;</a></h3>
-<ol>
-<li>Open the windows explorer (e.g. by clicking [Windows] and [E]).</li>
-<li>Right click on "This Computer".</li>
-<li>Select "Add Network".</li>
-<li>Click "Next".</li>
-<li>
-<p>Enter </p>
-<ul>
-<li><a href="http://servername/originals/">http://servername/originals/</a></li>
-</ul>
-<p>or </p>
-<ul>
-<li><a href="http://servername/import/">http://servername/import/</a></li>
-</ul>
-</li>
-<li>
-<p>Enter your username and password. The username is photoprism. You can change your password in the <a href="../../settings/account/">account settings</a>.</p>
-</li>
-<li>Now the network appears in your explorer and you can start adding files.</li>
-</ol>
-<h3 id="add-photos-via-webdav-from-mobile-device">Add photos via WebDAV from mobile device<a class="headerlink" href="#add-photos-via-webdav-from-mobile-device" title="Permanent link">&para;</a></h3>
-<p>You can use WebDAV to add photos from your mobile phone or tablet as well.</p>
-<ol>
-<li>Install an app that supports WebDAV.</li>
-<li>
-<p>Connect to </p>
-<ul>
-<li><a href="http://servername/originals/">http://servername/originals/</a></li>
-</ul>
-<p>or </p>
-<ul>
-<li><a href="http://servername/import/">http://servername/import/</a></li>
-</ul>
-</li>
-<li>
-<p>Move or copy your files.</p>
-</li>
-</ol>
+<!--### Add photos via WebDAV on Windows ###
+1. Open the windows explorer (e.g. by clicking [Windows] and [E]).
+2. Right click on "This Computer".
+3. Select "Add Network".
+4. Click "Next".
+5. Enter
+
+       * http://servername/originals/
+
+       or 
+
+       * http://servername/import/
+
+6. Enter your username and password. The username is photoprism. You can change your password in the [account settings](../settings/account.md).
+7. Now the network appears in your explorer and you can start adding files.
+
+
+### Add photos via WebDAV from mobile device ###
+You can use WebDAV to add photos from your mobile phone or tablet as well.
+
+1. Install an app that supports WebDAV.
+2. Connect to
+
+       * http://servername/originals/
+
+       or 
+
+       * http://servername/import/
+
+3. Move or copy your files.
+-->
                 
               
               
@@ -1515,14 +1426,14 @@ Just connect to <a href="http://servername/originals/">http://servername/origina
     </div>
     
       <script src="../../../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../assets/javascripts/bundle.a45f732b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "../../..",
           features: ["tabs"],
           search: Object.assign({
-            worker: "../../../assets/javascripts/worker/search.27c6a5e6.min.js"
+            worker: "../../../assets/javascripts/worker/search.c03f0417.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
