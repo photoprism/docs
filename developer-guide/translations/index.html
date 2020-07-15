@@ -1319,9 +1319,9 @@ e.g. <code>Found %{n} files</code>.</p>
 Download is free for Mac, Windows and Linux.
 It's source code can be obtained on <a href="https://github.com/vslavik/poedit">GitHub</a>.</p>
 <h2 id="frontend">Frontend<a class="headerlink" href="#frontend" title="Permanent link">&para;</a></h2>
-<p>Files required for localization can be found in <code>frontend/src/locales</code>. The POT file, containing only 
-English message ids, is <code>translations.pot</code>.</p>
-<p><code>*.po</code> files contain localized message strings for each language, e.g. <code>de.po</code> for German.
+<p>Localization files can be found in <code>/frontend/src/locales</code>. The POT file containing message ids 
+is <code>translations.pot</code>.</p>
+<p><code>*.po</code> files contain localized message strings for each language, e.g. <code>/frontend/src/locales/de.po</code> for German.
 You can open, edit and save them with Poedit to update existing translations. </p>
 <p>To add a new translation, open <code>translations.pot</code>, click on "Create New Translation" at the bottom, select
 the language, and start translating. 
@@ -1339,8 +1339,9 @@ language in Settings automatically triggers a reload.</p>
 <p>To extract new or changed text needing translation from <code>*.js</code> and <code>*.vue</code> source, run 
 <div class="highlight"><pre><span></span><code>npm run gettext-extract
 </code></pre></div>
-in the <code>frontend/</code> directory. This updates the POT file <code>translations.pot</code>. Apply changes to existing translations 
-by clicking on "Catalogue" &gt; "Update from POT File..." in the Poedit app menu.</p>
+in <code>/frontend</code>. This updates the POT file <code>translations.pot</code>.</p>
+<p>Apply changes to existing translations by clicking on "Catalogue" &gt; "Update from POT File..." 
+in the Poedit app menu.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>A binary <code>*.mo</code> (machine object) file will be automatically saved along with every <code>*.po</code> file. 
@@ -1352,17 +1353,16 @@ and often causes merge conflicts.</p>
 <p>Technical log messages should be in English to avoid ambiguities and (even slightly) wrong translations. 
 Only asynchronous confirmation messages and certain API responses need translation to provide a 
 consistent user experience.</p>
-<p>Backend translations are located in <code>assets/locales</code>. The POT file, containing only 
-English message ids, is <code>messages.pot</code>.</p>
+<p>Backend translations can be found in <code>/assets/locales</code>. The POT file containing message ids is <code>messages.pot</code>.</p>
 <p><code>default.po</code> files in sub directories contain localized message strings for each language, e.g. 
-<code>de/default.po</code> for German. You can open, edit and save them with Poedit. Please
+<code>/assets/locales/de/default.po</code> for German. You can open, edit and save them with Poedit. Please
 also commit and push binary <code>*.mo</code> files, which will be automatically created by Poedit.</p>
 <p>To add a new translation, open <code>messages.pot</code>, click on "Create New Translation" at the bottom, select
 the language, and start translating. 
 When done, add a new directory for the language and save your translation as <code>default.po</code>,
 just like existing examples.</p>
-<p>The POT file <code>assets/locales/messages.pot</code> will be automatically updated when 
-running <code>go generate</code> in <code>internal/i18n/</code> or <code>make generate</code> in the main project directory.
+<p>The POT file <code>/assets/locales/messages.pot</code> will be automatically updated when 
+running <code>go generate</code> in <code>/internal/i18n</code> or <code>make generate</code> in the main project directory.
 Note that this will only work when you have gettext installed on your system.
 We recommand using our latest development image as described in the developer guide.</p>
 <p>Apply changes to existing translations by clicking on "Catalogue" &gt; "Update from POT File..." 
