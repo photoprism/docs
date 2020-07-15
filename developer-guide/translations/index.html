@@ -1309,19 +1309,17 @@
                 
                 <h1 id="translations">Translations<a class="headerlink" href="#translations" title="Permanent link">&para;</a></h1>
 <p>PhotoPrism uses <a href="https://en.wikipedia.org/wiki/Gettext">gettext</a> for localizing frontend and backend.
-It's around since the 90s and probably the most widely adopted standard for translating user interfaces.</p>
-<p>A human readable, English string like <code>File not found</code> is used as message id for 
-finding a matching translation string, and used as default whenever there is no translation for 
-the current locale.</p>
-<p>Messages may optionally contain placeholders for dynamically inserted numbers or names,
-e.g. <code>Found %{n} files</code>.</p>
+It's one most widely adopted standards for translating user interfaces.</p>
+<p>Human readable messages like <code>File not found</code> are used as ids for finding matching translations, 
+and used as defaults whenever there is no translation for the current locale.</p>
+<p>They may optionally contain placeholders for numbers or names: <code>Found %{n} files</code></p>
 <p>We strongly recommend <a href="https://poedit.net/download">Poedit</a> for creating and updating translations.
 Download is free for Mac, Windows and Linux.
 It's source code can be obtained on <a href="https://github.com/vslavik/poedit">GitHub</a>.</p>
 <h2 id="frontend">Frontend<a class="headerlink" href="#frontend" title="Permanent link">&para;</a></h2>
-<p>Localization files can be found in <code>/frontend/src/locales</code>. The POT file containing message ids 
+<p>Localizations can be found in <code>/frontend/src/locales</code>. The POT file, only containing message ids, 
 is <code>translations.pot</code>.</p>
-<p><code>*.po</code> files contain localized message strings for each language, e.g. <code>/frontend/src/locales/de.po</code> for German.
+<p><code>*.po</code> files contain localized messages for each language, e.g. <code>de.po</code> for German.
 You can open, edit and save them with Poedit to update existing translations. </p>
 <p>To add a new translation, open <code>translations.pot</code>, click on "Create New Translation" at the bottom, select
 the language, and start translating. 
@@ -1350,12 +1348,12 @@ translations via email. The compiled <code>translations.json</code> file is not 
 and often causes merge conflicts.</p>
 </div>
 <h2 id="backend">Backend<a class="headerlink" href="#backend" title="Permanent link">&para;</a></h2>
-<p>Technical log messages should be in English to avoid ambiguities and (even slightly) wrong translations. 
-Only asynchronous confirmation messages and certain API responses need translation to provide a 
-consistent user experience.</p>
-<p>Backend translations can be found in <code>/assets/locales</code>. The POT file containing message ids is <code>messages.pot</code>.</p>
-<p><code>default.po</code> files in sub directories contain localized message strings for each language, e.g. 
-<code>/assets/locales/de/default.po</code> for German. You can open, edit and save them with Poedit. Please
+<p>Only asynchronous notifications and certain API responses need translation to provide a 
+consistent user experience.
+Technical log messages should be in English to avoid ambiguities and (even slightly) wrong translations. </p>
+<p>Localizations are kept in <code>/assets/locales</code>. The POT file, only containing message ids, is <code>messages.pot</code>.</p>
+<p><code>default.po</code> files in sub directories contain localized messages for each language, e.g. 
+<code>de/default.po</code> for German. You can open, edit and save them with Poedit. Please
 also commit and push binary <code>*.mo</code> files, which will be automatically created by Poedit.</p>
 <p>To add a new translation, open <code>messages.pot</code>, click on "Create New Translation" at the bottom, select
 the language, and start translating. 
