@@ -1329,7 +1329,9 @@ You can open, edit and save them with Poedit to update existing translations. </
 we don't maintain translations for dialects like <code>de_AT</code> or <code>pt_BR</code>.</p>
 <p>To add a new translation, open <code>translations.pot</code>, click on "Create New Translation" at the bottom, select
 the language, and start translating. 
-When done, save the result as <code>*.po</code> file using the language locale as name.</p>
+When done, save your translation as <code>*.po</code> file using the two-letter language locale as name.
+In addition, the new language needs to be added to the <code>Languages</code> function
+in <code>/frontend/src/options/options.js</code>.</p>
 <p>If you have a working development environment in place:</p>
 <p>Running <code>npm run gettext-compile</code> in the <code>frontend</code> directory compiles existing translations into 
 a single <code>translations.json</code> file.</p>
@@ -1365,7 +1367,7 @@ like <code>de/default.po</code> for German. You can open, edit and save them wit
 also commit and push binary <code>*.mo</code> files, which will be automatically created by Poedit.</p>
 <p>To add a new translation, open <code>messages.pot</code>, click on "Create New Translation" at the bottom, select
 the language, and start translating. 
-When done, add a new directory for the language and save your translation as <code>default.po</code>,
+When done, create a new directory (using the locale as name) and save your translation as <code>default.po</code>,
 just like existing examples.</p>
 <p>The POT file <code>/assets/locales/messages.pot</code> will be automatically updated when 
 running <code>go generate</code> in <code>/internal/i18n</code> or <code>make generate</code> in the main project directory.
