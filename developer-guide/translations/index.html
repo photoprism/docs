@@ -1311,16 +1311,22 @@
 <p>PhotoPrism uses <a href="https://en.wikipedia.org/wiki/Gettext">gettext</a> for localizing frontend and backend.
 It's one most widely adopted standards for translating user interfaces.</p>
 <p>Human readable messages like <code>File not found</code> are used as ids for finding matching translations, 
-and used as defaults whenever there is no translation for the current locale.</p>
-<p>They may optionally contain placeholders for numbers or names: <code>Found %{n} files</code></p>
+and used as defaults whenever there is no translation available.</p>
+<p>Messages may optionally contain placeholders, like <code>Found %{n} files</code>, for numbers and 
+other variables.</p>
 <p>We strongly recommend <a href="https://poedit.net/download">Poedit</a> for creating and updating translations.
 Download is free for Mac, Windows and Linux.
 It's source code can be obtained on <a href="https://github.com/vslavik/poedit">GitHub</a>.</p>
 <h2 id="frontend">Frontend<a class="headerlink" href="#frontend" title="Permanent link">&para;</a></h2>
 <p>Localizations can be found in <code>/frontend/src/locales</code>. The POT file, only containing message ids, 
 is <code>translations.pot</code>.</p>
-<p><code>*.po</code> files contain localized messages for each language, e.g. <code>de.po</code> for German.
+<p><code>*.po</code> files contain localized messages for each 
+<a href="https://www.gnu.org/software/gettext/manual/html_node/Usual-Language-Codes.html#Usual-Language-Codes">language</a>,
+identified by their <a href="https://www.gnu.org/software/gettext/manual/html_node/Locale-Names.html">two-letter locale</a>, 
+like <code>de.po</code> for German.
 You can open, edit and save them with Poedit to update existing translations. </p>
+<p>As it doesn't seem necessary for our use case, and to reduce the amount of work, 
+we don't maintain translations for dialects like <code>de_AT</code> or <code>pt_BR</code>.</p>
 <p>To add a new translation, open <code>translations.pot</code>, click on "Create New Translation" at the bottom, select
 the language, and start translating. 
 When done, save the result as <code>*.po</code> file using the language locale as name.</p>
@@ -1352,8 +1358,10 @@ and often causes merge conflicts.</p>
 consistent user experience.
 Technical log messages should be in English to avoid ambiguities and (even slightly) wrong translations. </p>
 <p>Localizations are kept in <code>/assets/locales</code>. The POT file, only containing message ids, is <code>messages.pot</code>.</p>
-<p><code>default.po</code> files in sub directories contain localized messages for each language, e.g. 
-<code>de/default.po</code> for German. You can open, edit and save them with Poedit. Please
+<p><code>default.po</code> files in sub directories contain localized messages for each 
+<a href="https://www.gnu.org/software/gettext/manual/html_node/Usual-Language-Codes.html#Usual-Language-Codes">language</a>,
+identified by their <a href="https://www.gnu.org/software/gettext/manual/html_node/Locale-Names.html">two-letter locale</a>, 
+like <code>de/default.po</code> for German. You can open, edit and save them with Poedit. Please
 also commit and push binary <code>*.mo</code> files, which will be automatically created by Poedit.</p>
 <p>To add a new translation, open <code>messages.pot</code>, click on "Create New Translation" at the bottom, select
 the language, and start translating. 
