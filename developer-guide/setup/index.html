@@ -1803,6 +1803,11 @@ based on our <a href="https://github.com/photoprism/photoprism/blob/develop/dock
 <div class="highlight"><pre><span></span><code>git clone git@github.com:photoprism/photoprism.git
 </code></pre></div>
 
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you're on windows, make sure to disable auto CR LF. Otherwise, the build won't work.
+<code>git config --global core.autocrlf false</code></p>
+</div>
 <p><strong>Step 2:</strong> Start <a href="https://www.docker.com/">Docker</a> containers:</p>
 <div class="highlight"><pre><span></span><code>cd photoprism
 docker-compose up

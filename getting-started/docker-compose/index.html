@@ -461,6 +461,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#configure-storage-on-external-nas-server" class="md-nav__link">
+    Configure storage on external NAS / server
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1857,6 +1864,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#configure-storage-on-external-nas-server" class="md-nav__link">
+    Configure storage on external NAS / server
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1947,6 +1961,29 @@ useful after updates that add new features.</p>
 <p>You should now be able to see your photos. You can continue using your favorite tools like Photoshop or Lightroom
 to edit images in the <em>originals</em> folder. Run <code>photoprism index</code> to reindex them as needed.
 Even deleting and adding is possible. Easy, isn't it?</p>
+<h3 id="configure-storage-on-external-nas-server">Configure storage on external NAS / server<a class="headerlink" href="#configure-storage-on-external-nas-server" title="Permanent link">&para;</a></h3>
+<p>If you wish to store the data on an external server, there are multiple approaches, but the simplest might be to directly mount a NFS share with docker.</p>
+<p>You can mount any number of NFS shares as directories. For example, if you want to store the originals in a share, just specify the following in your <code>docker-compose.yml</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">volumes</span><span class="p">:</span>
+      <span class="c1"># ... (other mounts) ...</span>
+      <span class="p p-Indicator">-</span> <span class="s">&quot;photoprism-originals:/photoprism/originals&quot;</span>     <span class="c1"># Map originals folder to its own volume.</span>
+
+<span class="nt">photoprism-originals</span><span class="p">:</span>
+    <span class="nt">driver</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">local</span>
+    <span class="nt">driver_opts</span><span class="p">:</span>
+      <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">nfs</span>
+      <span class="nt">o</span><span class="p">:</span> <span class="s">&quot;addr=10.0.20.2,soft,rw&quot;</span> <span class="c1"># The IP of your NAS</span>
+      <span class="nt">device</span><span class="p">:</span> <span class="s">&quot;:/mnt/red/photoprism/originals&quot;</span> <span class="c1"># Path of the created share on your NAS</span>
+</code></pre></div>
+
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This specific example was tested with TrueNAS, but any NFS (and even other types) can be mounted by docker. So as long as you have some sort of share that can be mounted by docker, you can configure it here.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Mounting the import directory to a share which is also accessible via other ways (e.g. Samba/CIFS) is especially handy, because you can dump all the data from you SD card / camera directly into that folder and trigger the index in the GUI afterwards. So you can skip the upload dialog in the GUI and it's a little faster.</p>
+</div>
                 
               
               
