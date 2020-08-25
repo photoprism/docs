@@ -1889,35 +1889,52 @@
                 
                 <h1 id="setup-using-docker-compose">Setup Using Docker Compose<a class="headerlink" href="#setup-using-docker-compose" title="Permanent link">&para;</a></h1>
 <p>To simplify running PhotoPrism on a server, we strongly recommend using <a href="https://docs.docker.com/compose/">Docker Compose</a>.</p>
-<p>Before you start, make sure you have <a href="https://store.docker.com/search?type=edition&amp;offering=community">Docker</a> installed on your system. It is available for Mac, Linux and Windows.
+<p>Before you start, make sure you have <a href="https://store.docker.com/search?type=edition&amp;offering=community">Docker</a> installed on your system. 
+It is available for Mac, Linux and Windows.
 Developers can skip this and move on to the <a href="https://github.com/photoprism/photoprism/wiki">Developer Guide</a>.</p>
 <p>In addition, we plan to ship the final app as a single binary for users that don't know or like Docker.
 An image for the <a href="../raspberry-pi/">Raspberry Pi</a> is now available too.</p>
 <h3 id="step-1-configure">Step 1: Configure<a class="headerlink" href="#step-1-configure" title="Permanent link">&para;</a></h3>
-<p>Download <a href="https://dl.photoprism.org/docker/docker-compose.yml">docker-compose.yml</a> (right click and <em>Save Link As...</em> or use <code>wget</code>) to a directory of your choice and edit directory names as needed:</p>
+<p>Download our <a href="https://dl.photoprism.org/docker/docker-compose.yml">docker-compose.yml</a> (right click and <em>Save Link As...</em> or use <code>wget</code>) 
+example to a folder of your choice and change the <a href="../config-options/">configuration</a> as needed:</p>
 <div class="highlight"><pre><span></span><code>wget https://dl.photoprism.org/docker/docker-compose.yml
 </code></pre></div>
 
-<p>By default, a folder named <code>Pictures</code> in your home directory will be used to store all images and sidecar files. You don't need to create it.</p>
-<p>PhotoPrism will also create <code>Import</code> and <code>Originals</code> in this folder: You may copy photos to <em>import</em> and copy or move them from there to avoid duplicates.
-Files that cannot be imported will stay in the <em>import</em> directory, nothing gets lost. Using import is strictly optional and can be disabled in Settings.</p>
-<p>To enable read-only mode, set <code>PHOTOPRISM_READONLY</code> to <code>true</code>. You may additionally want to 
-mount your <em>originals</em> directory with a <code>:ro</code> flag so that Docker prevents any write operations.</p>
+<p>By default, the <em>originals</em> folder, containing all photo and video files that should be indexed, 
+will be mounted to <code>~/Pictures</code> where <code>~</code> is a placeholder for your <a href="https://en.wikipedia.org/wiki/Home_directory">home directory</a>.
+Docker will automatically create it if it doesn't exist. </p>
+<p>You may change this to any folder accessible from your computer, including network drives. 
+Note that PhotoPrism won't be able to see folders that have not been mounted.
+Multiple folders can be indexed by mounting them as subfolders:</p>
+<div class="highlight"><pre><span></span><code>volumes:
+  - &quot;~/Family:/photoprism/originals/Family&quot;
+  - &quot;~/Friends:/photoprism/originals/Friends&quot;
+</code></pre></div>
+
+<p>The <em>import</em> folder will be mounted to <code>~/PhotoPrism/Import</code> by default, so that you can easily access it.
+If you don't need this feature, for example because you manage files manually or use a different tool, 
+you can safely remove the volume. Using import is strictly optional and can be disabled as well.</p>
+<p>Settings, index, sidecar files, and generated thumbnails will be stored in <code>~/PhotoPrism/Storage</code> by default. 
+You may also use an <a href="https://docs.docker.com/storage/bind-mounts/">anonymous volume</a> instead, just don't remove
+it completely so that you don't lose your data after restarting or upgrading the container.</p>
+<p>To enable the read-only mode, set <code>PHOTOPRISM_READONLY</code> to <code>"true"</code>. You may additionally want to 
+mount <em>originals</em> with a <code>:ro</code> flag so that Docker prevents any write operations. Note that this
+automatically disables any features that require write permissions, like adding files via Web upload.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Your image files won't be deleted, modified or moved. We might later update metadata in 
+<p>Your original media files won't be deleted, modified or moved. We might later update metadata in 
 <a href="https://www.adobe.com/products/xmp.html">XMP sidecar files</a> to
 sync with Adobe Lightroom.
 A JPEG representation might be created for RAW, HEIF, TIFF, PNG, BMP and GIF images in order to render 
 thumbnails. You can enable read-only mode to prevent this completely, but you will also lose the functionality.</p>
 </div>
 <h3 id="step-2-start-the-server">Step 2: Start the server<a class="headerlink" href="#step-2-start-the-server" title="Permanent link">&para;</a></h3>
-<p>Open a terminal, go to the directory in which you saved the config file and run this command to start the server:</p>
+<p>Open a terminal, go to the folder in which you saved the config file and run this command to start the server:</p>
 <div class="highlight"><pre><span></span><code>docker-compose up -d
 </code></pre></div>
 
 <p>Now open <a href="http://localhost:2342/">http://localhost:2342/</a> in a Web browser to see the user interface.</p>
-<p>The initial password is "photoprism". You can change it in Settings or using 
+<p>The initial <strong>password</strong> is "photoprism". You can change it in Settings or using 
 the <code>photoprism passwd</code> command in a terminal.</p>
 <p>The port and other basic settings can be changed in <code>docker-compose.yml</code>.
 Remember to stop and re-create the container whenever configuration values changed:</p>
@@ -1963,7 +1980,7 @@ to edit images in the <em>originals</em> folder. Run <code>photoprism index</cod
 Even deleting and adding is possible. Easy, isn't it?</p>
 <h3 id="configure-storage-on-external-nas-server">Configure storage on external NAS / server<a class="headerlink" href="#configure-storage-on-external-nas-server" title="Permanent link">&para;</a></h3>
 <p>If you wish to store the data on an external server, there are multiple approaches, but the simplest might be to directly mount a NFS share with docker.</p>
-<p>You can mount any number of NFS shares as directories. For example, if you want to store the originals in a share, just specify the following in your <code>docker-compose.yml</code>:</p>
+<p>You can mount any number of NFS shares as folders. For example, if you want to store the originals in a share, just specify the following in your <code>docker-compose.yml</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">volumes</span><span class="p">:</span>
       <span class="c1"># ... (other mounts) ...</span>
       <span class="p p-Indicator">-</span> <span class="s">&quot;photoprism-originals:/photoprism/originals&quot;</span>     <span class="c1"># Map originals folder to its own volume.</span>
@@ -1982,7 +1999,7 @@ Even deleting and adding is possible. Easy, isn't it?</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Mounting the import directory to a share which is also accessible via other ways (e.g. Samba/CIFS) is especially handy, because you can dump all the data from you SD card / camera directly into that folder and trigger the index in the GUI afterwards. So you can skip the upload dialog in the GUI and it's a little faster.</p>
+<p>Mounting the import folder to a share which is also accessible via other ways (e.g. Samba/CIFS) is especially handy, because you can dump all the data from you SD card / camera directly into that folder and trigger the index in the GUI afterwards. So you can skip the upload dialog in the GUI and it's a little faster.</p>
 </div>
                 
               

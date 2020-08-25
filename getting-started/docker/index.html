@@ -1892,7 +1892,7 @@ the folder containing your original photo and video files:</p>
 </code></pre></div>
 
 <p>Now open <a href="http://localhost:2342/">http://localhost:2342/</a> in a Web browser to see the user interface.</p>
-<p>The <strong>initial password</strong> is <code>photoprism</code>. You can change it in Settings or using 
+<p>The initial <strong>password</strong> is <code>photoprism</code>. You can change it in Settings or using 
 the <code>photoprism passwd</code> command in a terminal.</p>
 <p>This is a simplified configuration compared to our <a href="../docker-compose/">Docker Compose</a> example:</p>
 <ul>
@@ -1900,19 +1900,21 @@ the <code>photoprism passwd</code> command in a terminal.</p>
   so that you can't easily access it from your host machine. 
   Uploading files or mounting it via <a href="../../user-guide/backup/webdav/">WebDAV</a> 
   is still possible.</li>
-<li>Settings, sidecar files, and generated thumbnails will be stored 
+<li>Settings, index, sidecar files, and generated thumbnails will be stored 
   in <code>/photoprism/storage</code>. 
   You may also <a href="https://docs.docker.com/storage/bind-mounts/">mount</a>
   this path to a local folder instead of an anonymous volume.</li>
 </ul>
 <p>The default port 2342 and other configuration values can be changed as needed,
 see <a href="../config-options/">Config Options</a>. </p>
-<p>Adding the <code>:ro</code> flag to a volume mounts it read only. Multiple folders can be
-indexed by mounting them as subfolders e.g. 
+<p>To enable the read-only mode, add <code>-e PHOTOPRISM_READONLY="true"</code>. You may additionally want to 
+mount <em>originals</em> with a <code>:ro</code> flag so that Docker prevents any write operations. Note that this
+automatically disables any features that require write permissions, like adding files via Web upload.</p>
+<p>Multiple folders can be indexed by mounting them as subfolders e.g. 
 <code>-v ~/Example:/photoprism/originals/Example</code>.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Your image files won't be deleted, modified or moved. We might later update metadata in 
+<p>Your original media files won't be deleted, modified or moved. We might later update metadata in 
 <a href="https://www.adobe.com/products/xmp.html">XMP sidecar files</a> to
 sync with Adobe Lightroom.
 A JPEG representation might be created for RAW, HEIF, TIFF, PNG, BMP and GIF images in order to render 
