@@ -1877,9 +1877,8 @@
 <p>These instructions are for users who don't like Docker Compose for any reason and prefer pure Docker instead. If you are not
 sure, try using <a href="../docker-compose/">Docker Compose</a> first.</p>
 <h3 id="step-1-start-the-server">Step 1: Start the server<a class="headerlink" href="#step-1-start-the-server" title="Permanent link">&para;</a></h3>
-<p>Open a terminal and run this command after replacing <code>~/originals</code> with
-the folder containing your photos, and <code>~/storage</code> with where you
-want to store generated sidecar files and thumbnails:</p>
+<p>Open a terminal and run this command after replacing <code>~/Pictures</code> with
+the folder containing your original photo and video files:</p>
 <div class="highlight"><pre><span></span><code>docker run -d \
   --name photoprism \
   --security-opt seccomp=unconfined \
@@ -1887,8 +1886,8 @@ want to store generated sidecar files and thumbnails:</p>
   -p 2342:2342 \
   -e PHOTOPRISM_UPLOAD_NSFW=&quot;true&quot; \
   -e PHOTOPRISM_ADMIN_PASSWORD=&quot;photoprism&quot; \
-  -v ~/storage:/photoprism/storage \
-  -v ~/originals:/photoprism/originals \
+  -v /photoprism/storage \
+  -v ~/Pictures:/photoprism/originals \
   photoprism/photoprism
 </code></pre></div>
 
@@ -1901,8 +1900,14 @@ the <code>photoprism passwd</code> command in a terminal.</p>
 <li>User settings, the thumbnail <em>cache</em> and <em>database</em> files will get stored in <code>originals/.photoprism</code>
   unless you configure a separate storage path</li>
 </ul>
-<p>The default port 2342 and other configuration values can be changed as needed. Adding the <code>:ro</code> flag to a volume 
-mounts it read only. </p>
+<p>The default port 2342 and other configuration values can be changed as needed,
+see <a href="../config-options/">Config Options</a>. 
+Generated thumbnails, sidecar files, and the index will be stored 
+in <code>/photoprism/storage</code>. You may also <a href="https://docs.docker.com/storage/bind-mounts/">mount</a> 
+this path to a specific folder.</p>
+<p>Adding the <code>:ro</code> flag to a volume mounts it read only. Multiple folders can be
+indexed by mounting them as subfolders e.g. 
+<code>-v ~/Example:/photoprism/originals/Example</code>.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Your image files won't be deleted, modified or moved. We might later update metadata in 
