@@ -1919,8 +1919,8 @@ you can safely remove the volume. Using import is strictly optional and can be d
 You may use an <a href="https://docs.docker.com/storage/bind-mounts/">anonymous volume</a> instead, just don't remove
 it completely so that you don't lose your data after restarting or upgrading the container.</p>
 <p>To enable the read-only mode, set <code>PHOTOPRISM_READONLY</code> to <code>"true"</code>. You may additionally want to 
-mount <em>originals</em> with a <code>:ro</code> flag so that Docker prevents any write operations. Note that this
-automatically disables any features that require write permissions, like adding files via Web upload.</p>
+mount <em>originals</em> with a <code>:ro</code> flag so that Docker prevents write operations. Note that this
+automatically disables any features that require write permissions, like importing files via Web upload.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Your original media files won't be deleted, modified or moved. We might later update metadata in 

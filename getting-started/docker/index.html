@@ -1908,8 +1908,8 @@ the <code>photoprism passwd</code> command in a terminal.</p>
 <p>The default port 2342 and other configuration values can be changed as needed,
 see <a href="../config-options/">Config Options</a>. </p>
 <p>To enable the read-only mode, add <code>-e PHOTOPRISM_READONLY="true"</code>. You may additionally want to 
-mount <em>originals</em> with a <code>:ro</code> flag so that Docker prevents any write operations. Note that this
-automatically disables any features that require write permissions, like adding files via Web upload.</p>
+mount <em>originals</em> with a <code>:ro</code> flag so that Docker prevents write operations. Note that this
+automatically disables any features that require write permissions, like importing files via Web upload.</p>
 <p>Multiple folders can be indexed by mounting them as subfolders e.g. 
 <code>-v ~/Example:/photoprism/originals/Example</code>.</p>
 <div class="admonition info">
