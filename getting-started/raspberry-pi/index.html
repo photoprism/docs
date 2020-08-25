@@ -1848,15 +1848,17 @@
                 <h1 id="running-photoprism-on-a-raspberry-pi">Running PhotoPrism on a Raspberry Pi<a class="headerlink" href="#running-photoprism-on-a-raspberry-pi" title="Permanent link">&para;</a></h1>
 <p>Big thank you to <a href="https://github.com/guysoft">Guy Sheffer</a> for 
 <a href="https://github.com/photoprism/photoprism/issues/109">building</a> this!</p>
-<p>Simply download our <a href="https://dl.photoprism.org/docker/arm64/docker-compose.yml"><code>docker-compose.yml</code></a> (edit to 
-change config) and run <code>docker-compose up</code> to start PhotoPrism:</p>
+<p>Download our <a href="https://dl.photoprism.org/docker/arm64/docker-compose.yml">docker-compose.yml</a> file
+(right click and <em>Save Link As...</em> or use <code>wget</code>) to a folder of your choice, 
+change the <a href="../config-options/">configuration</a> as needed, and run <code>sudo docker-compose up</code> to start PhotoPrism:</p>
 <div class="highlight"><pre><span></span><code>wget https://dl.photoprism.org/docker/arm64/docker-compose.yml
 sudo docker-compose up
 </code></pre></div>
 
+<p>See <a href="../docker-compose/">Setup Using Docker Compose</a> for details.</p>
 <p>Image name on Docker Hub: <a href="https://hub.docker.com/repository/docker/photoprism/photoprism-arm64"><code>photoprism/photoprism-arm64</code></a></p>
 <h2 id="operating-system-and-hardware-requirements">Operating System and Hardware Requirements<a class="headerlink" href="#operating-system-and-hardware-requirements" title="Permanent link">&para;</a></h2>
-<p>You need to boot your Raspberry Pi &frac34; with the parameter <code>arm_64bit=1</code> in <code>config.txt</code>
+<p>You need to boot your Raspberry Pi 3 / 4 with the parameter <code>arm_64bit=1</code> in <code>config.txt</code>
 to be able to use this image.
 A fast SD card and 4 GB of RAM are recommended, in addition you might want to add swap for large photo collections.</p>
 <p>Make sure your docker compose configuration contains the following setting:</p>
