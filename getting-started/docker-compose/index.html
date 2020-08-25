@@ -1900,8 +1900,8 @@ example to a folder of your choice and change the <a href="../config-options/">c
 <div class="highlight"><pre><span></span><code>wget https://dl.photoprism.org/docker/docker-compose.yml
 </code></pre></div>
 
-<p>By default, the <em>originals</em> folder, containing all photo and video files that should be indexed, 
-will be mounted to <code>~/Pictures</code> where <code>~</code> is a placeholder for your <a href="https://en.wikipedia.org/wiki/Home_directory">home directory</a>.
+<p>The <em>originals</em> folder, containing your personal photo and video collection, 
+will be mounted to <code>~/Pictures</code> by default, where <code>~</code> is a placeholder for your <a href="https://en.wikipedia.org/wiki/Home_directory">home directory</a>.
 Docker will automatically create it if it doesn't exist. </p>
 <p>You may change this to any folder accessible from your computer, including network drives. 
 Note that PhotoPrism won't be able to see folders that have not been mounted.
@@ -1915,7 +1915,7 @@ Multiple folders can be indexed by mounting them as subfolders:</p>
 If you don't need this feature, for example because you manage files manually or use a different tool, 
 you can safely remove the volume. Using import is strictly optional and can be disabled as well.</p>
 <p>Settings, index, sidecar files, and generated thumbnails will be stored in <code>~/PhotoPrism/Storage</code> by default. 
-You may also use an <a href="https://docs.docker.com/storage/bind-mounts/">anonymous volume</a> instead, just don't remove
+You may use an <a href="https://docs.docker.com/storage/bind-mounts/">anonymous volume</a> instead, just don't remove
 it completely so that you don't lose your data after restarting or upgrading the container.</p>
 <p>To enable the read-only mode, set <code>PHOTOPRISM_READONLY</code> to <code>"true"</code>. You may additionally want to 
 mount <em>originals</em> with a <code>:ro</code> flag so that Docker prevents any write operations. Note that this
