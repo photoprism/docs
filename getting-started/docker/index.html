@@ -1892,19 +1892,23 @@ the folder containing your original photo and video files:</p>
 </code></pre></div>
 
 <p>Now open <a href="http://localhost:2342/">http://localhost:2342/</a> in a Web browser to see the user interface.</p>
-<p>The initial password is "photoprism". You can change it in Settings or using 
+<p>The <strong>initial password</strong> is <code>photoprism</code>. You can change it in Settings or using 
 the <code>photoprism passwd</code> command in a terminal.</p>
 <p>This is a simplified configuration compared to our <a href="../docker-compose/">Docker Compose</a> example:</p>
 <ul>
-<li>The <em>import</em> folder is not mounted so that importing is not possible</li>
-<li>User settings, the thumbnail <em>cache</em> and <em>database</em> files will get stored in <code>originals/.photoprism</code>
-  unless you configure a separate storage path</li>
+<li>The <code>/photoprism/import</code> folder is not <a href="https://docs.docker.com/storage/bind-mounts/">mounted</a> 
+  so that you can't easily access it from your host machine. 
+  Uploading files or mounting it via <a href="../../user-guide/backup/webdav/">WebDAV</a> 
+  is still possible.</li>
+<li>Settings, sidecar files, and generated thumbnails will be stored 
+  in <code>/photoprism/storage</code>. 
+  You may also <a href="https://docs.docker.com/storage/bind-mounts/">mount</a>
+  this path to a local folder instead of an anonymous volume.</li>
 </ul>
 <p>The default port 2342 and other configuration values can be changed as needed,
 see <a href="../config-options/">Config Options</a>. 
 Generated thumbnails, sidecar files, and the index will be stored 
-in <code>/photoprism/storage</code>. You may also <a href="https://docs.docker.com/storage/bind-mounts/">mount</a> 
-this path to a specific folder.</p>
+in <code>/photoprism/storage</code>.</p>
 <p>Adding the <code>:ro</code> flag to a volume mounts it read only. Multiple folders can be
 indexed by mounting them as subfolders e.g. 
 <code>-v ~/Example:/photoprism/originals/Example</code>.</p>
