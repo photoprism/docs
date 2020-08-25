@@ -1901,10 +1901,9 @@ and change the <a href="../config-options/">configuration</a> as needed:</p>
 <div class="highlight"><pre><span></span><code>wget https://dl.photoprism.org/docker/docker-compose.yml
 </code></pre></div>
 
-<p>The <em>originals</em> folder, containing your personal photo and video collection, 
-will be mounted to <code>~/Pictures</code> by default, where <code>~</code> is a placeholder for your <a href="https://en.wikipedia.org/wiki/Home_directory">home directory</a>.
-Docker will automatically create it if it doesn't exist. </p>
-<p>You may change this to any folder accessible from your computer, including network drives. 
+<p>Your personal photo and video collection will be mounted from <code>~/Pictures</code> by default,
+where <code>~</code> is a placeholder for your <a href="https://en.wikipedia.org/wiki/Home_directory">home directory</a>.</p>
+<p>You may change this to any folder accessible from your computer, including network drives.
 Note that PhotoPrism won't be able to see folders that have not been mounted.
 Multiple folders can be indexed by mounting them as subfolders:</p>
 <div class="highlight"><pre><span></span><code>volumes:
@@ -1912,7 +1911,7 @@ Multiple folders can be indexed by mounting them as subfolders:</p>
   - &quot;~/Friends:/photoprism/originals/Friends&quot;
 </code></pre></div>
 
-<p>The <em>import</em> folder will be mounted to <code>~/PhotoPrism/Import</code> by default, so that you can easily access it.
+<p>The <em>import</em> folder points to <code>~/PhotoPrism/Import</code> by default, so that you can easily access it.
 If you don't need this feature, for example because you manage files manually or use a different tool, 
 you can safely remove the volume. Using import is strictly optional and can be disabled as well.</p>
 <p>Settings, index, sidecar files, and generated thumbnails will be stored in <code>~/PhotoPrism/Storage</code> by default. 
