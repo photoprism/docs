@@ -17,7 +17,7 @@
         <meta name="author" content="PhotoPrism.org">
       
       <link rel="shortcut icon" href="../../img/favicon-16.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.3">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.2">
     
     
       
@@ -25,7 +25,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.6e35a1a6.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a2408e81.min.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/palette.a46bcfb3.min.css">
       
@@ -477,6 +477,48 @@
     <a href="../../getting-started/scalability/" title="Scalability" class="md-nav__link">
       Scalability
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7-9" type="checkbox" id="nav-7-9">
+    
+    <label class="md-nav__link" for="nav-7-9">
+      Proxies
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Proxies" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-9">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Proxies
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/proxies/advanced-nginx-proxy-setup/" title="Nginx" class="md-nav__link">
+      Nginx
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -1958,8 +2000,17 @@ We plan to implement permanent deletion within PhotoPrism soon.</p>
 If a label is removed the keyword is not automatically removed because it might originated from another source.
 You can delete the keyword manually on the <a href="../organize/edit/">edit dialogue</a>.</p>
 <h2 id="what-are-sidecar-files-and-where-do-i-find-them">What are sidecar files and where do I find them?<a class="headerlink" href="#what-are-sidecar-files-and-where-do-i-find-them" title="Permanent link">&para;</a></h2>
-<p>For us it is important that all the information you add to your photos like keywords, titles, labels etc is accessible to you at any time.
-That's why we create json files with all those data. </p>
+<p>A sidecar is a file which sits along**side** your photos with the same name but different file extension/type. E.g:</p>
+<ul>
+<li><code>IMG_0101.jpg</code></li>
+<li><code>IMG_0101.json</code></li>
+<li><code>IMG_0101.yaml</code></li>
+</ul>
+<p>There are 2 types of sidecar files used by Photoprism. </p>
+<ul>
+<li><strong>json</strong> - (Variable: <code>PHOTOPRISM_SIDECAR_JSON</code> Parameter: <code>--sidecar-json, -j</code>) - This is automatically created from the EXIF data of your photos by <code>exiftool</code>. This makes the data easily available for other scripts/apps.</li>
+<li><strong>yaml</strong> - (Variable: <code>PHOTOPRISM_SIDECAR_YAML</code> Parameter: <code>--sidecar-yaml, -y</code>) - This is used to back up any changes made in Photoprism to the metadata of your photos. This preserves the promise that we will not make any changes to originals while also providing any changes you have made in a plaintext format. Useful for and backup/restore and database rebuilds.</li>
+</ul>
 <h2 id="what-is-the-advantage-of-photoprism-being-opensource-for-me-as-a-user">What is the advantage of PhotoPrism being OpenSource for me as a user?<a class="headerlink" href="#what-is-the-advantage-of-photoprism-being-opensource-for-me-as-a-user" title="Permanent link">&para;</a></h2>
                 
               
@@ -2055,14 +2106,14 @@ That's why we create json files with all those data. </p>
     </div>
     
       <script src="../../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../../assets/javascripts/bundle.a45f732b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "../..",
           features: ["tabs"],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.c03f0417.min.js"
+            worker: "../../assets/javascripts/worker/search.27c6a5e6.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
