@@ -2105,7 +2105,7 @@ using our example <a href="../../getting-started/docker-compose/">docker-compose
 where <code>~</code> is a placeholder for your home directory.</p>
 <p>You may change this to any folder accessible from your computer, including network drives.
 Note that PhotoPrism won't be able to see folders that have not been mounted unless you compile &amp; install it locally
-without Docker (not recommended).</p>
+without Docker (developers only).</p>
 <p>Multiple folders can be indexed by mounting them as sub-folders of <code>/photoprism/originals</code>:</p>
 <div class="highlight"><pre><span></span><code>volumes:
   - &quot;~/Family:/photoprism/originals/Family&quot;
@@ -2114,7 +2114,7 @@ without Docker (not recommended).</p>
 
 <h3 id="whats-the-difference-between-keywords-and-labels">What's the difference between keywords and labels?<a class="headerlink" href="#whats-the-difference-between-keywords-and-labels" title="Permanent link">&para;</a></h3>
 <p>Keywords contain a list of search terms extracted from metadata, file names, and other sources 
-like geo data. Pictures with matching keywords automatically show up in related <em>Labels</em>. </p>
+like geodata. Pictures with matching keywords automatically show up in related <em>Labels</em>. </p>
 <p>Although related, keywords and labels serve different purposes:</p>
 <ul>
 <li>Labels may be nested and are primarily used for classification, like "cat", "dog", or "boat". 
