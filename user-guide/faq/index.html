@@ -1289,13 +1289,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#why-do-some-pictures-have-an-odd-date-like-01011980" class="md-nav__link">
-    Why do some pictures have an odd date like 01/01/1980?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#some-files-seem-hidden-where-are-they" class="md-nav__link">
     Some files seem hidden, where are they?
   </a>
@@ -1303,15 +1296,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-can-i-permanently-delete-files" class="md-nav__link">
-    How can I permanently delete files?
+  <a href="#why-do-some-pictures-have-an-odd-date-like-01011980" class="md-nav__link">
+    Why do some pictures have an odd date like 01/01/1980?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#which-folder-will-be-indexed" class="md-nav__link">
-    Which folder will be indexed?
+  <a href="#how-can-i-permanently-delete-files" class="md-nav__link">
+    How can I permanently delete files?
   </a>
   
 </li>
@@ -1967,13 +1960,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#why-do-some-pictures-have-an-odd-date-like-01011980" class="md-nav__link">
-    Why do some pictures have an odd date like 01/01/1980?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#some-files-seem-hidden-where-are-they" class="md-nav__link">
     Some files seem hidden, where are they?
   </a>
@@ -1981,15 +1967,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-can-i-permanently-delete-files" class="md-nav__link">
-    How can I permanently delete files?
+  <a href="#why-do-some-pictures-have-an-odd-date-like-01011980" class="md-nav__link">
+    Why do some pictures have an odd date like 01/01/1980?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#which-folder-will-be-indexed" class="md-nav__link">
-    Which folder will be indexed?
+  <a href="#how-can-i-permanently-delete-files" class="md-nav__link">
+    How can I permanently delete files?
   </a>
   
 </li>
@@ -2080,17 +2066,17 @@ On Mac OS, <a href="https://ss64.com/osx/sips.html">Sips</a> can be used as well
 In addition, <code>PHOTOPRISM_SIDECAR_JSON</code> must be <code>"true"</code> in order to
 extract and index metadata like location and duration from video files.</p>
 <p>You're welcome to open an issue if you experience issues with a specific file format.</p>
+<h3 id="some-files-seem-hidden-where-are-they">Some files seem hidden, where are they?<a class="headerlink" href="#some-files-seem-hidden-where-are-they" title="Permanent link">&para;</a></h3>
+<p>If the <a href="../organize/review/">quality filter</a> is enabled, you might find them in <em>Photos &gt; Review</em>. Otherwise, their
+format may not be supported, they may be corrupted, or they may be stacked with other files if their name, 
+exact date &amp; location, or unique image ID indicate they belong to the same photo. You may then unstack 
+them if this happened by mistake e.g. because of bad metadata.</p>
 <h3 id="why-do-some-pictures-have-an-odd-date-like-01011980">Why do some pictures have an odd date like 01/01/1980?<a class="headerlink" href="#why-do-some-pictures-have-an-odd-date-like-01011980" title="Permanent link">&para;</a></h3>
 <p>This may happen in case there was an issue with your camera's settings when the photo was taken.
 While the date can easily be changed in the <a href="../organize/edit/">edit dialog</a>, this only updates the index 
 without modifying your originals.</p>
 <p>To fix the date directly in your image or video files, please use other applications
 like Photoshop, or Exiftool, and re-index your library.</p>
-<h3 id="some-files-seem-hidden-where-are-they">Some files seem hidden, where are they?<a class="headerlink" href="#some-files-seem-hidden-where-are-they" title="Permanent link">&para;</a></h3>
-<p>If the <a href="../organize/review/">quality filter</a> is enabled, you might find them in <em>Photos &gt; Review</em>. Otherwise, their
-format may not be supported, they may be corrupted, or they may be stacked with other files if their name, 
-exact date &amp; location, or unique image ID indicate they belong to the same photo. You may then unstack 
-them if this happened by mistake e.g. because of bad metadata.</p>
 <h3 id="how-can-i-permanently-delete-files">How can I permanently delete files?<a class="headerlink" href="#how-can-i-permanently-delete-files" title="Permanent link">&para;</a></h3>
 <p>As we currently don't modify originals to avoid accidental data loss and conflicts with other applications, 
 you may only "soft delete" pictures by moving them to <em>Photos &gt; Archive</em> using the context menu (if enabled in Settings).</p>
@@ -2098,21 +2084,6 @@ you may only "soft delete" pictures by moving them to <em>Photos &gt; Archive</e
 see <a href="https://github.com/photoprism/photoprism/issues/167">Use trashcan to physically delete files after confirmation #167</a>.</p>
 <p>When deleting files manually, or using other applications, make sure to re-index your library 
 (or run <code>photoprism purge</code> in a terminal).</p>
-<h3 id="which-folder-will-be-indexed">Which folder will be indexed?<a class="headerlink" href="#which-folder-will-be-indexed" title="Permanent link">&para;</a></h3>
-<p>This depends on your <a href="../../getting-started/config-options/">configuration</a>. While sub-folders can be selected for
-indexing in the UI, changing the base folder requires a restart.</p>
-<p>Your photo and video collection will be mounted from <code>~/Pictures</code> by default when 
-using our example <a href="../../getting-started/docker-compose/">docker-compose.yml</a> file, 
-where <code>~</code> is a placeholder for your home directory.</p>
-<p>You may change this to any folder accessible from your computer, including network drives.
-Note that PhotoPrism won't be able to see folders that have not been mounted unless you compile &amp; install it locally
-without Docker (developers only).</p>
-<p>Multiple folders can be indexed by mounting them as sub-folders of <code>/photoprism/originals</code>:</p>
-<div class="highlight"><pre><span></span><code>volumes:
-  - &quot;~/Family:/photoprism/originals/Family&quot;
-  - &quot;~/Friends:/photoprism/originals/Friends&quot;
-</code></pre></div>
-
 <h3 id="whats-the-difference-between-keywords-and-labels">What's the difference between keywords and labels?<a class="headerlink" href="#whats-the-difference-between-keywords-and-labels" title="Permanent link">&para;</a></h3>
 <p>Keywords contain a list of search terms extracted from metadata, file names, and other sources 
 like geodata. Pictures with matching keywords automatically show up in related <em>Labels</em>. </p>

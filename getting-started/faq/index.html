@@ -603,6 +603,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#which-folder-will-be-indexed" class="md-nav__link">
+    Which folder will be indexed?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#im-having-issues-understanding-the-difference-between-the-import-and-originals-folders" class="md-nav__link">
     I'm having issues understanding the difference between the import and originals folders?
   </a>
@@ -1919,6 +1926,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#which-folder-will-be-indexed" class="md-nav__link">
+    Which folder will be indexed?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#im-having-issues-understanding-the-difference-between-the-import-and-originals-folders" class="md-nav__link">
     I'm having issues understanding the difference between the import and originals folders?
   </a>
@@ -1984,6 +1998,21 @@
                 
                 
                 <h1 id="frequently-asked-questions">Frequently Asked Questions<a class="headerlink" href="#frequently-asked-questions" title="Permanent link">&para;</a></h1>
+<h3 id="which-folder-will-be-indexed">Which folder will be indexed?<a class="headerlink" href="#which-folder-will-be-indexed" title="Permanent link">&para;</a></h3>
+<p>This depends on your <a href="../config-options/">configuration</a>. While sub-folders can be selected for
+indexing in the UI, changing the base folder requires a restart.</p>
+<p>Your photo and video collection will be mounted from <code>~/Pictures</code> by default when 
+using our example <a href="../docker-compose/">docker-compose.yml</a> file, 
+where <code>~</code> is a placeholder for your home directory.</p>
+<p>You may change this to any folder accessible from your computer, including network drives.
+Note that PhotoPrism won't be able to see folders that have not been mounted unless you compile &amp; install it locally
+without Docker (developers only).</p>
+<p>Multiple folders can be indexed by mounting them as sub-folders of <code>/photoprism/originals</code>:</p>
+<div class="highlight"><pre><span></span><code>volumes:
+  - &quot;~/Family:/photoprism/originals/Family&quot;
+  - &quot;~/Friends:/photoprism/originals/Friends&quot;
+</code></pre></div>
+
 <h3 id="im-having-issues-understanding-the-difference-between-the-import-and-originals-folders">I'm having issues understanding the difference between the import and originals folders?<a class="headerlink" href="#im-having-issues-understanding-the-difference-between-the-import-and-originals-folders" title="Permanent link">&para;</a></h3>
 <p>Import is a temporary folder from which you can move or copy files to originals in a structured way that avoids duplicates.
 Most users with existing collections will want to index their originals directly without importing them, 
