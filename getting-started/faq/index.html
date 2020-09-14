@@ -603,8 +603,56 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#i-could-not-find-a-documentation-of-config-parameters" class="md-nav__link">
+    I could not find a documentation of config parameters?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-sidecar-files-and-where-do-i-find-them" class="md-nav__link">
+    What are sidecar files and where do I find them?
+  </a>
+  
+    <nav class="md-nav" aria-label="What are sidecar files and where do I find them?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    JSON
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yaml" class="md-nav__link">
+    YAML
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xmp" class="md-nav__link">
+    XMP
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#which-folder-will-be-indexed" class="md-nav__link">
     Which folder will be indexed?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#which-file-types-are-supported" class="md-nav__link">
+    Which file types are supported?
   </a>
   
 </li>
@@ -617,15 +665,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-exactly-does-read-only-mode" class="md-nav__link">
-    What exactly does read-only mode?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#i-could-not-find-a-good-documentation-of-the-config-parameters-in-the-docker-composeyml-file" class="md-nav__link">
-    I could not find a good documentation of the config parameters in the docker-compose.yml file?
+  <a href="#what-exactly-does-the-read-only-mode" class="md-nav__link">
+    What exactly does the read-only mode?
   </a>
   
 </li>
@@ -1926,8 +1967,56 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#i-could-not-find-a-documentation-of-config-parameters" class="md-nav__link">
+    I could not find a documentation of config parameters?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-sidecar-files-and-where-do-i-find-them" class="md-nav__link">
+    What are sidecar files and where do I find them?
+  </a>
+  
+    <nav class="md-nav" aria-label="What are sidecar files and where do I find them?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    JSON
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yaml" class="md-nav__link">
+    YAML
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xmp" class="md-nav__link">
+    XMP
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#which-folder-will-be-indexed" class="md-nav__link">
     Which folder will be indexed?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#which-file-types-are-supported" class="md-nav__link">
+    Which file types are supported?
   </a>
   
 </li>
@@ -1940,15 +2029,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-exactly-does-read-only-mode" class="md-nav__link">
-    What exactly does read-only mode?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#i-could-not-find-a-good-documentation-of-the-config-parameters-in-the-docker-composeyml-file" class="md-nav__link">
-    I could not find a good documentation of the config parameters in the docker-compose.yml file?
+  <a href="#what-exactly-does-the-read-only-mode" class="md-nav__link">
+    What exactly does the read-only mode?
   </a>
   
 </li>
@@ -1998,6 +2080,55 @@
                 
                 
                 <h1 id="frequently-asked-questions">Frequently Asked Questions<a class="headerlink" href="#frequently-asked-questions" title="Permanent link">&para;</a></h1>
+<h3 id="i-could-not-find-a-documentation-of-config-parameters">I could not find a documentation of config parameters?<a class="headerlink" href="#i-could-not-find-a-documentation-of-config-parameters" title="Permanent link">&para;</a></h3>
+<p>You may run <code>photoprism help</code> in a terminal to see all options and commands. 
+We also maintain a complete list of <a href="../config-options/">config options</a> in these docs.</p>
+<p>Our Docker Compose <a href="https://dl.photoprism.org/docker/docker-compose.yml">examples</a> are continuously maintained and inline documentation 
+has been added to simplify installation.</p>
+<h3 id="what-are-sidecar-files-and-where-do-i-find-them">What are sidecar files and where do I find them?<a class="headerlink" href="#what-are-sidecar-files-and-where-do-i-find-them" title="Permanent link">&para;</a></h3>
+<p>A sidecar is a file which sits <strong>alongside</strong> your main photo or video files, 
+typically using the same name and a different extension like </p>
+<ul>
+<li><code>IMG_0101.jpg</code></li>
+<li><code>IMG_0101.json</code></li>
+<li><code>IMG_0101.yaml</code></li>
+</ul>
+<p>New sidecar files will be created in the <em>storage</em> folder by default so that the <em>originals</em> folder 
+can be mounted read-only.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>PhotoPrism will always look out for existing sidecar files and use them for indexing, 
+even if <code>PHOTOPRISM_SIDECAR_JSON</code> and <code>PHOTOPRISM_SIDECAR_YAML</code> are set to <code>"false"</code>.</p>
+</div>
+<p>Three types of metadata sidecar files are supported currently:</p>
+<h4 id="json">JSON<a class="headerlink" href="#json" title="Permanent link">&para;</a></h4>
+<p>If enabled via <code>PHOTOPRISM_SIDECAR_JSON</code> or <code>--sidecar-json</code>, <a href="https://exiftool.org/">Exiftool</a> is used to 
+automatically create a JSON sidecar for each media file. 
+<strong>This way, embedded XMP and video metadata can be indexed as well.</strong>
+Native metadata extraction is limited to common Exif headers.
+Note that this causes moderate overhead when indexing for the first time.</p>
+<p>JSON files may also be useful for debugging as they contain the complete metadata, 
+and can be processed using common development tools and text editors.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>PhotoPrism can also read JSON files exported by Google Photos. Support for additional
+schemas may be added over time.</p>
+</div>
+<h4 id="yaml">YAML<a class="headerlink" href="#yaml" title="Permanent link">&para;</a></h4>
+<p>If enabled via <code>PHOTOPRISM_SIDECAR_YAML</code> or <code>--sidecar-yaml</code>, PhotoPrism will automatically create / update 
+YAML sidecar files while indexing and after manually editing fields like title, date, or location. 
+They <strong>serve as a backup</strong> in case the database (index) gets lost, or when folders are synced with a remote 
+PhotoPrism instance.</p>
+<p>Like JSON, YAML files can be opened using common development tools and text editors.
+Changes won't be synced back to the original index though as this might overwrite existing data.</p>
+<h4 id="xmp">XMP<a class="headerlink" href="#xmp" title="Permanent link">&para;</a></h4>
+<p>XMP (Extensible Metadata Platform) is an XML-based metadata container format 
+<a href="https://www.adobe.com/products/xmp.html">invented by Adobe</a>. 
+It offers much more fields (as part of embedded models like Dublin Core) than Exif. 
+That also makes it difficult - if not impossible - to provide complete support.
+Reading Title, Copyright, Artist, and Description from XMP sidecar files is implemented as a proof-of-concept, 
+<a href="https://docs.photoprism.org/developer-guide/metadata/xmp/">contributions welcome</a>.
+Indexing embedded XMP is only possible via Exiftool, see above.</p>
 <h3 id="which-folder-will-be-indexed">Which folder will be indexed?<a class="headerlink" href="#which-folder-will-be-indexed" title="Permanent link">&para;</a></h3>
 <p>This depends on your <a href="../config-options/">configuration</a>. While sub-folders can be selected for
 indexing in the UI, changing the base folder requires a restart.</p>
@@ -2013,19 +2144,26 @@ without Docker (developers only).</p>
   - &quot;~/Friends:/photoprism/originals/Friends&quot;
 </code></pre></div>
 
+<h3 id="which-file-types-are-supported">Which file types are supported?<a class="headerlink" href="#which-file-types-are-supported" title="Permanent link">&para;</a></h3>
+<p>PhotoPrism's primary image file format is JPEG.
+While indexing, a JPEG sidecar file may automatically be created for RAW, HEIF, TIFF, PNG, BMP, 
+and GIF files. It is required for classification and resampling.</p>
+<p>Support for specific RAW formats depends on the runtime environment and configuration. PhotoPrism may use 
+Darktable and RawTherapee for RAW to JPEG conversion. 
+On Mac OS, <a href="https://ss64.com/osx/sips.html">Sips</a> can be used as well.</p>
+<p>Only MPEG-4 AVC video files are fully supported for now. Transcoding of other codecs is planned for a later release.
+In addition, <code>PHOTOPRISM_SIDECAR_JSON</code> must be <code>"true"</code> in order to
+extract and index metadata like location and duration from video files.</p>
+<p>You're welcome to open an issue if you experience issues with a specific file format.</p>
 <h3 id="im-having-issues-understanding-the-difference-between-the-import-and-originals-folders">I'm having issues understanding the difference between the import and originals folders?<a class="headerlink" href="#im-having-issues-understanding-the-difference-between-the-import-and-originals-folders" title="Permanent link">&para;</a></h3>
-<p>Import is a temporary folder from which you can move or copy files to originals in a structured way that avoids duplicates.
-Most users with existing collections will want to index their originals directly without importing them, 
-so that existing file and directory names stay the same. On the other hand, importing is more efficient when
-adding files as you don't need to re-index all originals to find new photos and videos.</p>
-<h3 id="what-exactly-does-read-only-mode">What exactly does read-only mode?<a class="headerlink" href="#what-exactly-does-read-only-mode" title="Permanent link">&para;</a></h3>
+<p>Import is a temporary folder from which you can move or copy files to <em>originals</em> in a structured way that avoids duplicates.
+Most users with existing collections will want to index their <em>originals</em> folder without import, 
+so that existing file and directory names don't change. On the other hand, importing may be more efficient when
+adding files as you don't need to re-index <em>originals</em>.</p>
+<h3 id="what-exactly-does-the-read-only-mode">What exactly does the read-only mode?<a class="headerlink" href="#what-exactly-does-the-read-only-mode" title="Permanent link">&para;</a></h3>
 <p>There are users who don't want us to modify their original files and folders in any way, so we've added
 a configuration option for this use case. It will disable uploads, import and future features
-that might rename, update or delete files in the originals folder.</p>
-<h3 id="i-could-not-find-a-good-documentation-of-the-config-parameters-in-the-docker-composeyml-file">I could not find a good documentation of the config parameters in the docker-compose.yml file?<a class="headerlink" href="#i-could-not-find-a-good-documentation-of-the-config-parameters-in-the-docker-composeyml-file" title="Permanent link">&para;</a></h3>
-<p>Our example configuration files are continuously maintained and documentation has been added:
-<a href="https://dl.photoprism.org/docker/docker-compose.yml">https://dl.photoprism.org/docker/docker-compose.yml</a></p>
-<p>Let us know if you're missing something.</p>
+that might rename, update or delete files in the <em>originals</em> folder.</p>
 <h3 id="im-using-an-operating-system-without-docker-support-how-to-install-and-use-photoprism-without-docker">I'm using an operating system without Docker support. How to install and use PhotoPrism without Docker?<a class="headerlink" href="#im-using-an-operating-system-without-docker-support-how-to-install-and-use-photoprism-without-docker" title="Permanent link">&para;</a></h3>
 <p>In general, you would build / install it like a <a href="../../developer-guide/setup/">developer</a> since we don't have packages 
 for specific operating systems yet.</p>
@@ -2046,12 +2184,12 @@ PhotoPrism, see <a href="https://github.com/photoprism/photoprism/issues/147">is
 <h3 id="any-plans-to-add-support-for-active-directory-ldap-or-other-centralized-account-management-options">Any plans to add support for Active Directory, LDAP or other centralized account management options?<a class="headerlink" href="#any-plans-to-add-support-for-active-directory-ldap-or-other-centralized-account-management-options" title="Permanent link">&para;</a></h3>
 <p>There is no Active Directory, LDAP, or Single Sign-On support yet as we didn't consider it essential for a first release. 
 It might be added later, maybe as a premium feature for our sponsors and contributors.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Development and testing efforts are focused on smaller servers and typical home users. Developing any functionality,
-that seems primarily useful for deployment in Enterprise environments, 
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Our development and testing efforts are focused on small servers and home users. Adding functionality
+that seems primarily useful for deployment in business environments, 
 or that only benefits few private users with special needs, diverts resources away from features that benefit everyone.
-If you're using PhotoPrism for your business, you're welcome to <a href="../../contact/">contact us</a> to get a custom solution.</p>
+Professional users are welcome to <a href="../../contact/">reach out</a> to us for a custom solution.</p>
 </div>
                 
               
