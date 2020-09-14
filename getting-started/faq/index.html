@@ -603,13 +603,6 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#i-could-not-find-a-documentation-of-config-parameters" class="md-nav__link">
-    I could not find a documentation of config parameters?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#what-are-sidecar-files-and-where-do-i-find-them" class="md-nav__link">
     What are sidecar files and where do I find them?
   </a>
@@ -667,6 +660,13 @@
         <li class="md-nav__item">
   <a href="#what-exactly-does-the-read-only-mode" class="md-nav__link">
     What exactly does the read-only mode?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i-could-not-find-a-documentation-of-config-parameters" class="md-nav__link">
+    I could not find a documentation of config parameters?
   </a>
   
 </li>
@@ -1967,13 +1967,6 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#i-could-not-find-a-documentation-of-config-parameters" class="md-nav__link">
-    I could not find a documentation of config parameters?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#what-are-sidecar-files-and-where-do-i-find-them" class="md-nav__link">
     What are sidecar files and where do I find them?
   </a>
@@ -2036,6 +2029,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#i-could-not-find-a-documentation-of-config-parameters" class="md-nav__link">
+    I could not find a documentation of config parameters?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#im-using-an-operating-system-without-docker-support-how-to-install-and-use-photoprism-without-docker" class="md-nav__link">
     I'm using an operating system without Docker support. How to install and use PhotoPrism without Docker?
   </a>
@@ -2080,11 +2080,6 @@
                 
                 
                 <h1 id="frequently-asked-questions">Frequently Asked Questions<a class="headerlink" href="#frequently-asked-questions" title="Permanent link">&para;</a></h1>
-<h3 id="i-could-not-find-a-documentation-of-config-parameters">I could not find a documentation of config parameters?<a class="headerlink" href="#i-could-not-find-a-documentation-of-config-parameters" title="Permanent link">&para;</a></h3>
-<p>You may run <code>photoprism help</code> in a terminal to see all options and commands. 
-We also maintain a complete list of <a href="../config-options/">config options</a> in these docs.</p>
-<p>Our Docker Compose <a href="https://dl.photoprism.org/docker/docker-compose.yml">examples</a> are continuously maintained and inline documentation 
-has been added to simplify installation.</p>
 <h3 id="what-are-sidecar-files-and-where-do-i-find-them">What are sidecar files and where do I find them?<a class="headerlink" href="#what-are-sidecar-files-and-where-do-i-find-them" title="Permanent link">&para;</a></h3>
 <p>A sidecar is a file which sits <strong>alongside</strong> your main photo or video files, 
 typically using the same name and a different extension like </p>
@@ -2130,13 +2125,18 @@ Reading Title, Copyright, Artist, and Description from XMP sidecar files is impl
 <a href="../../developer-guide/metadata/xmp/">contributions welcome</a>.
 Indexing embedded XMP is only possible via Exiftool, see above.</p>
 <h3 id="which-folder-will-be-indexed">Which folder will be indexed?<a class="headerlink" href="#which-folder-will-be-indexed" title="Permanent link">&para;</a></h3>
-<p>This depends on your <a href="../config-options/">configuration</a>. While sub-folders can be selected for
-indexing in the UI, changing the base folder requires a restart.</p>
-<p>Your photo and video collection will be mounted from <code>~/Pictures</code> by default when 
-using our example <a href="../docker-compose/">docker-compose.yml</a> file, 
-where <code>~</code> is a placeholder for your home directory.</p>
+<p>This depends on your <a href="../docker-compose/">runtime environment</a> and <a href="../config-options/">configuration</a>.
+While sub-folders can be selected for indexing in the UI, changing the <em>originals</em> base folder 
+requires a restart for security reasons.</p>
+<p>If you skip configuration and don't use one of our Docker images, PhotoPrism will try to find 
+a photo library by going through a list of common 
+<a href="https://github.com/photoprism/photoprism/blob/develop/pkg/fs/dirs.go">folder names</a> 
+like <code>/photoprism/originals</code>, <code>Pictures</code>, and <code>~/Photos</code>. It will also search for other resources
+like external applications, classification models, and frontend assets.</p>
+<p>Your library will be mounted from <code>~/Pictures</code> by default when using our 
+example <a href="../docker-compose/">docker-compose.yml</a> file, where <code>~</code> is a placeholder for your home directory. </p>
 <p>You may change this to any folder accessible from your computer, including network drives.
-Note that PhotoPrism won't be able to see folders that have not been mounted unless you compile &amp; install it locally
+Note that PhotoPrism won't be able to see folders that have not been mounted unless you install it locally
 without Docker (developers only).</p>
 <p>Multiple folders can be indexed by mounting them as sub-folders of <code>/photoprism/originals</code>:</p>
 <div class="highlight"><pre><span></span><code>volumes:
@@ -2149,7 +2149,7 @@ without Docker (developers only).</p>
 While indexing, a JPEG sidecar file may automatically be created for RAW, HEIF, TIFF, PNG, BMP, 
 and GIF files. It is required for classification and resampling.</p>
 <p>Support for specific RAW formats depends on the runtime environment and configuration. PhotoPrism may use 
-Darktable and RawTherapee for RAW to JPEG conversion. 
+<a href="https://www.darktable.org/">Darktable</a> and <a href="https://rawtherapee.com/">RawTherapee</a> for RAW to JPEG conversion. 
 On Mac OS, <a href="https://ss64.com/osx/sips.html">Sips</a> can be used as well.</p>
 <p>Only MPEG-4 AVC video files are fully supported for now. Transcoding of other codecs is planned for a later release.
 In addition, <code>PHOTOPRISM_SIDECAR_JSON</code> must be <code>"true"</code> in order to
@@ -2164,6 +2164,11 @@ adding files as you don't need to re-index <em>originals</em>.</p>
 <p>There are users who don't want us to modify their original files and folders in any way, so we've added
 a configuration option for this use case. It will disable uploads, import and future features
 that might rename, update or delete files in the <em>originals</em> folder.</p>
+<h3 id="i-could-not-find-a-documentation-of-config-parameters">I could not find a documentation of config parameters?<a class="headerlink" href="#i-could-not-find-a-documentation-of-config-parameters" title="Permanent link">&para;</a></h3>
+<p>You may run <code>photoprism help</code> in a terminal to see all options and commands. 
+We also maintain a complete list of <a href="../config-options/">config options</a> in these docs.</p>
+<p>Our Docker Compose <a href="https://dl.photoprism.org/docker/docker-compose.yml">examples</a> are continuously maintained and inline documentation 
+has been added to simplify installation.</p>
 <h3 id="im-using-an-operating-system-without-docker-support-how-to-install-and-use-photoprism-without-docker">I'm using an operating system without Docker support. How to install and use PhotoPrism without Docker?<a class="headerlink" href="#im-using-an-operating-system-without-docker-support-how-to-install-and-use-photoprism-without-docker" title="Permanent link">&para;</a></h3>
 <p>In general, you would build / install it like a <a href="../../developer-guide/setup/">developer</a> since we don't have packages 
 for specific operating systems yet.</p>
