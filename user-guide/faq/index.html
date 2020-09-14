@@ -1282,22 +1282,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-file-types-are-supported-by-photoprism" class="md-nav__link">
-    What file types are supported by PhotoPrism?
+  <a href="#which-file-types-are-supported" class="md-nav__link">
+    Which file types are supported?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#why-do-some-of-my-pictures-have-a-strange-date-like-01011980" class="md-nav__link">
-    Why do some of my pictures have a strange date like 01/01/1980?
+  <a href="#why-do-some-pictures-have-an-odd-date-like-01011980" class="md-nav__link">
+    Why do some pictures have an odd date like 01/01/1980?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#some-photos-seem-hidden-after-indexing-where-are-they" class="md-nav__link">
-    Some photos seem hidden after indexing, where are they?
+  <a href="#some-files-seem-hidden-where-are-they" class="md-nav__link">
+    Some files seem hidden, where are they?
   </a>
   
 </li>
@@ -1310,8 +1310,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#which-folders-will-be-indexed-by-photoprism" class="md-nav__link">
-    Which folders will be indexed by PhotoPrism?
+  <a href="#which-folder-will-be-indexed" class="md-nav__link">
+    Which folder will be indexed?
   </a>
   
 </li>
@@ -1960,22 +1960,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-file-types-are-supported-by-photoprism" class="md-nav__link">
-    What file types are supported by PhotoPrism?
+  <a href="#which-file-types-are-supported" class="md-nav__link">
+    Which file types are supported?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#why-do-some-of-my-pictures-have-a-strange-date-like-01011980" class="md-nav__link">
-    Why do some of my pictures have a strange date like 01/01/1980?
+  <a href="#why-do-some-pictures-have-an-odd-date-like-01011980" class="md-nav__link">
+    Why do some pictures have an odd date like 01/01/1980?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#some-photos-seem-hidden-after-indexing-where-are-they" class="md-nav__link">
-    Some photos seem hidden after indexing, where are they?
+  <a href="#some-files-seem-hidden-where-are-they" class="md-nav__link">
+    Some files seem hidden, where are they?
   </a>
   
 </li>
@@ -1988,8 +1988,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#which-folders-will-be-indexed-by-photoprism" class="md-nav__link">
-    Which folders will be indexed by PhotoPrism?
+  <a href="#which-folder-will-be-indexed" class="md-nav__link">
+    Which folder will be indexed?
   </a>
   
 </li>
@@ -2053,66 +2053,74 @@
                 
                 <h1 id="frequently-asked-questions">Frequently Asked Questions<a class="headerlink" href="#frequently-asked-questions" title="Permanent link">&para;</a></h1>
 <h3 id="can-i-use-trees-to-organize-my-pictures-and-albums">Can I use trees to organize my pictures and albums?<a class="headerlink" href="#can-i-use-trees-to-organize-my-pictures-and-albums" title="Permanent link">&para;</a></h3>
-<p>Except in <em>Library &gt; Originals</em>, we don't support nested content in our user interface for a number of reasons:</p>
+<p>Except in <em>Library &gt; Originals</em>, we don't support nested content in our user interface (UI) for a number of reasons:</p>
 <p>First, there are many tools (including Windows Explorer and Mac OS Finder) that already browse folders in such a way.</p>
-<p>A common UX challenge with trees is, that they create namespaces. So the album "Berlin" might exist 20 times
-in different locations. 
-Existing album selectors, e.g. when uploading, would become useless and must be replaced 
-with a complex tree browser that shows the complete context. This is also difficult to use on a mobile phone.</p>
-<p>Personal photo albums can typically be browsed by time, with optional filters - like category - that hide irrelevant results.
-That is different in Enterprise asset management, where you might need trees for different products or teams, 
-so that responsibilities &amp; <a href="https://github.com/photoprism/photoprism/issues/455#issuecomment-675859270">permissions</a> can be managed. 
+<p>A common UX challenge is to deal with namespaces.
+For example, the album "Berlin" may exist 5 times in different parts of a tree.
+Simple input fields or dropdowns become useless in this case and must be replaced 
+with a complex tree browser that shows the complete context to avoid ambiguities.
+This is especially difficult on mobile screens.</p>
+<p>Personal albums can typically be browsed by time, with optional filters for more specific results.
+This is typically different in Enterprise asset management, where trees are needed to manage 
+responsibilities &amp; <a href="https://github.com/photoprism/photoprism/issues/455#issuecomment-675859270">permissions</a>. 
 We might do a special release for professional users and Enterprise customers later. </p>
-<p>Note that you can store photos and videos in any folder structure that suits your needs.
-We just don't think hierarchical trees should be at the heart of our application.
-Most users probably don't have their files properly sorted yet and want to explore them in multiple dimensions.</p>
-<h3 id="what-file-types-are-supported-by-photoprism">What file types are supported by PhotoPrism?<a class="headerlink" href="#what-file-types-are-supported-by-photoprism" title="Permanent link">&para;</a></h3>
-<p>PhotoPrism aims to support most common photo file formats like JPEG, PNG, and TIFF.
-Depending on your runtime environment and configuration, it can also convert RAW files 
-supported by Darktable, RawTherapee, or SIPS.</p>
-<p>Video playback is only possible with MPEG-4 AVC files currently. Transcoding of other formats will be added later.
-Note that <code>PHOTOPRISM_SIDECAR_JSON</code> must the set to <code>"true"</code> to extract and index video metadata like location or duration.</p>
-<p>Please let us know if you have issues with a specific format you think should be supported.</p>
-<h3 id="why-do-some-of-my-pictures-have-a-strange-date-like-01011980">Why do some of my pictures have a strange date like 01/01/1980?<a class="headerlink" href="#why-do-some-of-my-pictures-have-a-strange-date-like-01011980" title="Permanent link">&para;</a></h3>
+<p>While even deeply nested folders can be indexed without issues,
+we don't think trees should be at the heart of our UI.
+Most users won't be able to sort their memories in a strictly hierarchical way 
+and prefer to explore them in multiple dimensions instead.</p>
+<h3 id="which-file-types-are-supported">Which file types are supported?<a class="headerlink" href="#which-file-types-are-supported" title="Permanent link">&para;</a></h3>
+<p>PhotoPrism's primary image file format is JPEG.
+While indexing, a JPEG sidecar file may automatically be created for RAW, HEIF, TIFF, PNG, BMP, 
+and GIF files. It is required for classification and resampling.</p>
+<p>Support for specific RAW formats depends on the runtime environment and configuration. We may use 
+Darktable, RawTherapee, and sips (on OS X) for RAW to JPEG conversion.</p>
+<p>Only MPEG-4 AVC video files are fully supported for now. Transcoding of other codecs is planned for a later release.
+In addition, <code>PHOTOPRISM_SIDECAR_JSON</code> must be <code>"true"</code> in order to
+extract and index metadata like location and duration from video files.</p>
+<p>You're welcome to open an issue if you experience issues with a specific file format.</p>
+<h3 id="why-do-some-pictures-have-an-odd-date-like-01011980">Why do some pictures have an odd date like 01/01/1980?<a class="headerlink" href="#why-do-some-pictures-have-an-odd-date-like-01011980" title="Permanent link">&para;</a></h3>
 <p>This may happen in case there was an issue with your camera's settings when the photo was taken.
-While the date can easily be changed in the <a href="../organize/edit/">edit dialog</a>, this will only update the index 
-but not any original media files.</p>
-<p>To change dates - or other fields - directly in your image or video files, please use external apps 
+While the date can easily be changed in the <a href="../organize/edit/">edit dialog</a>, this only updates the index 
+without modifying your originals.</p>
+<p>To fix the date directly in your image or video files, please use other applications
 like Photoshop, or Exiftool, and re-index your library.</p>
-<h3 id="some-photos-seem-hidden-after-indexing-where-are-they">Some photos seem hidden after indexing, where are they?<a class="headerlink" href="#some-photos-seem-hidden-after-indexing-where-are-they" title="Permanent link">&para;</a></h3>
-<p>If the <a href="../organize/review/">quality filter</a> is enabled, you might find them in Photos &gt; Review. Otherwise, their
-format may not be supported, they may be corrupted, or they may be stacked with other files if their file name, 
-exact date &amp; location, or unique image ID, indicate that they belong to the same photo.</p>
+<h3 id="some-files-seem-hidden-where-are-they">Some files seem hidden, where are they?<a class="headerlink" href="#some-files-seem-hidden-where-are-they" title="Permanent link">&para;</a></h3>
+<p>If the <a href="../organize/review/">quality filter</a> is enabled, you might find them in <em>Photos &gt; Review</em>. Otherwise, their
+format may not be supported, they may be corrupted, or they may be stacked with other files if their name, 
+exact date &amp; location, or unique image ID indicate they belong to the same photo. You may then unstack 
+them if this happened by mistake e.g. because of bad metadata.</p>
 <h3 id="how-can-i-permanently-delete-files">How can I permanently delete files?<a class="headerlink" href="#how-can-i-permanently-delete-files" title="Permanent link">&para;</a></h3>
-<p>As we don't modify any originals to avoid unintended data loss, you can currently only "soft delete" pictures
-by moving them to Archive using the context menu (if enabled in Settings).</p>
-<p>Permanently deleting files for saving storage will be implemented in a later release,
+<p>As we currently don't modify originals to avoid accidental data loss and conflicts with other applications, 
+you may only "soft delete" pictures by moving them to <em>Photos &gt; Archive</em> using the context menu (if enabled in Settings).</p>
+<p>Permanently deleting files for freeing up storage will be implemented in a later release,
 see <a href="https://github.com/photoprism/photoprism/issues/167">Use trashcan to physically delete files after confirmation #167</a>.</p>
-<p>When deleting files manually, or using external applications, make sure to re-index your library 
+<p>When deleting files manually, or using other applications, make sure to re-index your library 
 (or run <code>photoprism purge</code> in a terminal).</p>
-<h3 id="which-folders-will-be-indexed-by-photoprism">Which folders will be indexed by PhotoPrism?<a class="headerlink" href="#which-folders-will-be-indexed-by-photoprism" title="Permanent link">&para;</a></h3>
-<p>This depends on your <a href="../../getting-started/config-options/">configuration</a>.</p>
-<p>If you're using our example <a href="../../getting-started/docker-compose/">docker-compose.yml</a> file, your personal photo and video collection 
-will be mounted from <code>~/Pictures</code> by default, where ~ is a placeholder for your home directory.</p>
+<h3 id="which-folder-will-be-indexed">Which folder will be indexed?<a class="headerlink" href="#which-folder-will-be-indexed" title="Permanent link">&para;</a></h3>
+<p>This depends on your <a href="../../getting-started/config-options/">configuration</a>. While sub-folders can be selected for
+indexing in the UI, changing the base folder requires a restart.</p>
+<p>Your photo and video collection will be mounted from <code>~/Pictures</code> by default when 
+using our example <a href="../../getting-started/docker-compose/">docker-compose.yml</a> file, 
+where <code>~</code> is a placeholder for your home directory.</p>
 <p>You may change this to any folder accessible from your computer, including network drives.
 Note that PhotoPrism won't be able to see folders that have not been mounted unless you compile &amp; install it locally
-without Docker (recommended only for developers). Multiple folders can be indexed by mounting them as subfolders:</p>
+without Docker (not recommended).</p>
+<p>Multiple folders can be indexed by mounting them as sub-folders of <code>/photoprism/originals</code>:</p>
 <div class="highlight"><pre><span></span><code>volumes:
   - &quot;~/Family:/photoprism/originals/Family&quot;
   - &quot;~/Friends:/photoprism/originals/Friends&quot;
 </code></pre></div>
 
 <h3 id="whats-the-difference-between-keywords-and-labels">What's the difference between keywords and labels?<a class="headerlink" href="#whats-the-difference-between-keywords-and-labels" title="Permanent link">&para;</a></h3>
-<p>Keywords is a sorted and unique list of search terms extracted from various sources like Exif headers, sidecar files, 
-and geo data.
-They will be matched with labels, so that pictures with related keywords will automatically be visible in Labels. </p>
+<p>Keywords contain a list of search terms extracted from metadata, file names, and other sources 
+like geo data. Pictures with matching keywords automatically show up in related <em>Labels</em>. </p>
 <p>Although related, keywords and labels serve different purposes:</p>
 <ul>
-<li>Labels are general categories, like "cat", "dog", or "boat". They should not include duplicates.</li>
-<li>Keywords are search terms and may include duplicates with the same, or very similar, 
-  meaning like "kitten", "cat", "katze", and "cats".</li>
+<li>Labels may be nested and are primarily used for classification, like "cat", "dog", or "boat". 
+  Duplicates and ambiguities should be avoided.</li>
+<li>Keywords are primarily used for searching. They may include similar terms and translations,
+  like "kitten", "cat", and "cats".</li>
 </ul>
-<p>Keywords and labels can both be deleted manually.</p>
 <h3 id="what-are-sidecar-files-and-where-do-i-find-them">What are sidecar files and where do I find them?<a class="headerlink" href="#what-are-sidecar-files-and-where-do-i-find-them" title="Permanent link">&para;</a></h3>
 <p>A sidecar is a file which sits <strong>alongside</strong> your main photo or video files, 
 typically using the same name and a different extension like </p>
@@ -2121,26 +2129,26 @@ typically using the same name and a different extension like </p>
 <li><code>IMG_0101.json</code></li>
 <li><code>IMG_0101.yaml</code></li>
 </ul>
-<p>New files will be created in the storage / sidecar folder by default so that the <em>originals</em> folder 
+<p>New sidecar files will be created in the <em>storage</em> folder by default so that the <em>originals</em> folder 
 does not need to be modified, and can be mounted read-only.
-PhotoPrism will also search the <em>originals</em> folder for existing files, and use them for indexing 
-even if <code>PHOTOPRISM_SIDECAR_JSON</code> or <code>PHOTOPRISM_SIDECAR_YAML</code> are set to <code>"false"</code>.</p>
+PhotoPrism will also search the <em>originals</em> folder for existing sidecars, and use them for indexing 
+even if <code>PHOTOPRISM_SIDECAR_JSON</code> and <code>PHOTOPRISM_SIDECAR_YAML</code> are set to <code>"false"</code>.</p>
 <p>Three types of metadata sidecar files are supported currently:</p>
 <h4 id="json">JSON<a class="headerlink" href="#json" title="Permanent link">&para;</a></h4>
 <p>If enabled via <code>PHOTOPRISM_SIDECAR_JSON</code> or <code>--sidecar-json</code>, <a href="https://exiftool.org/">Exiftool</a> is used to 
-automatically create JSON sidecar files. 
-Embedded XMP and video metadata can be indexed this way while there is no native support yet (common Exif 
-headers in JPEG and PNG files can be indexed natively without <a href="https://exiftool.org/">Exiftool</a>).
-Note that this will cause some overhead when indexing for the first time. 
-They may also be useful as original metadata backup, or for debugging as they can be viewed &amp; modified 
-with any text editor and many other applications.</p>
+automatically create a JSON sidecar for each media file. 
+This way, embedded XMP and video metadata can be indexed as well. 
+Native metadata extraction is limited to common Exif headers.
+Note that this causes moderate overhead when indexing for the first time.</p>
+<p>JSON files may also be useful for debugging as they contain the complete metadata and 
+can be opened using a regular text editor, and many other applications.</p>
 <h4 id="yaml">YAML<a class="headerlink" href="#yaml" title="Permanent link">&para;</a></h4>
-<p>If enabled via <code>PHOTOPRISM_SIDECAR_YAML</code> or <code>--sidecar-yaml</code>, PhotoPrism will automatically create YAML sidecar
-files while indexing and when manually editing fields like title, date, or location. They serve as a backup
-in case the database (index) gets lost, or when you copy files to a different PhotoPrism instance.
-YAML files can also be viewed with a regular text editor. Manual changes won't be synced back 
-to the original index though as this would create an event loop and might overwrite existing data.
-You may only use JSON or XMP files for this.</p>
+<p>If enabled via <code>PHOTOPRISM_SIDECAR_YAML</code> or <code>--sidecar-yaml</code>, PhotoPrism will automatically create / update 
+YAML sidecar files while indexing and after manually editing fields like title, date, or location. 
+They <strong>serve as a backup</strong> in case the database (index) gets lost, or when folders are synced with a remote 
+PhotoPrism instance.</p>
+<p>Like JSON, YAML files can be viewed and updated using a text editor.
+Manual changes won't be synced back to the original index though as this might overwrite existing data.</p>
 <h4 id="xmp">XMP<a class="headerlink" href="#xmp" title="Permanent link">&para;</a></h4>
 <p>XMP (Extensible Metadata Platform) is an XML-based metadata container format 
 <a href="https://www.adobe.com/products/xmp.html">invented by Adobe</a>. 
