@@ -1992,7 +1992,7 @@ We always keep our <a href="https://dl.photoprism.org/docker/">example configura
 In addition, you can run <code>photoprism help</code> inside the container to see all options incl. 
 environment variable names and a short description.</p>
 <h3 id="step-3-index-your-library">Step 3: Index your library<a class="headerlink" href="#step-3-index-your-library" title="Permanent link">&para;</a></h3>
-<p>Go to Library in our Web UI to start indexing or importing. Alternatively, you can run this command 
+<p>Go to <em>Library</em> in our Web UI to start indexing or importing. Alternatively, you can run this command 
 in a terminal to index all files in your <em>originals</em> folder:</p>
 <div class="highlight"><pre><span></span><code>docker-compose exec photoprism photoprism index
 </code></pre></div>
@@ -2001,7 +2001,8 @@ in a terminal to index all files in your <em>originals</em> folder:</p>
 and GIF files. It is required for classification and resampling. By default, it will be created
 in the <em>storage</em> folder, so that your originals can be mounted read-only.
 You may configure PhotoPrism to store it in the same folder, next to the original, instead.</p>
-<p>Photos will become visible one after another. You can watch the indexer working in the terminal, or the logs tab in Library.</p>
+<p>Pictures will become visible one after another. You can watch the indexer working in the terminal, 
+or the <em>Logs</em> tab in <em>Library</em>.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>If you're running out of memory while indexing, it often helps to limit the 
