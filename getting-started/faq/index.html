@@ -672,6 +672,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-can-i-configure-photoprism-to-use-network-storage" class="md-nav__link">
+    How can I configure PhotoPrism to use network storage?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#im-using-an-operating-system-without-docker-support-how-to-install-and-use-photoprism-without-docker" class="md-nav__link">
     I'm using an operating system without Docker support. How to install and use PhotoPrism without Docker?
   </a>
@@ -2036,6 +2043,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-can-i-configure-photoprism-to-use-network-storage" class="md-nav__link">
+    How can I configure PhotoPrism to use network storage?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#im-using-an-operating-system-without-docker-support-how-to-install-and-use-photoprism-without-docker" class="md-nav__link">
     I'm using an operating system without Docker support. How to install and use PhotoPrism without Docker?
   </a>
@@ -2169,6 +2183,32 @@ that might rename, update or delete files in the <em>originals</em> folder.</p>
 We also maintain a complete list of <a href="../config-options/">config options</a> in these docs.</p>
 <p>Our Docker Compose <a href="https://dl.photoprism.org/docker/docker-compose.yml">examples</a> are continuously maintained and inline documentation 
 has been added to simplify installation.</p>
+<h3 id="how-can-i-configure-photoprism-to-use-network-storage">How can I configure PhotoPrism to use network storage?<a class="headerlink" href="#how-can-i-configure-photoprism-to-use-network-storage" title="Permanent link">&para;</a></h3>
+<p>If you wish to store the data on an external server, there are multiple approaches, but the simplest might be to directly mount a NFS share with docker.</p>
+<p>You can mount any number of NFS shares as folders. For example, if you want to store the originals in a share, just specify the following in your <code>docker-compose.yml</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">volumes</span><span class="p">:</span>
+      <span class="c1"># ... (other mounts) ...</span>
+      <span class="p p-Indicator">-</span> <span class="s">&quot;photoprism-originals:/photoprism/originals&quot;</span>     <span class="c1"># Map originals folder to its own volume.</span>
+
+<span class="nt">photoprism-originals</span><span class="p">:</span>
+    <span class="nt">driver</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">local</span>
+    <span class="nt">driver_opts</span><span class="p">:</span>
+      <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">nfs</span>
+      <span class="nt">o</span><span class="p">:</span> <span class="s">&quot;addr=10.0.20.2,soft,rw&quot;</span> <span class="c1"># The IP of your NAS</span>
+      <span class="nt">device</span><span class="p">:</span> <span class="s">&quot;:/mnt/red/photoprism/originals&quot;</span> <span class="c1"># Path of the created share on your NAS</span>
+</code></pre></div>
+
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This was tested with TrueNAS and NFS, but other (network) file system may be mounted with Docker as well.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Mounting the import folder to a share which is also accessible via other ways (e.g. Samba/CIFS) 
+is especially handy, as you can dump all data from a SD card / camera directly into that folder 
+and trigger the index in the GUI afterwards. So you can skip the upload dialog in the 
+GUI and it's a little faster.</p>
+</div>
 <h3 id="im-using-an-operating-system-without-docker-support-how-to-install-and-use-photoprism-without-docker">I'm using an operating system without Docker support. How to install and use PhotoPrism without Docker?<a class="headerlink" href="#im-using-an-operating-system-without-docker-support-how-to-install-and-use-photoprism-without-docker" title="Permanent link">&para;</a></h3>
 <p>In general, you would build / install it like a <a href="../../developer-guide/setup/">developer</a> since we don't have packages 
 for specific operating systems yet.</p>
