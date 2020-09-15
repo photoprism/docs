@@ -2188,23 +2188,27 @@ has been added to simplify installation.</p>
 One of the easiest might be to directly mount NFS shares with Docker.</p>
 <p>You can mount any number of NFS shares as folders. Follow this <code>docker-compose.yml</code> example 
 if you want to mount the <em>originals</em> folder as a share:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">volumes</span><span class="p">:</span>
-  <span class="c1"># Map originals folder to its own volume.</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;photoprism-originals:/photoprism/originals&quot;</span>     
+<div class="highlight"><pre><span></span><code><span class="nt">services</span><span class="p">:</span>
+  <span class="nt">photoprism</span><span class="p">:</span>
+    <span class="c1"># ...</span>
+    <span class="nt">volumes</span><span class="p">:</span>
+      <span class="c1"># Map originals folder to NFS:</span>
+      <span class="p p-Indicator">-</span> <span class="s">&quot;photoprism-originals:/photoprism/originals&quot;</span>     
 
-<span class="nt">photoprism-originals</span><span class="p">:</span>
-  <span class="nt">driver</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">local</span>
-  <span class="nt">driver_opts</span><span class="p">:</span>
-    <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">nfs</span>
-    <span class="c1"># The IP of your NAS</span>
-    <span class="nt">o</span><span class="p">:</span> <span class="s">&quot;addr=10.0.20.2,soft,rw&quot;</span> 
-    <span class="c1"># Path of the created share on your NAS</span>
-    <span class="nt">device</span><span class="p">:</span> <span class="s">&quot;:/mnt/red/photoprism/originals&quot;</span> 
+<span class="nt">volumes</span><span class="p">:</span>
+  <span class="nt">photoprism-originals</span><span class="p">:</span>
+    <span class="nt">driver</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">local</span>
+    <span class="nt">driver_opts</span><span class="p">:</span>
+      <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">nfs</span>
+      <span class="c1"># The IP of your NAS:</span>
+      <span class="nt">o</span><span class="p">:</span> <span class="s">&quot;addr=1.2.3.4,soft,rw&quot;</span> 
+      <span class="c1"># Share path on your NAS:</span>
+      <span class="nt">device</span><span class="p">:</span> <span class="s">&quot;:/mnt/photos&quot;</span> 
 </code></pre></div>
 
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>This was tested with TrueNAS and NFS, but other (network) file system may be mounted with Docker as well.</p>
+<p>This was tested with TrueNAS and NFS, but other (network) file systems may be mounted with Docker as well.</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
