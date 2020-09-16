@@ -17,7 +17,7 @@
         <meta name="author" content="PhotoPrism.org">
       
       <link rel="shortcut icon" href="../../../img/favicon-16.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.2">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.3">
     
     
       
@@ -25,7 +25,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.a2408e81.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6e35a1a6.min.css">
       
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.a46bcfb3.min.css">
       
@@ -1930,12 +1930,12 @@
                 <h1 id="library-settings">Library Settings<a class="headerlink" href="#library-settings" title="Permanent link">&para;</a></h1>
 <h2 id="raw-to-jpeg-conversion">RAW to JPEG Conversion<a class="headerlink" href="#raw-to-jpeg-conversion" title="Permanent link">&para;</a></h2>
 <p>Many photographers keep their originals in some sort of lossless RAW format instead of compressed JPEG, especially when shooting with a Digital SLR. Some <a href="https://www.fredericpaulussen.be/how-to-raw-photos-huawei-p30-pro/">mobile phones</a> also support RAW or use HEIC/HEIF for a similar purpose. PhotoPrism aims at providing excellent support for all <a href="https://en.wikipedia.org/wiki/Raw_image_format">RAW</a> formats, independent of camera brand and model. Please let us know when there is an issue with your specific device.</p>
-<p>Web browsers in general cannot display RAW image files. They need to be converted, which is what our import and convert commands do. You'll also find a checkbox for this step in our <a href="../ui/">Web UI</a>.</p>
+<p>Web browsers in general cannot display RAW image files. They need to be converted, which is what our <em>import</em> and <em>convert</em> commands do. You'll also find a checkbox for this step in our <a href="../ui/">Web UI</a>.</p>
 <p>In addition, PhotoPrism now also supports TIFF, PNG, BMP and GIF files. Be aware that files in those formats often don't contain useful metadata and are typically used for screenshots, charts, graphs and icons only.</p>
 <p><img alt="" src="https://pbs.twimg.com/media/EPd-Lp1WAAYYBzs?format=png&amp;name=large" /></p>
 <h3 id="read-only-mode">Read-only mode<a class="headerlink" href="#read-only-mode" title="Permanent link">&para;</a></h3>
-<p>Conversion is currently disabled in read-only mode because creating JPEGs from RAWs is a pretty expensive operation and it makes sense to store JPEGs right next to their RAW files so that they can be found and used again in the future. Otherwise it might not be possible to match the files again and you don't want to put the expensively created JPEG file in a temporary directory or do all this on the fly in memory, unless you have a really fast computer. Most users want to make a backup of their files, so files that belong together should not be randomly distributed across the file system. 20 years from now, it's probably easier to open a JPEG than render a proprietary RAW file again in good quality.</p>
-<p>However, we see the point of <a href="https://github.com/photoprism/photoprism/issues/189">users who want to use PhotoPrism as a read-only photo viewer</a> that should not create any files in their originals directory. The easiest solution is to create JPEGs manually or use another tool you trust to do this automatically.</p>
+<p>Conversion is currently disabled in <em>read-only mode</em> because creating JPEGs from RAWs is a pretty expensive operation and it makes sense to store JPEGs right next to their RAW files so that they can be found and used again in the future. Otherwise it might not be possible to match the files again and you don't want to put the expensively created JPEG file in a temporary directory or do all this on the fly in memory, unless you have a really fast computer. Most users want to make a backup of their files, so files that belong together should not be randomly distributed across the file system. 20 years from now, it's probably easier to open a JPEG than render a proprietary RAW file again in good quality.</p>
+<p>However, we see the point of <a href="https://github.com/photoprism/photoprism/issues/189">users who want to use PhotoPrism as a read-only photo viewer</a> that should not create any files in their <em>originals directory</em>. The easiest solution is to create JPEGs manually or use another tool you trust to do this automatically.</p>
 <p>With some effort, it might be possible to extract embedded JPEGs in acceptable quality from many RAW formats and use those in read-only mode. Alternatively, JPEGs could be created in the cache directory with all the disadvantages mentioned above, the storage will be gone one way or the other. Note that JPEGs in full-resolution are relatively large and you won't be able to find or reuse them as files there have a different naming scheme based on the hash of the original file.</p>
 <p>Idea: Put converted images in <code>cache/converted</code> by default with an option to automatically move / copy them to the <code>originals</code> directory. Feedback welcome.</p>
                 
@@ -2067,14 +2067,14 @@
     </div>
     
       <script src="../../../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../assets/javascripts/bundle.a45f732b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "../../..",
           features: ["tabs"],
           search: Object.assign({
-            worker: "../../../assets/javascripts/worker/search.27c6a5e6.min.js"
+            worker: "../../../assets/javascripts/worker/search.c03f0417.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
