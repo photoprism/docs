@@ -1901,11 +1901,11 @@ Multiple folders can be indexed by mounting them as sub-folders of <code>/photop
   - &quot;~/Friends:/photoprism/originals/Friends&quot;
 </code></pre></div>
 
-<p>The <em>import</em> folder points to <code>~/PhotoPrism/Import</code> by default, so that you can easily access it.
+<p>The <em>import</em> folder points to <code>~/Import</code> by default, so that you can easily access it.
 If you don't need this feature, e.g. because you manage all files manually or 
 use a different tool for importing, you can safely remove the volume. Using import is strictly 
 optional.</p>
-<p>Settings, index, sidecar files, and thumbnails will be stored in <code>~/PhotoPrism/Storage</code> by default. 
+<p>Settings, index, sidecar files, and thumbnails will be stored in <code>~/.photoprism</code> by default. 
 You may use an <a href="https://docs.docker.com/storage/bind-mounts/">anonymous volume</a> instead, just don't remove
 it completely so that you don't lose your index and albums after restarting or upgrading the container.</p>
 <div class="admonition tip">
