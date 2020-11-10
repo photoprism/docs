@@ -9,13 +9,14 @@
         <meta name="description" content="User Guide">
       
       
+      
         <link rel="canonical" href="https://docs.photoprism.org/developer-guide/tests/">
       
       
         <meta name="author" content="PhotoPrism.org">
       
       <link rel="shortcut icon" href="../../img/favicon-16.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.2">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.4">
     
     
       
@@ -23,10 +24,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.38780c08.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.358818c7.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f72e892.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.f0267088.min.css">
         
           
           
@@ -108,7 +109,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://docs.photoprism.org/" title="PhotoPrism" class="md-header-nav__button md-logo" aria-label="PhotoPrism">
       
@@ -264,7 +267,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://docs.photoprism.org/" title="PhotoPrism" class="md-nav__button md-logo" aria-label="PhotoPrism">
       
@@ -1929,16 +1934,17 @@
 </blockquote>
 <h2 id="go">Go<a class="headerlink" href="#go" title="Permanent link">&para;</a></h2>
 <p>To run all unit tests, type <code>make test</code> or <code>go test ./internal/...</code> in a terminal.</p>
-<p>These <code>make</code> targets are currently defined for tests:
-- <code>test</code>: Executes all tests found in a) <em>/internal</em> with a timeout of 20 min and verbose output and b) <em>frontend/tests/unit</em>
-- <code>test-short</code>: Executes only fast tests found in <em>/internal</em> with a timeout of 5 min and verbose output
-- <code>test-race</code>: Same as <code>test</code> but with race condition detector (much slower) and higher timeout of 60 min
-- <code>test-codecov</code>: Same as <code>test</code> but creates a coverage log in <em>coverage.txt</em> and sends it to <a href="https://codecov.io/gh/photoprism/photoprism">Codecov</a> (don't use it locally)
-- <code>test-coverage</code>: Same as <code>test</code> but creates a <em>coverage.txt</em> file as well as a human-readable report in <em>coverage.html</em>; timeout is elevated to 30 min</p>
+<p>These <code>make</code> targets are currently defined for tests:</p>
+<ul>
+<li><code>test</code>: Executes all tests found in a) <em>/internal</em> with a timeout of 20 min and verbose output and b) <em>frontend/tests/unit</em></li>
+<li><code>test-short</code>: Executes only fast tests found in <em>/internal</em> with a timeout of 5 min and verbose output</li>
+<li><code>test-race</code>: Same as <code>test</code> but with race condition detector (much slower) and higher timeout of 60 min</li>
+<li><code>test-codecov</code>: Same as <code>test</code> but creates a coverage log in <em>coverage.txt</em> and sends it to <a href="https://codecov.io/gh/photoprism/photoprism">Codecov</a> (don't use it locally)</li>
+<li><code>test-coverage</code>: Same as <code>test</code> but creates a <em>coverage.txt</em> file as well as a human-readable report in <em>coverage.html</em>; timeout is elevated to 30 min</li>
+</ul>
 <p>You can run single tests via <code>go test -run</code> in a package directory, e.g. <em>/internal/photoprism</em>:</p>
 <div class="highlight"><pre><span></span><code>$ go test -run NameOfTest
 </code></pre></div>
-
 <p>See <a href="https://golang.org/pkg/testing/#hdr-Subtests_and_Sub_benchmarks">docs</a> for more info.</p>
 <h3 id="test-frameworks">Test Frameworks<a class="headerlink" href="#test-frameworks" title="Permanent link">&para;</a></h3>
 <p>Go comes with a cool testing framework, it allows you to write test code using the same language, without needing to learn any library or test engine. <a href="https://medium.com/@povilasve/go-advanced-tips-tricks-a872503ac859">Go advanced testing tips &amp; tricks</a> contains a lot of useful information. We only import <a href="https://github.com/stretchr/testify/tree/master/assert">testify/assert</a> to save a few lines for common assertions.</p>
@@ -1952,11 +1958,9 @@
     <span class="o">...</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>To execute:</p>
 <div class="highlight"><pre><span></span><code>go test -short
 </code></pre></div>
-
 <h2 id="javascript">Javascript<a class="headerlink" href="#javascript" title="Permanent link">&para;</a></h2>
 <p>To run all javascript unit tests, type <code>make test-js</code> in a terminal.</p>
 <p>In case you want to run a single test add .only to the test you want to run e.g.:</p>
@@ -1970,7 +1974,6 @@
         <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">result</span><span class="p">,</span> <span class="s2">&quot;66&quot;</span><span class="p">);</span>
     <span class="p">});</span>
 </code></pre></div>
-
 <p>Test coverage output is saved to <em>frontend/coverage/html</em></p>
 <h3 id="test-frameworks_1">Test Frameworks<a class="headerlink" href="#test-frameworks_1" title="Permanent link">&para;</a></h3>
 <p>To test javascript code we use <a href="https://mochajs.org/">mocha</a> in combination with <a href="https://karma-runner.github.io/4.0/intro/installation.html">karma</a>, <a href="https://www.chaijs.com/">chai</a>, <a href="https://sinonjs.org/">sinon</a> and the <a href="https://github.com/mattlewis92/karma-coverage-istanbul-reporter">karma-istanbul-coverage-reporter</a>.</p>
@@ -2195,8 +2198,8 @@ We agreed on using TestCafe as tests were the most stable and pretty fast (becau
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.77e55a48.min.js"></script>
-      <script src="../../assets/javascripts/bundle.9554a270.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b3a72adc.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

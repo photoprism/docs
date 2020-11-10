@@ -9,13 +9,14 @@
         <meta name="description" content="User Guide">
       
       
+      
         <link rel="canonical" href="https://docs.photoprism.org/developer-guide/metadata/classification/">
       
       
         <meta name="author" content="PhotoPrism.org">
       
       <link rel="shortcut icon" href="../../../img/favicon-16.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.2">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.4">
     
     
       
@@ -23,10 +24,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.38780c08.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.358818c7.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f72e892.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.f0267088.min.css">
         
           
           
@@ -108,7 +109,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://docs.photoprism.org/" title="PhotoPrism" class="md-header-nav__button md-logo" aria-label="PhotoPrism">
       
@@ -264,7 +267,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://docs.photoprism.org/" title="PhotoPrism" class="md-nav__button md-logo" aria-label="PhotoPrism">
       
@@ -1909,7 +1914,6 @@
 tabby cat:
   see: cat
 </code></pre></div>
-
 <p><img src="https://pbs.twimg.com/media/EPdSzWNX0AELgCJ?format=jpg&name=medium" width="330" align="right" /> </p>
 <p>This was necessary because we didn't find a <a href="https://wordnet.princeton.edu/">taxonomy</a> suitable for consumers (mainly just scientific ones) and needed a lot of control to fine tune terms and their probability thresholds. The raw results were <a href="https://github.com/photoprism/photoprism/issues/160">not useful</a> to a typical user. Indexing too many words, categories and alternatives also negatively affects performance and <a href="https://github.com/photoprism/photoprism/issues/160">leads to noise</a>. </p>
 <p>It took us several months of testing until we were happy with the results and there are still labels to improve.</p>
@@ -2126,7 +2130,6 @@ $ tar -xvf inception_v3_2016_08_28.tar.gz
 $ mv inception_v3.ckpt <span class="si">${</span><span class="nv">CHECKPOINT_DIR</span><span class="si">}</span>
 $ rm inception_v3_2016_08_28.tar.gz
 </code></pre></div>
-
 <h2 id="landmark-detection">Landmark detection<a class="headerlink" href="#landmark-detection" title="Permanent link">&para;</a></h2>
 <p>DELF: DEep Local Features
  - <a href="https://github.com/tensorflow/models/tree/master/research/delf">https://github.com/tensorflow/models/tree/master/research/delf</a> - Tensorflow implementation</p>
@@ -2283,8 +2286,8 @@ Source: <a href="http://www.asimovinstitute.org/neural-network-zoo/">http://www.
       
     </div>
     
-      <script src="../../../assets/javascripts/vendor.77e55a48.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.9554a270.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../../assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.b3a72adc.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

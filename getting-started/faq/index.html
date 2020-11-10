@@ -9,13 +9,14 @@
         <meta name="description" content="User Guide">
       
       
+      
         <link rel="canonical" href="https://docs.photoprism.org/getting-started/faq/">
       
       
         <meta name="author" content="PhotoPrism.org">
       
       <link rel="shortcut icon" href="../../img/favicon-16.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.2">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.4">
     
     
       
@@ -23,10 +24,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.38780c08.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.358818c7.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f72e892.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.f0267088.min.css">
         
           
           
@@ -108,7 +109,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://docs.photoprism.org/" title="PhotoPrism" class="md-header-nav__button md-logo" aria-label="PhotoPrism">
       
@@ -264,7 +267,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://docs.photoprism.org/" title="PhotoPrism" class="md-nav__button md-logo" aria-label="PhotoPrism">
       
@@ -635,6 +640,13 @@
         <li class="md-nav__item">
   <a href="#which-file-types-are-supported" class="md-nav__link">
     Which file types are supported?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-is-my-storage-folder-so-large-what-is-in-it" class="md-nav__link">
+    Why is my storage folder so large? What is in it?
   </a>
   
 </li>
@@ -1969,6 +1981,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#why-is-my-storage-folder-so-large-what-is-in-it" class="md-nav__link">
+    Why is my storage folder so large? What is in it?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#im-having-issues-understanding-the-difference-between-the-import-and-originals-folders" class="md-nav__link">
     I'm having issues understanding the difference between the import and originals folders?
   </a>
@@ -2101,7 +2120,6 @@ without Docker (developers only).</p>
   - &quot;~/Family:/photoprism/originals/Family&quot;
   - &quot;~/Friends:/photoprism/originals/Friends&quot;
 </code></pre></div>
-
 <h3 id="which-file-types-are-supported">Which file types are supported?<a class="headerlink" href="#which-file-types-are-supported" title="Permanent link">&para;</a></h3>
 <p>PhotoPrism's primary image file format is JPEG.
 While indexing, a JPEG sidecar file may automatically be created for RAW, HEIF, TIFF, PNG, BMP, 
@@ -2113,6 +2131,20 @@ On Mac OS, <a href="https://ss64.com/osx/sips.html">Sips</a> can be used as well
 In addition, <code>PHOTOPRISM_SIDECAR_JSON</code> must be <code>"true"</code> in order to
 extract and index metadata like location and duration from video files.</p>
 <p>You're welcome to open an issue if you experience issues with a specific file format.</p>
+<h3 id="why-is-my-storage-folder-so-large-what-is-in-it">Why is my storage folder so large? What is in it?<a class="headerlink" href="#why-is-my-storage-folder-so-large-what-is-in-it" title="Permanent link">&para;</a></h3>
+<p>The storage folder contains sidecar, thumbnail, and configuration files.
+It may also contain index database files if you're using SQLite.
+Most space is consumed by thumbnails: These are high-quality resampled, smaller 
+versions of your originals.</p>
+<p>Thumbnails are required because Web browsers do a pretty bad job at resampling large images 
+so that they fit your screen. Using originals for slideshows and search result previews 
+would consume much more browser memory, and reduce overall performance, as well.</p>
+<p>If you're happy with lower quality thumbnails, you can reduce their JPEG quality 
+and/or set a size limit. Note that existing thumbnail files won't be replaced automatically 
+after changing <a href="../config-options/">config values</a>.</p>
+<p>You may also choose to render thumbnails on-demand if you have a fast CPU and enough memory. 
+However, storage is typically affordable enough for most users to go for better quality and 
+performance instead.</p>
 <h3 id="im-having-issues-understanding-the-difference-between-the-import-and-originals-folders">I'm having issues understanding the difference between the import and originals folders?<a class="headerlink" href="#im-having-issues-understanding-the-difference-between-the-import-and-originals-folders" title="Permanent link">&para;</a></h3>
 <p>Import is a temporary folder from which you can move or copy files to <em>originals</em> in a structured way that avoids duplicates.
 Most users with existing collections will want to index their <em>originals</em> folder without import, 
@@ -2149,7 +2181,6 @@ if you want to mount the <em>originals</em> folder as a share:</p>
       <span class="c1"># Share path on your NAS:</span>
       <span class="nt">device</span><span class="p">:</span> <span class="s">&quot;:/mnt/photos&quot;</span> 
 </code></pre></div>
-
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>This was tested with TrueNAS and NFS, but other (network) file systems may be mounted with Docker as well.</p>
@@ -2316,8 +2347,8 @@ Professional users are welcome to <a href="../../contact/">reach out</a> to us f
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.77e55a48.min.js"></script>
-      <script src="../../assets/javascripts/bundle.9554a270.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b3a72adc.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

@@ -9,13 +9,14 @@
         <meta name="description" content="User Guide">
       
       
+      
         <link rel="canonical" href="https://docs.photoprism.org/developer-guide/library/thumbnails/">
       
       
         <meta name="author" content="PhotoPrism.org">
       
       <link rel="shortcut icon" href="../../../img/favicon-16.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.2">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.4">
     
     
       
@@ -23,10 +24,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.38780c08.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.358818c7.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f72e892.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.f0267088.min.css">
         
           
           
@@ -108,7 +109,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://docs.photoprism.org/" title="PhotoPrism" class="md-header-nav__button md-logo" aria-label="PhotoPrism">
       
@@ -264,7 +267,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://docs.photoprism.org/" title="PhotoPrism" class="md-nav__button md-logo" aria-label="PhotoPrism">
       
@@ -1996,14 +2001,12 @@
 <p>You can limit the size of JPEG thumbnails using the <code>-s</code> parameter when you run commands:</p>
 <div class="highlight"><pre><span></span><code>photoprism -s 720 start
 </code></pre></div>
-
 <p>The minimum size is 720px. This will render the following images:</p>
 <p><img alt="Screenshot 2020-01-08 at 22 10 30" src="https://user-images.githubusercontent.com/301686/72016344-e5fdfb80-3263-11ea-95b3-00564156140f.png" /></p>
 <p>500px is used for tiles in search results, the others are mostly needed for classification.</p>
 <p>Size is still ~550kb with high quality (95). With lower JPEG quality (80), you'll get it down to ~100kb:</p>
 <div class="highlight"><pre><span></span><code>photoprism -s 720 -q 80 start
 </code></pre></div>
-
 <p>This page demonstrates and discusses the effects of JPEG compression: <a href="http://fotoforensics.com/tutorial-estq.php">http://fotoforensics.com/tutorial-estq.php</a></p>
 <p>Image classification obviously works better with sharp images, so it's possible you'll get less accurate labels with higher compression. Please share your experience.</p>
 <p>If size limit is exceeded, for example because you use a large screen, originals will be used for displaying images in the frontend. This might result in the image displayed with wrong rotation if the browser doesn't rotate it automatically.</p>
@@ -2317,8 +2320,8 @@ From faster (lower quality) to slower (higher quality):</p>
       
     </div>
     
-      <script src="../../../assets/javascripts/vendor.77e55a48.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.9554a270.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../../assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.b3a72adc.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

@@ -9,13 +9,14 @@
         <meta name="description" content="User Guide">
       
       
+      
         <link rel="canonical" href="https://docs.photoprism.org/developer-guide/setup-fedora/">
       
       
         <meta name="author" content="PhotoPrism.org">
       
       <link rel="shortcut icon" href="../../img/favicon-16.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.2">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.4">
     
     
       
@@ -23,10 +24,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.38780c08.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.358818c7.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f72e892.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.f0267088.min.css">
         
           
           
@@ -108,7 +109,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://docs.photoprism.org/" title="PhotoPrism" class="md-header-nav__button md-logo" aria-label="PhotoPrism">
       
@@ -262,7 +265,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://docs.photoprism.org/" title="PhotoPrism" class="md-nav__button md-logo" aria-label="PhotoPrism">
       
@@ -1802,11 +1807,9 @@ You'll need:</p>
 <div class="highlight"><pre><span></span><code>git clone git@github.com:tensorflow/tensorflow.git
 git clone git@github.com:photoprism/photoprism.git
 </code></pre></div>
-
 <p><strong>Step 2:</strong> Install required packages:</p>
 <div class="highlight"><pre><span></span><code>sudo dnf install golang darktable intltool nodejs npm
 </code></pre></div>
-
 <p><em>Note: This setup is for development and testing purposes only.</em></p>
 <p><strong>Step 3:</strong> Download Bazel wrapper to build tensorflow:</p>
 <p>Consult the <a href="https://www.tensorflow.org/install/source#configure_the_build">TensorFlow Docs</a> for configuration options.</p>
@@ -1816,20 +1819,17 @@ cd tensorflow
 bazel build --config=v1 //tensorflow/tools/lib_package:libtensorflow
 sudo tar -C /usr/local/ -xvf $HOME/.cache/bazel/_bazel_$USER/&lt;SOME_HASH&gt;/execroot/org_tensorflow/bazel-out/k8-opt/bin/tensorflow/tools/lib_package/libtensorflow.tar.gz
 </code></pre></div>
-
 <p><em>Note: Your SOME_HASH value will depend on your build, go find it!</em></p>
 <p><strong>Step 4:</strong> Build PhotoPrism:</p>
 <div class="highlight"><pre><span></span><code>cd photoprism
 make
 </code></pre></div>
-
 <p><strong>Step 5:</strong> Enjoy an amazing application ;-)</p>
 <p>Depending on your system's configuration, you might need to update your ldconfig</p>
 <p><em>Add a configuration file which persists reboots</em></p>
 <div class="highlight"><pre><span></span><code>sudo echo &#39;/usr/local/lib/&#39; &gt;&gt; /etc/ld.so.conf.d/usrlocallib.conf
 sudo ldconfig
 </code></pre></div>
-
 <p><em>Update your shell's environment which will not persist upon reboot</em></p>
 <div class="highlight"><pre><span></span><code>export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 sudo ldconfig
@@ -1927,8 +1927,8 @@ sudo ldconfig
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.77e55a48.min.js"></script>
-      <script src="../../assets/javascripts/bundle.9554a270.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b3a72adc.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
