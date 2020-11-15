@@ -673,6 +673,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-can-i-uninstall-photoprism" class="md-nav__link">
+    How can I uninstall PhotoPrism?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#how-can-i-mount-nfs-shares-with-docker" class="md-nav__link">
     How can I mount NFS shares with Docker?
   </a>
@@ -2009,6 +2016,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-can-i-uninstall-photoprism" class="md-nav__link">
+    How can I uninstall PhotoPrism?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#how-can-i-mount-nfs-shares-with-docker" class="md-nav__link">
     How can I mount NFS shares with Docker?
   </a>
@@ -2159,6 +2173,13 @@ that might rename, update or delete files in the <em>originals</em> folder.</p>
 We also maintain a complete list of <a href="../config-options/">config options</a> in these docs.</p>
 <p>Our Docker Compose <a href="https://dl.photoprism.org/docker/docker-compose.yml">examples</a> are continuously maintained and inline documentation 
 has been added to simplify installation.</p>
+<h3 id="how-can-i-uninstall-photoprism">How can I uninstall PhotoPrism?<a class="headerlink" href="#how-can-i-uninstall-photoprism" title="Permanent link">&para;</a></h3>
+<p>This depends on how you installed it. If you're running PhotoPrism with Docker Compose, 
+this command will stop and remove the Docker container:</p>
+<div class="highlight"><pre><span></span><code>docker-compose rm -s -v
+</code></pre></div>
+<p>Please refer to the official Docker <a href="https://docs.docker.com/compose/reference/rm/">documentation</a> 
+for further details.</p>
 <h3 id="how-can-i-mount-nfs-shares-with-docker">How can I mount NFS shares with Docker?<a class="headerlink" href="#how-can-i-mount-nfs-shares-with-docker" title="Permanent link">&para;</a></h3>
 <p>There are multiple ways of using network storage. 
 One of the easiest might be to directly mount NFS shares with Docker.</p>
