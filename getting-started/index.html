@@ -1860,10 +1860,16 @@ It is available for Mac, Linux and Windows.</p>
 your library. Please be patient, this will take a while depending on the size of your photo collection.</p>
 <p>Already indexed photos can be browsed in <a href="../user-guide/organize/browse/">Photos</a> 
 while videos show up in <a href="../user-guide/organize/video/">Videos</a>.
-Counts are continuously updated in the navigation.</p>
+Counts are getting continuously updated in the navigation.</p>
 <p>If files are missing, they might be in <a href="../user-guide/organize/review/">Review</a> due to low quality or missing metadata.
 You can turn this and other features off in <a href="../user-guide/settings/ui/">Settings</a>, depending on
 your specific use case.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>We do our best to provide a complete, stable version very soon. Check the 
+<a href="https://github.com/photoprism/photoprism/projects/5">roadmap</a> for open issues.
+Leave your email to get a <a href="https://goo.gl/forms/KBPVGl9PCsOKrAv33">release notification</a>.</p>
+</div>
 <h2 id="feature-requests">Feature Requests<a class="headerlink" href="#feature-requests" title="Permanent link">&para;</a></h2>
 <p>Our <a href="https://github.com/photoprism/photoprism/projects/5">roadmap</a> shows what tasks are in progress, 
 what needs testing, and which feature requests are going to be implemented next.</p>
@@ -1872,10 +1878,13 @@ Ideas backed by one or more <a href="https://docs.photoprism.org/funding/">spons
 <h2 id="system-requirements">System Requirements<a class="headerlink" href="#system-requirements" title="Permanent link">&para;</a></h2>
 <p>We recommend a modern computer with <strong>at least 2 cores</strong> and <strong>4 GB of memory</strong> for running PhotoPrism. Indexing large photo and 
 video collections significantly benefits from <strong>fast, local SSD storage</strong> and enough memory for caching. </p>
-<p>If you're running out of memory, limit the <a href="https://docs.photoprism.org/getting-started/config-options/">number of workers</a>
+<p>If you're running out of memory or system load is too high, limit the 
+<a href="https://docs.photoprism.org/getting-started/config-options/">number of workers</a>,
 and make sure the server has <a href="https://opensource.com/article/18/9/swap-space-linux-systems">swap</a> 
 configured, so that indexing doesn't stop when there are memory usage spikes.
 As a measure of last resort, you may additionally disable image classification using TensorFlow.</p>
+<p>PhotoPrism is compatible with SQLite, MariaDB, and MySQL. We recommend <a href="https://mariadb.org/">MariaDB</a> 
+for best performance &amp; scalability.</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>When installing PhotoPrism on a public server outside your home network, please <strong>always run it
