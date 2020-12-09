@@ -1797,9 +1797,9 @@
                 
                 <h1 id="running-photoprism-with-kubernetes">Running PhotoPrism with Kubernetes<a class="headerlink" href="#running-photoprism-with-kubernetes" title="Permanent link">&para;</a></h1>
 <p><em>Note: This is contributed content and may be outdated.</em></p>
-<p>Running PhotoPrism on a Kubernetes cluster is straightforward. </p>
+<p>Running PhotoPrism on a Kubernetes cluster is straightforward.</p>
 <p>At a minimum, you can just define a Kubernetes <code>Service</code> and a <code>StatefulSet</code> and be up and running.
-For more real-world usage, you'll probably want to at least include persistent storage, 
+For more real-world usage, you'll probably want to at least include persistent storage,
 and possibly some <code>Ingress</code> rules for exposing PhotoPrism outside your cluster.</p>
 <p>For those familiar with <a href="https://helm.sh">Helm</a>, a PhotoPrism Helm chart <a href="https://github.com/p80n/photoprism-helm">is available</a>.</p>
 <p>Once you've got PhotoPrism deployed, you can <code>exec</code> into the running container and <code>photoprism import</code> your photos.</p>
@@ -1808,6 +1808,7 @@ and possibly some <code>Ingress</code> rules for exposing PhotoPrism outside you
 <li><code>Namespace</code></li>
 <li><code>Service</code> exposing PhotoPrism on port 80</li>
 <li><code>StatefulSet</code> with persistent NFS volumes</li>
+<li><code>Secret</code> which stores the database DSN and admin password</li>
 <li><code>Ingress</code> rule for a Kubernetes <a href="https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/">ingress controller</a></li>
 <li>Annotations for a Kubernetes <a href="https://github.com/jetstack/cert-manager"><code>Certificate Manager</code></a></li>
 </ul>
@@ -1815,6 +1816,15 @@ and possibly some <code>Ingress</code> rules for exposing PhotoPrism outside you
 <span class="nt">kind</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Namespace</span>
 <span class="nt">metadata</span><span class="p">:</span>
   <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">photoprism</span>
+<span class="nn">---</span>
+<span class="nt">apiVersion</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">v1</span>
+<span class="nt">kind</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Secret</span>
+<span class="nt">metadata</span><span class="p">:</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">photoprism-secrets</span>
+  <span class="nt">namespace</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">photoprism</span>
+<span class="nt">stringData</span><span class="p">:</span>
+  <span class="nt">PHOTOPRISM_ADMIN_PASSWORD</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;your admin password here&gt;</span>
+  <span class="nt">PHOTOPRISM_DATABASE_DSN</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">username:password@tcp(db-server-address:3306)/dbname?charset=utf8mb4,utf8&amp;parseTime=true</span>
 <span class="nn">---</span>
 <span class="nt">apiVersion</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">apps/v1</span>
 <span class="nt">kind</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">StatefulSet</span>
@@ -1838,8 +1848,6 @@ and possibly some <code>Ingress</code> rules for exposing PhotoPrism outside you
         <span class="nt">env</span><span class="p">:</span>
         <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">PHOTOPRISM_DEBUG</span>
           <span class="nt">value</span><span class="p">:</span> <span class="s">&quot;true&quot;</span>
-        <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">PHOTOPRISM_SERVER_MODE</span>
-          <span class="nt">value</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">debug</span>
         <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">PHOTOPRISM_CACHE_PATH</span>
           <span class="nt">value</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">/assets/cache</span>
         <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">PHOTOPRISM_IMPORT_PATH</span>
@@ -1850,15 +1858,15 @@ and possibly some <code>Ingress</code> rules for exposing PhotoPrism outside you
           <span class="nt">vale</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">/assets/photos/originals</span>
         <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">PHOTOPRISM_DATABASE_DRIVER</span>
           <span class="nt">value</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mysql</span>
-        <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">PHOTOPRISM_DATABASE_DSN</span>
-          <span class="nt">value</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">photoprism:photoprism@tcp(mariadb.db:3306)/photoprism?parseTime=true</span>
         <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">PHOTOPRISM_HTTP_HOST</span>
           <span class="nt">value</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0.0.0.0</span>
         <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">PHOTOPRISM_HTTP_PORT</span>
           <span class="nt">value</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2342</span>
-        <span class="nt">resources</span><span class="p">:</span>
-          <span class="nt">requests</span><span class="p">:</span>
-            <span class="nt">memory</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2Gi</span>
+        <span class="c1"># Load database DSN &amp; admin password from secret</span>
+        <span class="nt">envFrom</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="nt">secretRef</span><span class="p">:</span>
+            <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">photoprism-secrets</span>
+            <span class="nt">optional</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
         <span class="nt">ports</span><span class="p">:</span>
         <span class="p p-Indicator">-</span> <span class="nt">containerPort</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2342</span>
           <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">http</span>
@@ -1875,6 +1883,10 @@ and possibly some <code>Ingress</code> rules for exposing PhotoPrism outside you
         <span class="p p-Indicator">-</span> <span class="nt">mountPath</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">/assets/photos/export</span>
           <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">photoprism</span>
           <span class="nt">subPath</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">export</span>
+        <span class="nt">readinessProbe</span><span class="p">:</span>
+          <span class="nt">httpGet</span><span class="p">:</span>
+            <span class="nt">path</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">/api/v1/status</span>
+            <span class="nt">port</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">http</span>
       <span class="nt">volumes</span><span class="p">:</span>
       <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">originals</span>
         <span class="nt">nfs</span><span class="p">:</span>
@@ -1905,8 +1917,12 @@ and possibly some <code>Ingress</code> rules for exposing PhotoPrism outside you
 <span class="nt">kind</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Ingress</span>
 <span class="nt">metadata</span><span class="p">:</span>
   <span class="nt">annotations</span><span class="p">:</span>
-    <span class="nt">certmanager.k8s.io/cluster-issuer</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">letsencrypt-prod</span>
+    <span class="c1"># For nginx ingress controller:</span>
     <span class="nt">kubernetes.io/ingress.class</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">nginx</span>
+    <span class="c1"># Default is very low so most photo uploads will fail</span>
+    <span class="nt">nginx.ingress.kubernetes.io/proxy-body-size</span><span class="p">:</span> <span class="s">&quot;512M&quot;</span>
+    <span class="c1"># If using cert-manager:</span>
+    <span class="nt">certmanager.k8s.io/cluster-issuer</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">letsencrypt-prod</span>
     <span class="nt">kubernetes.io/tls-acme</span><span class="p">:</span> <span class="s">&quot;true&quot;</span>
   <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">photoprism</span>
   <span class="nt">namespace</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">photoprism</span>
