@@ -1861,6 +1861,12 @@ It is available for Mac, Linux and Windows.
 Developers can skip this and move on to the <a href="../../developer-guide/">Developer Guide</a>.</p>
 <p>An image for the <a href="../raspberry-pi/">Raspberry Pi</a> is available as well.
 In addition, we plan to provide a single binary.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Windows users may need to <a href="../img/docker-disable-wsl2.jpg">disable</a> the WSL 2 based engine in <em>Docker Settings &gt; General</em>
+to mount drives other than <code>C:</code>. They are advised to use this <a href="https://dl.photoprism.org/docker/windows/docker-compose.yml">docker-compose.yml</a>
+example config to get started.</p>
+</div>
 <h3 id="step-1-configure">Step 1: Configure<a class="headerlink" href="#step-1-configure" title="Permanent link">&para;</a></h3>
 <p>Download our <a href="https://dl.photoprism.org/docker/docker-compose.yml">docker-compose.yml</a> file
 (right click and <em>Save Link As...</em> or use <code>wget</code>) to a folder of your choice,
