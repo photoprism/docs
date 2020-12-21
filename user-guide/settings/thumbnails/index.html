@@ -1971,10 +1971,9 @@
 <p>For best results, you should choose a high JPEG quality &gt; 90, and the <em>lanczos</em> downscaling filter.
 This will require additional storage and slows down indexing, but only once when indexing for the first time.</p>
 <p>In comparison, the <em>cubic</em> filter may be 30% faster than <em>lanczos</em>.
-A JPEG quality setting of 95 results in a preview files size of about 500kb.
+A <a href="http://fotoforensics.com/tutorial-estq.php">JPEG quality</a> setting of 95 results in a preview files size of about 500kb.
 Reducing the JPEG quality to 80 gets storage size down to ~100kb, and results in visible compression artifacts
 as in heavily compressed social media content.</p>
-<p>This page demonstrates and discusses the effects of JPEG compression: <a href="http://fotoforensics.com/tutorial-estq.php">http://fotoforensics.com/tutorial-estq.php</a></p>
 <p>Image classification also works better with sharp images, 
 so it's likely you'll get less accurate labels with higher compression.</p>
 <h2 id="preview-sizes">Preview Sizes<a class="headerlink" href="#preview-sizes" title="Permanent link">&para;</a></h2>
@@ -2089,7 +2088,6 @@ the photo viewer may be forced to use original image files instead.
 This may result in images displayed with the wrong orientation.</p>
 </div>
 <h2 id="downscaling-filters">Downscaling Filters<a class="headerlink" href="#downscaling-filters" title="Permanent link">&para;</a></h2>
-<p>Source: <a href="https://ijarcce.com/wp-content/uploads/2016/02/IJARCCE-7.pdf">https://ijarcce.com/wp-content/uploads/2016/02/IJARCCE-7.pdf</a></p>
 <h3 id="linear">Linear<a class="headerlink" href="#linear" title="Permanent link">&para;</a></h3>
 <p>Bilinear interpolation takes a weighted average of the four
 neighborhood pixels to calculate its final interpolated
@@ -2159,6 +2157,7 @@ From faster (lower quality) to slower (higher quality):</p>
 </tr>
 </tbody>
 </table>
+<p>Source: <a href="https://ijarcce.com/wp-content/uploads/2016/02/IJARCCE-7.pdf">A Comparative Analysis of Image Interpolation Algorithms</a></p>
 <h2 id="what-files-will-be-created-by-photoprism">What files will be created by PhotoPrism?<a class="headerlink" href="#what-files-will-be-created-by-photoprism" title="Permanent link">&para;</a></h2>
 <p>The minimum size for static previews is 720px. This will render the following images in the cache folder:</p>
 <div class="highlight"><pre><span></span><code>cache/thumbnails/1/a/3/1a30c1f...9_100x100_center.jpg
