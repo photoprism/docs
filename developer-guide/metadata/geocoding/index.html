@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#example-request" class="md-skip">
+        <a href="#maps-places" class="md-skip">
           Skip to content
         </a>
       
@@ -1576,6 +1576,8 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
+      
+    
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
         Geocoding
@@ -1589,6 +1591,8 @@
       
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
@@ -1607,13 +1611,6 @@
         <li class="md-nav__item">
   <a href="#privacy" class="md-nav__link">
     Privacy
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#performance" class="md-nav__link">
-    Performance
   </a>
   
 </li>
@@ -1841,6 +1838,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1858,13 +1857,6 @@
         <li class="md-nav__item">
   <a href="#privacy" class="md-nav__link">
     Privacy
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#performance" class="md-nav__link">
-    Performance
   </a>
   
 </li>
@@ -1921,18 +1913,13 @@
                   </a>
                 
                 
-                  <h1>Geocoding</h1>
-                
-                <p>PhotoPrism includes four high-resolution <a href="https://demo.photoprism.org/places">world maps</a> to see where you've been,
-and for rediscovering long-forgotten shots.
-To enhance your photos with location data such as state, city and category, 
-we've recently launched our own geo-information service based on OpenStreetMap.
-It features enhanced privacy, outstanding performance, and high availability.
-A future release will additionally provide public events' data, so that 
-albums of popular music festivals, or sports gatherings, can be created automatically.</p>
+                <h1 id="maps-places">Maps &amp; Places<a class="headerlink" href="#maps-places" title="Permanent link">&para;</a></h1>
+<p>PhotoPrism includes four high-resolution <a href="https://demo.photoprism.org/places">world maps</a>  to see where you've been, and for rediscovering long-forgotten shots.</p>
+<p>To enhance your photos with location data such as state, city and category, we've also launched our own geo-information service based on OpenStreetMap.
+A future release will additionally provide public events' data, so that albums of popular music festivals, or sports gatherings, can be created automatically.</p>
 <p>We are happy to assist other OSS projects that don't have the time or expertise to run their own infrastructure.</p>
 <h2 id="example-request">Example Request<a class="headerlink" href="#example-request" title="Permanent link">&para;</a></h2>
-<p><a href="https://places.photoprism.org/v1/location/149ce78563">https://places.photoprism.org/v1/location/149ce78563</a></p>
+<p><a href="https://places.photoprism.app/v1/location/149ce78563">https://places.photoprism.app/v1/location/149ce78563</a></p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
   <span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;149ce78563&quot;</span><span class="p">,</span>
   <span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Pink Beach&quot;</span><span class="p">,</span>
@@ -1952,15 +1939,12 @@ albums of popular music festivals, or sports gatherings, can be created automati
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="privacy">Privacy<a class="headerlink" href="#privacy" title="Permanent link">&para;</a></h2>
-<p>Geocoding requests are not logged, but developers can of course see cached items in MariaDB without personal information. That's the point of a cache. Those will be randomly distributed with hot spots around tourist attractions and big cities.</p>
-<p>Because of HTTPS, your internet provider can't see the exact request, just that you contacted a server.</p>
-<p>The API approximates coordinates, encodes them with <a href="https://s2geometry.io/resources/s2cell_statistics.html">S2</a> and doesn't care about street or house number:</p>
+<p>Reverse geocoding requests won't be logged. Location data is cached though so 
+that it can be used to serve subsequent requests. 
+Because of HTTPS, your internet provider can't see the exact request - only the fact that you exchanged data with our backend.</p>
+<p>Our API approximates coordinates, encodes them with <a href="https://s2geometry.io/resources/s2cell_statistics.html">S2</a>,
+and doesn't care about street or house number:</p>
 <p><img alt="" src="../img/placesPrivacy.jpeg" /></p>
-<h2 id="performance">Performance<a class="headerlink" href="#performance" title="Permanent link">&para;</a></h2>
-<p>First <a href="https://github.com/tsliwowicz/go-wrk">benchmarks</a> show that up to 2500 req/s can be handled. Compare this with the pricing of commercial providers and you'll see the value. Response times range from 10ms to 7μs, depending on the query and cache.</p>
-<p>If you prefer running this on-site: We use a 6-core Intel Xeon processor, 320 GB of SSD and 16 GB of memory. 
-In addition you'll have to download ~100 GB of data.
-Due to the properties of S2 cell IDs, scaling and sharding should be easy if needed.</p>
 <h2 id="event-discovery">Event Discovery<a class="headerlink" href="#event-discovery" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://schedjoules.github.io/event-discovery-api/#introduction">https://schedjoules.github.io/event-discovery-api/#introduction</a></li>
