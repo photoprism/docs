@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#thumbnail-settings" class="md-skip">
+        <a href="#image-quality-settings" class="md-skip">
           Skip to content
         </a>
       
@@ -1177,32 +1177,18 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#config-options" class="md-nav__link">
-    Config Options
+  <a href="#preview-sizes" class="md-nav__link">
+    Preview Sizes
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
+  <a href="#downscaling-filters" class="md-nav__link">
+    Downscaling Filters
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sizes" class="md-nav__link">
-    Sizes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#filters" class="md-nav__link">
-    Filters
-  </a>
-  
-    <nav class="md-nav" aria-label="Filters">
+    <nav class="md-nav" aria-label="Downscaling Filters">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1242,6 +1228,20 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-files-will-be-created-by-photoprism" class="md-nav__link">
+    What files will be created by PhotoPrism?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config-options" class="md-nav__link">
+    Config Options
+  </a>
   
 </li>
       
@@ -1880,32 +1880,18 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#config-options" class="md-nav__link">
-    Config Options
+  <a href="#preview-sizes" class="md-nav__link">
+    Preview Sizes
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
+  <a href="#downscaling-filters" class="md-nav__link">
+    Downscaling Filters
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sizes" class="md-nav__link">
-    Sizes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#filters" class="md-nav__link">
-    Filters
-  </a>
-  
-    <nav class="md-nav" aria-label="Filters">
+    <nav class="md-nav" aria-label="Downscaling Filters">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1948,6 +1934,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#what-files-will-be-created-by-photoprism" class="md-nav__link">
+    What files will be created by PhotoPrism?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config-options" class="md-nav__link">
+    Config Options
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1965,33 +1965,19 @@
                   </a>
                 
                 
-                <h1 id="thumbnail-settings">Thumbnail Settings<a class="headerlink" href="#thumbnail-settings" title="Permanent link">&para;</a></h1>
-<p>For best results, you should (at least) set jpeg quality to 95 and use the "lanczos" filter. Obviously this will require significantly more storage and CPU time. From our experience, "cubic" might be 30% faster than "lanczos" on modern desktop and server CPUs. Keep in mind that you only need to create thumbnails once and then can enjoy them for the rest of your life.</p>
-<h2 id="config-options">Config Options<a class="headerlink" href="#config-options" title="Permanent link">&para;</a></h2>
-<p><code>--thumb-filter NAME, -f NAME</code></p>
-<p>downscaling filter NAME (best to worst: blackman, lanczos, cubic, linear) (default: "lanczos") [$PHOTOPRISM_THUMB_FILTER]</p>
-<p><code>--thumb-size PIXELS, -s PIXELS</code></p>
-<p>static thumbnail size limit in PIXELS (720-7680) (default: 2048) [$PHOTOPRISM_THUMB_SIZE]</p>
-<p><code>--thumb-uncached, -u</code></p>
-<p>enable dynamic thumbnail rendering (high memory and cpu usage) [$PHOTOPRISM_THUMB_UNCACHED]</p>
-<p><code>--thumb-size-uncached PIXELS, -x PIXELS</code></p>
-<p>dynamic rendering size limit in PIXELS (720-7680) (default: 7680) [PHOTOPRISM_THUMB_SIZE_UNCACHED]</p>
-<p><code>--jpeg-quality value, -q value</code></p>
-<p>set to 95 for high-quality thumbnails (25-100) (default: 90) [$PHOTOPRISM_JPEG_QUALITY]</p>
-<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
-<p>You can limit the size of JPEG thumbnails using the <code>-s</code> parameter when you run commands:</p>
-<div class="highlight"><pre><span></span><code>photoprism -s 720 start
-</code></pre></div>
-<p>The minimum size is 720px. This will render the following images:</p>
-<p><img alt="Screenshot 2020-01-08 at 22 10 30" src="https://user-images.githubusercontent.com/301686/72016344-e5fdfb80-3263-11ea-95b3-00564156140f.png" /></p>
-<p>500px is used for tiles in search results, the others are mostly needed for classification.</p>
-<p>Size is still ~550kb with high quality (95). With lower JPEG quality (80), you'll get it down to ~100kb:</p>
-<div class="highlight"><pre><span></span><code>photoprism -s 720 -q 80 start
-</code></pre></div>
+                <h1 id="image-quality-settings">Image Quality Settings<a class="headerlink" href="#image-quality-settings" title="Permanent link">&para;</a></h1>
+<p>You may change quality settings for preview images in the Advanced Settings tab (not available in public mode):</p>
+<p><img alt="" src="../img/advanced-settings.jpg" /></p>
+<p>For best results, you should choose a high JPEG quality &gt; 90, and the <em>lanczos</em> downscaling filter.
+This will require additional storage and slows down indexing, but only once when indexing for the first time.</p>
+<p>In comparison, the <em>cubic</em> filter may be 30% faster than <em>lanczos</em>.
+A JPEG quality setting of 95 results in a preview files size of about 500kb.
+Reducing the JPEG quality to 80 gets storage size down to ~100kb, and results in visible compression artifacts
+as in heavily compressed social media content.</p>
 <p>This page demonstrates and discusses the effects of JPEG compression: <a href="http://fotoforensics.com/tutorial-estq.php">http://fotoforensics.com/tutorial-estq.php</a></p>
-<p>Image classification obviously works better with sharp images, so it's possible you'll get less accurate labels with higher compression. Please share your experience.</p>
-<p>If size limit is exceeded, for example because you use a large screen, originals will be used for displaying images in the frontend. This might result in the image displayed with wrong rotation if the browser doesn't rotate it automatically.</p>
-<h2 id="sizes">Sizes<a class="headerlink" href="#sizes" title="Permanent link">&para;</a></h2>
+<p>Image classification also works better with sharp images, 
+so it's likely you'll get less accurate labels with higher compression.</p>
+<h2 id="preview-sizes">Preview Sizes<a class="headerlink" href="#preview-sizes" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -2096,7 +2082,13 @@
 </tr>
 </tbody>
 </table>
-<h2 id="filters">Filters<a class="headerlink" href="#filters" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When the configured size limit is exceeded, for example if users have a larger screen,
+the photo viewer may be forced to use original image files instead.
+This may result in images displayed with the wrong orientation.</p>
+</div>
+<h2 id="downscaling-filters">Downscaling Filters<a class="headerlink" href="#downscaling-filters" title="Permanent link">&para;</a></h2>
 <p>Source: <a href="https://ijarcce.com/wp-content/uploads/2016/02/IJARCCE-7.pdf">https://ijarcce.com/wp-content/uploads/2016/02/IJARCCE-7.pdf</a></p>
 <h3 id="linear">Linear<a class="headerlink" href="#linear" title="Permanent link">&para;</a></h3>
 <p>Bilinear interpolation takes a weighted average of the four
@@ -2130,7 +2122,7 @@ translated and scaled kernels is then evaluated at the
 desired pixel. Lanczos interpolation has the <strong>best
 properties in terms of detail preservation and minimal
 generation of aliasing artifacts</strong> for geometric
-transformations not involving strong down sampling. 
+transformations not involving strong down sampling.
 However higher order Lanczos interpolation requires high
 computational time, which makes it unsuitable for
 most commercial software.</p>
@@ -2167,6 +2159,35 @@ From faster (lower quality) to slower (higher quality):</p>
 </tr>
 </tbody>
 </table>
+<h2 id="what-files-will-be-created-by-photoprism">What files will be created by PhotoPrism?<a class="headerlink" href="#what-files-will-be-created-by-photoprism" title="Permanent link">&para;</a></h2>
+<p>The minimum size for static previews is 720px. This will render the following images in the cache folder:</p>
+<div class="highlight"><pre><span></span><code>cache/thumbnails/1/a/3/1a30c1f...9_100x100_center.jpg
+cache/thumbnails/1/a/3/1a30c1f...9_224x224_center.jpg
+cache/thumbnails/1/a/3/1a30c1f...9_224x224_left.jpg
+cache/thumbnails/1/a/3/1a30c1f...9_224x224_right.jpg
+cache/thumbnails/1/a/3/1a30c1f...9_3x3_resize.png
+cache/thumbnails/1/a/3/1a30c1f...9_500x500_center.jpg
+cache/thumbnails/1/a/3/1a30c1f...9_50x50_center.jpg
+cache/thumbnails/1/a/3/1a30c1f...9_720x720_fit.jpg
+</code></pre></div>
+<p>A static limit of 2048px renders the additional previews up to this size:</p>
+<div class="highlight"><pre><span></span><code>cache/thumbnails/1/a/3/1a30c1f...9_1280x1024_fit.jpg
+cache/thumbnails/1/a/3/1a30c1f...9_1920x1200_fit.jpg
+cache/thumbnails/1/a/3/1a30c1f...9_2048x2048_fit.jpg
+</code></pre></div>
+<h2 id="config-options">Config Options<a class="headerlink" href="#config-options" title="Permanent link">&para;</a></h2>
+<p>When using PhotoPrism in public mode, image quality preferences may be set in the application config file, 
+or via command line parameter (requires a restart):</p>
+<p><code>--thumb-filter NAME, -f NAME</code></p>
+<p>downscaling filter NAME (best to worst: blackman, lanczos, cubic, linear) (default: "lanczos") [$PHOTOPRISM_THUMB_FILTER]</p>
+<p><code>--thumb-size PIXELS, -s PIXELS</code></p>
+<p>static thumbnail size limit in PIXELS (720-7680) (default: 2048) [$PHOTOPRISM_THUMB_SIZE]</p>
+<p><code>--thumb-uncached, -u</code></p>
+<p>enable dynamic thumbnail rendering (high memory and cpu usage) [$PHOTOPRISM_THUMB_UNCACHED]</p>
+<p><code>--thumb-size-uncached PIXELS, -x PIXELS</code></p>
+<p>dynamic rendering size limit in PIXELS (720-7680) (default: 7680) [PHOTOPRISM_THUMB_SIZE_UNCACHED]</p>
+<p><code>--jpeg-quality value, -q value</code></p>
+<p>set to 95 for high-quality thumbnails (25-100) (default: 90) [$PHOTOPRISM_JPEG_QUALITY]</p>
                 
               
               
