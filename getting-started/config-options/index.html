@@ -1800,29 +1800,134 @@
 <td align="left">don't modify originals directory (import and upload disabled)</td>
 </tr>
 <tr>
-<td align="left"><code>PHOTOPRISM_TENSORFLOW_OFF</code></td>
-<td align="left">--tf-off</td>
-<td align="left">don't use TensorFlow for image classification (or anything else)</td>
-</tr>
-<tr>
 <td align="left"><code>PHOTOPRISM_EXPERIMENTAL</code></td>
 <td align="left">--experimental, -e</td>
 <td align="left">enable experimental features</td>
 </tr>
 <tr>
 <td align="left"><code>PHOTOPRISM_ADMIN_PASSWORD</code></td>
-<td align="left">--admin-password value</td>
-<td align="left">initial admin password (can be changed in settings)</td>
+<td align="left">--admin-password PASSWORD</td>
+<td align="left">initial admin PASSWORD, please use a secure default</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_CONFIG_FILE</code></td>
+<td align="left">--config-file FILENAME, -c FILENAME</td>
+<td align="left">load initial config options from FILENAME</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_CONFIG_PATH</code></td>
+<td align="left">--config-path PATH</td>
+<td align="left">folder containing application settings</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_ORIGINALS_PATH</code></td>
+<td align="left">--originals-path PATH</td>
+<td align="left">originals PATH containing your photo and video collection</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_ORIGINALS_LIMIT</code></td>
+<td align="left">--originals-limit MB</td>
+<td align="left">file size limit for originals in MB (default: 1000)</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_IMPORT_PATH</code></td>
+<td align="left">--import-path PATH</td>
+<td align="left">optional PATH for importing files to originals</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_STORAGE_PATH</code></td>
+<td align="left">--storage-path PATH</td>
+<td align="left">storage PATH for cache, database and sidecar files</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_SIDECAR_PATH</code></td>
+<td align="left">--sidecar-path PATH</td>
+<td align="left">relative or absolute storage PATH for sidecar files</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_CACHE_PATH</code></td>
+<td align="left">--cache-path PATH</td>
+<td align="left">cache storage PATH for sessions and thumbnails</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_TEMP_PATH</code></td>
+<td align="left">--temp-path PATH</td>
+<td align="left">temporary PATH for storing uploads and downloads</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_BACKUP_PATH</code></td>
+<td align="left">--backup-path PATH</td>
+<td align="left">backup storage PATH</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_ASSETS_PATH</code></td>
+<td align="left">--assets-path PATH</td>
+<td align="left">assets PATH for static resources like models and templates</td>
 </tr>
 <tr>
 <td align="left"><code>PHOTOPRISM_WORKERS</code></td>
-<td align="left">--workers value, -w value</td>
-<td align="left">number of workers for indexing (default: 0)</td>
+<td align="left">--workers LIMIT, -w LIMIT</td>
+<td align="left">LIMIT the number of indexing workers to reduce system load</td>
 </tr>
 <tr>
 <td align="left"><code>PHOTOPRISM_WAKEUP_INTERVAL</code></td>
-<td align="left">--wakeup-interval value</td>
-<td align="left">background worker wakeup interval in seconds (default: 0)</td>
+<td align="left">--wakeup-interval SECONDS</td>
+<td align="left">background worker wakeup interval in SECONDS</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_DISABLE_BACKUPS</code></td>
+<td align="left">--disable-backups</td>
+<td align="left">don't backup photo and album metadata to YAML files</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_DISABLE_WEBDAV</code></td>
+<td align="left">--disable-webdav</td>
+<td align="left">disable built-in WebDAV server</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_DISABLE_SETTINGS</code></td>
+<td align="left">--disable-settings</td>
+<td align="left">users can not view or change settings</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_DISABLE_PLACES</code></td>
+<td align="left">--disable-places</td>
+<td align="left">disables reverse geocoding and map</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_DISABLE_EXIFTOOL</code></td>
+<td align="left">--disable-exiftool</td>
+<td align="left">don't create ExifTool JSON files for enhanced metadata extraction</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_DISABLE_TENSORFLOW</code></td>
+<td align="left">--disable-tensorflow</td>
+<td align="left">don't use TensorFlow for image classification</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_DETECT_NSFW</code></td>
+<td align="left">--detect-nsfw</td>
+<td align="left">flag photos as private that may be offensive</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_UPLOAD_NSFW</code></td>
+<td align="left">--upload-nsfw</td>
+<td align="left">allow uploads that may be offensive</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_LOG_LEVEL</code></td>
+<td align="left">--log-level value, -l value</td>
+<td align="left">trace, debug, info, warning, error, fatal or panic (default: "info")</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_LOG_FILENAME</code></td>
+<td align="left">--log-filename value</td>
+<td align="left">server log FILENAME</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_PID_FILENAME</code></td>
+<td align="left">--pid-filename value</td>
+<td align="left">server process id FILENAME</td>
 </tr>
 <tr>
 <td align="left"><code>PHOTOPRISM_SITE_URL</code></td>
@@ -1877,7 +1982,27 @@
 <tr>
 <td align="left"><code>PHOTOPRISM_DATABASE_DSN</code></td>
 <td align="left">--database-dsn DSN</td>
-<td align="left">data source or file name (DSN)</td>
+<td align="left">sqlite file name, specifying a DSN is optional for mariadb and mysql</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_DATABASE_SERVER</code></td>
+<td align="left">--database-server HOST</td>
+<td align="left">database server HOST, specifying a :port is optional</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_DATABASE_NAME</code></td>
+<td align="left">--database-name NAME</td>
+<td align="left">database schema NAME (default: "photoprism")</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_DATABASE_USER</code></td>
+<td align="left">--database-user NAME</td>
+<td align="left">database user NAME (default: "photoprism")</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_DATABASE_PASSWORD</code></td>
+<td align="left">--database-password PASSWORD</td>
+<td align="left">database user PASSWORD</td>
 </tr>
 <tr>
 <td align="left"><code>PHOTOPRISM_DATABASE_CONNS</code></td>
@@ -1890,134 +2015,39 @@
 <td align="left">max NUMBER of idle connections (equal or less than open) (default: 0)</td>
 </tr>
 <tr>
-<td align="left"><code>PHOTOPRISM_ASSETS_PATH</code></td>
-<td align="left">--assets-path PATH</td>
-<td align="left">assets PATH for static files like templates and TensorFlow models</td>
-</tr>
-<tr>
-<td align="left"><code>PHOTOPRISM_STORAGE_PATH</code></td>
-<td align="left">--storage-path PATH</td>
-<td align="left">storage PATH for generated files like cache and index</td>
-</tr>
-<tr>
-<td align="left"><code>PHOTOPRISM_IMPORT_PATH</code></td>
-<td align="left">--import-path PATH</td>
-<td align="left">optional import PATH for copying files to originals</td>
-</tr>
-<tr>
-<td align="left"><code>PHOTOPRISM_ORIGINALS_PATH</code></td>
-<td align="left">--originals-path PATH</td>
-<td align="left">originals PATH for photo, video and sidecar files</td>
-</tr>
-<tr>
-<td align="left"><code>PHOTOPRISM_ORIGINALS_LIMIT</code></td>
-<td align="left">--originals-limit MEGABYTE</td>
-<td align="left">file size limit for originals in MEGABYTE (default: 1000)</td>
-</tr>
-<tr>
-<td align="left"><code>PHOTOPRISM_LOG_LEVEL</code></td>
-<td align="left">--log-level value, -l value</td>
-<td align="left">trace, debug, info, warning, error, fatal or panic (default: "info")</td>
-</tr>
-<tr>
-<td align="left"><code>PHOTOPRISM_LOG_FILENAME</code></td>
-<td align="left">--log-filename value</td>
-<td align="left">filename for storing server logs</td>
-</tr>
-<tr>
-<td align="left"><code>PHOTOPRISM_PID_FILENAME</code></td>
-<td align="left">--pid-filename value</td>
-<td align="left">filename for the server process id (pid)</td>
-</tr>
-<tr>
-<td align="left"><code>PHOTOPRISM_CACHE_PATH</code></td>
-<td align="left">--cache-path PATH</td>
-<td align="left">cache PATH</td>
-</tr>
-<tr>
-<td align="left"><code>PHOTOPRISM_TEMP_PATH</code></td>
-<td align="left">--temp-path PATH</td>
-<td align="left">temporary PATH for uploads and downloads</td>
-</tr>
-<tr>
-<td align="left"><code>PHOTOPRISM_CONFIG_FILE</code></td>
-<td align="left">--config-file FILENAME, -c FILENAME</td>
-<td align="left">load configuration from FILENAME</td>
-</tr>
-<tr>
-<td align="left"><code>PHOTOPRISM_SETTINGS_PATH</code></td>
-<td align="left">--settings-path PATH</td>
-<td align="left">settings PATH</td>
-</tr>
-<tr>
-<td align="left"><code>PHOTOPRISM_SETTINGS_HIDDEN</code></td>
-<td align="left">--settings-hidden</td>
-<td align="left">users can not view or change settings</td>
-</tr>
-<tr>
 <td align="left"><code>PHOTOPRISM_RAWTHERAPEE_BIN</code></td>
-<td align="left">--rawtherapee-bin FILENAME</td>
-<td align="left">rawtherapee-cli executable FILENAME (default: "rawtherapee-cli")</td>
+<td align="left">--rawtherapee-bin COMMAND</td>
+<td align="left">RawTherapee CLI COMMAND for raw image conversion (default: "rawtherapee-cli")</td>
 </tr>
 <tr>
 <td align="left"><code>PHOTOPRISM_DARKTABLE_BIN</code></td>
-<td align="left">--darktable-bin FILENAME</td>
-<td align="left">darktable-cli executable FILENAME (default: "darktable-cli")</td>
+<td align="left">--darktable-bin COMMAND</td>
+<td align="left">Darktable CLI COMMAND for raw image conversion (default: "darktable-cli")</td>
 </tr>
 <tr>
 <td align="left"><code>PHOTOPRISM_DARKTABLE_PRESETS</code></td>
 <td align="left">--darktable-presets</td>
-<td align="left">use darktable presets (disables concurrent raw to jpeg conversion)</td>
+<td align="left">disables simultaneous conversion of raw files to apply Darktable presets</td>
 </tr>
 <tr>
 <td align="left"><code>PHOTOPRISM_SIPS_BIN</code></td>
 <td align="left">--sips-bin FILENAME</td>
-<td align="left">sips executable FILENAME (default: "sips")</td>
+<td align="left">Scriptable Image Processing System COMMAND (default: "sips")</td>
 </tr>
 <tr>
 <td align="left"><code>PHOTOPRISM_HEIFCONVERT_BIN</code></td>
-<td align="left">--heifconvert-bin FILENAME</td>
-<td align="left">heif-convert executable FILENAME (default: "heif-convert")</td>
+<td align="left">--heifconvert-bin COMMAND</td>
+<td align="left">HEIC/HEIF image convert COMMAND (default: "heif-convert")</td>
 </tr>
 <tr>
 <td align="left"><code>PHOTOPRISM_FFMPEG_BIN</code></td>
-<td align="left">--ffmpeg-bin FILENAME</td>
-<td align="left">ffmpeg executable FILENAME (default: "ffmpeg")</td>
+<td align="left">--ffmpeg-bin COMMAND</td>
+<td align="left">FFmpeg COMMAND for video transcoding and cover images (default: "ffmpeg")</td>
 </tr>
 <tr>
 <td align="left"><code>PHOTOPRISM_EXIFTOOL_BIN</code></td>
-<td align="left">--exiftool-bin FILENAME</td>
-<td align="left">exiftool executable FILENAME (default: "exiftool")</td>
-</tr>
-<tr>
-<td align="left"><code>PHOTOPRISM_SIDECAR_JSON</code></td>
-<td align="left">--sidecar-json, -j</td>
-<td align="left">automatically create JSON sidecar files using Exiftool</td>
-</tr>
-<tr>
-<td align="left"><code>PHOTOPRISM_SIDECAR_YAML</code></td>
-<td align="left">--sidecar-yaml, -y</td>
-<td align="left">automatically backup metadata to YAML sidecar files</td>
-</tr>
-<tr>
-<td align="left"><code>PHOTOPRISM_SIDECAR_PATH</code></td>
-<td align="left">--sidecar-path PATH</td>
-<td align="left">storage PATH for automatically created sidecar files (relative or absolute)</td>
-</tr>
-<tr>
-<td align="left"><code>PHOTOPRISM_DETECT_NSFW</code></td>
-<td align="left">--detect-nsfw</td>
-<td align="left">flag photos as private that may be offensive</td>
-</tr>
-<tr>
-<td align="left"><code>PHOTOPRISM_UPLOAD_NSFW</code></td>
-<td align="left">--upload-nsfw</td>
-<td align="left">allow uploads that may be offensive</td>
-</tr>
-<tr>
-<td align="left"><code>PHOTOPRISM_GEOCODING_API</code></td>
-<td align="left">--geocoding-api value, -g value</td>
-<td align="left">geocoding api (none, osm or places) (default: "places")</td>
+<td align="left">--exiftool-bin COMMAND</td>
+<td align="left">ExifTool COMMAND for enhanced metadata extraction (default: "exiftool")</td>
 </tr>
 <tr>
 <td align="left"><code>PHOTOPRISM_DOWNLOAD_TOKEN</code></td>
@@ -2032,27 +2062,27 @@
 <tr>
 <td align="left"><code>PHOTOPRISM_THUMB_FILTER</code></td>
 <td align="left">--thumb-filter NAME, -f NAME</td>
-<td align="left">resample filter NAME (best to worst: blackman, lanczos, cubic, linear) (default: "lanczos")</td>
-</tr>
-<tr>
-<td align="left"><code>PHOTOPRISM_THUMB_UNCACHED</code></td>
-<td align="left">--thumb-uncached, -u</td>
-<td align="left">enable on-demand thumbnail rendering (high memory and cpu usage if thumbnails haven't been generated yet)</td>
+<td align="left">downscaling filter NAME (best to worst: blackman, lanczos, cubic, linear) (default: "lanczos")</td>
 </tr>
 <tr>
 <td align="left"><code>PHOTOPRISM_THUMB_SIZE</code></td>
 <td align="left">--thumb-size PIXELS, -s PIXELS</td>
-<td align="left">pre-rendered thumbnail size limit in PIXELS (720-7680) (default: 2048)</td>
+<td align="left">static thumbnail size limit in PIXELS (720-7680) (default: 2048)</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_THUMB_UNCACHED</code></td>
+<td align="left">--thumb-uncached, -u</td>
+<td align="left">enable dynamic thumbnail rendering (high memory and cpu usage if thumbnails haven't been generated yet)</td>
 </tr>
 <tr>
 <td align="left"><code>PHOTOPRISM_THUMB_SIZE_UNCACHED</code></td>
 <td align="left">--thumb-size-uncached PIXELS, -x PIXELS</td>
-<td align="left">on-demand rendering size limit in PIXELS (720-7680) (default: 7680)</td>
+<td align="left">dynamic rendering size limit in PIXELS (720-7680) (default: 7680)</td>
 </tr>
 <tr>
 <td align="left"><code>PHOTOPRISM_JPEG_SIZE</code></td>
 <td align="left">--jpeg-size PIXELS</td>
-<td align="left">size limit for converted image files in PIXELS (720-30000) (default: 7680)</td>
+<td align="left">size limit for converted image files in PIXELS (720-30000) (default: 7680</td>
 </tr>
 <tr>
 <td align="left"><code>PHOTOPRISM_JPEG_QUALITY</code></td>
