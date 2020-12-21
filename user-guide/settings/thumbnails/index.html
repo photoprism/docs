@@ -1968,16 +1968,16 @@
                 <h1 id="thumbnail-settings">Thumbnail Settings<a class="headerlink" href="#thumbnail-settings" title="Permanent link">&para;</a></h1>
 <p>For best results, you should (at least) set jpeg quality to 95 and use the "lanczos" filter. Obviously this will require significantly more storage and CPU time. From our experience, "cubic" might be 30% faster than "lanczos" on modern desktop and server CPUs. Keep in mind that you only need to create thumbnails once and then can enjoy them for the rest of your life.</p>
 <h2 id="config-options">Config Options<a class="headerlink" href="#config-options" title="Permanent link">&para;</a></h2>
+<p><code>--thumb-filter NAME, -f NAME</code></p>
+<p>downscaling filter NAME (best to worst: blackman, lanczos, cubic, linear) (default: "lanczos") [$PHOTOPRISM_THUMB_FILTER]</p>
+<p><code>--thumb-size PIXELS, -s PIXELS</code></p>
+<p>static thumbnail size limit in PIXELS (720-7680) (default: 2048) [$PHOTOPRISM_THUMB_SIZE]</p>
+<p><code>--thumb-uncached, -u</code></p>
+<p>enable dynamic thumbnail rendering (high memory and cpu usage) [$PHOTOPRISM_THUMB_UNCACHED]</p>
+<p><code>--thumb-size-uncached PIXELS, -x PIXELS</code></p>
+<p>dynamic rendering size limit in PIXELS (720-7680) (default: 7680) [PHOTOPRISM_THUMB_SIZE_UNCACHED]</p>
 <p><code>--jpeg-quality value, -q value</code></p>
 <p>set to 95 for high-quality thumbnails (25-100) (default: 90) [$PHOTOPRISM_JPEG_QUALITY]</p>
-<p><code>--thumb-size value, -s value</code></p>
-<p>default thumbnail size limit in pixels (720-3840) (default: 2048) [$PHOTOPRISM_THUMB_SIZE]</p>
-<p><code>--thumb-limit value, -x value</code></p>
-<p>on-demand thumbnail size limit in pixels (720-3840) (default: 3840) [$PHOTOPRISM_THUMB_LIMIT]</p>
-<p><code>--thumb-uncached, -u</code></p>
-<p>on-demand rendering of default thumbnails (high memory and cpu usage) [$PHOTOPRISM_THUMB_UNCACHED]</p>
-<p><code>--thumb-filter value, -f value</code></p>
-<p>resample filter (best to worst: blackman, lanczos, cubic, linear) (default: "lanczos") [$PHOTOPRISM_THUMB_FILTER]</p>
 <h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
 <p>You can limit the size of JPEG thumbnails using the <code>-s</code> parameter when you run commands:</p>
 <div class="highlight"><pre><span></span><code>photoprism -s 720 start

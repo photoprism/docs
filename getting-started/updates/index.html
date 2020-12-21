@@ -1803,35 +1803,14 @@
 <div class="highlight"><pre><span></span><code>docker pull photoprism/photoprism-arm64:latest
 </code></pre></div>
 <p>Pulling a new version can take several minutes, depending on your internet connection.
-You can use <a href="https://github.com/containrrr/watchtower">Watchtower</a> to automatically update the image which is how our
-<a href="https://demo.photoprism.org/">public demo</a> stays up-to-date:</p>
+You can use <a href="https://github.com/containrrr/watchtower">Watchtower</a> to automatically keep images up-to-date:</p>
 <div class="highlight"><pre><span></span><code>services:
-  photoprism:
-    restart: unless-stopped
-    command: photoprism --public start
-    image: photoprism/demo:latest
-    environment:
-      PHOTOPRISM_URL: <span class="s2">&quot;https://demo.photoprism.org/&quot;</span>
-      PHOTOPRISM_TITLE: <span class="s2">&quot;PhotoPrism&quot;</span>
-      PHOTOPRISM_SUBTITLE: <span class="s2">&quot;Try our demo&quot;</span>
-      PHOTOPRISM_DESCRIPTION: <span class="s2">&quot;Personal Photo Management&quot;</span>
-      PHOTOPRISM_AUTHOR: <span class="s2">&quot;PhotoPrism.org&quot;</span>
-      PHOTOPRISM_TWITTER: <span class="s2">&quot;@browseyourlife&quot;</span>
-
   watchtower:
-    restart: unless-stopped
-    image: containrrr/watchtower
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
+  image: containrrr/watchtower
+  restart: unless-stopped
+  volumes:
+    - <span class="s2">&quot;/var/run/docker.sock:/var/run/docker.sock&quot;</span>
 </code></pre></div>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Our database schema still changes a lot as we do performance optimizations and add features.
-Therefore we cannot provide a smooth upgrade path and you should be prepared
-to delete your current database and re-index.
-To spare you a disappointment, we kindly advise you not to index large photo 
-collections at the moment.</p>
-</div>
                 
               
               

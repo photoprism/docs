@@ -2064,7 +2064,7 @@
                 <h1 id="frequently-asked-questions">Frequently Asked Questions<a class="headerlink" href="#frequently-asked-questions" title="Permanent link">&para;</a></h1>
 <h3 id="what-are-sidecar-files-and-where-do-i-find-them">What are sidecar files and where do I find them?<a class="headerlink" href="#what-are-sidecar-files-and-where-do-i-find-them" title="Permanent link">&para;</a></h3>
 <p>A sidecar is a file which sits <strong>alongside</strong> your main photo or video files, 
-typically using the same name and a different extension like </p>
+typically using the same name, and a different extension like </p>
 <ul>
 <li><code>IMG_0101.jpg</code></li>
 <li><code>IMG_0101.json</code></li>
@@ -2075,11 +2075,11 @@ can be mounted read-only.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>PhotoPrism will always look out for existing sidecar files and use them for indexing, 
-even if <code>PHOTOPRISM_SIDECAR_JSON</code> and <code>PHOTOPRISM_SIDECAR_YAML</code> are set to <code>"false"</code>.</p>
+even if <code>PHOTOPRISM_DISABLE_EXIFTOOL</code> and <code>PHOTOPRISM_DISABLE_BACKUPS</code> are set to <code>"true"</code>.</p>
 </div>
 <p>Three types of metadata sidecar files are supported currently:</p>
 <h4 id="json">JSON<a class="headerlink" href="#json" title="Permanent link">&para;</a></h4>
-<p>If enabled via <code>PHOTOPRISM_SIDECAR_JSON</code> or <code>--sidecar-json</code>, <a href="https://exiftool.org/">Exiftool</a> is used to 
+<p>If not disabled via <code>PHOTOPRISM_DISABLE_EXIFTOOL</code> or <code>--disable-exiftool</code>, <a href="https://exiftool.org/">Exiftool</a> is used to 
 automatically create a JSON sidecar for each media file. 
 <strong>This way, embedded XMP and video metadata can be indexed as well.</strong>
 Native metadata extraction is limited to common Exif headers.
@@ -2092,7 +2092,7 @@ and can be processed using common development tools and text editors.</p>
 schemas may be added over time.</p>
 </div>
 <h4 id="yaml">YAML<a class="headerlink" href="#yaml" title="Permanent link">&para;</a></h4>
-<p>If enabled via <code>PHOTOPRISM_SIDECAR_YAML</code> or <code>--sidecar-yaml</code>, PhotoPrism will automatically create / update 
+<p>If disabled via <code>PHOTOPRISM_DISABLE_BACKUPS</code> or <code>--disable-backups</code>, PhotoPrism will automatically create / update 
 YAML sidecar files while indexing and after manually editing fields like title, date, or location. 
 They <strong>serve as a backup</strong> in case the database (index) gets lost, or when folders are synced with a remote 
 PhotoPrism instance.</p>
@@ -2133,7 +2133,7 @@ and GIF files. It is required for classification and resampling.</p>
 <a href="https://www.darktable.org/">Darktable</a> and <a href="https://rawtherapee.com/">RawTherapee</a> for RAW to JPEG conversion. 
 On Mac OS, <a href="https://ss64.com/osx/sips.html">Sips</a> can be used as well.</p>
 <p>Only MPEG-4 AVC video files are fully supported for now. Transcoding of other codecs is planned for a later release.
-In addition, <code>PHOTOPRISM_SIDECAR_JSON</code> must be <code>"true"</code> in order to
+In addition, <code>PHOTOPRISM_DISABLE_EXIFTOOL</code> must be <code>"false"</code> or unset in order to
 extract and index metadata like location and duration from video files.</p>
 <p>You're welcome to open an issue if you experience issues with a specific file format.</p>
 <h3 id="why-is-my-storage-folder-so-large-what-is-in-it">Why is my storage folder so large? What is in it?<a class="headerlink" href="#why-is-my-storage-folder-so-large-what-is-in-it" title="Permanent link">&para;</a></h3>
