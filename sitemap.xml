@@ -180,11 +180,7 @@
      <lastmod>2020-12-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/user-guide/backup/webdav/</loc>
-     <lastmod>2020-12-21</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.photoprism.org/user-guide/backup/nextcloud/</loc>
+     <loc>https://docs.photoprism.org/user-guide/sync/webdav/</loc>
      <lastmod>2020-12-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -201,6 +197,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/settings/advanced/</loc>
+     <lastmod>2020-12-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.photoprism.org/user-guide/settings/sync/</loc>
      <lastmod>2020-12-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
