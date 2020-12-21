@@ -1802,14 +1802,15 @@
 <p>For our Raspberry Pi version:</p>
 <div class="highlight"><pre><span></span><code>docker pull photoprism/photoprism-arm64:latest
 </code></pre></div>
-<p>Pulling a new version can take several minutes, depending on your internet connection.
-You can use <a href="https://github.com/containrrr/watchtower">Watchtower</a> to automatically keep images up-to-date:</p>
+<p>Pulling a new version can take several minutes, depending on your internet connection.</p>
+<p>Adding <a href="https://github.com/containrrr/watchtower">Watchtower</a> as a service in your <code>docker-compose.yml</code> will 
+automatically keep images up-to-date:</p>
 <div class="highlight"><pre><span></span><code>services:
   watchtower:
-  image: containrrr/watchtower
-  restart: unless-stopped
-  volumes:
-    - <span class="s2">&quot;/var/run/docker.sock:/var/run/docker.sock&quot;</span>
+    image: containrrr/watchtower
+    restart: unless-stopped
+    volumes:
+      - <span class="s2">&quot;/var/run/docker.sock:/var/run/docker.sock&quot;</span>
 </code></pre></div>
                 
               
