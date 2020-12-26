@@ -2114,7 +2114,7 @@ or the <em>Logs</em> tab in <em>Library</em>.</p>
 <p class="admonition-title">Reducing Server Load</p>
 <p>If you're running out of memory - or other system resources - while indexing, please limit the
 <a href="https://docs.photoprism.org/getting-started/config-options/">number of workers</a> by setting
-a value less than the number of logical CPU cores for <code>PHOTOPRISM_WORKERS</code>.
+<code>PHOTOPRISM_WORKERS</code> to a value less than the number of logical CPU cores.
 Also make sure your server has <a href="https://opensource.com/article/18/9/swap-space-linux-systems">swap</a> 
 configured so that indexing doesn't cause restarts when there are memory usage spikes.
 As a measure of last resort, you may additionally disable image classification using TensorFlow.</p>
