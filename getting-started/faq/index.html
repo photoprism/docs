@@ -646,6 +646,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#photoprism-seems-getting-stuck-in-a-restart-loop-on-my-server" class="md-nav__link">
+    PhotoPrism seems getting stuck in a restart loop on my server!?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#how-can-i-uninstall-photoprism" class="md-nav__link">
     How can I uninstall PhotoPrism?
   </a>
@@ -2181,6 +2188,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#photoprism-seems-getting-stuck-in-a-restart-loop-on-my-server" class="md-nav__link">
+    PhotoPrism seems getting stuck in a restart loop on my server!?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#how-can-i-uninstall-photoprism" class="md-nav__link">
     How can I uninstall PhotoPrism?
   </a>
@@ -2342,6 +2356,20 @@ that might rename, update or delete files in the <em>originals</em> folder.</p>
 We also maintain a complete list of <a href="../config-options/">config options</a> in these docs.</p>
 <p>Our Docker Compose <a href="https://dl.photoprism.org/docker/docker-compose.yml">examples</a> are continuously maintained and inline documentation 
 has been added to simplify installation.</p>
+<h3 id="photoprism-seems-getting-stuck-in-a-restart-loop-on-my-server">PhotoPrism seems getting stuck in a restart loop on my server!?<a class="headerlink" href="#photoprism-seems-getting-stuck-in-a-restart-loop-on-my-server" title="Permanent link">&para;</a></h3>
+<p>These restarts are triggered by Docker (based on your configuration)
+when PhotoPrism is unable to start.
+They are typically caused by one or more of the following reasons:</p>
+<ol>
+<li>Your (virtual) server disk may be full.</li>
+<li>The storage folder may not be writable.</li>
+<li>Your database server may be unavailable.</li>
+<li>There are connection issues caused by a proxy or firewall.</li>
+</ol>
+<p>Please check the server logs for a detailed error message like "disk full" or "wrong permissions".
+If you're using Docker Compose, you may enter this command to see the last 20 log entries:</p>
+<div class="highlight"><pre><span></span><code>docker-compose logs --tail=20
+</code></pre></div>
 <h3 id="how-can-i-uninstall-photoprism">How can I uninstall PhotoPrism?<a class="headerlink" href="#how-can-i-uninstall-photoprism" title="Permanent link">&para;</a></h3>
 <p>This depends on how you installed it. If you're running PhotoPrism with Docker Compose, 
 this command will stop and remove the Docker container:</p>
