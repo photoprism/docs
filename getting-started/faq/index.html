@@ -2395,9 +2395,18 @@ if you want to mount the <em>originals</em> folder as a share:</p>
     <span class="nt">driver_opts</span><span class="p">:</span>
       <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">nfs</span>
       <span class="c1"># The IP of your NAS:</span>
-      <span class="nt">o</span><span class="p">:</span> <span class="s">&quot;addr=1.2.3.4,soft,rw&quot;</span> 
+      <span class="nt">o</span><span class="p">:</span> <span class="s">&quot;username=user,password=secret,addr=1.2.3.4,soft,rw&quot;</span>
       <span class="c1"># Share path on your NAS:</span>
       <span class="nt">device</span><span class="p">:</span> <span class="s">&quot;:/mnt/photos&quot;</span> 
+</code></pre></div>
+<p>For Windows / CIFS shares:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">volumes</span><span class="p">:</span>
+  <span class="nt">photoprism-originals</span><span class="p">:</span>
+    <span class="nt">driver</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">local</span>
+    <span class="nt">driver_opts</span><span class="p">:</span>
+      <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">cifs</span>
+      <span class="nt">o</span><span class="p">:</span> <span class="s">&quot;username=user,password=secret,rw&quot;</span>
+      <span class="nt">device</span><span class="p">:</span> <span class="s">&quot;//host/folder&quot;</span>
 </code></pre></div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
