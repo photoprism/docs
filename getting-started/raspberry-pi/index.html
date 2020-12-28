@@ -437,8 +437,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#operating-system-and-hardware-requirements" class="md-nav__link">
-    Operating System and Hardware Requirements
+  <a href="#system-requirements" class="md-nav__link">
+    System Requirements
   </a>
   
 </li>
@@ -1994,8 +1994,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#operating-system-and-hardware-requirements" class="md-nav__link">
-    Operating System and Hardware Requirements
+  <a href="#system-requirements" class="md-nav__link">
+    System Requirements
   </a>
   
 </li>
@@ -2018,7 +2018,7 @@
                 
                 
                 <h1 id="running-photoprism-on-a-raspberry-pi">Running PhotoPrism on a Raspberry Pi<a class="headerlink" href="#running-photoprism-on-a-raspberry-pi" title="Permanent link">&para;</a></h1>
-<p>Big thank you to <a href="https://github.com/guysoft">Guy Sheffer</a> for 
+<p>Big thank you to <a href="https://github.com/guysoft">Guy Sheffer</a> for
 <a href="https://github.com/photoprism/photoprism/issues/109">building</a> this!</p>
 <p>Download our <a href="https://dl.photoprism.org/docker/arm64/docker-compose.yml">docker-compose.yml</a> file
 (right click and <em>Save Link As...</em> or use <code>wget</code>) to a folder of your choice, 
@@ -2026,29 +2026,34 @@ change the <a href="../config-options/">configuration</a> as needed, and run <co
 <div class="highlight"><pre><span></span><code>wget https://dl.photoprism.org/docker/arm64/docker-compose.yml
 sudo docker-compose up
 </code></pre></div>
-<p>See <a href="../docker-compose/">Setup Using Docker Compose</a> for details.</p>
-<p>Image name on Docker Hub: <a href="https://hub.docker.com/r/photoprism/photoprism-arm64"><code>photoprism/photoprism-arm64</code></a></p>
-<h2 id="operating-system-and-hardware-requirements">Operating System and Hardware Requirements<a class="headerlink" href="#operating-system-and-hardware-requirements" title="Permanent link">&para;</a></h2>
-<p>You need to boot your Raspberry Pi 3 / 4 with the parameter <code>arm_64bit=1</code> in <code>config.txt</code>
-to be able to use this image.
-A fast SD card and 4 GB of RAM are recommended, in addition you might want to add swap for large photo collections.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>If you're running out of memory while indexing, it often helps to limit the 
-<a href="https://docs.photoprism.org/getting-started/config-options/">number of workers</a> by setting
-an explicit value for <code>PHOTOPRISM_WORKERS</code> in <code>docker-compose.yml</code>.
-Make sure the server has <a href="https://opensource.com/article/18/9/swap-space-linux-systems">swap</a> 
-configured so that indexing doesn't stop when there are memory usage spikes.
-As a measure of last resort, you can additionally disable image classification using TensorFlow.</p>
+<p>The default port 2342 and other configuration values may be changed as needed,
+see <a href="../docker-compose/">Setup Using Docker Compose</a> and <a href="../config-options/">Config Options</a> for details.</p>
+<p>Our repository on Docker Hub: <a href="https://hub.docker.com/r/photoprism/photoprism-arm64"><code>photoprism/photoprism-arm64</code></a></p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Please change <code>PHOTOPRISM_ADMIN_PASSWORD</code> so that PhotoPrism starts with a secure <strong>initial password</strong>.
+Never use <code>photoprism</code> or <code>insecure</code> as password if you're running it on a public server.</p>
 </div>
-<p>Make sure your docker compose configuration contains the following setting:</p>
-<div class="highlight"><pre><span></span><code>  photoprism:
-    security_opt:
-      - seccomp:unconfined
+<h2 id="system-requirements">System Requirements<a class="headerlink" href="#system-requirements" title="Permanent link">&para;</a></h2>
+<p>You need to <a href="https://www.raspberrypi.org/documentation/installation/installing-images/README.md">boot</a>
+your Raspberry Pi &frac34; with the parameter <code>arm_64bit=1</code> in <code>config.txt</code> in order to use this image.
+Alternatively, you can run the image on <a href="https://github.com/guysoft/UbuntuDockerPi">UbuntuDockerPi</a>.
+It's a 64bit Ubuntu Server with Docker pre-installed.</p>
+<div class="admonition tip">
+<p class="admonition-title">Reducing Server Load</p>
+<p>If you're running out of memory - or other system resources - while indexing, please limit the
+<a href="https://docs.photoprism.org/getting-started/config-options/">number of workers</a> by setting
+<code>PHOTOPRISM_WORKERS</code> to a value less than the number of logical CPU cores in <code>docker-compose.yml</code>.
+Also make sure your server has <a href="https://opensource.com/article/18/9/swap-space-linux-systems">swap</a>
+configured so that indexing doesn't cause restarts when there are memory usage spikes.
+As a measure of last resort, you may additionally disable image classification using TensorFlow.</p>
+</div>
+<p>To avoid permission issues, docker-compose.yml should include the following security options:</p>
+<div class="highlight"><pre><span></span><code>  <span class="nt">photoprism</span><span class="p">:</span>
+    <span class="nt">security_opt</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">seccomp:unconfined</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">apparmor:unconfined</span>
 </code></pre></div>
-<p>Alternatively, you can run the image on <a href="https://github.com/guysoft/UbuntuDockerPi">UbuntuDockerPi</a>. It's a 64bit Ubuntu Server with Docker pre-installed.</p>
-<p>See also:
-<a href="https://www.raspberrypi.org/documentation/installation/installing-images/README.md">https://www.raspberrypi.org/documentation/installation/installing-images/README.md</a></p>
                 
               
               
