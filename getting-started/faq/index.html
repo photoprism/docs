@@ -2365,11 +2365,20 @@ They are typically caused by one or more of the following reasons:</p>
 <li>The storage folder may not be writable.</li>
 <li>Your database server may be unavailable.</li>
 <li>There are connection issues caused by a proxy or firewall.</li>
+<li>Kernel security modules such as
+   <a href="https://wiki.ubuntu.com/AppArmor">AppArmor</a> or
+   <a href="https://en.wikipedia.org/wiki/Security-Enhanced_Linux">SELinux</a>
+   may be blocking permissions.</li>
 </ol>
 <p>Please check the server logs for a detailed error message like "disk full" or "wrong permissions".
 If you're using Docker Compose, you may enter this command to see the last 20 log entries:</p>
 <div class="highlight"><pre><span></span><code>docker-compose logs --tail=20
 </code></pre></div>
+<p>Linux kernel security may be disabled on private servers, especially if you have no experience
+with configuring it properly. Use the commands <code>chmod</code> and <code>chown</code> to fix file system permissions
+on Linux and macOS.
+Available disk space can be displayed with <code>df -h</code>. The size of virtual disks and memory can be
+increased in Docker settings.</p>
 <h3 id="how-can-i-uninstall-photoprism">How can I uninstall PhotoPrism?<a class="headerlink" href="#how-can-i-uninstall-photoprism" title="Permanent link">&para;</a></h3>
 <p>This depends on how you installed it. If you're running PhotoPrism with Docker Compose, 
 this command will stop and remove the Docker container:</p>
