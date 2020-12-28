@@ -2115,7 +2115,7 @@ The <em>originals</em> folder must be readable, while <em>storage</em> must be r
 and sign in using the password set in <code>PHOTOPRISM_ADMIN_PASSWORD</code>.
 You may change it in Settings, or using the <code>photoprism passwd</code> command in a terminal.</p>
 <p>The port and other basic settings can be changed in <code>docker-compose.yml</code>.
-Remember to stop and re-create the container whenever configuration values changed:</p>
+Remember to stop and re-create the container whenever configuration values have been changed:</p>
 <div class="highlight"><pre><span></span><code>docker-compose stop photoprism
 docker-compose up -d --no-deps photoprism
 </code></pre></div>
