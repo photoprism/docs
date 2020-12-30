@@ -2129,8 +2129,8 @@ A future release will additionally provide public events' data, so that albums o
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="privacy">Privacy<a class="headerlink" href="#privacy" title="Permanent link">&para;</a></h2>
-<p>Reverse geocoding requests won't be logged. Location data is cached though so 
-that it can be used to serve subsequent requests. 
+<p>Reverse geocoding requests won't be logged. Location data is cached though so
+that it can be used to serve subsequent requests.
 Because of HTTPS, your internet provider can't see the exact request - only the fact that you exchanged data with our backend.</p>
 <p>Our API approximates coordinates, encodes them with <a href="https://s2geometry.io/resources/s2cell_statistics.html">S2</a>,
 and doesn't care about street or house number:</p>
@@ -2144,7 +2144,7 @@ and doesn't care about street or house number:</p>
 <ul>
 <li><a href="https://tegola.io/">https://tegola.io/</a> - An open source vector tile server written in Go</li>
 <li><a href="https://tegola.io/tutorials/tegola-with-open-layers/">https://tegola.io/tutorials/tegola-with-open-layers/</a> - Using Tegola with OpenLayers</li>
-<li><a href="https://github.com/go-spatial/tegola-osm">https://github.com/go-spatial/tegola-osm</a> - scripts for importing and running a mirror of OSM with tegola </li>
+<li><a href="https://github.com/go-spatial/tegola-osm">https://github.com/go-spatial/tegola-osm</a> - scripts for importing and running a mirror of OSM with tegola</li>
 <li><a href="https://pelias.io/">https://pelias.io/</a> - Pelias Geocoder (<a href="https://github.com/pelias/pelias">GitHub</a>)</li>
 <li><a href="https://github.com/Leaflet/Leaflet">https://github.com/Leaflet/Leaflet</a> - JavaScript library for mobile-friendly interactive maps</li>
 <li><a href="https://github.com/tidwall/tile38">https://github.com/tidwall/tile38</a> - a geospatial database and realtime geofencing server</li>
@@ -2160,7 +2160,7 @@ and doesn't care about street or house number:</p>
 </ul>
 <h2 id="openstreetmap">OpenStreetMap<a class="headerlink" href="#openstreetmap" title="Permanent link">&para;</a></h2>
 <p>At the moment, we use the <a href="https://wiki.openstreetmap.org/wiki/Nominatim#Reverse_Geocoding">reverse lookup API</a> of OpenStreetMap as well as the their tiles for our Leaflet-based Places page.</p>
-<p>Code: <a href="https://github.com/photoprism/photoprism/blob/develop/internal/photoprism/openstreetmap.go">https://github.com/photoprism/photoprism/blob/develop/internal/photoprism/openstreetmap.go</a></p>
+<p>Code: <a href="https://github.com/photoprism/photoprism/blob/develop/internal/maps/osm/location.go">internal/maps/osm/location.go</a></p>
 <h2 id="commercial-maps">Commercial Maps<a class="headerlink" href="#commercial-maps" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://developers.google.com/maps/documentation/">https://developers.google.com/maps/documentation/</a></li>
