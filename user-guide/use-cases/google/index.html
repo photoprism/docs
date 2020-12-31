@@ -1218,9 +1218,45 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Export files from Google Photos
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
     <a href="./" class="md-nav__link md-nav__link--active">
       Export files from Google Photos
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#importing-photos-from-google-photos" class="md-nav__link">
+    Importing Photos from Google Photos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-imported" class="md-nav__link">
+    What is imported?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -1234,6 +1270,19 @@
   <li class="md-nav__item">
     <a href="../flickr/" class="md-nav__link">
       Export files from Flickr
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../dropbox/" class="md-nav__link">
+      Sync files from Dropbox
     </a>
   </li>
 
@@ -1960,6 +2009,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#importing-photos-from-google-photos" class="md-nav__link">
+    Importing Photos from Google Photos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-imported" class="md-nav__link">
+    What is imported?
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1976,16 +2047,68 @@
                 
                 
                 <h1 id="export-files-from-google-photos">Export files from Google Photos<a class="headerlink" href="#export-files-from-google-photos" title="Permanent link">&para;</a></h1>
-<!--@Micha what do we currently import from Googles json? 
-@Micha what might we import later? -->
-
+<p>It's possible to seamlessly migrate your photos from Google Photos to PhotoPrism.</p>
+<p>In order to get your original resolution images and all associated metadata (such as geolocation information),
+we have to use <a href="https://takeout.google.com/">Google Takeout</a>.</p>
+<h2 id="importing-photos-from-google-photos">Importing Photos from Google Photos<a class="headerlink" href="#importing-photos-from-google-photos" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Go to <a href="https://takeout.google.com/">https://takeout.google.com/</a></li>
-<li>Trigger the <em>export</em> of your Google Photos Data</li>
-<li>Depending on the amount of photos it can take a few days for your data to be exported</li>
-<li><em>Download</em> your data and add it to your <em>originals directory</em> (including json files)</li>
+<li>Click <code>Deselect all</code> then check only <code>Google Photos</code>.</li>
+<li>Trigger the <em>export</em> of your Google Photos Data.</li>
+<li>Depending on the number of photos, it can take a few days for your data to be exported</li>
+<li><em>Download</em> your data and extract all archives into to your <em>originals directory</em><ul>
+<li>the folder should include the photos themselves, alongside json files for each of the photos</li>
+</ul>
+</li>
 <li>Start <a href="../../library/indexing/"><em>indexing</em></a></li>
 </ol>
+<h2 id="what-is-imported">What is imported?<a class="headerlink" href="#what-is-imported" title="Permanent link">&para;</a></h2>
+<p>Google Takeout exports the following;</p>
+<table>
+<thead>
+<tr>
+<th align="left">Data Type</th>
+<th align="left">Description</th>
+<th align="left">Format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Photos</td>
+<td align="left">Unedited and edited photos contained in each album.</td>
+<td align="left">Original format/PNG/JPG/WEBP</td>
+</tr>
+<tr>
+<td align="left">Videos</td>
+<td align="left">Videos contained in each album.</td>
+<td align="left">Original format/MP4</td>
+</tr>
+<tr>
+<td align="left">Album metadata</td>
+<td align="left">Data associated with each album, such as title or description.</td>
+<td align="left">JSON</td>
+</tr>
+<tr>
+<td align="left">Photo metadata</td>
+<td align="left">Data associated with each photo or video, such as creation time or comments.</td>
+<td align="left">JSON</td>
+</tr>
+</tbody>
+</table>
+<p>The format exported from Google Photos depends on the <a href="https://photos.google.com/settings">quality chosen</a>
+when uploaded to Google Photos; 'High' or 'Original'.</p>
+<p>Metadata is read by PhotoPrism from the exported JSON files for each photo.
+The following fields are saved;</p>
+<ul>
+<li>Title</li>
+<li>Description</li>
+<li>Number of Views</li>
+<li>Geolocation Info (lat/long)</li>
+<li>Date/Time Taken</li>
+<li>Date/Time Created</li>
+<li>Date/Time Updated</li>
+</ul>
+<p>Albums from Google Photos are replicated in PhotoPrism.</p>
                 
               
               
