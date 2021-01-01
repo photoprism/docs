@@ -2061,7 +2061,7 @@ see <a href="../docker-compose/">Setup Using Docker Compose</a> and <a href="../
 <p>Please change <code>PHOTOPRISM_ADMIN_PASSWORD</code> so that PhotoPrism starts with a secure <strong>initial password</strong>.
 Never use <code>photoprism</code> or <code>insecure</code> as password if you're running it on a public server.</p>
 </div>
-<h2 id="system-requirements">System Requirements<a class="headerlink" href="#system-requirements" title="Permanent link">&para;</a></h2>
+<h3 id="system-requirements">System Requirements<a class="headerlink" href="#system-requirements" title="Permanent link">&para;</a></h3>
 <p>You need to <a href="https://www.raspberrypi.org/documentation/installation/installing-images/README.md">boot</a>
 your Raspberry Pi &frac34; with the parameter <code>arm_64bit=1</code> in <code>config.txt</code> in order to use this image.
 Alternatively, you can run the image on <a href="https://github.com/guysoft/UbuntuDockerPi">UbuntuDockerPi</a>.
@@ -2081,7 +2081,12 @@ As a measure of last resort, you may additionally disable image classification u
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">seccomp:unconfined</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">apparmor:unconfined</span>
 </code></pre></div>
-<h2 id="command-reference">Command Reference<a class="headerlink" href="#command-reference" title="Permanent link">&para;</a></h2>
+<h3 id="command-reference">Command Reference<a class="headerlink" href="#command-reference" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">sudo</p>
+<p>Please prefix with <code>sudo</code> if the current user doesn't have permission
+to run Docker commands.</p>
+</div>
 <table>
 <thead>
 <tr>
@@ -2144,11 +2149,6 @@ As a measure of last resort, you may additionally disable image classification u
 </tr>
 </tbody>
 </table>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Please prefix with <code>sudo</code> if the current user doesn't have permission
-to run Docker commands.</p>
-</div>
                 
               
               
