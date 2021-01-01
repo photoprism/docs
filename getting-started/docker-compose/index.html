@@ -416,6 +416,19 @@
     Step 3: Index your library
   </a>
   
+    <nav class="md-nav" aria-label="Step 3: Index your library">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#command-reference" class="md-nav__link">
+    Command Reference
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -2039,6 +2052,19 @@
     Step 3: Index your library
   </a>
   
+    <nav class="md-nav" aria-label="Step 3: Index your library">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#command-reference" class="md-nav__link">
+    Command Reference
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -2152,6 +2178,11 @@ in the <em>storage</em> folder, so that your originals can be mounted read-only.
 You may configure PhotoPrism to store it in the same folder, next to the original, instead.</p>
 <p>Pictures will become visible one after another. You can watch the indexer working in the terminal, 
 or the <em>Logs</em> tab in <em>Library</em>.</p>
+<p>Your photos and videos can now be browsed, organized in albums, and shared with others.
+You may continue using your favorite tools, like Photoshop or Lightroom,
+to edit, add and delete files in the <em>originals</em> folder.
+Run <code>photoprism index</code>, or go to <em>Library</em> and click <em>Start</em>, to update the index as needed.</p>
+<p>Easy, isn't it?</p>
 <div class="admonition tip">
 <p class="admonition-title">Reducing Server Load</p>
 <p>If you're running out of memory - or other system resources - while indexing, please limit the 
@@ -2166,17 +2197,74 @@ As a measure of last resort, you may additionally disable image classification u
 <p><code>photoprism index --all</code> will re-index all originals, including already indexed and unchanged files. This may be
 necessary after upgrading, especially to new major versions.</p>
 </div>
-<p>To import files, run <code>photoprism import</code> after putting them in the <em>import</em> folder:</p>
-<div class="highlight"><pre><span></span><code>docker-compose exec photoprism photoprism import
-</code></pre></div>
-<p>For a list of commands and config options run:</p>
-<div class="highlight"><pre><span></span><code>docker-compose exec photoprism photoprism help
-</code></pre></div>
-<p>Your photos and videos can now be browsed, organized in albums, and shared with others.
-You may continue using your favorite tools, like Photoshop or Lightroom,
-to edit, add and delete files in the <em>originals</em> folder. 
-Run <code>photoprism index</code>, or go to <em>Library</em> and click <em>Start</em>, to update the index as needed.
-Easy, isn't it?</p>
+<h4 id="command-reference">Command Reference<a class="headerlink" href="#command-reference" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Update</td>
+<td><code>docker-compose pull photoprism</code></td>
+</tr>
+<tr>
+<td>Stop</td>
+<td><code>docker-compose stop photoprism</code></td>
+</tr>
+<tr>
+<td>Start</td>
+<td><code>docker-compose up -d photoprism</code></td>
+</tr>
+<tr>
+<td>Logs</td>
+<td><code>docker-compose logs --tail=25 -f</code></td>
+</tr>
+<tr>
+<td>Terminal</td>
+<td><code>docker-compose exec photoprism bash</code></td>
+</tr>
+<tr>
+<td>Help</td>
+<td><code>docker-compose exec photoprism photoprism help</code></td>
+</tr>
+<tr>
+<td>Config</td>
+<td><code>docker-compose exec photoprism photoprism config</code></td>
+</tr>
+<tr>
+<td>Reset</td>
+<td><code>docker-compose exec photoprism photoprism reset</code></td>
+</tr>
+<tr>
+<td>Backup</td>
+<td><code>docker-compose exec photoprism photoprism backup -a -i</code></td>
+</tr>
+<tr>
+<td>Restore</td>
+<td><code>docker-compose exec photoprism photoprism restore -a -i</code></td>
+</tr>
+<tr>
+<td>Index</td>
+<td><code>docker-compose exec photoprism photoprism index</code></td>
+</tr>
+<tr>
+<td>Reindex</td>
+<td><code>docker-compose exec photoprism photoprism index -a</code></td>
+</tr>
+<tr>
+<td>Import</td>
+<td><code>docker-compose exec photoprism photoprism import</code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please prefix with <code>sudo</code> if the current user doesn't have permission
+to run Docker commands.</p>
+</div>
                 
               
               

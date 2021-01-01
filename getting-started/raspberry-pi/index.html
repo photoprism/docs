@@ -443,6 +443,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#command-reference" class="md-nav__link">
+    Command Reference
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2013,6 +2020,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#command-reference" class="md-nav__link">
+    Command Reference
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2067,6 +2081,74 @@ As a measure of last resort, you may additionally disable image classification u
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">seccomp:unconfined</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">apparmor:unconfined</span>
 </code></pre></div>
+<h2 id="command-reference">Command Reference<a class="headerlink" href="#command-reference" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Update</td>
+<td><code>docker-compose pull photoprism</code></td>
+</tr>
+<tr>
+<td>Stop</td>
+<td><code>docker-compose stop photoprism</code></td>
+</tr>
+<tr>
+<td>Start</td>
+<td><code>docker-compose up -d photoprism</code></td>
+</tr>
+<tr>
+<td>Logs</td>
+<td><code>docker-compose logs --tail=25 -f</code></td>
+</tr>
+<tr>
+<td>Terminal</td>
+<td><code>docker-compose exec photoprism bash</code></td>
+</tr>
+<tr>
+<td>Help</td>
+<td><code>docker-compose exec photoprism photoprism help</code></td>
+</tr>
+<tr>
+<td>Config</td>
+<td><code>docker-compose exec photoprism photoprism config</code></td>
+</tr>
+<tr>
+<td>Reset</td>
+<td><code>docker-compose exec photoprism photoprism reset</code></td>
+</tr>
+<tr>
+<td>Backup</td>
+<td><code>docker-compose exec photoprism photoprism backup -a -i</code></td>
+</tr>
+<tr>
+<td>Restore</td>
+<td><code>docker-compose exec photoprism photoprism restore -a -i</code></td>
+</tr>
+<tr>
+<td>Index</td>
+<td><code>docker-compose exec photoprism photoprism index</code></td>
+</tr>
+<tr>
+<td>Reindex</td>
+<td><code>docker-compose exec photoprism photoprism index -a</code></td>
+</tr>
+<tr>
+<td>Import</td>
+<td><code>docker-compose exec photoprism photoprism import</code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please prefix with <code>sudo</code> if the current user doesn't have permission
+to run Docker commands.</p>
+</div>
                 
               
               
