@@ -2075,6 +2075,13 @@
                 <h1 id="running-photoprism-with-docker">Running PhotoPrism with Docker<a class="headerlink" href="#running-photoprism-with-docker" title="Permanent link">&para;</a></h1>
 <p>These instructions are for users who don't like Docker Compose for any reason and prefer pure Docker instead. If you are not
 sure, try using <a href="../docker-compose/">Docker Compose</a> first.</p>
+<div class="admonition info">
+<p class="admonition-title">Linux</p>
+<p>All commands may have to be prefixed with <code>sudo</code> when not running as root.
+Note that this will change the home directory <code>~</code> to <code>/root</code> in your configuration.
+Kernel security modules such as SELinux have been reported to cause
+<a href="https://docs.photoprism.org/getting-started/faq/#why-is-photoprism-getting-stuck-in-a-restart-loop">issues</a>.</p>
+</div>
 <h3 id="step-1-start-the-server">Step 1: Start the server<a class="headerlink" href="#step-1-start-the-server" title="Permanent link">&para;</a></h3>
 <p>Open a terminal and run this command after replacing <code>~/Pictures</code> with
 the folder containing your personal photo and video collection:</p>
