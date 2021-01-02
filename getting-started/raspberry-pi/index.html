@@ -417,13 +417,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#command-reference" class="md-nav__link">
-    Command Reference
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -2088,13 +2081,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#command-reference" class="md-nav__link">
-    Command Reference
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -2137,6 +2123,12 @@ Alternatively, you may run the image on <a href="https://github.com/guysoft/Ubun
 It's a 64bit Ubuntu Server with Docker pre-installed.</p>
 <p>Indexing large photo and video collections significantly benefits from fast, local SSD storage 
 and enough memory for caching.</p>
+<p>To avoid permission issues, docker-compose.yml should include the following security options:</p>
+<div class="highlight"><pre><span></span><code>  <span class="nt">photoprism</span><span class="p">:</span>
+    <span class="nt">security_opt</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">seccomp:unconfined</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">apparmor:unconfined</span>
+</code></pre></div>
 <div class="admonition tip">
 <p class="admonition-title">Reducing Server Load</p>
 <p>If you're running out of memory - or other system resources - while indexing, please limit the
@@ -2145,79 +2137,6 @@ and enough memory for caching.</p>
 Also make sure your server has <a href="https://opensource.com/article/18/9/swap-space-linux-systems">swap</a>
 configured so that indexing doesn't cause restarts when there are memory usage spikes.
 As a measure of last resort, you may additionally disable image classification using TensorFlow.</p>
-</div>
-<p>To avoid permission issues, docker-compose.yml should include the following security options:</p>
-<div class="highlight"><pre><span></span><code>  <span class="nt">photoprism</span><span class="p">:</span>
-    <span class="nt">security_opt</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">seccomp:unconfined</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">apparmor:unconfined</span>
-</code></pre></div>
-<h3 id="command-reference">Command Reference<a class="headerlink" href="#command-reference" title="Permanent link">&para;</a></h3>
-<p>The help command shows a complete list of commands and config options.
-Use the <code>--help</code> flag to see a detailed command info
-like <code>docker-compose exec photoprism photoprism backup --help</code>.</p>
-<table>
-<thead>
-<tr>
-<th>Action</th>
-<th>Command</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Start</td>
-<td><code>docker-compose up -d</code></td>
-</tr>
-<tr>
-<td>Stop</td>
-<td><code>docker-compose stop</code></td>
-</tr>
-<tr>
-<td>Update</td>
-<td><code>docker-compose pull</code></td>
-</tr>
-<tr>
-<td>View Logs</td>
-<td><code>docker-compose logs --tail=25 -f</code></td>
-</tr>
-<tr>
-<td>Open Terminal</td>
-<td><code>docker-compose exec photoprism bash</code></td>
-</tr>
-<tr>
-<td>Show Help</td>
-<td><code>docker-compose exec photoprism photoprism help</code></td>
-</tr>
-<tr>
-<td>Show Config</td>
-<td><code>docker-compose exec photoprism photoprism config</code></td>
-</tr>
-<tr>
-<td>Reset Database</td>
-<td><code>docker-compose exec photoprism photoprism reset</code></td>
-</tr>
-<tr>
-<td>Backup Database</td>
-<td><code>docker-compose exec photoprism photoprism backup -a -i</code></td>
-</tr>
-<tr>
-<td>Restore Database</td>
-<td><code>docker-compose exec photoprism photoprism restore -a -i</code></td>
-</tr>
-<tr>
-<td>Index Originals</td>
-<td><code>docker-compose exec photoprism photoprism index</code></td>
-</tr>
-<tr>
-<td>Import Files</td>
-<td><code>docker-compose exec photoprism photoprism import</code></td>
-</tr>
-</tbody>
-</table>
-<div class="admonition info">
-<p class="admonition-title">Complete Rescan</p>
-<p><code>photoprism index --all</code> will re-index all originals, including already indexed and unchanged files. This may be
-necessary after upgrading, especially to new major versions.</p>
 </div>
                 
               
