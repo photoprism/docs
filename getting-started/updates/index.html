@@ -440,9 +440,52 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Getting Updates
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
     <a href="./" class="md-nav__link md-nav__link--active">
       Getting Updates
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#docker-compose" class="md-nav__link">
+    Docker Compose
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#watchtower" class="md-nav__link">
+    Watchtower
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pure-docker" class="md-nav__link">
+    Pure Docker
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -2039,6 +2082,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#docker-compose" class="md-nav__link">
+    Docker Compose
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#watchtower" class="md-nav__link">
+    Watchtower
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pure-docker" class="md-nav__link">
+    Pure Docker
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2055,14 +2127,23 @@
                 
                 
                 <h1 id="getting-updates">Getting Updates<a class="headerlink" href="#getting-updates" title="Permanent link">&para;</a></h1>
-<p>Open a terminal and run the following command to pull the latest container image:</p>
-<div class="highlight"><pre><span></span><code>docker pull photoprism/photoprism:latest
-</code></pre></div>
-<p>For our Raspberry Pi version:</p>
-<div class="highlight"><pre><span></span><code>docker pull photoprism/photoprism-arm64:latest
+<h3 id="docker-compose">Docker Compose<a class="headerlink" href="#docker-compose" title="Permanent link">&para;</a></h3>
+<p>Open a terminal on your server, and run the following commands to pull the latest container image and restart PhotoPrism:</p>
+<div class="highlight"><pre><span></span><code>docker-compose pull photoprism
+docker-compose stop photoprism
+docker-compose up -d photoprism
 </code></pre></div>
 <p>Pulling a new version can take several minutes, depending on your internet connection.</p>
-<p>Adding <a href="https://github.com/containrrr/watchtower">Watchtower</a> as a service in your <code>docker-compose.yml</code> will 
+<p>Advanced users may put this into a <code>Makefile</code> so that they only need to type a single command.</p>
+<p>See <a href="../docker-compose/">Setup Using Docker Compose</a> for a full command reference.</p>
+<div class="admonition tip">
+<p class="admonition-title">Preview Builds</p>
+<p>Update your <code>docker-compose.yml</code> to use <code>photoprism/photoprism:preview</code> instead of 
+<code>photoprism/photoprism:latest</code> for testing our latest development preview.
+The image name for ARM64 is <code>photoprism/photoprism-arm64:preview</code>.</p>
+</div>
+<h3 id="watchtower">Watchtower<a class="headerlink" href="#watchtower" title="Permanent link">&para;</a></h3>
+<p>Adding <a href="https://github.com/containrrr/watchtower">Watchtower</a> as a service to your <code>docker-compose.yml</code> will
 automatically keep images up-to-date:</p>
 <div class="highlight"><pre><span></span><code>services:
   watchtower:
@@ -2071,6 +2152,24 @@ automatically keep images up-to-date:</p>
     volumes:
       - <span class="s2">&quot;/var/run/docker.sock:/var/run/docker.sock&quot;</span>
 </code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Automatic updates may interrupt indexing and importing operations. 
+Only enable Watchtower if you are comfortable with this.</p>
+</div>
+<h3 id="pure-docker">Pure Docker<a class="headerlink" href="#pure-docker" title="Permanent link">&para;</a></h3>
+<p>Open a terminal on your server, and run the following command to pull the latest container image:</p>
+<div class="highlight"><pre><span></span><code>docker pull photoprism/photoprism:latest
+</code></pre></div>
+<p>For our Raspberry Pi / ARM64 version:</p>
+<div class="highlight"><pre><span></span><code>docker pull photoprism/photoprism-arm64:latest
+</code></pre></div>
+<p>See <a href="../docker/">Running PhotoPrism with Docker</a> for a full command reference.</p>
+<div class="admonition tip">
+<p class="admonition-title">Preview Builds</p>
+<p>Use <code>photoprism/photoprism:preview</code> instead of <code>photoprism/photoprism:latest</code> for testing 
+our latest development preview. The image name for ARM64 is <code>photoprism/photoprism-arm64:preview</code>.</p>
+</div>
                 
               
               
