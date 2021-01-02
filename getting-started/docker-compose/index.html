@@ -2172,11 +2172,8 @@ configured so that indexing doesn't cause restarts when there are memory usage s
 As a measure of last resort, you may additionally disable image classification using TensorFlow.</p>
 </div>
 <h3 id="command-reference">Command Reference<a class="headerlink" href="#command-reference" title="Permanent link">&para;</a></h3>
-<div class="admonition info">
-<p class="admonition-title">sudo</p>
-<p>Please prefix with <code>sudo</code> if the current user doesn't have permission
-to run Docker commands.</p>
-</div>
+<p>All commands may have to be prefixed with <code>sudo</code> when not running as root.
+Note that this will change the home directory <code>~</code> to <code>/root</code> in your configuration.</p>
 <table>
 <thead>
 <tr>
@@ -2239,7 +2236,7 @@ to run Docker commands.</p>
 </tr>
 </tbody>
 </table>
-<div class="admonition note">
+<div class="admonition info">
 <p class="admonition-title">Complete Rescan</p>
 <p><code>photoprism index --all</code> will re-index all originals, including already indexed and unchanged files. This may be
 necessary after upgrading, especially to new major versions.</p>
