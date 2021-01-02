@@ -2099,8 +2099,6 @@
                 
                 
                 <h1 id="running-photoprism-on-a-raspberry-pi">Running PhotoPrism on a Raspberry Pi<a class="headerlink" href="#running-photoprism-on-a-raspberry-pi" title="Permanent link">&para;</a></h1>
-<p>Big thank you to <a href="https://github.com/guysoft">Guy Sheffer</a> for
-<a href="https://github.com/photoprism/photoprism/issues/109">building</a> this!</p>
 <p>Download our <a href="https://dl.photoprism.org/docker/arm64/docker-compose.yml">docker-compose.yml</a> file
 (right click and <em>Save Link As...</em> or use <code>wget</code>) to a folder of your choice, 
 change the <a href="../config-options/">configuration</a> as needed, and run <code>docker-compose up</code> to start PhotoPrism:</p>
@@ -2129,6 +2127,8 @@ and enough memory for caching.</p>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">seccomp:unconfined</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">apparmor:unconfined</span>
 </code></pre></div>
+<p>Big thank you to <a href="https://github.com/guysoft">Guy Sheffer</a> for
+<a href="https://github.com/photoprism/photoprism/issues/109">building</a> this!</p>
 <div class="admonition tip">
 <p class="admonition-title">Reducing Server Load</p>
 <p>If you're running out of memory - or other system resources - while indexing, please limit the
