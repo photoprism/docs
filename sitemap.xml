@@ -20,10 +20,6 @@
      <lastmod>2021-01-02</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/getting-started/kubernetes/</loc>
-     <lastmod>2021-01-02</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
      <loc>https://docs.photoprism.org/getting-started/config-options/</loc>
      <lastmod>2021-01-02</lastmod>
      <changefreq>daily</changefreq>
@@ -53,6 +49,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/getting-started/scalability/</loc>
+     <lastmod>2021-01-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.photoprism.org/getting-started/kubernetes/</loc>
      <lastmod>2021-01-02</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
