@@ -2223,19 +2223,19 @@ to run Docker commands.</p>
 <td><code>docker-compose exec photoprism photoprism config</code></td>
 </tr>
 <tr>
-<td>Reset</td>
+<td>Reset Database</td>
 <td><code>docker-compose exec photoprism photoprism reset</code></td>
 </tr>
 <tr>
-<td>Backup</td>
+<td>Backup Database</td>
 <td><code>docker-compose exec photoprism photoprism backup -a -i</code></td>
 </tr>
 <tr>
-<td>Restore</td>
+<td>Restore Database</td>
 <td><code>docker-compose exec photoprism photoprism restore -a -i</code></td>
 </tr>
 <tr>
-<td>Index</td>
+<td>Index Library</td>
 <td><code>docker-compose exec photoprism photoprism index</code></td>
 </tr>
 <tr>
@@ -2243,12 +2243,12 @@ to run Docker commands.</p>
 <td><code>docker-compose exec photoprism photoprism index --all</code></td>
 </tr>
 <tr>
-<td>Import</td>
+<td>Import Files</td>
 <td><code>docker-compose exec photoprism photoprism import</code></td>
 </tr>
 </tbody>
 </table>
-<div class="admonition tip">
+<div class="admonition note">
 <p class="admonition-title">Complete Rescan</p>
 <p><code>photoprism index --all</code> will re-index all originals, including already indexed and unchanged files. This may be
 necessary after upgrading, especially to new major versions.</p>
