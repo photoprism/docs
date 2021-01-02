@@ -431,20 +431,33 @@
 
 
 
+  <li class="md-nav__item">
+    <a href="../updates/" class="md-nav__link">
+      Getting Updates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
   
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-8" type="checkbox" id="nav-1-8" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-9" type="checkbox" id="nav-1-9" >
     
-    <label class="md-nav__link" for="nav-1-8">
-      Proxies
+    <label class="md-nav__link" for="nav-1-9">
+      Reverse Proxies
       <span class="md-nav__icon md-icon"></span>
     </label>
-    <nav class="md-nav" aria-label="Proxies" data-md-level="2">
-      <label class="md-nav__title" for="nav-1-8">
+    <nav class="md-nav" aria-label="Reverse Proxies" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-9">
         <span class="md-nav__icon md-icon"></span>
-        Proxies
+        Reverse Proxies
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -456,8 +469,60 @@
 
 
   <li class="md-nav__item">
-    <a href="../proxies/advanced-nginx-proxy-setup/" class="md-nav__link">
-      Nginx
+    <a href="../proxies/traefik/" class="md-nav__link">
+      Traefik
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../proxies/caddy-1/" class="md-nav__link">
+      Caddy 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../proxies/caddy-2/" class="md-nav__link">
+      Caddy 2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../proxies/nginx/" class="md-nav__link">
+      NGINX
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../proxies/apache-2/" class="md-nav__link">
+      Apache 2.4
     </a>
   </li>
 
@@ -473,9 +538,33 @@
 
 
 
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-10" type="checkbox" id="nav-1-10" >
+    
+    <label class="md-nav__link" for="nav-1-10">
+      Advanced
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Advanced" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-10">
+        <span class="md-nav__icon md-icon"></span>
+        Advanced
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
   <li class="md-nav__item">
-    <a href="../updates/" class="md-nav__link">
-      Updates
+    <a href="../scalability/" class="md-nav__link">
+      Scalability
     </a>
   </li>
 
@@ -500,9 +589,14 @@
 
 
   <li class="md-nav__item">
-    <a href="../scalability/" class="md-nav__link">
-      Scalability
+    <a href="../proxies/advanced-nginx-proxy-setup/" class="md-nav__link">
+      NGINX
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -594,6 +688,13 @@
         <li class="md-nav__item">
   <a href="#why-is-my-storage-folder-so-large-what-is-in-it" class="md-nav__link">
     Why is my storage folder so large? What is in it?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#can-i-skip-creating-thumbnails-completely" class="md-nav__link">
+    Can I skip creating thumbnails completely?
   </a>
   
 </li>
@@ -2154,6 +2255,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#can-i-skip-creating-thumbnails-completely" class="md-nav__link">
+    Can I skip creating thumbnails completely?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#im-having-issues-understanding-the-difference-between-the-import-and-originals-folders" class="md-nav__link">
     I'm having issues understanding the difference between the import and originals folders?
   </a>
@@ -2329,6 +2437,10 @@ after changing <a href="../config-options/">config values</a>.</p>
 <p>You may also choose to render thumbnails on-demand if you have a fast CPU and enough memory. 
 However, storage is typically affordable enough for most users to go for better quality and 
 performance instead.</p>
+<h3 id="can-i-skip-creating-thumbnails-completely">Can I skip creating thumbnails completely?<a class="headerlink" href="#can-i-skip-creating-thumbnails-completely" title="Permanent link">&para;</a></h3>
+<p>The smallest <a href="../../user-guide/settings/advanced/">configurable</a> limit is 720px for consumption 
+by the indexer and TensorFlow during image classification. Recreating and keeping them in memory
+is too demanding, even for the most powerful servers.</p>
 <h3 id="im-having-issues-understanding-the-difference-between-the-import-and-originals-folders">I'm having issues understanding the difference between the import and originals folders?<a class="headerlink" href="#im-having-issues-understanding-the-difference-between-the-import-and-originals-folders" title="Permanent link">&para;</a></h3>
 <p>Import is a temporary folder from which you can move or copy files to <em>originals</em> in a structured way that avoids duplicates.
 Most users with existing collections will want to index their <em>originals</em> folder without import, 
@@ -2460,7 +2572,7 @@ Professional users are welcome to <a href="../../contact/">reach out</a> to us f
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../scalability/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../proxies/advanced-nginx-proxy-setup/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -2469,7 +2581,7 @@ Professional users are welcome to <a href="../../contact/">reach out</a> to us f
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Scalability
+                NGINX
               </div>
             </div>
           </a>

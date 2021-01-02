@@ -28,11 +28,31 @@
      <lastmod>2021-01-02</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/getting-started/proxies/advanced-nginx-proxy-setup/</loc>
+     <loc>https://docs.photoprism.org/getting-started/updates/</loc>
      <lastmod>2021-01-02</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/getting-started/updates/</loc>
+     <loc>https://docs.photoprism.org/getting-started/proxies/traefik/</loc>
+     <lastmod>2021-01-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.photoprism.org/getting-started/proxies/caddy-1/</loc>
+     <lastmod>2021-01-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.photoprism.org/getting-started/proxies/caddy-2/</loc>
+     <lastmod>2021-01-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.photoprism.org/getting-started/proxies/nginx/</loc>
+     <lastmod>2021-01-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.photoprism.org/getting-started/proxies/apache-2/</loc>
+     <lastmod>2021-01-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.photoprism.org/getting-started/scalability/</loc>
      <lastmod>2021-01-02</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -40,7 +60,7 @@
      <lastmod>2021-01-02</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.photoprism.org/getting-started/scalability/</loc>
+     <loc>https://docs.photoprism.org/getting-started/proxies/advanced-nginx-proxy-setup/</loc>
      <lastmod>2021-01-02</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
