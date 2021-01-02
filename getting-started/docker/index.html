@@ -444,6 +444,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#command-reference" class="md-nav__link">
+    Command Reference
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2041,6 +2048,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#command-reference" class="md-nav__link">
+    Command Reference
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2117,12 +2131,17 @@ The <em>originals</em> folder must be readable, while <em>storage</em> must be r
 Alternatively, you can run this command in a terminal to index all files in your <em>originals</em> folder:</p>
 <div class="highlight"><pre><span></span><code>docker exec -ti photoprism photoprism index
 </code></pre></div>
-<p>While indexing, a JPEG sidecar file may automatically be created for RAW, HEIF, TIFF, PNG, BMP, 
+<p>While indexing, a JPEG sidecar file may automatically be created for RAW, HEIF, TIFF, PNG, BMP,
 and GIF files. It is required for classification and resampling. By default, it will be created
 in the <em>storage</em> folder, so that your originals can be mounted read-only.
 You may configure PhotoPrism to store it in the same folder, next to the original, instead.</p>
-<p>Pictures will become visible one after another. You can watch the indexer working in the terminal, 
+<p>Pictures will become visible one after another. You can watch the indexer working in the terminal,
 or the <em>Logs</em> tab in <em>Library</em>.</p>
+<p>Your photos and videos can now be browsed, organized in albums, and shared with others.
+You may continue using your favorite tools, like Photoshop or Lightroom,
+to edit, add and delete files in the <em>originals</em> folder.
+Run <code>photoprism index</code>, or go to <em>Library</em> and click <em>Start</em>, to update the index as needed.</p>
+<p>Easy, isn't it?</p>
 <div class="admonition tip">
 <p class="admonition-title">Reducing Server Load</p>
 <p>If you're running out of memory - or other system resources - while indexing, please limit the
@@ -2132,11 +2151,6 @@ Also make sure your server has <a href="https://opensource.com/article/18/9/swap
 configured so that indexing doesn't cause restarts when there are memory usage spikes.
 As a measure of last resort, you may additionally disable image classification using TensorFlow.</p>
 </div>
-<div class="admonition info">
-<p class="admonition-title">Complete Rescan</p>
-<p><code>photoprism index --all</code> will re-index all originals, including already indexed and unchanged files. This may be
-necessary after upgrading, especially to new major versions.</p>
-</div>
 <h3 id="step-3-when-youre-done">Step 3: When you're done...<a class="headerlink" href="#step-3-when-youre-done" title="Permanent link">&para;</a></h3>
 <p>You can stop the server and start it again using the following commands:</p>
 <div class="highlight"><pre><span></span><code>docker stop photoprism
@@ -2145,6 +2159,69 @@ docker start photoprism
 <p>To remove the container completely:</p>
 <div class="highlight"><pre><span></span><code>docker rm -f photoprism
 </code></pre></div>
+<h3 id="command-reference">Command Reference<a class="headerlink" href="#command-reference" title="Permanent link">&para;</a></h3>
+<p>The help command shows a complete list of commands and config options.
+Use the <code>--help</code> flag to see a detailed command info
+like <code>docker exec -ti photoprism photoprism backup --help</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Update</td>
+<td><code>docker pull photoprism/photoprism:latest</code></td>
+</tr>
+<tr>
+<td>Remove Container</td>
+<td><code>docker rm -f photoprism</code></td>
+</tr>
+<tr>
+<td>View Logs</td>
+<td><code>docker logs --tail=25 -f photoprism</code></td>
+</tr>
+<tr>
+<td>Open Terminal</td>
+<td><code>docker exec -ti photoprism bash</code></td>
+</tr>
+<tr>
+<td>Show Help</td>
+<td><code>docker exec -ti photoprism photoprism help</code></td>
+</tr>
+<tr>
+<td>Show Config</td>
+<td><code>docker exec -ti photoprism photoprism config</code></td>
+</tr>
+<tr>
+<td>Reset Database</td>
+<td><code>docker exec -ti photoprism photoprism reset</code></td>
+</tr>
+<tr>
+<td>Backup Database</td>
+<td><code>docker exec -ti photoprism photoprism backup -a -i</code></td>
+</tr>
+<tr>
+<td>Restore Database</td>
+<td><code>docker exec -ti photoprism photoprism restore -a -i</code></td>
+</tr>
+<tr>
+<td>Index Originals</td>
+<td><code>docker exec -ti photoprism photoprism index</code></td>
+</tr>
+<tr>
+<td>Import Files</td>
+<td><code>docker exec -ti photoprism photoprism import</code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Complete Rescan</p>
+<p><code>photoprism index --all</code> will re-index all originals, including already indexed and unchanged files. This may be
+necessary after upgrading, especially to new major versions.</p>
+</div>
                 
               
               
