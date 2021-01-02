@@ -2189,7 +2189,8 @@ and change the <a href="../config-options/">configuration</a> as needed:</p>
 <div class="admonition attention">
 <p class="admonition-title">Change Password</p>
 <p>Please change <code>PHOTOPRISM_ADMIN_PASSWORD</code> so that PhotoPrism starts with a secure <strong>initial password</strong>.
-Never use <code>photoprism</code>, or other easy-to-guess passwords, on a public server.</p>
+Never use <code>photoprism</code>, or other easy-to-guess passwords, on a public server.
+A minimum length of 4 characters is required.</p>
 </div>
 <p>Your personal photo and video collection will be mounted from <code>~/Pictures</code> by default,
 where <code>~</code> is a placeholder for your <a href="https://en.wikipedia.org/wiki/Home_directory">home directory</a>.
@@ -2228,7 +2229,8 @@ The <em>originals</em> folder must be readable, while <em>storage</em> must be r
 </code></pre></div>
 <p>Now open <a href="http://localhost:2342/">http://localhost:2342/</a> in a Web browser to see the user interface
 and sign in using the password set in <code>PHOTOPRISM_ADMIN_PASSWORD</code>.
-You may change it in Settings, or using the <code>photoprism passwd</code> command in a terminal.</p>
+You may change it in Settings, or using the <code>photoprism passwd</code> command in a terminal.
+A minimum length of 4 characters is required.</p>
 <p>The port and other basic settings may be changed in <code>docker-compose.yml</code>.
 Remember to stop and re-create the container whenever configuration values have been changed:</p>
 <div class="highlight"><pre><span></span><code>docker-compose stop photoprism
