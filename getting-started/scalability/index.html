@@ -430,41 +430,19 @@
           
 
 
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
-      Scalability
-    </a>
-    
-  </li>
-
-        
-          
-          
-          
-
-
 
   
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-9" type="checkbox" id="nav-1-9" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-8" type="checkbox" id="nav-1-8" >
     
-    <label class="md-nav__link" for="nav-1-9">
+    <label class="md-nav__link" for="nav-1-8">
       Proxies
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Proxies" data-md-level="2">
-      <label class="md-nav__title" for="nav-1-9">
+      <label class="md-nav__title" for="nav-1-8">
         <span class="md-nav__icon md-icon"></span>
         Proxies
       </label>
@@ -520,11 +498,20 @@
           
 
 
+  
 
-  <li class="md-nav__item">
-    <a href="../support/" class="md-nav__link">
-      Support
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Scalability
     </a>
+    
   </li>
 
         
@@ -1974,23 +1961,26 @@
                 
                 
                 <h1 id="scalability-distributed-computing-and-cloud-storage">Scalability, Distributed Computing and Cloud Storage<a class="headerlink" href="#scalability-distributed-computing-and-cloud-storage" title="Permanent link">&para;</a></h1>
-<p>We aim to get the most of what is there, both in terms of hardware and development resources.
-So far, development and testing has been focused on smaller servers and typical home users with 
-less than 200,000 files. Given enough time and demand, it's within the scope of this project
-to scale from a Raspberry Pi up to AMD EPYC servers with 64 or even more cores. </p>
+<p>Our team aims to get the most of what is there.
+Development and testing have been focused on smaller servers and typical home users with 
+less than 500,000 files.</p>
+<p>While PhotoPrism has been reported to run well on 24 cores or more, we can not invest a 
+lot of time in optimizing it for enterprise-class servers while there are more important 
+feature requests waiting - and most users don't actually own such hardware.</p>
 <p>If the primary focus was on larger servers or clusters, the current architecture might
-be different in some aspects and had other tradeoffs.
+be different in some aspects, and had other tradeoffs.
 For example, relying on database locking and conflict resolution tends 
 to be inefficient with an increasing number of cores and workers.
 On the other hand, this simplifies application logic, 
 especially when running multiple instances on the same index.</p>
 <p>Traditional database servers like MariaDB might be slower and less powerful 
-than specialized NoSQL or in-memory engines, but are better documented and easier 
-to maintain for the majority of users.
-Also, there is no native support for sharding or cloud storage APIs like S3. 
-Instead, PhotoPrism prefers a fast, local solid-state drive.</p>
-<p>We welcome pull requests with optimizations and are <a href="../../contact/">happy to assist</a> 
-if you need a custom solution that runs well in a corporate cloud environment.</p>
+than specialized NoSQL or in-memory engines. They are often better documented and easier 
+to maintain for the majority of users though.</p>
+<p>Also, there is no native support for sharding or cloud storage APIs like S3. 
+Instead, PhotoPrism prefers a fast, local solid-state drive. Support for S3 may be
+added later for backing up originals.</p>
+<p>We are <a href="https://photoprism.app/contact">happy to assist</a> if you need a custom solution 
+that runs well in a corporate cloud environment.</p>
                 
               
               
@@ -2009,7 +1999,7 @@ if you need a custom solution that runs well in a corporate cloud environment.</
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../config-options/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../caching/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -2018,19 +2008,19 @@ if you need a custom solution that runs well in a corporate cloud environment.</
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Config Options
+                Caching
               </div>
             </div>
           </a>
         
         
-          <a href="../proxies/advanced-nginx-proxy-setup/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../faq/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Nginx
+                FAQ
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
