@@ -1791,6 +1791,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../../../developer-guide/library/encryption/" class="md-nav__link">
+      Encryption
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../../../developer-guide/library/converting/" class="md-nav__link">
       Converting RAW to JPEG
     </a>
@@ -2250,8 +2263,10 @@
 <p>4.3. in <em>Task Settings</em> fill in:</p>
 <p>4.3.1. Run command: copy/paste the user defined script below. Check if the ports are available on your NAS and that the path to the volume is correct (it should point to the folder created in step 3 above):
   <div class="highlight"><pre><span></span><code>docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v /volume1/docker/portainer:/data portainer/portainer-ce
-</code></pre></div>
-5. click <em>OK</em>; then, on the list of scheduled tasks, select the newly created task and hit <em>Run</em>; follow the prompts to install Portainer; in the end you can delete the task or keep it – just uncheck the <em>enabled</em> checkbox to disable the task.</p>
+</code></pre></div></p>
+</li>
+<li>
+<p>click <em>OK</em>; then, on the list of scheduled tasks, select the newly created task and hit <em>Run</em>; follow the prompts to install Portainer; in the end you can delete the task or keep it – just uncheck the <em>enabled</em> checkbox to disable the task.</p>
 </li>
 <li>
 <p>Portainer should now be acessible in your local network in http://[YOUR-LOCAL-IP]:9000/.</p>

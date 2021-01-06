@@ -13,14 +13,14 @@
         <meta name="author" content="PhotoPrism.org">
       
       
-        <link rel="canonical" href="https://docs.photoprism.org/developer-guide/metadata/classification/">
+        <link rel="canonical" href="https://docs.photoprism.org/developer-guide/library/encryption/">
       
       <link rel="shortcut icon" href="../../../img/favicon-16.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.3">
     
     
       
-        <title>Image Classification - PhotoPrism</title>
+        <title>Encryption - PhotoPrism</title>
       
     
     
@@ -55,14 +55,14 @@
     
   
   <meta property="og:type" content="website">
-  <meta property="og:title" content="PhotoPrism - Image Classification">
+  <meta property="og:title" content="PhotoPrism - Encryption">
   <meta property="og:description" content="User Guide">
-  <meta property="og:url" content="https://docs.photoprism.org/developer-guide/metadata/classification/">
+  <meta property="og:url" content="https://docs.photoprism.org/developer-guide/library/encryption/">
   <meta property="og:image" content="https://dl.photoprism.org/assets/img/preview.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@browseyourlife">
   <meta name="twitter:creator" content="@browseyourlife">
-  <meta name="twitter:title" content="PhotoPrism - Image Classification">
+  <meta name="twitter:title" content="PhotoPrism - Encryption">
   <meta name="twitter:description" content="User Guide">
   <meta name="twitter:image" content="https://dl.photoprism.org/assets/img/preview.jpg">
 
@@ -84,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#updating-labels" class="md-skip">
+        <a href="#encryption" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +133,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Image Classification
+              Encryption
             
           </span>
         </div>
@@ -1678,12 +1678,14 @@
           
 
 
+  
+
 
   
-  <li class="md-nav__item md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-12" type="checkbox" id="nav-3-12" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-12" type="checkbox" id="nav-3-12" checked>
     
     <label class="md-nav__link" for="nav-3-12">
       Photo Library
@@ -1704,7 +1706,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../library/importing/" class="md-nav__link">
+    <a href="../importing/" class="md-nav__link">
       Importing
     </a>
   </li>
@@ -1717,7 +1719,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../library/storage/" class="md-nav__link">
+    <a href="../storage/" class="md-nav__link">
       Storage
     </a>
   </li>
@@ -1728,11 +1730,49 @@
           
 
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../library/encryption/" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Encryption
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
       Encryption
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#related-tickets" class="md-nav__link">
+    Related tickets
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -1743,7 +1783,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../library/converting/" class="md-nav__link">
+    <a href="../converting/" class="md-nav__link">
       Converting RAW to JPEG
     </a>
   </li>
@@ -1756,7 +1796,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../library/heif/" class="md-nav__link">
+    <a href="../heif/" class="md-nav__link">
       High Efficiency Image File Format
     </a>
   </li>
@@ -1769,7 +1809,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../library/thumbnails/" class="md-nav__link">
+    <a href="../thumbnails/" class="md-nav__link">
       Thumbnails
     </a>
   </li>
@@ -1782,7 +1822,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../library/samples/" class="md-nav__link">
+    <a href="../samples/" class="md-nav__link">
       Samples
     </a>
   </li>
@@ -1798,14 +1838,12 @@
           
 
 
-  
-
 
   
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-13" type="checkbox" id="nav-3-13" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-13" type="checkbox" id="nav-3-13" >
     
     <label class="md-nav__link" for="nav-3-13">
       Metadata
@@ -1826,7 +1864,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../geocoding/" class="md-nav__link">
+    <a href="../../metadata/geocoding/" class="md-nav__link">
       Geocoding
     </a>
   </li>
@@ -1839,7 +1877,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../colors/" class="md-nav__link">
+    <a href="../../metadata/colors/" class="md-nav__link">
       Color Extraction
     </a>
   </li>
@@ -1850,73 +1888,11 @@
           
 
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Image Classification
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../metadata/classification/" class="md-nav__link">
       Image Classification
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#updating-labels" class="md-nav__link">
-    Updating labels
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pre-trained-models" class="md-nav__link">
-    Pre-trained Models
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#landmark-detection" class="md-nav__link">
-    Landmark detection
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#types-of-neural-networks" class="md-nav__link">
-    Types of neural networks
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#links" class="md-nav__link">
-    Links
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1927,7 +1903,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../face-recognition/" class="md-nav__link">
+    <a href="../../metadata/face-recognition/" class="md-nav__link">
       Face Recognition
     </a>
   </li>
@@ -1940,7 +1916,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xmp/" class="md-nav__link">
+    <a href="../../metadata/xmp/" class="md-nav__link">
       XMP
     </a>
   </li>
@@ -1953,7 +1929,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../exif/" class="md-nav__link">
+    <a href="../../metadata/exif/" class="md-nav__link">
       EXIF
     </a>
   </li>
@@ -1966,7 +1942,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../edit-exif/" class="md-nav__link">
+    <a href="../../metadata/edit-exif/" class="md-nav__link">
       Edit EXIF
     </a>
   </li>
@@ -2185,6 +2161,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2193,36 +2171,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#updating-labels" class="md-nav__link">
-    Updating labels
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pre-trained-models" class="md-nav__link">
-    Pre-trained Models
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#landmark-detection" class="md-nav__link">
-    Landmark detection
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#types-of-neural-networks" class="md-nav__link">
-    Types of neural networks
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#links" class="md-nav__link">
-    Links
+  <a href="#related-tickets" class="md-nav__link">
+    Related tickets
   </a>
   
 </li>
@@ -2239,270 +2189,14 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/photoprism/photoprism-docs/tree/master/docs/developer-guide/metadata/classification.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/photoprism/photoprism-docs/tree/master/docs/developer-guide/library/encryption.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Image Classification</h1>
-                
-                <p>Image classification is performed using a <a href="https://dl.photoprism.org/tensorflow/">pre-trained model</a>, <em>NASNet Mobile 224</em>, that we have chosen because of its size, performance and accuracy. To get a basic understanding of how this works, you can read <a href="https://medium.com/@tifa2up/image-classification-using-deep-neural-networks-a-beginner-friendly-approach-using-tensorflow-94b0a090ccd4">Image Classification using Deep Neural Networks</a>.</p>
-<p>In addition, we manually matched the model classification with the <a href="https://github.com/photoprism/photoprism/blob/develop/internal/classify/rules.yml">labels</a> you see in our UI:</p>
-<p><div class="highlight"><pre><span></span><code>cat:
-  label: cat
-  threshold: 0.3
-  priority: 5
-  categories:
-    - animal
-
-tabby cat:
-  see: cat
-</code></pre></div>
-<img src="../img/editPhotoLabels.jpeg" width="330" align="right" /> </p>
-<p>This was necessary because we didn't find a <a href="https://wordnet.princeton.edu/">taxonomy</a> suitable for consumers (mainly just scientific ones) and needed a lot of control to fine tune terms and their probability thresholds. The raw results were <a href="https://github.com/photoprism/photoprism/issues/160">not useful</a> to a typical user. Indexing too many words, categories and alternatives also negatively affects performance and <a href="https://github.com/photoprism/photoprism/issues/160">leads to noise</a>. </p>
-<p>It took us several months of testing until we were happy with the results and there are still labels to improve.</p>
-<h2 id="updating-labels">Updating labels<a class="headerlink" href="#updating-labels" title="Permanent link">&para;</a></h2>
-<p>After editing or adding labels in <a href="https://github.com/photoprism/photoprism/blob/develop/internal/classify/rules.yml">rules.yml</a>, you now have to run <code>make generate</code> in the main project directory to generate native Go source from this file.</p>
-<h2 id="pre-trained-models">Pre-trained Models<a class="headerlink" href="#pre-trained-models" title="Permanent link">&para;</a></h2>
-<p>See also: <a href="https://tfhub.dev/">TensorFlow Hub</a></p>
-<p>Source: <a href="https://github.com/tensorflow/models/blob/master/research/slim/README.md">https://github.com/tensorflow/models/blob/master/research/slim/README.md</a></p>
-<p>Neural nets work best when they have many parameters, making them powerful
-function approximators.
-However, this  means they must be trained on very large datasets. Because
-training models from scratch can be a very computationally intensive process
-requiring days or even weeks, there are various pre-trained models available. 
-These CNNs have been trained on the
-<a href="http://www.image-net.org/challenges/LSVRC/2012/">ILSVRC-2012-CLS</a>
-image classification dataset.</p>
-<p>Note that the VGG and ResNet V1 parameters have been converted from their original
-caffe formats
-(<a href="https://github.com/BVLC/caffe/wiki/Model-Zoo#models-used-by-the-vgg-team-in-ilsvrc-2014">here</a>
-and
-<a href="https://github.com/KaimingHe/deep-residual-networks">here</a>),
-whereas the Inception and ResNet V2 parameters have been trained internally at
-Google. Also be aware that these accuracies were computed by evaluating using a
-single image crop. PhotoPrism uses three crops, except for square images.</p>
-<table>
-<thead>
-<tr>
-<th align="center">Model</th>
-<th align="center">TF-Slim File</th>
-<th align="center">Checkpoint</th>
-<th align="center">Top-1 Accuracy</th>
-<th align="center">Top-5 Accuracy</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center"><a href="http://arxiv.org/abs/1409.4842v1">Inception V1</a></td>
-<td align="center"><a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/inception_v1.py">Code</a></td>
-<td align="center"><a href="http://download.tensorflow.org/models/inception_v1_2016_08_28.tar.gz">inception_v1_2016_08_28.tar.gz</a></td>
-<td align="center">69.8</td>
-<td align="center">89.6</td>
-</tr>
-<tr>
-<td align="center"><a href="http://arxiv.org/abs/1502.03167">Inception V2</a></td>
-<td align="center"><a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/inception_v2.py">Code</a></td>
-<td align="center"><a href="http://download.tensorflow.org/models/inception_v2_2016_08_28.tar.gz">inception_v2_2016_08_28.tar.gz</a></td>
-<td align="center">73.9</td>
-<td align="center">91.8</td>
-</tr>
-<tr>
-<td align="center"><a href="http://arxiv.org/abs/1512.00567">Inception V3</a></td>
-<td align="center"><a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/inception_v3.py">Code</a></td>
-<td align="center"><a href="http://download.tensorflow.org/models/inception_v3_2016_08_28.tar.gz">inception_v3_2016_08_28.tar.gz</a></td>
-<td align="center">78.0</td>
-<td align="center">93.9</td>
-</tr>
-<tr>
-<td align="center"><a href="http://arxiv.org/abs/1602.07261">Inception V4</a></td>
-<td align="center"><a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/inception_v4.py">Code</a></td>
-<td align="center"><a href="http://download.tensorflow.org/models/inception_v4_2016_09_09.tar.gz">inception_v4_2016_09_09.tar.gz</a></td>
-<td align="center">80.2</td>
-<td align="center">95.2</td>
-</tr>
-<tr>
-<td align="center"><a href="http://arxiv.org/abs/1602.07261">Inception-ResNet-v2</a></td>
-<td align="center"><a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/inception_resnet_v2.py">Code</a></td>
-<td align="center"><a href="http://download.tensorflow.org/models/inception_resnet_v2_2016_08_30.tar.gz">inception_resnet_v2_2016_08_30.tar.gz</a></td>
-<td align="center">80.4</td>
-<td align="center">95.3</td>
-</tr>
-<tr>
-<td align="center"><a href="https://arxiv.org/abs/1512.03385">ResNet V1 50</a></td>
-<td align="center"><a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/resnet_v1.py">Code</a></td>
-<td align="center"><a href="http://download.tensorflow.org/models/resnet_v1_50_2016_08_28.tar.gz">resnet_v1_50_2016_08_28.tar.gz</a></td>
-<td align="center">75.2</td>
-<td align="center">92.2</td>
-</tr>
-<tr>
-<td align="center"><a href="https://arxiv.org/abs/1512.03385">ResNet V1 101</a></td>
-<td align="center"><a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/resnet_v1.py">Code</a></td>
-<td align="center"><a href="http://download.tensorflow.org/models/resnet_v1_101_2016_08_28.tar.gz">resnet_v1_101_2016_08_28.tar.gz</a></td>
-<td align="center">76.4</td>
-<td align="center">92.9</td>
-</tr>
-<tr>
-<td align="center"><a href="https://arxiv.org/abs/1512.03385">ResNet V1 152</a></td>
-<td align="center"><a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/resnet_v1.py">Code</a></td>
-<td align="center"><a href="http://download.tensorflow.org/models/resnet_v1_152_2016_08_28.tar.gz">resnet_v1_152_2016_08_28.tar.gz</a></td>
-<td align="center">76.8</td>
-<td align="center">93.2</td>
-</tr>
-<tr>
-<td align="center"><a href="https://arxiv.org/abs/1603.05027">ResNet V2 50</a>^</td>
-<td align="center"><a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/resnet_v2.py">Code</a></td>
-<td align="center"><a href="http://download.tensorflow.org/models/resnet_v2_50_2017_04_14.tar.gz">resnet_v2_50_2017_04_14.tar.gz</a></td>
-<td align="center">75.6</td>
-<td align="center">92.8</td>
-</tr>
-<tr>
-<td align="center"><a href="https://arxiv.org/abs/1603.05027">ResNet V2 101</a>^</td>
-<td align="center"><a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/resnet_v2.py">Code</a></td>
-<td align="center"><a href="http://download.tensorflow.org/models/resnet_v2_101_2017_04_14.tar.gz">resnet_v2_101_2017_04_14.tar.gz</a></td>
-<td align="center">77.0</td>
-<td align="center">93.7</td>
-</tr>
-<tr>
-<td align="center"><a href="https://arxiv.org/abs/1603.05027">ResNet V2 152</a>^</td>
-<td align="center"><a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/resnet_v2.py">Code</a></td>
-<td align="center"><a href="http://download.tensorflow.org/models/resnet_v2_152_2017_04_14.tar.gz">resnet_v2_152_2017_04_14.tar.gz</a></td>
-<td align="center">77.8</td>
-<td align="center">94.1</td>
-</tr>
-<tr>
-<td align="center"><a href="https://arxiv.org/abs/1603.05027">ResNet V2 200</a></td>
-<td align="center"><a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/resnet_v2.py">Code</a></td>
-<td align="center"><a href="">TBA</a></td>
-<td align="center">79.9*</td>
-<td align="center">95.2*</td>
-</tr>
-<tr>
-<td align="center"><a href="http://arxiv.org/abs/1409.1556.pdf">VGG 16</a></td>
-<td align="center"><a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/vgg.py">Code</a></td>
-<td align="center"><a href="http://download.tensorflow.org/models/vgg_16_2016_08_28.tar.gz">vgg_16_2016_08_28.tar.gz</a></td>
-<td align="center">71.5</td>
-<td align="center">89.8</td>
-</tr>
-<tr>
-<td align="center"><a href="http://arxiv.org/abs/1409.1556.pdf">VGG 19</a></td>
-<td align="center"><a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/vgg.py">Code</a></td>
-<td align="center"><a href="http://download.tensorflow.org/models/vgg_19_2016_08_28.tar.gz">vgg_19_2016_08_28.tar.gz</a></td>
-<td align="center">71.1</td>
-<td align="center">89.8</td>
-</tr>
-<tr>
-<td align="center"><a href="https://arxiv.org/pdf/1704.04861.pdf">MobileNet_v1_1.0_224</a></td>
-<td align="center"><a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet_v1.py">Code</a></td>
-<td align="center"><a href="http://download.tensorflow.org/models/mobilenet_v1_2018_02_22/mobilenet_v1_1.0_224.tgz">mobilenet_v1_1.0_224.tgz</a></td>
-<td align="center">70.9</td>
-<td align="center">89.9</td>
-</tr>
-<tr>
-<td align="center"><a href="https://arxiv.org/pdf/1704.04861.pdf">MobileNet_v1_0.50_160</a></td>
-<td align="center"><a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet_v1.py">Code</a></td>
-<td align="center"><a href="http://download.tensorflow.org/models/mobilenet_v1_2018_02_22/mobilenet_v1_0.5_160.tgz">mobilenet_v1_0.50_160.tgz</a></td>
-<td align="center">59.1</td>
-<td align="center">81.9</td>
-</tr>
-<tr>
-<td align="center"><a href="https://arxiv.org/pdf/1704.04861.pdf">MobileNet_v1_0.25_128</a></td>
-<td align="center"><a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet_v1.py">Code</a></td>
-<td align="center"><a href="http://download.tensorflow.org/models/mobilenet_v1_2018_02_22/mobilenet_v1_0.25_128.tgz">mobilenet_v1_0.25_128.tgz</a></td>
-<td align="center">41.5</td>
-<td align="center">66.3</td>
-</tr>
-<tr>
-<td align="center"><a href="https://arxiv.org/abs/1801.04381">MobileNet_v2_1.4_224^*</a></td>
-<td align="center"><a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet/mobilenet_v2.py">Code</a></td>
-<td align="center"><a href="https://storage.googleapis.com/mobilenet_v2/checkpoints/mobilenet_v2_1.4_224.tgz">mobilenet_v2_1.4_224.tgz</a></td>
-<td align="center">74.9</td>
-<td align="center">92.5</td>
-</tr>
-<tr>
-<td align="center"><a href="https://arxiv.org/abs/1801.04381">MobileNet_v2_1.0_224^*</a></td>
-<td align="center"><a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet/mobilenet_v2.py">Code</a></td>
-<td align="center"><a href="https://storage.googleapis.com/mobilenet_v2/checkpoints/mobilenet_v2_1.0_224.tgz">mobilenet_v2_1.0_224.tgz</a></td>
-<td align="center">71.9</td>
-<td align="center">91.0</td>
-</tr>
-<tr>
-<td align="center"><a href="https://arxiv.org/abs/1707.07012">NASNet-A_Mobile_224</a>#</td>
-<td align="center"><a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/nasnet/nasnet.py">Code</a></td>
-<td align="center"><a href="https://storage.googleapis.com/download.tensorflow.org/models/nasnet-a_mobile_04_10_2017.tar.gz">nasnet-a_mobile_04_10_2017.tar.gz</a></td>
-<td align="center">74.0</td>
-<td align="center">91.6</td>
-</tr>
-<tr>
-<td align="center"><a href="https://arxiv.org/abs/1707.07012">NASNet-A_Large_331</a>#</td>
-<td align="center"><a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/nasnet/nasnet.py">Code</a></td>
-<td align="center"><a href="https://storage.googleapis.com/download.tensorflow.org/models/nasnet-a_large_04_10_2017.tar.gz">nasnet-a_large_04_10_2017.tar.gz</a></td>
-<td align="center">82.7</td>
-<td align="center">96.2</td>
-</tr>
-<tr>
-<td align="center"><a href="https://arxiv.org/abs/1712.00559">PNASNet-5_Large_331</a></td>
-<td align="center"><a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/nasnet/pnasnet.py">Code</a></td>
-<td align="center"><a href="https://storage.googleapis.com/download.tensorflow.org/models/pnasnet-5_large_2017_12_13.tar.gz">pnasnet-5_large_2017_12_13.tar.gz</a></td>
-<td align="center">82.9</td>
-<td align="center">96.2</td>
-</tr>
-<tr>
-<td align="center"><a href="https://arxiv.org/abs/1712.00559">PNASNet-5_Mobile_224</a></td>
-<td align="center"><a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/nasnet/pnasnet.py">Code</a></td>
-<td align="center"><a href="https://storage.googleapis.com/download.tensorflow.org/models/pnasnet-5_mobile_2017_12_13.tar.gz">pnasnet-5_mobile_2017_12_13.tar.gz</a></td>
-<td align="center">74.2</td>
-<td align="center">91.9</td>
-</tr>
-</tbody>
-</table>
-<p>^ ResNet V2 models use Inception pre-processing and input image size of 299 (use
-<code>--preprocessing_name inception --eval_image_size 299</code> when using
-<code>eval_image_classifier.py</code>). Performance numbers for ResNet V2 models are
-reported on the ImageNet validation set.</p>
-<p>(#) More information and details about the NASNet architectures are available at this <a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/nasnet/README.md">README</a></p>
-<p>All 16 float MobileNet V1 models reported in the <a href="https://arxiv.org/abs/1704.04861">MobileNet Paper</a> and all
-16 quantized <a href="https://www.tensorflow.org/mobile/tflite/">TensorFlow Lite</a> compatible MobileNet V1 models can be found
-<a href="https://github.com/tensorflow/models/tree/master/research/slim/nets/mobilenet_v1.md">here</a>.</p>
-<p>(^#) More details on MobileNetV2 models can be found <a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet/README.md">here</a>.</p>
-<p>(*): Results quoted from the <a href="https://arxiv.org/abs/1603.05027">paper</a>.</p>
-<p>Here is an example of how to download the Inception V3 checkpoint:</p>
-<div class="highlight"><pre><span></span><code>$ <span class="nv">CHECKPOINT_DIR</span><span class="o">=</span>/tmp/checkpoints
-$ mkdir <span class="si">${</span><span class="nv">CHECKPOINT_DIR</span><span class="si">}</span>
-$ wget http://download.tensorflow.org/models/inception_v3_2016_08_28.tar.gz
-$ tar -xvf inception_v3_2016_08_28.tar.gz
-$ mv inception_v3.ckpt <span class="si">${</span><span class="nv">CHECKPOINT_DIR</span><span class="si">}</span>
-$ rm inception_v3_2016_08_28.tar.gz
-</code></pre></div>
-<h2 id="landmark-detection">Landmark detection<a class="headerlink" href="#landmark-detection" title="Permanent link">&para;</a></h2>
-<p>DELF: DEep Local Features
- - <a href="https://github.com/tensorflow/models/tree/master/research/delf">https://github.com/tensorflow/models/tree/master/research/delf</a> - Tensorflow implementation</p>
-<p><img alt="https://gitcdn.xyz/cdn/Tony607/blog_statics/ce9c3391932e24655b78e27a54543f28f11f3af0/images/landmark/query.jpg" src="../img/landmark-query.jpg" /></p>
-<p>Source: <a href="https://gitcdn.xyz/cdn/Tony607/blog_statics/ce9c3391932e24655b78e27a54543f28f11f3af0/images/landmark/query.jpg">https://gitcdn.xyz/cdn/Tony607/blog_statics/ce9c3391932e24655b78e27a54543f28f11f3af0/images/landmark/query.jpg</a></p>
-<h2 id="types-of-neural-networks">Types of neural networks<a class="headerlink" href="#types-of-neural-networks" title="Permanent link">&para;</a></h2>
-<p><img alt="http://www.asimovinstitute.org/wp-content/uploads/2016/09/neuralnetworks.png" src="../img/neuralnetworks.png" />
-Source: <a href="http://www.asimovinstitute.org/neural-network-zoo/">http://www.asimovinstitute.org/neural-network-zoo/</a></p>
-<h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="https://ai.facebook.com/blog/roberta-an-optimized-method-for-pretraining-self-supervised-nlp-systems/">https://ai.facebook.com/blog/roberta-an-optimized-method-for-pretraining-self-supervised-nlp-systems/</a> - An optimized method for pretraining self-supervised NLP systems</li>
-<li><a href="https://github.com/zihangdai/xlnet">https://github.com/zihangdai/xlnet</a> - Generalized Autoregressive Pretraining for Language Understanding</li>
-<li><a href="https://pjreddie.com/darknet/yolo/">https://pjreddie.com/darknet/yolo/</a> - real time image detection</li>
-<li><a href="https://pjreddie.com/darknet/imagenet/">https://pjreddie.com/darknet/imagenet/</a> - using use Darknet to classify images</li>
-<li><a href="https://github.com/ZanLabs/go-yolo">https://github.com/ZanLabs/go-yolo</a> - Golang binding for YOLO/Darknet recognition framework</li>
-<li><a href="https://itnext.io/implementing-yolo-v3-in-tensorflow-tf-slim-c3c55ff59dbe">https://itnext.io/implementing-yolo-v3-in-tensorflow-tf-slim-c3c55ff59dbe</a> - Implementing YOLO v3 in Tensorflow (TF-Slim)</li>
-<li><a href="https://github.com/chewxy/lingo">https://github.com/chewxy/lingo</a> - provides the data structures and algorithms required for natural language processing</li>
-<li><a href="https://modelzoo.co/">https://modelzoo.co/</a> - Discover open source deep learning code and pretrained models</li>
-<li><a href="https://polarr.ai/">https://polarr.ai/</a> - Efficient and Immersive C.V. experiences on the edge</li>
-<li><a href="https://github.com/gildasch/gildas-ai">https://github.com/gildasch/gildas-ai</a></li>
-<li><a href="https://www.tensorflow.org/lite/guide/hosted_models">https://www.tensorflow.org/lite/guide/hosted_models</a></li>
-<li><a href="https://github.com/tensorflow/models/tree/master/research/slim/nets/nasnet">https://github.com/tensorflow/models/tree/master/research/slim/nets/nasnet</a></li>
-<li><a href="https://www.wikidata.org/wiki/Wikidata:Database_download">https://www.wikidata.org/wiki/Wikidata:Database_download</a></li>
-<li><a href="https://github.com/ropensci/wikitaxa">https://github.com/ropensci/wikitaxa</a></li>
-<li><a href="https://datahub.io/collections/yago">https://datahub.io/collections/yago</a> - YAGO3 is a huge semantic knowledge base, derived from Wikipedia WordNet and GeoNames</li>
-<li><a href="https://ai.googleblog.com/2016/08/improving-inception-and-image.html">Google AI Blog: Improving Inception and Image Classification in TensorFlow</a></li>
-<li><a href="https://medium.com/@sidereal/cnns-architectures-lenet-alexnet-vgg-googlenet-resnet-and-more-666091488df5">CNN Architectures: LeNet, AlexNet, VGG, GoogLeNet, ResNet and more</a></li>
-<li><a href="https://dl.photoprism.org/slides/Image%20Search%20with%20Go%20and%20TensorFlow.pdf">Gildas Chabot - AI image search with Go &amp; Tensorflow</a> (slides)</li>
-</ul>
+                <h1 id="encryption">Encryption<a class="headerlink" href="#encryption" title="Permanent link">&para;</a></h1>
+<h3 id="related-tickets">Related tickets<a class="headerlink" href="#related-tickets" title="Permanent link">&para;</a></h3>
+<p><a href="https://github.com/photoprism/photoprism/issues/93#">Support for cloud storage with encryption</a></p>
                 
               
               
@@ -2521,7 +2215,7 @@ Source: <a href="http://www.asimovinstitute.org/neural-network-zoo/">http://www.
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../colors/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../storage/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -2530,19 +2224,19 @@ Source: <a href="http://www.asimovinstitute.org/neural-network-zoo/">http://www.
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Color Extraction
+                Storage
               </div>
             </div>
           </a>
         
         
-          <a href="../face-recognition/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../converting/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Face Recognition
+                Converting RAW to JPEG
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
