@@ -2168,13 +2168,18 @@ docker-compose up
 <p><strong>Step 3:</strong> Open a terminal to the photoprism container:</p>
 <div class="highlight"><pre><span></span><code>docker-compose exec photoprism bash
 </code></pre></div>
-<p>Now - inside this terminal - you can run tests and commands:</p>
-<div class="highlight"><pre><span></span><code>make all
-make test
+<p>Now you can run commands inside this terminal. To run the Go webserver, run:</p>
+<div class="highlight"><pre><span></span><code>make dep-tensorflow dep-go generate
+make build-go
 ./photoprism start
 </code></pre></div>
-<p>You can see a list of all <code>make</code> targets in our <a href="https://github.com/photoprism/photoprism/blob/develop/Makefile">Makefile</a>. For example, <code>make install</code> will build a <code>photoprism</code> production binary without debug information and install it in the user's directory including all assets.</p>
-<p><code>./photoprism start</code> starts the built-in Web server. It will listen on <a href="http://localhost:2342/">localhost:2342</a> by default, see <a href="https://github.com/photoprism/photoprism/blob/develop/docker-compose.yml">docker-compose.yml</a>.</p>
+<p>You can see a list of all <code>make</code> targets in our <a href="https://github.com/photoprism/photoprism/blob/develop/Makefile">Makefile</a>. For example, <code>make test</code> will run the tests and <code>make install</code> will build a <code>photoprism</code> production binary without debug information and install it in the user's directory including all assets.</p>
+<p><strong>Step 4:</strong> Build the frontend in watch mode:</p>
+<p>The Go webserver will serve static assets in addition to providing the backend API. The static assets can automatically built whenever you change a file. In a new terminal window, outside the Docker container, run:</p>
+<div class="highlight"><pre><span></span><code>make dep-js
+make watch-js
+</code></pre></div>
+<p>PhotoPrism will now be available at <a href="http://localhost:2342/">localhost:2342</a>. This is set in the <a href="https://github.com/photoprism/photoprism/blob/develop/docker-compose.yml">docker-compose.yml</a>.</p>
 <p>Questions?</p>
 <ul>
 <li>Radomir Sohlich wrote a <a href="https://sohlich.github.io/post/go_makefile/">pragmatic introduction to Makefiles</a> for Go developers.</li>
