@@ -16,7 +16,7 @@
         <link rel="canonical" href="https://docs.photoprism.org/release-notes/">
       
       <link rel="shortcut icon" href="../img/favicon-16.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.3">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.4">
     
     
       
@@ -24,10 +24,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3b61ea93.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.15aa0b43.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.75751829.min.css">
         
           
           
@@ -2243,22 +2243,27 @@ The preview image for ARM64 is <code>photoprism/photoprism-arm64:preview</code>.
 </div>
 <h3 id="development-preview">Development Preview<a class="headerlink" href="#development-preview" title="Permanent link">&para;</a></h3>
 <ul>
+<li>UX: <a href="https://github.com/photoprism/photoprism/issues/477">Removed lag when selecting pictures</a></li>
 <li>UX: Tweaked tile size breakpoints in <em>Albums</em>, <em>Labels</em>, and <em>Photos</em></li>
 <li>UX: <a href="https://github.com/photoprism/photoprism/issues/823">Added tooltips to navigation expand and minimize buttons</a></li>
 <li>UX: <a href="https://github.com/photoprism/photoprism/issues/477">Improved clipboard performance</a></li>
+<li>UX: <a href="https://github.com/photoprism/photoprism/issues/500">Preload additional search results</a></li>
 <li>UX: <a href="https://github.com/photoprism/photoprism/issues/862">Removed image loading spinners for faster rendering</a></li>
 <li>Thumbnails: <a href="https://github.com/photoprism/photoprism/issues/822">Added cache control headers for improved performance</a></li>
 <li>Album Covers: <a href="https://github.com/photoprism/photoprism/issues/807">Cache will be flushed after updating private flags</a></li>
+<li>Search: <a href="https://github.com/photoprism/photoprism/commit/dcf94e26a53e2c3e78c9998f6e7b442fbbf3d544">Improved performance of photos query</a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps">PWA</a>: Added service worker so that app can be installed <a href="https://github.com/photoprism/photoprism/issues/852">more easily</a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps">PWA</a>: <a href="https://github.com/photoprism/photoprism/issues/744">Enabled auto-rotate</a>
   so that photos may be viewed in landscape mode</li>
 <li>Frontend: Removed <a href="https://github.com/photoprism/photoprism/pull/824">unused dependencies</a> and 
   <a href="https://github.com/photoprism/photoprism/pull/836">reduced build size</a></li>
 <li>Translations: Updated <a href="https://github.com/photoprism/photoprism/pull/837">Russian</a>, 
-  <a href="https://github.com/photoprism/photoprism/pull/849">French</a>, and
+  <a href="https://github.com/photoprism/photoprism/pull/849">French</a>,
+  <a href="https://github.com/photoprism/photoprism/commit/614f93f696c7a180ff8196a01d3a10881847d459">Simplified Chinese</a>, and
   <a href="https://github.com/photoprism/photoprism/commit/e015e17f3f2b7d29d2d7d71518b9d8657daff99c">German</a></li>
 <li>Indexing: Automatically create <a href="https://github.com/photoprism/photoprism/issues/813">JPEGs for related media files</a> as well</li>
 <li>Import: Improved <a href="https://github.com/photoprism/photoprism/issues/261">error handling</a> when the file system becomes unavailable</li>
+<li>Config: Added optional gzip compression for built-in web server</li>
 <li>Config: Limit number of indexing workers to half the number of physical cores by default to 
   avoid <a href="https://twitter.com/miguelarios_/status/1347775696492503040">high load</a> on hyper-threading capable CPUs</li>
 </ul>
@@ -2421,8 +2426,8 @@ The preview image for ARM64 is <code>photoprism/photoprism-arm64:preview</code>.
       
     </div>
     
-      <script src="../assets/javascripts/vendor.08c56446.min.js"></script>
-      <script src="../assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../assets/javascripts/vendor.93c04032.min.js"></script>
+      <script src="../assets/javascripts/bundle.83e5331e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
