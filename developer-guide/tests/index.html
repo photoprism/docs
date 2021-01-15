@@ -2446,10 +2446,16 @@ It contains the files and configs needed for the tests to pass.</p>
 <p>Locally you can run the tests in all supported browsers you have installed.</p>
 <p>To run tests locally you need to install testcafe on your machine.
 <div class="highlight"><pre><span></span><code>npm install -g testcafe
-</code></pre></div>
-Then you can execute tests with
+</code></pre></div></p>
+<p>Start the test-instance (from within the docker container)
+<div class="highlight"><pre><span></span><code>make acceptance-restart
+</code></pre></div></p>
+<p>Then you can execute tests with
 <div class="highlight"><pre><span></span><code>testcafe  firefox,chrome,safari,opera -S \
   -s frontend/tests/acceptance/screenshots frontend/tests/acceptance/
+</code></pre></div></p>
+<p>You can stop the test-instance using
+<div class="highlight"><pre><span></span><code>make stop
 </code></pre></div></p>
 <p>To run tests on remote or mobile devices use
 <div class="highlight"><pre><span></span><code>testcafe  remote -S \
