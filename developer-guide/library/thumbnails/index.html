@@ -661,6 +661,19 @@
   </li>
 
         
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../getting-started/advanced/backup/" class="md-nav__link">
+      Backup
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1809,68 +1822,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#downscaling-filters" class="md-nav__link">
-    Downscaling Filters
-  </a>
-  
-    <nav class="md-nav" aria-label="Downscaling Filters">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#linear" class="md-nav__link">
-    Linear
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cubic" class="md-nav__link">
-    Cubic
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lanczos" class="md-nav__link">
-    Lanczos
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#blackman" class="md-nav__link">
-    Blackman
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    Examples
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-files-will-be-created-by-photoprism" class="md-nav__link">
-    What files will be created by PhotoPrism?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config-options" class="md-nav__link">
-    Config Options
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#links" class="md-nav__link">
     Links
   </a>
@@ -2247,68 +2198,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#downscaling-filters" class="md-nav__link">
-    Downscaling Filters
-  </a>
-  
-    <nav class="md-nav" aria-label="Downscaling Filters">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#linear" class="md-nav__link">
-    Linear
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cubic" class="md-nav__link">
-    Cubic
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lanczos" class="md-nav__link">
-    Lanczos
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#blackman" class="md-nav__link">
-    Blackman
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    Examples
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-files-will-be-created-by-photoprism" class="md-nav__link">
-    What files will be created by PhotoPrism?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config-options" class="md-nav__link">
-    Config Options
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#links" class="md-nav__link">
     Links
   </a>
@@ -2333,242 +2222,16 @@
                 
                 
                 <h1 id="thumbnail-rendering-settings">Thumbnail Rendering Settings<a class="headerlink" href="#thumbnail-rendering-settings" title="Permanent link">&para;</a></h1>
+<p>The <a href="/user-guide/settings/advanced/">advanced settings user guide</a> explains the
+usage of downscaling filter options and examples of images generated with each.</p>
 <p>We use the <a href="https://github.com/disintegration/imaging">disintegration/imaging</a> package to create thumbnails.</p>
-<p>You may change the settings for preview images in the <em>Advanced</em> settings tab (not available in public mode):</p>
-<p><img alt="" src="../img/advanced-settings.jpg" /></p>
-<p>For best results, you should choose a high JPEG quality &gt; 90, and the <em>lanczos</em> downscaling filter.
-This will require additional storage and slows down indexing, but only once when indexing for the first time.</p>
-<p>In comparison, the <em>cubic</em> filter may be 30% faster than <em>lanczos</em>.
-A <a href="http://fotoforensics.com/tutorial-estq.php">JPEG quality</a> setting of 95 results in a preview files size of about 500kb.
-Reducing the JPEG quality to 80 gets storage size down to 100kb, and results in visible artifacts
-as in heavily compressed social media content.</p>
-<p>Image classification also works better with sharp images,
-so it's likely you'll get less accurate labels with higher compression.</p>
 <h2 id="preview-sizes">Preview Sizes<a class="headerlink" href="#preview-sizes" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th align="left">Name</th>
-<th align="left">Source</th>
-<th align="center">Width</th>
-<th align="center">Height</th>
-<th align="left">Use</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">colors</td>
-<td align="left">fit_720</td>
-<td align="center">3</td>
-<td align="center">3</td>
-<td align="left">Color Detection</td>
-</tr>
-<tr>
-<td align="left">tile_50</td>
-<td align="left">tile_500</td>
-<td align="center">50</td>
-<td align="center">50</td>
-<td align="left">List Preview</td>
-</tr>
-<tr>
-<td align="left">tile_100</td>
-<td align="left">tile_500</td>
-<td align="center">100</td>
-<td align="center">100</td>
-<td align="left">Maps Preview</td>
-</tr>
-<tr>
-<td align="left">tile_224</td>
-<td align="left">tile_500</td>
-<td align="center">224</td>
-<td align="center">224</td>
-<td align="left">Mosaic Preview</td>
-</tr>
-<tr>
-<td align="left">left_224</td>
-<td align="left">fit_720</td>
-<td align="center">224</td>
-<td align="center">224</td>
-<td align="left">TensorFlow</td>
-</tr>
-<tr>
-<td align="left">right_224</td>
-<td align="left">fit_720</td>
-<td align="center">224</td>
-<td align="center">224</td>
-<td align="left">TensorFlow</td>
-</tr>
-<tr>
-<td align="left">tile_500</td>
-<td align="left"></td>
-<td align="center">500</td>
-<td align="center">500</td>
-<td align="left">Cards Preview</td>
-</tr>
-<tr>
-<td align="left">fit_720</td>
-<td align="left"></td>
-<td align="center">720</td>
-<td align="center">720</td>
-<td align="left">Mobile, TV</td>
-</tr>
-<tr>
-<td align="left">fit_1280</td>
-<td align="left">fit_2048</td>
-<td align="center">1280</td>
-<td align="center">1024</td>
-<td align="left">Mobile, HD Ready TV</td>
-</tr>
-<tr>
-<td align="left">fit_1920</td>
-<td align="left">fit_2048</td>
-<td align="center">1920</td>
-<td align="center">1200</td>
-<td align="left">Mobile, Full HD TV</td>
-</tr>
-<tr>
-<td align="left">fit_2048</td>
-<td align="left"></td>
-<td align="center">2048</td>
-<td align="center">2048</td>
-<td align="left">Tablets, Cinema 2K</td>
-</tr>
-<tr>
-<td align="left">fit_2560</td>
-<td align="left"></td>
-<td align="center">2560</td>
-<td align="center">1600</td>
-<td align="left">Quad HD, Retina Display</td>
-</tr>
-<tr>
-<td align="left">fit_3840</td>
-<td align="left"></td>
-<td align="center">3840</td>
-<td align="center">2400</td>
-<td align="left">Ultra HD</td>
-</tr>
-<tr>
-<td align="left">fit_4096</td>
-<td align="left"></td>
-<td align="center">4096</td>
-<td align="center">4096</td>
-<td align="left">Ultra HD, Retina 4K</td>
-</tr>
-<tr>
-<td align="left">fit_7680</td>
-<td align="left"></td>
-<td align="center">7680</td>
-<td align="center">4320</td>
-<td align="left">8K Ultra HD 2, Retina 6K</td>
-</tr>
-</tbody>
-</table>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-</div>
-<p>When the configured size limit is exceeded, for example if users have a larger screen,
-the photo viewer may be forced to use original image files instead.
-This may result in images displayed with the wrong orientation.</p>
-<h2 id="downscaling-filters">Downscaling Filters<a class="headerlink" href="#downscaling-filters" title="Permanent link">&para;</a></h2>
-<h3 id="linear">Linear<a class="headerlink" href="#linear" title="Permanent link">&para;</a></h3>
-<p>Bilinear interpolation takes a weighted average of the four
-neighborhood pixels to calculate its final interpolated
-value. The result is much smoother image than the original
-image. When all known pixel distances are equal, then the
-interpolated value is simply their sum divided by four.
-This technique performs interpolation in both directions,
-horizontal and vertical. This technique gives better result
-than nearest neighbor interpolation and take less
-computation time compared to bicubic interpolation.</p>
-<h3 id="cubic">Cubic<a class="headerlink" href="#cubic" title="Permanent link">&para;</a></h3>
-<p>Catmull-Rom is a local interpolating spline developed for
-computer graphics purposes. Its initial use was in design
-of curves and surfaces, and has recently been used in
-several applications. Catmull-Rom splines are a family of
-cubic interpolating splines formulated such that the
-tangent at each point is calculated using the previous and
-next point on the spline. The results are similar to ones
-produced by bicubic interpolation with regards to
-sharpness, but the Catmull-Rom reconstruction is clearly
-superior in smooth signal region.</p>
-<h3 id="lanczos">Lanczos<a class="headerlink" href="#lanczos" title="Permanent link">&para;</a></h3>
-<p>The Lanczos interpolation function is a mathematical formula
-used to smoothly interpolate the value of a digital
-image between its samples. It maps each sample of the
-given image to a translated and scaled copy of the Lanczos
-kernel, which is a sinc function windowed by the central
-hump of a dilated sinc function. The sum of these
-translated and scaled kernels is then evaluated at the
-desired pixel. Lanczos interpolation has the <strong>best
-properties in terms of detail preservation and minimal
-generation of aliasing artifacts</strong> for geometric
-transformations not involving strong down sampling.
-However higher order Lanczos interpolation requires high
-computational time, which makes it unsuitable for
-most commercial software.</p>
-<h3 id="blackman">Blackman<a class="headerlink" href="#blackman" title="Permanent link">&para;</a></h3>
-<p>Blackman is a modification of Lanczos that has better control of ringing artifacts.</p>
-<h3 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h3>
-<p>Original image:</p>
-<p><img alt="" src="../img/branches.png" /></p>
-<p>The same image resized from 600x400px to 150x100px using different resampling filters.
-From faster (lower quality) to slower (higher quality):</p>
-<table>
-<thead>
-<tr>
-<th>Filter</th>
-<th>Resize result</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Nearest Neighbor</td>
-<td><img alt="" src="../img/out_resize_nearest.png" /></td>
-</tr>
-<tr>
-<td>Bilinear</td>
-<td><img alt="" src="../img/out_resize_linear.png" /></td>
-</tr>
-<tr>
-<td>Sharp Bicubic</td>
-<td><img alt="" src="../img/out_resize_catrom.png" /></td>
-</tr>
-<tr>
-<td>Lanczos</td>
-<td><img alt="" src="../img/out_resize_lanczos.png" /></td>
-</tr>
-</tbody>
-</table>
-<p>Source: <a href="https://ijarcce.com/wp-content/uploads/2016/02/IJARCCE-7.pdf">A Comparative Analysis of Image Interpolation Algorithms</a></p>
-<h2 id="what-files-will-be-created-by-photoprism">What files will be created by PhotoPrism?<a class="headerlink" href="#what-files-will-be-created-by-photoprism" title="Permanent link">&para;</a></h2>
-<p>The minimum size for static previews is 720px. This will render the following images in the cache folder:</p>
-<div class="highlight"><pre><span></span><code>cache/thumbnails/1/a/3/1a30c1f...9_100x100_center.jpg
-cache/thumbnails/1/a/3/1a30c1f...9_224x224_center.jpg
-cache/thumbnails/1/a/3/1a30c1f...9_224x224_left.jpg
-cache/thumbnails/1/a/3/1a30c1f...9_224x224_right.jpg
-cache/thumbnails/1/a/3/1a30c1f...9_3x3_resize.png
-cache/thumbnails/1/a/3/1a30c1f...9_500x500_center.jpg
-cache/thumbnails/1/a/3/1a30c1f...9_50x50_center.jpg
-cache/thumbnails/1/a/3/1a30c1f...9_720x720_fit.jpg
-</code></pre></div>
-<p>A static limit of 2048px renders additional previews up to this size:</p>
-<div class="highlight"><pre><span></span><code>cache/thumbnails/1/a/3/1a30c1f...9_1280x1024_fit.jpg
-cache/thumbnails/1/a/3/1a30c1f...9_1920x1200_fit.jpg
-cache/thumbnails/1/a/3/1a30c1f...9_2048x2048_fit.jpg
-</code></pre></div>
-<h2 id="config-options">Config Options<a class="headerlink" href="#config-options" title="Permanent link">&para;</a></h2>
-<p>When using PhotoPrism in public mode, image quality preferences may be set in the application config file,
-or via command line parameter (requires a restart):</p>
-<p><code>--thumb-filter NAME, -f NAME</code></p>
-<p>downscaling filter NAME (best to worst: blackman, lanczos, cubic, linear) (default: "lanczos") [$PHOTOPRISM_THUMB_FILTER]</p>
-<p><code>--thumb-size PIXELS, -s PIXELS</code></p>
-<p>static thumbnail size limit in PIXELS (720-7680) (default: 2048) [$PHOTOPRISM_THUMB_SIZE]</p>
-<p><code>--thumb-uncached, -u</code></p>
-<p>enable dynamic thumbnail rendering (high memory and cpu usage) [$PHOTOPRISM_THUMB_UNCACHED]</p>
-<p><code>--thumb-size-uncached PIXELS, -x PIXELS</code></p>
-<p>dynamic rendering size limit in PIXELS (720-7680) (default: 7680) [PHOTOPRISM_THUMB_SIZE_UNCACHED]</p>
-<p><code>--jpeg-quality value, -q value</code></p>
-<p>choose 95 for high-quality thumbnails (25-100) (default: 92) [$PHOTOPRISM_JPEG_QUALITY]</p>
+<p>These are configured in <a href="https://github.com/photoprism/photoprism/blob/master/internal/thumb/types.go"><code>internal/thumb/types.go</code></a>. A <code>TypeMap</code> defines;</p>
+<ul>
+<li>the different dimensions of preview image ('thumbnail') generated</li>
+<li>the corresponding purposes/usages of each</li>
+<li>the source file used to generate each.</li>
+</ul>
 <h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Comparison_gallery_of_image_scaling_algorithms">https://en.wikipedia.org/wiki/Comparison_gallery_of_image_scaling_algorithms</a></li>

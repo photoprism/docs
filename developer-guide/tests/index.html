@@ -661,6 +661,19 @@
   </li>
 
         
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/advanced/backup/" class="md-nav__link">
+      Backup
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1526,6 +1539,14 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#unit-tests" class="md-nav__link">
+    Unit Tests
+  </a>
+  
+    <nav class="md-nav" aria-label="Unit Tests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#go" class="md-nav__link">
     Go
   </a>
@@ -1551,8 +1572,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#javascript" class="md-nav__link">
     Javascript
   </a>
@@ -1562,6 +1583,45 @@
         
           <li class="md-nav__item">
   <a href="#test-frameworks_1" class="md-nav__link">
+    Test Frameworks
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acceptance-tests" class="md-nav__link">
+    Acceptance Tests
+  </a>
+  
+    <nav class="md-nav" aria-label="Acceptance Tests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-tests-within-the-docker-container" class="md-nav__link">
+    Run tests within the docker container
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-tests-locally" class="md-nav__link">
+    Run tests locally
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-frameworks_2" class="md-nav__link">
     Test Frameworks
   </a>
   
@@ -2209,6 +2269,14 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#unit-tests" class="md-nav__link">
+    Unit Tests
+  </a>
+  
+    <nav class="md-nav" aria-label="Unit Tests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#go" class="md-nav__link">
     Go
   </a>
@@ -2234,8 +2302,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#javascript" class="md-nav__link">
     Javascript
   </a>
@@ -2245,6 +2313,45 @@
         
           <li class="md-nav__item">
   <a href="#test-frameworks_1" class="md-nav__link">
+    Test Frameworks
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acceptance-tests" class="md-nav__link">
+    Acceptance Tests
+  </a>
+  
+    <nav class="md-nav" aria-label="Acceptance Tests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-tests-within-the-docker-container" class="md-nav__link">
+    Run tests within the docker container
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-tests-locally" class="md-nav__link">
+    Run tests locally
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-frameworks_2" class="md-nav__link">
     Test Frameworks
   </a>
   
@@ -2276,7 +2383,8 @@
 <blockquote>
 <p>In any process, obsessing about the wait times will yield greater improvements than practically anything else, for longer than you might think. Automation, simplification, etc. are implementation details of that obsession.<br>— <cite>Dan North</cite></p>
 </blockquote>
-<h2 id="go">Go<a class="headerlink" href="#go" title="Permanent link">&para;</a></h2>
+<h2 id="unit-tests">Unit Tests<a class="headerlink" href="#unit-tests" title="Permanent link">&para;</a></h2>
+<h3 id="go">Go<a class="headerlink" href="#go" title="Permanent link">&para;</a></h3>
 <p>To run all unit tests, type <code>make test</code> or <code>go test ./internal/...</code> in a terminal.</p>
 <p>These <code>make</code> targets are currently defined for tests:</p>
 <ul>
@@ -2290,10 +2398,10 @@
 <div class="highlight"><pre><span></span><code>$ go test -run NameOfTest
 </code></pre></div>
 <p>See <a href="https://golang.org/pkg/testing/#hdr-Subtests_and_Sub_benchmarks">docs</a> for more info.</p>
-<h3 id="test-frameworks">Test Frameworks<a class="headerlink" href="#test-frameworks" title="Permanent link">&para;</a></h3>
+<h4 id="test-frameworks">Test Frameworks<a class="headerlink" href="#test-frameworks" title="Permanent link">&para;</a></h4>
 <p>Go comes with a cool testing framework, it allows you to write test code using the same language, without needing to learn any library or test engine. <a href="https://medium.com/@povilasve/go-advanced-tips-tricks-a872503ac859">Go advanced testing tips &amp; tricks</a> contains a lot of useful information. We only import <a href="https://github.com/stretchr/testify/tree/master/assert">testify/assert</a> to save a few lines for common assertions.</p>
 <p>Todo: Use a SQL mock driver to test database interactions, for example <a href="https://github.com/DATA-DOG/go-sqlmock">https://github.com/DATA-DOG/go-sqlmock</a>.</p>
-<h3 id="slow-tests">Slow Tests<a class="headerlink" href="#slow-tests" title="Permanent link">&para;</a></h3>
+<h4 id="slow-tests">Slow Tests<a class="headerlink" href="#slow-tests" title="Permanent link">&para;</a></h4>
 <p>Slow tests and benchmarks can be skipped using the <code>-short</code> flag:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">func</span> <span class="nx">TestTimeConsuming</span><span class="p">(</span><span class="nx">t</span> <span class="o">*</span><span class="nx">testing</span><span class="p">.</span><span class="nx">T</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">if</span> <span class="nx">testing</span><span class="p">.</span><span class="nx">Short</span><span class="p">()</span> <span class="p">{</span>
@@ -2305,7 +2413,7 @@
 <p>To execute:</p>
 <div class="highlight"><pre><span></span><code>go test -short
 </code></pre></div>
-<h2 id="javascript">Javascript<a class="headerlink" href="#javascript" title="Permanent link">&para;</a></h2>
+<h3 id="javascript">Javascript<a class="headerlink" href="#javascript" title="Permanent link">&para;</a></h3>
 <p>To run all javascript unit tests, type <code>make test-js</code> in a terminal.</p>
 <p>In case you want to run a single test add .only to the test you want to run e.g.:</p>
 <div class="highlight"><pre><span></span><code> <span class="nx">it</span><span class="p">.</span><span class="nx">only</span><span class="p">(</span><span class="s2">&quot;should get album id&quot;</span><span class="p">,</span>  <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
@@ -2319,21 +2427,32 @@
     <span class="p">});</span>
 </code></pre></div>
 <p>Test coverage output is saved to <em>frontend/coverage/html</em></p>
-<h3 id="test-frameworks_1">Test Frameworks<a class="headerlink" href="#test-frameworks_1" title="Permanent link">&para;</a></h3>
+<h4 id="test-frameworks_1">Test Frameworks<a class="headerlink" href="#test-frameworks_1" title="Permanent link">&para;</a></h4>
 <p>To test javascript code we use <a href="https://mochajs.org/">mocha</a> in combination with <a href="https://karma-runner.github.io/4.0/intro/installation.html">karma</a>, <a href="https://www.chaijs.com/">chai</a>, <a href="https://sinonjs.org/">sinon</a> and the <a href="https://github.com/mattlewis92/karma-coverage-istanbul-reporter">karma-istanbul-coverage-reporter</a>.</p>
-<h1 id="acceptance-tests">Acceptance Tests<a class="headerlink" href="#acceptance-tests" title="Permanent link">&para;</a></h1>
+<h2 id="acceptance-tests">Acceptance Tests<a class="headerlink" href="#acceptance-tests" title="Permanent link">&para;</a></h2>
+<p>First download the folder <a href="https://dl.photoprism.org/qa/">acceptance</a> and add it to your storage directory.
+It contains the files and configs needed for the tests to pass.</p>
 <h3 id="run-tests-within-the-docker-container">Run tests within the docker container<a class="headerlink" href="#run-tests-within-the-docker-container" title="Permanent link">&para;</a></h3>
-<p>You can run the tests from within the photoprism container in firefox or chromium.<br>
-* <code>make acceptance</code>: executes all tests in headless chromium and firefox<br>
-* <code>make test-chromium</code>: This executes all tests in headless chromium <br>
-* <code>make test-firefox</code>: This executes all tests in headless firefox</p>
+<p>You can run the tests from within the photoprism container in firefox or chromium.</p>
+<ul>
+<li>
+<p><code>make acceptance-run-chromium</code>: This executes all tests in headless chromium</p>
+</li>
+<li>
+<p><code>make acceptance-run-firefox</code>: This executes all tests in headless firefox</p>
+</li>
+</ul>
 <h3 id="run-tests-locally">Run tests locally<a class="headerlink" href="#run-tests-locally" title="Permanent link">&para;</a></h3>
-<p>Locally you can run the tests in all supported browsers (see table below). <br>
-To run tests locally you need to install testcafe on your machine <br> <br> 
+<p>Locally you can run the tests in all supported browsers you have installed.</p>
+<p>To run tests locally you need to install testcafe on your machine.
 <div class="highlight"><pre><span></span><code>npm install -g testcafe
 </code></pre></div>
 Then you can execute tests with
 <div class="highlight"><pre><span></span><code>testcafe  firefox,chrome,safari,opera -S \
+  -s frontend/tests/acceptance/screenshots frontend/tests/acceptance/
+</code></pre></div></p>
+<p>To run tests on remote or mobile devices use
+<div class="highlight"><pre><span></span><code>testcafe  remote -S \
   -s frontend/tests/acceptance/screenshots frontend/tests/acceptance/
 </code></pre></div></p>
 <h3 id="test-frameworks_2">Test Frameworks<a class="headerlink" href="#test-frameworks_2" title="Permanent link">&para;</a></h3>

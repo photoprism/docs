@@ -661,6 +661,19 @@
   </li>
 
         
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/advanced/backup/" class="md-nav__link">
+      Backup
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1578,56 +1591,16 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#package-documentation-godoc" class="md-nav__link">
-    Package Documentation (GoDoc)
+  <a href="#user-facing-documentation" class="md-nav__link">
+    User Facing Documentation
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#docsphotoprismorg" class="md-nav__link">
-    docs.photoprism.org
+  <a href="#package-documentation-godoc" class="md-nav__link">
+    Package Documentation (GoDoc)
   </a>
-  
-    <nav class="md-nav" aria-label="docs.photoprism.org">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#contributing-changes" class="md-nav__link">
-    Contributing changes
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#building-with-mkdocs" class="md-nav__link">
-    Building with Mkdocs
-  </a>
-  
-    <nav class="md-nav" aria-label="Building with Mkdocs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#editing-existing-pages" class="md-nav__link">
-    Editing existing pages
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2216,56 +2189,16 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#package-documentation-godoc" class="md-nav__link">
-    Package Documentation (GoDoc)
+  <a href="#user-facing-documentation" class="md-nav__link">
+    User Facing Documentation
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#docsphotoprismorg" class="md-nav__link">
-    docs.photoprism.org
+  <a href="#package-documentation-godoc" class="md-nav__link">
+    Package Documentation (GoDoc)
   </a>
-  
-    <nav class="md-nav" aria-label="docs.photoprism.org">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#contributing-changes" class="md-nav__link">
-    Contributing changes
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#building-with-mkdocs" class="md-nav__link">
-    Building with Mkdocs
-  </a>
-  
-    <nav class="md-nav" aria-label="Building with Mkdocs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#editing-existing-pages" class="md-nav__link">
-    Editing existing pages
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2287,47 +2220,23 @@
                 
                 
                 <h1 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">&para;</a></h1>
+<h2 id="user-facing-documentation">User Facing Documentation<a class="headerlink" href="#user-facing-documentation" title="Permanent link">&para;</a></h2>
+<p>User-facing documentation lives in the <a href="https://github.com/photoprism/photoprism-docs/">photoprism-docs</a>
+repository and can be browsed on <a href="https://docs.photoprism.org/">docs.photoprism.org</a>.</p>
+<p>See the <a href="https://github.com/photoprism/photoprism-docs/#readme">README</a> for how to easily edit the docs yourself.</p>
 <h2 id="package-documentation-godoc">Package Documentation (GoDoc)<a class="headerlink" href="#package-documentation-godoc" title="Permanent link">&para;</a></h2>
-<p><a href="https://blog.golang.org/godoc-documenting-go-code">Godoc parses Go source code</a> - including comments - and produces documentation as HTML or plain text. The end result is documentation tightly coupled with the code it documents:</p>
+<p><a href="https://blog.golang.org/godoc-documenting-go-code">Godoc</a> generates documentation automatically, so it's tightly coupled to the photoprism source code.</p>
+<p><a class="md-button md-button--primary" href="https://pkg.go.dev/github.com/photoprism/photoprism">View docs on pkg.go.dev</a></p>
+<p>Some highlights to explore:</p>
 <ul>
-<li><a href="https://godoc.org/github.com/photoprism/photoprism/cmd/photoprism">cmd/photoprism</a> - main application</li>
-<li><a href="https://godoc.org/github.com/photoprism/photoprism/internal/photoprism">internal/photoprism</a> - main library package</li>
-<li><a href="https://godoc.org/github.com/photoprism/photoprism/internal/server">internal/server</a> - server initialization and routing</li>
-<li><a href="https://godoc.org/github.com/photoprism/photoprism/internal/api">internal/api</a> - server api </li>
-<li><a href="https://godoc.org/github.com/photoprism/photoprism/internal/commands">internal/commands</a> - command line interface</li>
-<li><a href="https://godoc.org/github.com/photoprism/photoprism/internal/form">internal/form</a> - input validation (based on <a href="https://github.com/gin-gonic/gin#model-binding-and-validation">gin</a>)</li>
-<li><a href="https://godoc.org/github.com/photoprism/photoprism/internal/entity">internal/entity</a> - models (based on <a href="http://gorm.io/">GORM</a>)</li>
+<li><a href="https://pkg.go.dev/github.com/photoprism/photoprism/cmd/photoprism">cmd/photoprism</a> - main application</li>
+<li><a href="https://pkg.go.dev/github.com/photoprism/photoprism/internal/photoprism">internal/photoprism</a> - main library package</li>
+<li><a href="https://pkg.go.dev/github.com/photoprism/photoprism/internal/server">internal/server</a> - server initialization and routing</li>
+<li><a href="https://pkg.go.dev/github.com/photoprism/photoprism/internal/api">internal/api</a> - server api</li>
+<li><a href="https://pkg.go.dev/github.com/photoprism/photoprism/internal/commands">internal/commands</a> - command line interface</li>
+<li><a href="https://pkg.go.dev/github.com/photoprism/photoprism/internal/form">internal/form</a> - input validation (based on <a href="https://github.com/gin-gonic/gin#model-binding-and-validation">gin</a>)</li>
+<li><a href="https://pkg.go.dev/github.com/photoprism/photoprism/internal/entity">internal/entity</a> - models (based on <a href="http://gorm.io/">GORM</a>)</li>
 </ul>
-<h2 id="docsphotoprismorg"><a href="../..">docs.photoprism.org</a><a class="headerlink" href="#docsphotoprismorg" title="Permanent link">&para;</a></h2>
-<p><a href="https://github.com/photoprism/photoprism-docs">github.com/photoprism/photoprism-docs</a> contains the source 
-our public docs in <a href="https://www.mkdocs.org/user-guide/writing-your-docs/#writing-with-markdown">Markdown</a>.</p>
-<p>They are meant to be parsed with the <a href="https://www.mkdocs.org/">Mkdocs</a> documentation builder to build the 
-HTML documentation on <a href="https://docs.photoprism.org/">docs.photoprism.org</a>.</p>
-<h3 id="contributing-changes">Contributing changes<a class="headerlink" href="#contributing-changes" title="Permanent link">&para;</a></h3>
-<p><strong>Pull Requests should use the <code>master</code> branch by default.</strong></p>
-<p>Though less convenient to edit than a Wiki, our <code>photoprism-docs</code> repository is meant to receive pull requests to always improve the documentation, add new pages, etc. Having direct access to the source files in a revision control system is a big plus to ensure the quality of our end user documentation.</p>
-<h3 id="project-layout">Project layout<a class="headerlink" href="#project-layout" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></div>
-
-<h3 id="building-with-mkdocs">Building with Mkdocs<a class="headerlink" href="#building-with-mkdocs" title="Permanent link">&para;</a></h3>
-<p>To build the HTML, you need to install <a href="https://www.mkdocs.org/">Mkdocs</a>.</p>
-<p>It is best installed using <a href="https://pip.pypa.io">pip</a>, Python's module installer. On a Mac you can run:</p>
-<div class="highlight"><pre><span></span><code>brew install python
-pip3 install mkdocs
-pip3 install mkdocs-material
-</code></pre></div>
-<p>You can then build the HTML documentation from the root folder of this repository with:</p>
-<div class="highlight"><pre><span></span><code>mkdocs build
-</code></pre></div>
-<p>or start a server that listens on <a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a></p>
-<div class="highlight"><pre><span></span><code>mkdocs server
-</code></pre></div>
-<h4 id="editing-existing-pages">Editing existing pages<a class="headerlink" href="#editing-existing-pages" title="Permanent link">&para;</a></h4>
-<p>To edit an existing page, locate its .md source file and open it in your favourite text editor. You can then commit the changes, push them to your fork and make a pull request.</p>
                 
               
               

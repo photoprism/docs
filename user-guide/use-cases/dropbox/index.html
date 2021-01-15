@@ -84,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sync-files-from-dropbox" class="md-skip">
+        <a href="#sync-files-with-dropbox" class="md-skip">
           Skip to content
         </a>
       
@@ -657,6 +657,19 @@
   <li class="md-nav__item">
     <a href="../../../getting-started/advanced/nginx-proxy-setup/" class="md-nav__link">
       NGINX
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../getting-started/advanced/backup/" class="md-nav__link">
+      Backup
     </a>
   </li>
 
@@ -1380,9 +1393,45 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Sync with Dropbox
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
     <a href="./" class="md-nav__link md-nav__link--active">
       Sync with Dropbox
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#auto-upload-from-mobile" class="md-nav__link">
+    Auto-upload from Mobile
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smart-selective-sync" class="md-nav__link">
+    Smart / Selective Sync
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -2135,6 +2184,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#auto-upload-from-mobile" class="md-nav__link">
+    Auto-upload from Mobile
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smart-selective-sync" class="md-nav__link">
+    Smart / Selective Sync
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2150,16 +2221,40 @@
                   </a>
                 
                 
-                <h1 id="sync-files-from-dropbox">Sync files from Dropbox<a class="headerlink" href="#sync-files-from-dropbox" title="Permanent link">&para;</a></h1>
+                <h1 id="sync-files-with-dropbox">Sync files with Dropbox<a class="headerlink" href="#sync-files-with-dropbox" title="Permanent link">&para;</a></h1>
 <p>It's possible to use <a href="https://www.dropbox.com/">Dropbox</a> to store your photos, while viewing and managing them through PhotoPrism.</p>
-<p>A useful (although paid) feature is <a href="https://www.dropbox.com/smart-sync">Dropbox Smart Sync</a> (with optional auto-evict) which will download the files from Dropbox's servers only when you (or PhotoPrism) accesses them (such as during initial indexing, or when downloading an original file via the PhotoPrism interface).</p>
 <ol>
 <li>Set up a Dropbox account.</li>
 <li>Install the Dropbox desktop client.</li>
 <li>Sync your Dropbox to a local directory.</li>
-<li>If using Docker, configure the Dropbox folder as the <code>photoprism/originals</code> directory (or a subdirectory of that).</li>
+<li>If using Docker, configure your <code>docker-compose.yml</code> with;
+    <div class="highlight"><pre><span></span><code>volumes:
+  - &quot;~/Dropbox/Photos:/photoprism/originals&quot;
+</code></pre></div></li>
 <li>Follow the PhotoPrism <a href="/getting-started/">getting started</a> guide as normal.</li>
 </ol>
+<h2 id="auto-upload-from-mobile">Auto-upload from Mobile<a class="headerlink" href="#auto-upload-from-mobile" title="Permanent link">&para;</a></h2>
+<p>The Dropbox mobile apps also have a 'Camera Upload' feature which syncs photos to Dropbox, and then to any machine with Dropbox installed.</p>
+<p>To auto-import uploaded files into PhotoPrism;</p>
+<ol>
+<li>Install the Dropbox <a href="https://itunes.apple.com/gb/app/dropbox/id327630330?mt=8">iOS</a> or <a href="https://play.google.com/store/apps/details?hl=en_GB&amp;id=com.dropbox.android">Android</a> app.</li>
+<li>Enable 'Camera Uploads' in the Dropbox app's settings.</li>
+<li>Install the Dropbox <a href="https://www.dropbox.com/install">desktop client</a> on your server or a network-accessible machine</li>
+<li>Configure the <code>Camera Uploads</code> folder as your <code>import</code> directory for PhotoPrism.
+    In your <code>docker-compose.yml</code> file, this is;
+    <div class="highlight"><pre><span></span><code>volumes:
+  - &quot;~/Dropbox/Camera Uploads:/photoprism/import&quot;
+</code></pre></div></li>
+<li>Optional: Enable 'delete on import' in PhotoPrism's settings to delete imported files from Dropbox. This saves Dropbox space, allowing you to remain within the 2GB free tier.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Dropbox mobile app needs to be opened periodically or it tends to fail to identify and sync new photos.</p>
+<p>The <a href="https://github.com/photoprism/photoprism-mobile">PhotoPrism mobile app</a> is also under development and provides a sync feature.</p>
+</div>
+<h2 id="smart-selective-sync">Smart / Selective Sync<a class="headerlink" href="#smart-selective-sync" title="Permanent link">&para;</a></h2>
+<p>A useful (although paid) feature is <a href="https://www.dropbox.com/smart-sync">Dropbox Smart Sync</a> (with optional auto-evict) which will download the files from Dropbox's servers only when you (or PhotoPrism) accesses them (such as during initial indexing, or when downloading an original file via the PhotoPrism interface).</p>
+<p>This can save space on your server by automically offloading the originals unless/until they're viewed.</p>
                 
               
               
