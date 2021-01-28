@@ -16,7 +16,7 @@
         <link rel="canonical" href="https://docs.photoprism.org/release-notes/">
       
       <link rel="shortcut icon" href="../img/favicon-16.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.5">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.6">
     
     
       
@@ -24,10 +24,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.15aa0b43.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.cb6bc1d0.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.75751829.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
         
           
           
@@ -311,7 +311,6 @@
       
       
       
-
 
   
   
@@ -679,7 +678,6 @@
       
       
       
-
 
   
   
@@ -1453,7 +1451,6 @@
       
       
 
-
   
   
   
@@ -2017,7 +2014,6 @@
       
       
 
-
   
   
   
@@ -2214,15 +2210,19 @@ The preview image for ARM64 is <code>photoprism/photoprism-arm64:preview</code>.
 <li>UX: Improved theme colors and icons</li>
 <li>Translations: Updated German and French</li>
 <li>CLI: Added cleanup command to remove orphaned index entries and thumbnails</li>
+<li>Config: Reduced auto index &amp; import safety delay defaults</li>
+<li>Download: Include all related media files using their current name by default</li>
+<li>Indexer: <a href="https://github.com/photoprism/photoprism/commit/57dc591b124b071cb943cca8c11e98824b65cefc">Improved photo titles, removed small words from title endings</a></li>
+<li>Metadata: Improved date extraction from current and original file names</li>
 <li>Metadata: <a href="https://github.com/photoprism/photoprism/issues/930">Fallback to earliest file mod time in case there is no other date</a></li>
 <li>Import: <a href="https://github.com/photoprism/photoprism/issues/920">Index keywords from non-primary filenames as well</a></li>
 <li>Mobile: <a href="https://github.com/photoprism/photoprism/issues/953">Prevent like on touch swipe</a></li>
 <li>WebDAV: <a href="https://github.com/photoprism/photoprism/issues/496">Improved service discovery</a></li>
-<li>Purge: <a href="https://github.com/photoprism/photoprism/issues/917">Hide missing files in UI and set new primary if needed</a></li>
+<li>Purge: <a href="https://github.com/photoprism/photoprism/issues/917">Hide missing files in edit dialog and set new primary if needed</a></li>
 <li>Archive: <a href="https://github.com/photoprism/photoprism/issues/167">Physically delete files after confirmation</a> (early-access
   feature for our <a href="https://www.patreon.com/photoprism">sponsors</a> and <a href="https://docs.photoprism.org/developer-guide/">contributors</a>)</li>
 <li>Moments: <a href="https://github.com/photoprism/photoprism/issues/942">Added delete button to context menu</a></li>
-<li>Settings: <a href="https://github.com/photoprism/photoprism/issues/954">Added "Estimates" feature flag to UI</a></li>
+<li>Settings: <a href="https://github.com/photoprism/photoprism/issues/954">Added Estimates and Delete feature flags</a></li>
 </ul>
 <h3 id="january-21-2021">January 21, 2021<a class="headerlink" href="#january-21-2021" title="Permanent link">&para;</a></h3>
 <p><a href="https://drone.photoprism.app/photoprism/photoprism/882/1/0">210121-07e559df-Linux-x86_64</a>,
@@ -2443,15 +2443,15 @@ The preview image for ARM64 is <code>photoprism/photoprism-arm64:preview</code>.
       
     </div>
     
-      <script src="../assets/javascripts/vendor.93c04032.min.js"></script>
-      <script src="../assets/javascripts/bundle.83e5331e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../assets/javascripts/vendor.53cc9318.min.js"></script>
+      <script src="../assets/javascripts/bundle.e9c9f54f.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "..",
           features: ['navigation.tabs'],
           search: Object.assign({
-            worker: "../assets/javascripts/worker/search.8c7e0a7e.min.js"
+            worker: "../assets/javascripts/worker/search.9c0e82ba.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
