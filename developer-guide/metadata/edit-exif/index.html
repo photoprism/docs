@@ -16,7 +16,7 @@
         <link rel="canonical" href="https://docs.photoprism.org/developer-guide/metadata/edit-exif/">
       
       <link rel="shortcut icon" href="../../../img/favicon-16.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.6">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.7">
     
     
       
@@ -1090,6 +1090,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-guide/organize/delete/" class="md-nav__link">
+        Delete photos
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -1852,9 +1864,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#command-line-example" class="md-nav__link">
-    Command line example
+  <a href="#command-line-examples" class="md-nav__link">
+    Command line examples
   </a>
+  
+    <nav class="md-nav" aria-label="Command line examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#set-createdate" class="md-nav__link">
+    Set CreateDate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-all-gps-data" class="md-nav__link">
+    Remove all GPS data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-all-exif-data" class="md-nav__link">
+    Remove all exif data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2087,9 +2126,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#command-line-example" class="md-nav__link">
-    Command line example
+  <a href="#command-line-examples" class="md-nav__link">
+    Command line examples
   </a>
+  
+    <nav class="md-nav" aria-label="Command line examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#set-createdate" class="md-nav__link">
+    Set CreateDate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-all-gps-data" class="md-nav__link">
+    Remove all GPS data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-all-exif-data" class="md-nav__link">
+    Remove all exif data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2114,9 +2180,14 @@
                 
                 <h2 id="edit-exif-metadata-for-testing">Edit EXIF metadata for testing<a class="headerlink" href="#edit-exif-metadata-for-testing" title="Permanent link">&para;</a></h2>
 <p>Exiftool &rarr; <a href="https://exiftool.org/">https://exiftool.org/</a></p>
-<p>Installation possible via brew or from homepage</p>
-<h2 id="command-line-example">Command line example<a class="headerlink" href="#command-line-example" title="Permanent link">&para;</a></h2>
+<p>Installation possible via brew or from homepage.</p>
+<h2 id="command-line-examples">Command line examples<a class="headerlink" href="#command-line-examples" title="Permanent link">&para;</a></h2>
+<h3 id="set-createdate">Set CreateDate<a class="headerlink" href="#set-createdate" title="Permanent link">&para;</a></h3>
 <p><code>exiftool -CreateDate="1919:05:04 05:59:26+02:00" dog_toshi_yellow.jpg</code></p>
+<h3 id="remove-all-gps-data">Remove all GPS data<a class="headerlink" href="#remove-all-gps-data" title="Permanent link">&para;</a></h3>
+<p><code>exiftool -GPS:all= file.jpg</code></p>
+<h3 id="remove-all-exif-data">Remove all exif data<a class="headerlink" href="#remove-all-exif-data" title="Permanent link">&para;</a></h3>
+<p><code>exiftool -all= foo.jpg</code></p>
 <p>Further examples can be found here: <a href="https://exiftool.org/examples.html">https://exiftool.org/examples.html</a></p>
                 
               
