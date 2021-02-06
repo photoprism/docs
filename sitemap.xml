@@ -1,403 +1,403 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://docs.photoprism.org/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/getting-started/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/getting-started/docker-compose/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/getting-started/raspberry-pi/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/getting-started/docker/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/getting-started/config-options/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/getting-started/updates/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/getting-started/portainer/synology/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/getting-started/proxies/traefik/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/getting-started/proxies/caddy-1/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/getting-started/proxies/caddy-2/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/getting-started/proxies/nginx/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/getting-started/proxies/apache-2/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/getting-started/advanced/scalability/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/getting-started/advanced/kubernetes/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/getting-started/advanced/freebsd/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/getting-started/advanced/databases/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/getting-started/advanced/caching/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/getting-started/advanced/nginx-proxy-setup/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/getting-started/advanced/backup/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/getting-started/faq/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/navigate/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/library/import-vs-index/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/library/indexing/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/library/import/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/library/upload/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/library/webdav/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/library/files/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/organize/browse/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/organize/views/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/organize/search/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/organize/review/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/organize/stacks/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/organize/panoramas/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/organize/scans/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/organize/private/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/organize/archive/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/organize/albums/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/organize/folders/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/organize/labels/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/organize/places/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/organize/video/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/organize/moments/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/organize/calendar/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/organize/download/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/organize/edit/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/organize/delete/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/sync/webdav/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/share/share/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/settings/general/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/settings/library/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/settings/advanced/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/settings/sync/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/settings/account/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/use-cases/google/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/use-cases/flickr/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/use-cases/dropbox/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/release-notes/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/user-guide/faq/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/setup/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/directories/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/configuration/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/tests/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/issues/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/pull-requests/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/code-quality/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/documentation/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/translations/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/frontend/introduction/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/frontend/screenshots/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/frontend/components/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/frontend/design/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/frontend/rest-api/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/frontend/browsers/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/library/importing/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/library/storage/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/library/encryption/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/library/converting/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/library/heif/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/library/thumbnails/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/library/samples/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/metadata/geocoding/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/metadata/colors/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/metadata/classification/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/metadata/face-recognition/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/metadata/xmp/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/metadata/exif/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/metadata/edit-exif/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/technologies/golang/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/technologies/tensorflow/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/technologies/docker/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/technologies/broadway/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/developer-guide/technologies/external-apis/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/team/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/funding/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/credits/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/license/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.photoprism.org/contact/</loc>
-     <lastmod>2021-02-05</lastmod>
+     <lastmod>2021-02-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
