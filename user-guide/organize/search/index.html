@@ -967,6 +967,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#wildcard" class="md-nav__link">
+    Wildcard
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1208,6 +1215,18 @@
     <li class="md-nav__item">
       <a href="../../sync/webdav/" class="md-nav__link">
         Connect via WebDAV
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sync/sync-phone/" class="md-nav__link">
+        Sync from phone
       </a>
     </li>
   
@@ -2153,6 +2172,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#wildcard" class="md-nav__link">
+    Wildcard
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2413,10 +2439,18 @@
 </code></pre></div>
 <p>It will show photos that are monochrome <strong>and</strong> unreviewed.</p>
 <h2 id="or-search">OR Search<a class="headerlink" href="#or-search" title="Permanent link">&para;</a></h2>
-<p>An OR search is possible using |:</p>
+<p>An OR search is possible using <code>|</code>:</p>
 <div class="highlight"><pre><span></span><code>label:cat|dog
 </code></pre></div>
 <p>This will show all photos that have either the label cat <strong>or</strong> dog.</p>
+<h2 id="wildcard">Wildcard<a class="headerlink" href="#wildcard" title="Permanent link">&para;</a></h2>
+<p>The <code>*</code> character will act as a wildcard:</p>
+<div class="highlight"><pre><span></span><code>name:&quot;IMG_23*&quot;
+</code></pre></div>
+<p>This will show all photos which name start with <code>IMG_23</code>.</p>
+<div class="highlight"><pre><span></span><code>name:&quot;*_23*&quot;
+</code></pre></div>
+<p>This will show all photos which name contain <code>_23</code>, like <code>IMG_2356.MOV</code> , <code>2021_02_23.jpg</code>, etc.</p>
                 
               
               

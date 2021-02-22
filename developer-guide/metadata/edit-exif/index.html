@@ -84,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#edit-exif-metadata-for-testing" class="md-skip">
+        <a href="#show-exif-data-for-debugging" class="md-skip">
           Skip to content
         </a>
       
@@ -1142,6 +1142,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user-guide/sync/sync-phone/" class="md-nav__link">
+        Sync from phone
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -1857,18 +1869,38 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#edit-exif-metadata-for-testing" class="md-nav__link">
-    Edit EXIF metadata for testing
+  <a href="#show-exif-data-for-debugging" class="md-nav__link">
+    Show exif data for debugging
   </a>
+  
+    <nav class="md-nav" aria-label="Show exif data for debugging">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#show-exif-data-read-from-exiftool" class="md-nav__link">
+    Show exif data read from exiftool
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-exif-data-read-from-exif-read-tool" class="md-nav__link">
+    Show exif data read from exif-read-tool
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#command-line-examples" class="md-nav__link">
-    Command line examples
+  <a href="#edit-exif-data-for-testing" class="md-nav__link">
+    Edit EXIF data for testing
   </a>
   
-    <nav class="md-nav" aria-label="Command line examples">
+    <nav class="md-nav" aria-label="Edit EXIF data for testing">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2119,18 +2151,38 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#edit-exif-metadata-for-testing" class="md-nav__link">
-    Edit EXIF metadata for testing
+  <a href="#show-exif-data-for-debugging" class="md-nav__link">
+    Show exif data for debugging
   </a>
+  
+    <nav class="md-nav" aria-label="Show exif data for debugging">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#show-exif-data-read-from-exiftool" class="md-nav__link">
+    Show exif data read from exiftool
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-exif-data-read-from-exif-read-tool" class="md-nav__link">
+    Show exif data read from exif-read-tool
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#command-line-examples" class="md-nav__link">
-    Command line examples
+  <a href="#edit-exif-data-for-testing" class="md-nav__link">
+    Edit EXIF data for testing
   </a>
   
-    <nav class="md-nav" aria-label="Command line examples">
+    <nav class="md-nav" aria-label="Edit EXIF data for testing">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2178,10 +2230,15 @@
                 
                   <h1>Edit EXIF</h1>
                 
-                <h2 id="edit-exif-metadata-for-testing">Edit EXIF metadata for testing<a class="headerlink" href="#edit-exif-metadata-for-testing" title="Permanent link">&para;</a></h2>
-<p>Exiftool &rarr; <a href="https://exiftool.org/">https://exiftool.org/</a></p>
+                <p>Exiftool &rarr; <a href="https://exiftool.org/">https://exiftool.org/</a></p>
 <p>Installation possible via brew or from homepage.</p>
-<h2 id="command-line-examples">Command line examples<a class="headerlink" href="#command-line-examples" title="Permanent link">&para;</a></h2>
+<p>Exif-Read-Tool: <a href="https://github.com/dsoprea/go-exif">https://github.com/dsoprea/go-exif</a></p>
+<h2 id="show-exif-data-for-debugging">Show exif data for debugging<a class="headerlink" href="#show-exif-data-for-debugging" title="Permanent link">&para;</a></h2>
+<h3 id="show-exif-data-read-from-exiftool">Show exif data read from exiftool<a class="headerlink" href="#show-exif-data-read-from-exiftool" title="Permanent link">&para;</a></h3>
+<p><code>exiftool -j photo.jpg</code></p>
+<h3 id="show-exif-data-read-from-exif-read-tool">Show exif data read from exif-read-tool<a class="headerlink" href="#show-exif-data-read-from-exif-read-tool" title="Permanent link">&para;</a></h3>
+<p><code>exif-read-tool -f photo.jpg</code></p>
+<h2 id="edit-exif-data-for-testing">Edit EXIF data for testing<a class="headerlink" href="#edit-exif-data-for-testing" title="Permanent link">&para;</a></h2>
 <h3 id="set-createdate">Set CreateDate<a class="headerlink" href="#set-createdate" title="Permanent link">&para;</a></h3>
 <p><code>exiftool -CreateDate="1919:05:04 05:59:26+02:00" dog_toshi_yellow.jpg</code></p>
 <h3 id="remove-all-gps-data">Remove all GPS data<a class="headerlink" href="#remove-all-gps-data" title="Permanent link">&para;</a></h3>
