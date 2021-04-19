@@ -16,7 +16,7 @@
         <link rel="canonical" href="https://docs.photoprism.org/user-guide/advanced/backups/">
       
       <link rel="icon" href="../../../img/favicon-16.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.2">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.9299cb39.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f955dcd.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.ef6f36e2.min.css">
@@ -216,13 +216,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../" class="md-tabs__link">
+      <a href="../../" class="md-tabs__link md-tabs__link--active">
         User Guide
       </a>
     </li>
@@ -686,12 +688,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       <label class="md-nav__link" for="__nav_2">
         User Guide
@@ -1338,6 +1342,162 @@
     <li class="md-nav__item">
       <a href="../../use-cases/dropbox/" class="md-nav__link">
         Sync with Dropbox
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9" type="checkbox" id="__nav_2_9" checked>
+      
+      <label class="md-nav__link" for="__nav_2_9">
+        Advanced
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Advanced" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_9">
+          <span class="md-nav__icon md-icon"></span>
+          Advanced
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metadata/" class="md-nav__link">
+        Metadata
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Backups
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Backups
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#album-backups" class="md-nav__link">
+    Album Backups
+  </a>
+  
+    <nav class="md-nav" aria-label="Album Backups">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#album-backups_1" class="md-nav__link">
+    Album backups
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#folder-backups" class="md-nav__link">
+    Folder backups
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#month-backups" class="md-nav__link">
+    Month backups
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state-backups" class="md-nav__link">
+    State backups
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moment-backups" class="md-nav__link">
+    Moment backups
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#photo-backups" class="md-nav__link">
+    Photo Backups
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backup-command" class="md-nav__link">
+    Backup Command
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../folders/" class="md-nav__link">
+        Folders
       </a>
     </li>
   
@@ -2043,6 +2203,7 @@
   
   
   
+  
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
@@ -2104,6 +2265,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#backup-command" class="md-nav__link">
+    Backup Command
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2123,78 +2291,61 @@
                 
                   <h1>Backups</h1>
                 
-                <p>In case you have backups enabled in your <a href="../../settings/advanced/">Settings</a>, PhotoPrism automatically creates yml backup files for albums and photos.</p>
-<p>We do this to give you full control over your data. </p>
-<p>Other services store the result of the work, you put into your library (e.g. adding tags, adding descriptions, creating albums, marking photos as favorites etc), 
-in a way that is not accessible to you. Often they do not even provide you with an option to export all of this data.</p>
-<p>We chose yml files for the following reasons:</p>
-<ul>
-<li>human-readable</li>
-<li>...</li>
-</ul>
+                <p>In case you have backups enabled in your <a href="../../settings/advanced/">Settings</a>, PhotoPrism automatically creates YAML backup files for albums and photos.</p>
+<p>We do this to give you full control over your data.</p>
 <h2 id="album-backups">Album Backups<a class="headerlink" href="#album-backups" title="Permanent link">&para;</a></h2>
 <p>Album backups are created for the following album types: album, folder, state, moment and month.
 You find those backups inside of your <code>storage path</code> in <code>/albums</code>.</p>
 <h3 id="album-backups_1">Album backups<a class="headerlink" href="#album-backups_1" title="Permanent link">&para;</a></h3>
-<p>For each album the following metadata is stored in the yml file:</p>
+<p>For each album the following metadata is stored in the YAML file:</p>
 <ul>
 <li>UID, Slug, Type, Title, Location, Category, Description, Sort Order, Country, CreatedAt, UpdatedAt, Photos (UID + date the photo was added to the album)</li>
 </ul>
 <h3 id="folder-backups">Folder backups<a class="headerlink" href="#folder-backups" title="Permanent link">&para;</a></h3>
-<p>For each folder the following metadata is stored in the yml file:</p>
+<p>For each folder the following metadata is stored in the YAML file:</p>
 <ul>
 <li>UID, Slug, Type, Title, Location, Category, Description, Filter, Sort order, Country, Year, Month, Day, CreatedAt, UpdatedAt</li>
 </ul>
 <h3 id="month-backups">Month backups<a class="headerlink" href="#month-backups" title="Permanent link">&para;</a></h3>
-<p>For each month the following metadata is stored in the yml file:</p>
+<p>For each month the following metadata is stored in the YAML file:</p>
 <ul>
 <li>UID, Slug, Type, Title, Location, Category, Description, Filter, Sort Order, Country, Year, Month, CreatedAt, UpdatedAt</li>
 </ul>
 <h3 id="state-backups">State backups<a class="headerlink" href="#state-backups" title="Permanent link">&para;</a></h3>
-<p>For each state the following metadata is stored in the yml file:</p>
+<p>For each state the following metadata is stored in the YAML file:</p>
 <ul>
 <li>UID, Slug, Type, Title, Location, Category, Description, Filter, Sort Order, Country, CreatedAt, UpdatedAt</li>
 </ul>
 <h3 id="moment-backups">Moment backups<a class="headerlink" href="#moment-backups" title="Permanent link">&para;</a></h3>
-<p>For each moment the following metadata is stored in the yml file:</p>
+<p>For each moment the following metadata is stored in the YAML file:</p>
 <ul>
 <li>UID, Slug, Type, Title, Location, Category, Description, Filter, Sort Order, Country, Year, CreatedAt, UpdatedAt</li>
 </ul>
 <h2 id="photo-backups">Photo Backups<a class="headerlink" href="#photo-backups" title="Permanent link">&para;</a></h2>
-<p>PhotoPrism creates yml backup files for each photo in your <code>sidecar path</code>.</p>
+<p>PhotoPrism creates YAML backup files for each photo in your <code>sidecar path</code>.</p>
 <p>The following metadata is stored:</p>
 <ul>
-<li>TakenAt + Source</li>
-<li>UID</li>
-<li>Type</li>
-<li>Title + Source</li>
-<li>Description + Source</li>
-<li>OriginalName</li>
-<li>TimeZone</li>
-<li>PlaceSrc</li>
-<li>Altitude</li>
-<li>Lat</li>
-<li>Lng</li>
-<li>Year</li>
-<li>Month</li>
-<li>Day</li>
-<li>Iso</li>
-<li>Exposure</li>
-<li>FNumber</li>
-<li>FocalLength</li>
-<li>Quality</li>
-<li>Favorite</li>
-<li>Private</li>
-<li>Keywords + Source</li>
-<li>Notes + Source</li>
-<li>Subject + Source</li>
-<li>Artist + Source</li>
-<li>Copyright + Source</li>
-<li>License + Source</li>
-<li>CreatedAt</li>
-<li>UpdatedAt</li>
-<li>EditedAt</li>
-<li>DeletedAt (Archived)</li>
+<li>TakenAt + Source, UID, Type, Title + Source, Description + Source, OriginalName, TimeZone, PlaceSrc, Altitude, 
+  Lat, Lng, Year, Month, Day, Iso, Exposure, FNumber, FocalLength, Quality, Favorite, Private, Keywords + Source, 
+  Notes + Source, Subject + Source, Artist + Source, Copyright + Source, License + Source, CreatedAt, UpdatedAt, EditedAt, DeletedAt (Archived)</li>
+</ul>
+<h2 id="backup-command">Backup Command<a class="headerlink" href="#backup-command" title="Permanent link">&para;</a></h2>
+<p>PhotoPrism automatically creates the album and photo backup YAML files.
+If you want to update album backups or create a database backup you can use the backup command:</p>
+<p><code>docker-compose exec photoprism photoprism backup -a -i exampleName</code></p>
+<ul>
+<li>
+<p>-a = create album backups</p>
+</li>
+<li>
+<p>-i = create database backup</p>
+</li>
+<li>
+<p>-f = overwrite extisting backup files</p>
+</li>
+<li>
+<p>exampleFilename = optional, name of the file for the database backup</p>
+</li>
 </ul>
                 
               
@@ -2211,6 +2362,39 @@ You find those backups inside of your <code>storage path</code> in <code>/albums
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../metadata/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Metadata
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../folders/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Folders
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -2296,7 +2480,7 @@ You find those backups inside of your <code>storage path</code> in <code>/albums
     <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.7353b375.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.4ea5477f.min.js"></script>
       
     
   </body>
