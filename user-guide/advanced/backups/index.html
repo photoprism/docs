@@ -2332,23 +2332,14 @@ You find those backups inside of your <code>storage path</code> in <code>/albums
 <h2 id="backup-command">Backup Command<a class="headerlink" href="#backup-command" title="Permanent link">&para;</a></h2>
 <p>PhotoPrism automatically creates the album and photo backup YAML files.
 If you want to update album backups or create a database backup you can use the backup command:</p>
-<p><code>docker-compose exec photoprism photoprism backup -a --albums-path PATH -i --index-path PATH</code></p>
+<p><code>docker-compose exec photoprism photoprism backup -a --albums-path PATH -i --index-path PATH [FILENAME]</code></p>
 <ul>
-<li>
-<p>-a = create album backups</p>
-</li>
-<li>
-<p>--albums-path = optional, path where album backup will be stored</p>
-</li>
-<li>
-<p>-i = create database backup</p>
-</li>
-<li>
-<p>--index-path = optional, path for the database backup</p>
-</li>
-<li>
-<p>-f = overwrite existing backup files</p>
-</li>
+<li>-a = create album backups</li>
+<li>--albums-path = optional, path where album backups will be stored</li>
+<li>-i = create database backup</li>
+<li>--index-path = optional, path for the database backup</li>
+<li>-f = overwrite existing backup files</li>
+<li>A custom index sql backup FILENAME may be passed as first argument. Use - for stdout.</li>
 </ul>
                 
               
