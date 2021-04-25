@@ -16,7 +16,7 @@
         <link rel="canonical" href="https://docs.photoprism.org/getting-started/proxies/SWAG/">
       
       <link rel="icon" href="../../../img/favicon-16.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.2">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f955dcd.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.e35208c4.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.ef6f36e2.min.css">
@@ -2254,12 +2254,14 @@
                 
                 
                 <h1 id="using-swag-as-reverse-proxy">Using SWAG as Reverse Proxy<a class="headerlink" href="#using-swag-as-reverse-proxy" title="Permanent link">&para;</a></h1>
+<p><em>Note: This is contributed content.</em></p>
 <p>To make the setup of a Reverse Proxy much easier, Linuxserver.io developed <a href="https://github.com/linuxserver/docker-swag">SWAG</a><br />
-SWAG - Secure Web Application Gateway (formerly known as letsencrypt, no relation to Let's Encrypt™) sets up an Nginx webserver and reverse proxy with php support and a built-in certbot client that automates free SSL server certificate generation and renewal processes (Let's Encrypt and ZeroSSL). It also contains fail2ban for intrusion prevention.</p>
+SWAG - Secure Web Application Gateway (formerly known as letsencrypt, no relation to Let's Encrypt™) sets up an Nginx web server and reverse proxy with PHP support and a built-in certbot client that automates free SSL server certificate generation and renewal processes (Let's Encrypt and ZeroSSL). It also contains fail2ban for intrusion prevention.</p>
 <h2 id="step-1-get-a-domain">Step 1: Get a domain<a class="headerlink" href="#step-1-get-a-domain" title="Permanent link">&para;</a></h2>
-<p>The first step is to grab a dynamic dns if you don't have your own subdomain already. You can get this from for example <a href="https://www.duckdns.org">DuckDNS</a>.</p>
+<p>The first step is to grab a dynamic DNS if you don't have your own subdomain already. You can get this from for example <a href="https://www.duckdns.org">DuckDNS</a>.</p>
 <h2 id="step-2-set-up-swag">Step 2: Set-up SWAG<a class="headerlink" href="#step-2-set-up-swag" title="Permanent link">&para;</a></h2>
-<p>Then you will need to setup SWAG, the variables of the  docker-compose are explained on the Github-page of <a href="https://github.com/linuxserver/docker-swag">SWAG</a>. This is an example on how to set it up using duckdns and docker-compose. </p>
+<p>Then you will need to set up SWAG, the variables of the docker-compose are explained on the Github page of <a href="https://github.com/linuxserver/docker-swag">SWAG</a>.
+This is an example of how to set it up using duckdns and docker-compose. </p>
 <div class="admonition example">
 <p class="admonition-title">docker-compose.yml</p>
 <div class="highlight"><pre><span></span><code><span class="nt">version</span><span class="p">:</span> <span class="s">&quot;2.1&quot;</span>
@@ -2290,12 +2292,11 @@ SWAG - Secure Web Application Gateway (formerly known as letsencrypt, no relatio
         <span class="nt">restart</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">unless-stopped</span>
 </code></pre></div>
 </div>
-<p>Don't forget to change the <mydomain.duckns> into your personal domain and the <duckdnstoken> into your token.</p>
+<p>Don't forget to change the <code>mydomain.duckns</code> into your personal domain and the <code>duckdnstoken</code> into your token and remove the brackets.</p>
 <h2 id="step-3-change-the-config-files">Step 3: Change the config files<a class="headerlink" href="#step-3-change-the-config-files" title="Permanent link">&para;</a></h2>
 <p>Navigate to the config folder of SWAG and head to <code>proxy-confs</code>. If you used the example above, you should navigate to: <code>/etc/config/swag/nginx/proxy-confs/ </code>.
-Their are a lot of preconfigured files to use for different apps such as radarr,sonarr,overseerr,... </p>
+There are a lot of preconfigured files to use for different apps such as radarr,sonarr,overseerr,... </p>
 <p>To use the bundled configuration file, simply rename <code>photoprism.subdomain.conf.sample</code> in the proxy-confs folder to <code>photoprism.subdomain.conf</code>.
-<strong>It is possible that the config file isn't added yet. Please create the following file with your editor of choice.</strong>
 Alternatively, you can create a new file <code>photoprism.subdomain.conf</code> in proxy-confs with the following configuration:</p>
 <div class="admonition example">
 <p class="admonition-title">photoprism.subdomain.conf</p>
@@ -2322,13 +2323,15 @@ Alternatively, you can create a new file <code>photoprism.subdomain.conf</code> 
 </code></pre></div>
 </div>
 <h2 id="step-4-port-forward-port-443">Step 4: Port-forward port 443<a class="headerlink" href="#step-4-port-forward-port-443" title="Permanent link">&para;</a></h2>
-<p>Since SWAG allows you to set-up a secure connection, you will need to open port 443 on your router. This is way more secure then port 80.</p>
+<p>Since SWAG allows you to set up a secure connection, you will need to open port 443 on your router for encrypted traffic. This is way more secure than port 80 for http.</p>
 <h2 id="step-5-restart-swag">Step 5: Restart SWAG<a class="headerlink" href="#step-5-restart-swag" title="Permanent link">&para;</a></h2>
-<p>When you change anything in the config of nginx, you will need to restart the containter using <code>docker restart swag</code>.
-If everything went well, you can now access photoprism on the subdomain you configured: photoprism.<mydomain>.duckdns.org</p>
+<p>When you change anything in the config of Nginx, you will need to restart the container using <code>docker restart swag</code>.
+If everything went well, you can now access photoprism on the subdomain you configured: photoprism.mydomain.duckdns.org</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<p>In some cases, the docker-container of photoprism won't be named "photoprism". To check this, execute <code>docker ps</code> and check wether it is named "photoprism". If it's not, execute <code>docker rename <currentcontainername> photoprism</code>. Restart swag afterwards.</p>
+<p>In some cases, the docker-container of photoprism won't be named "photoprism".
+To check this, execute <code>docker ps</code> and check wether it is named "photoprism".
+If it's not, execute <code>docker rename <currentcontainername> photoprism</code>. Restart swag afterwards.</p>
 </div>
                 
               
