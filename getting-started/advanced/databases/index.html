@@ -2226,6 +2226,7 @@ tested and working database configurations. These docs are for advanced users on
 <p>Now create a user and grant privileges for this new database:</p>
 <div class="highlight"><pre><span></span><code><span class="k">CREATE</span> <span class="k">USER</span> <span class="s1">&#39;photoprism&#39;</span><span class="o">@</span><span class="s1">&#39;%&#39;</span> <span class="n">IDENTIFIED</span> <span class="k">BY</span> <span class="s1">&#39;insecure&#39;</span><span class="p">;</span>
 <span class="k">GRANT</span> <span class="k">ALL</span> <span class="k">PRIVILEGES</span> <span class="k">ON</span> <span class="n">photoprism</span><span class="p">.</span><span class="o">*</span> <span class="k">to</span> <span class="s1">&#39;photoprism&#39;</span><span class="o">@</span><span class="s1">&#39;%&#39;</span><span class="p">;</span>
+<span class="n">FLUSH</span> <span class="k">PRIVILEGES</span><span class="p">;</span>
 </code></pre></div>
 <p>Set the database environment variables for PhotoPrism as follows:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">services</span><span class="p">:</span>
