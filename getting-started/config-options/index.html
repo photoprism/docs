@@ -92,9 +92,7 @@
             
   <style>.md-announce a,.md-announce a:focus,.md-announce a:hover{color:currentColor}.md-announce strong{white-space:nowrap}.md-announce .twitter{margin-left:.2em;color:#00acee}</style>
   <a href="https://www.patreon.com/photoprism">
-    Become a sponsor on <strong>Patreon
-    <span class="twemoji"><img src="/img/patreon.svg" alt="Patreon Logo"></span>
-    </strong>
+    Become a sponsor on <strong>Patreon <span class="twemoji"><img src="/img/patreon.svg" alt="Patreon Logo" style="width: 16px; height: 16px;"></span></strong>
   </a>
 
           </div>
@@ -2276,6 +2274,31 @@
 <td align="left">don't use TensorFlow for image classification</td>
 </tr>
 <tr>
+<td align="left"><code>PHOTOPRISM_DISABLE_DARKTABLE</code></td>
+<td align="left">--disable-darktable</td>
+<td align="left">don't use Darktable to convert RAW files</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_DISABLE_RAWTHERAPEE</code></td>
+<td align="left">--disable-rawtherapee</td>
+<td align="left">don't use RawTherapee to convert RAW files</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_DISABLE_SIPS</code></td>
+<td align="left">--disable-sip</td>
+<td align="left">don't use Sips to convert RAW files on macOS</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_DISABLE_HEIFCONVERT</code></td>
+<td align="left">--disable-heifconvert</td>
+<td align="left">don't convert HEIC/HEIF files</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_DISABLE_FFMPEG</code></td>
+<td align="left">--disable-ffmpeg</td>
+<td align="left">don't transcode videos with FFmpeg</td>
+</tr>
+<tr>
 <td align="left"><code>PHOTOPRISM_DETECT_NSFW</code></td>
 <td align="left">--detect-nsfw</td>
 <td align="left">flag photos as private that may be offensive</td>
@@ -2401,9 +2424,9 @@
 <td align="left">Darktable CLI COMMAND for raw image conversion (default: "darktable-cli")</td>
 </tr>
 <tr>
-<td align="left"><code>PHOTOPRISM_DARKTABLE_PRESETS</code></td>
-<td align="left">--darktable-presets</td>
-<td align="left">disables simultaneous conversion of raw files to apply Darktable presets</td>
+<td align="left"><code>PHOTOPRISM_RAW_PRESETS</code></td>
+<td align="left">--raw-presets</td>
+<td align="left">enables RAW converter presets (may reduce performance)</td>
 </tr>
 <tr>
 <td align="left"><code>PHOTOPRISM_SIPS_BIN</code></td>
@@ -2419,6 +2442,21 @@
 <td align="left"><code>PHOTOPRISM_FFMPEG_BIN</code></td>
 <td align="left">--ffmpeg-bin COMMAND</td>
 <td align="left">FFmpeg COMMAND for video transcoding and cover images (default: "ffmpeg")</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_FFMPEG_ENCODER</code></td>
+<td align="left">--ffmpeg-encoder NAME</td>
+<td align="left">FFmpeg AVC encoder NAME (default: "libx264")</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_FFMPEG_BITRATE</code></td>
+<td align="left">--ffmpeg-bitrate LIMIT</td>
+<td align="left">FFmpeg encoding bitrate LIMIT in Mbit/s (default: "50")</td>
+</tr>
+<tr>
+<td align="left"><code>PHOTOPRISM_FFMPEG_BUFFERS</code></td>
+<td align="left">--ffmpeg-buffers</td>
+<td align="left">FFmpeg capture buffers (default: "532")</td>
 </tr>
 <tr>
 <td align="left"><code>PHOTOPRISM_EXIFTOOL_BIN</code></td>
