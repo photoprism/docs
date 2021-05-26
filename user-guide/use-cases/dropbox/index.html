@@ -1122,12 +1122,14 @@
             
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" checked>
       
       <label class="md-nav__link" for="__nav_2_5">
         Sync
@@ -1160,6 +1162,65 @@
       <a href="../../sync/sync-phone/" class="md-nav__link">
         Sync from phone
       </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Sync with Dropbox
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Sync with Dropbox
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#auto-upload-from-mobile" class="md-nav__link">
+    Auto-upload from Mobile
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smart-selective-sync" class="md-nav__link">
+    Smart / Selective Sync
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1299,23 +1360,21 @@
             
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8" type="checkbox" id="__nav_2_8" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8" type="checkbox" id="__nav_2_8" >
       
       <label class="md-nav__link" for="__nav_2_8">
-        Use Cases
+        Migrate
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Use Cases" data-md-level="2">
+      <nav class="md-nav" aria-label="Migrate" data-md-level="2">
         <label class="md-nav__title" for="__nav_2_8">
           <span class="md-nav__icon md-icon"></span>
-          Use Cases
+          Migrate
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1325,7 +1384,7 @@
   
     <li class="md-nav__item">
       <a href="../google/" class="md-nav__link">
-        Export from Google Photos
+        Migrate from Google Photos
       </a>
     </li>
   
@@ -1337,7 +1396,7 @@
   
     <li class="md-nav__item">
       <a href="../apple/" class="md-nav__link">
-        Export from Apple Photos
+        Migrate from Apple Photos
       </a>
     </li>
   
@@ -1349,67 +1408,8 @@
   
     <li class="md-nav__item">
       <a href="../flickr/" class="md-nav__link">
-        Export from Flickr
+        Migrate from Flickr
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Sync with Dropbox
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        Sync with Dropbox
-      </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#auto-upload-from-mobile" class="md-nav__link">
-    Auto-upload from Mobile
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#smart-selective-sync" class="md-nav__link">
-    Smart / Selective Sync
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2309,7 +2309,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../flickr/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../../sync/sync-phone/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -2318,19 +2318,19 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Export from Flickr
+              Sync from phone
             </div>
           </div>
         </a>
       
       
-        <a href="../../advanced/metadata/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../../share/share/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Metadata
+              Share album via link
             </div>
           </div>
           <div class="md-footer__button md-icon">
