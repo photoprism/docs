@@ -13,14 +13,14 @@
         <meta name="author" content="PhotoPrism.org">
       
       
-        <link rel="canonical" href="https://docs.photoprism.org/developer-guide/frontend/design/">
+        <link rel="canonical" href="https://docs.photoprism.org/developer-guide/storage/thumbnails/">
       
       <link rel="icon" href="../../../img/favicon-16.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.5">
     
     
       
-        <title>Design - PhotoPrism</title>
+        <title>Thumbnails - PhotoPrism</title>
       
     
     
@@ -55,14 +55,14 @@
     
   
   <meta property="og:type" content="website">
-  <meta property="og:title" content="PhotoPrism - Design">
+  <meta property="og:title" content="PhotoPrism - Thumbnails">
   <meta property="og:description" content="User Guide">
-  <meta property="og:url" content="https://docs.photoprism.org/developer-guide/frontend/design/">
+  <meta property="og:url" content="https://docs.photoprism.org/developer-guide/storage/thumbnails/">
   <meta property="og:image" content="https://dl.photoprism.org/assets/img/preview.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@photoprism_app">
   <meta name="twitter:creator" content="@photoprism_app">
-  <meta name="twitter:title" content="PhotoPrism - Design">
+  <meta name="twitter:title" content="PhotoPrism - Thumbnails">
   <meta name="twitter:description" content="User Guide">
   <meta name="twitter:image" content="https://dl.photoprism.org/assets/img/preview.jpg">
 
@@ -85,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#icons" class="md-skip">
+        <a href="#thumbnail-rendering-settings" class="md-skip">
           Skip to content
         </a>
       
@@ -126,7 +126,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Design
+              Thumbnails
             
           </span>
         </div>
@@ -1611,23 +1611,21 @@
             
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_11" type="checkbox" id="__nav_3_11" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_11" type="checkbox" id="__nav_3_11" >
       
       <label class="md-nav__link" for="__nav_3_11">
-        Frontend
+        User Interace
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Frontend" data-md-level="2">
+      <nav class="md-nav" aria-label="User Interace" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_11">
           <span class="md-nav__icon md-icon"></span>
-          Frontend
+          User Interace
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1636,7 +1634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../introduction/" class="md-nav__link">
+      <a href="../../ui/introduction/" class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -1648,7 +1646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../screenshots/" class="md-nav__link">
+      <a href="../../ui/screenshots/" class="md-nav__link">
         Screenshots
       </a>
     </li>
@@ -1660,8 +1658,133 @@
   
   
     <li class="md-nav__item">
-      <a href="../components/" class="md-nav__link">
-        UI Components
+      <a href="../../ui/components/" class="md-nav__link">
+        Components
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ui/design/" class="md-nav__link">
+        Design
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ui/rest-api/" class="md-nav__link">
+        REST API
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ui/browsers/" class="md-nav__link">
+        Browsers
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_12" type="checkbox" id="__nav_3_12" checked>
+      
+      <label class="md-nav__link" for="__nav_3_12">
+        Storage
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Storage" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_12">
+          <span class="md-nav__icon md-icon"></span>
+          Storage
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../import/" class="md-nav__link">
+        Import
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abstraction/" class="md-nav__link">
+        Abstraction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../encryption/" class="md-nav__link">
+        Encryption
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../converting/" class="md-nav__link">
+        Converting RAW to JPEG
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../heif/" class="md-nav__link">
+        High Efficiency Image File Format
       </a>
     </li>
   
@@ -1678,20 +1801,24 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Design
+          Thumbnails
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Design
+        Thumbnails
       </a>
       
         
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
@@ -1701,15 +1828,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#icons" class="md-nav__link">
-    Icons
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#colors" class="md-nav__link">
-    Colors
+  <a href="#preview-sizes" class="md-nav__link">
+    Preview Sizes
   </a>
   
 </li>
@@ -1734,130 +1854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rest-api/" class="md-nav__link">
-        REST API
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../browsers/" class="md-nav__link">
-        Browsers
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_12" type="checkbox" id="__nav_3_12" >
-      
-      <label class="md-nav__link" for="__nav_3_12">
-        Photo Library
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Photo Library" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_12">
-          <span class="md-nav__icon md-icon"></span>
-          Photo Library
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../library/importing/" class="md-nav__link">
-        Importing
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../library/storage/" class="md-nav__link">
-        Storage
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../library/encryption/" class="md-nav__link">
-        Encryption
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../library/converting/" class="md-nav__link">
-        Converting RAW to JPEG
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../library/heif/" class="md-nav__link">
-        High Efficiency Image File Format
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../library/thumbnails/" class="md-nav__link">
-        Thumbnails
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../library/samples/" class="md-nav__link">
+      <a href="../samples/" class="md-nav__link">
         Samples
       </a>
     </li>
@@ -1881,11 +1878,101 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_13" type="checkbox" id="__nav_3_13" >
       
       <label class="md-nav__link" for="__nav_3_13">
+        Security
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Security" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_13">
+          <span class="md-nav__icon md-icon"></span>
+          Security
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../security/policy/" class="md-nav__link">
+        Policy
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../security/checklist/" class="md-nav__link">
+        Checklist
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_14" type="checkbox" id="__nav_3_14" >
+      
+      <label class="md-nav__link" for="__nav_3_14">
+        Clients
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Clients" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_14">
+          <span class="md-nav__icon md-icon"></span>
+          Clients
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../clients/go/" class="md-nav__link">
+        Go
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_15" type="checkbox" id="__nav_3_15" >
+      
+      <label class="md-nav__link" for="__nav_3_15">
         Metadata
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Metadata" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_13">
+        <label class="md-nav__title" for="__nav_3_15">
           <span class="md-nav__icon md-icon"></span>
           Metadata
         </label>
@@ -1989,14 +2076,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_14" type="checkbox" id="__nav_3_14" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_16" type="checkbox" id="__nav_3_16" >
       
-      <label class="md-nav__link" for="__nav_3_14">
+      <label class="md-nav__link" for="__nav_3_16">
         Technologies
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Technologies" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_14">
+        <label class="md-nav__title" for="__nav_3_16">
           <span class="md-nav__icon md-icon"></span>
           Technologies
         </label>
@@ -2057,45 +2144,6 @@
     <li class="md-nav__item">
       <a href="../../technologies/external-apis/" class="md-nav__link">
         External APIs
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_15" type="checkbox" id="__nav_3_15" >
-      
-      <label class="md-nav__link" for="__nav_3_15">
-        Clients
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Clients" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_15">
-          <span class="md-nav__icon md-icon"></span>
-          Clients
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../clients/go/" class="md-nav__link">
-        Go
       </a>
     </li>
   
@@ -2219,6 +2267,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2227,15 +2277,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#icons" class="md-nav__link">
-    Icons
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#colors" class="md-nav__link">
-    Colors
+  <a href="#preview-sizes" class="md-nav__link">
+    Preview Sizes
   </a>
   
 </li>
@@ -2259,41 +2302,27 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/photoprism/photoprism-docs/tree/master/docs/developer-guide/frontend/design.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/photoprism/photoprism-docs/tree/master/docs/developer-guide/storage/thumbnails.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Design</h1>
-                
-                <p><strong>We strive to build an application that embraces simplicity and avoids unexpected behavior. It must be able to run on a wide range of devices. Its user interface must be easy to use for everyone.</strong></p>
-<blockquote>
-<p>Design is a funny word. Some people think design means how it looks. But of course, if you dig deeper, it's really how it works.<br />— <cite>Steve Jobs</cite></p>
-<p>Choice is the enemy of productivity. Put another way, if your solution does everything, and has no opinions about anything, then it solves nothing.<br />— <cite>Asim Aslam</cite></p>
-<p>Any fool can make something complicated. It takes a genius to make it simple.<br />— <cite>Woody Guthrie</cite></p>
-</blockquote>
-<h2 id="icons">Icons<a class="headerlink" href="#icons" title="Permanent link">&para;</a></h2>
-<p>Since Vuetify is based on Material Design, we stick with the following icons and only use other icons when absolutely necessary (e.g. for sharing):</p>
-<p><a href="https://material.io/resources/icons/">https://material.io/resources/icons/</a></p>
-<h2 id="colors">Colors<a class="headerlink" href="#colors" title="Permanent link">&para;</a></h2>
-<p>Our UI themes should all contain a color spectrum so that they look like a prism:</p>
+                <h1 id="thumbnail-rendering-settings">Thumbnail Rendering Settings<a class="headerlink" href="#thumbnail-rendering-settings" title="Permanent link">&para;</a></h1>
+<p>The <a href="/user-guide/settings/advanced/">advanced settings user guide</a> explains the
+usage of downscaling filter options and examples of images generated with each.</p>
+<p>We use the <a href="https://github.com/disintegration/imaging">disintegration/imaging</a> package to create thumbnails.</p>
+<h2 id="preview-sizes">Preview Sizes<a class="headerlink" href="#preview-sizes" title="Permanent link">&para;</a></h2>
+<p>These are configured in <a href="https://github.com/photoprism/photoprism/blob/master/internal/thumb/types.go"><code>internal/thumb/types.go</code></a>. A <code>TypeMap</code> defines;</p>
 <ul>
-<li><a href="https://www.nordtheme.com/#palettes-modularity">https://www.nordtheme.com/#palettes-modularity</a></li>
-<li><a href="https://www.schemecolor.com/?s=colorful">https://www.schemecolor.com/?s=colorful</a></li>
-<li><a href="https://www.schemecolor.com/?s=google">https://www.schemecolor.com/?s=google</a></li>
-<li><a href="https://www.schemecolor.com/memories-of-the-garden.php">https://www.schemecolor.com/memories-of-the-garden.php</a></li>
-<li><a href="https://www.schemecolor.com/double-disclosure.php">https://www.schemecolor.com/double-disclosure.php</a></li>
-<li><a href="https://www.schemecolor.com/true-lovers-color-scheme.php">https://www.schemecolor.com/true-lovers-color-scheme.php</a></li>
-<li><a href="https://www.schemecolor.com/sunset-painting.php">https://www.schemecolor.com/sunset-painting.php</a></li>
-<li><a href="https://www.schemecolor.com/happy-with-self.php">https://www.schemecolor.com/happy-with-self.php</a></li>
+<li>the different dimensions of preview image ('thumbnail') generated</li>
+<li>the corresponding purposes/usages of each</li>
+<li>the source file used to generate each.</li>
 </ul>
-<p>It's easiest to use the context menu for this:</p>
-<p><img alt="context menu" src="https://dl.photoprism.org/assets/wiki/docs/prism-context-menu.jpg" /></p>
 <h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../screenshots/">Screenshots</a> - development of our user interface in time lapse ⏱</li>
-<li><a href="http://thesign.it/Codemotion/Berlin2018.pdf">The 7 pillars of design</a> - slides by Raffaella Isidori (Codemotion Berlin 2018)</li>
-<li><a href="https://www.npmjs.com/package/material-design-icons-iconfont">A fork + fixes for Google's Material Design icons</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Comparison_gallery_of_image_scaling_algorithms">https://en.wikipedia.org/wiki/Comparison_gallery_of_image_scaling_algorithms</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Lanczos_resampling">https://en.wikipedia.org/wiki/Lanczos_resampling</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Image_scaling">https://en.wikipedia.org/wiki/Image_scaling</a></li>
 </ul>
                 
               
@@ -2313,7 +2342,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../components/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../heif/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -2322,19 +2351,19 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              UI Components
+              High Efficiency Image File Format
             </div>
           </div>
         </a>
       
       
-        <a href="../rest-api/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../samples/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              REST API
+              Samples
             </div>
           </div>
           <div class="md-footer__button md-icon">

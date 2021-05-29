@@ -13,14 +13,14 @@
         <meta name="author" content="PhotoPrism.org">
       
       
-        <link rel="canonical" href="https://docs.photoprism.org/developer-guide/library/thumbnails/">
+        <link rel="canonical" href="https://docs.photoprism.org/developer-guide/storage/heif/">
       
       <link rel="icon" href="../../../img/favicon-16.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.5">
     
     
       
-        <title>Thumbnails - PhotoPrism</title>
+        <title>High Efficiency Image File Format - PhotoPrism</title>
       
     
     
@@ -55,14 +55,14 @@
     
   
   <meta property="og:type" content="website">
-  <meta property="og:title" content="PhotoPrism - Thumbnails">
+  <meta property="og:title" content="PhotoPrism - High Efficiency Image File Format">
   <meta property="og:description" content="User Guide">
-  <meta property="og:url" content="https://docs.photoprism.org/developer-guide/library/thumbnails/">
+  <meta property="og:url" content="https://docs.photoprism.org/developer-guide/storage/heif/">
   <meta property="og:image" content="https://dl.photoprism.org/assets/img/preview.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@photoprism_app">
   <meta name="twitter:creator" content="@photoprism_app">
-  <meta name="twitter:title" content="PhotoPrism - Thumbnails">
+  <meta name="twitter:title" content="PhotoPrism - High Efficiency Image File Format">
   <meta name="twitter:description" content="User Guide">
   <meta name="twitter:image" content="https://dl.photoprism.org/assets/img/preview.jpg">
 
@@ -85,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#thumbnail-rendering-settings" class="md-skip">
+        <a href="#todo" class="md-skip">
           Skip to content
         </a>
       
@@ -126,7 +126,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Thumbnails
+              High Efficiency Image File Format
             
           </span>
         </div>
@@ -1619,13 +1619,13 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_11" type="checkbox" id="__nav_3_11" >
       
       <label class="md-nav__link" for="__nav_3_11">
-        Frontend
+        User Interace
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Frontend" data-md-level="2">
+      <nav class="md-nav" aria-label="User Interace" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_11">
           <span class="md-nav__icon md-icon"></span>
-          Frontend
+          User Interace
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1634,7 +1634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../frontend/introduction/" class="md-nav__link">
+      <a href="../../ui/introduction/" class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -1646,7 +1646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../frontend/screenshots/" class="md-nav__link">
+      <a href="../../ui/screenshots/" class="md-nav__link">
         Screenshots
       </a>
     </li>
@@ -1658,8 +1658,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../frontend/components/" class="md-nav__link">
-        UI Components
+      <a href="../../ui/components/" class="md-nav__link">
+        Components
       </a>
     </li>
   
@@ -1670,7 +1670,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../frontend/design/" class="md-nav__link">
+      <a href="../../ui/design/" class="md-nav__link">
         Design
       </a>
     </li>
@@ -1682,7 +1682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../frontend/rest-api/" class="md-nav__link">
+      <a href="../../ui/rest-api/" class="md-nav__link">
         REST API
       </a>
     </li>
@@ -1694,7 +1694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../frontend/browsers/" class="md-nav__link">
+      <a href="../../ui/browsers/" class="md-nav__link">
         Browsers
       </a>
     </li>
@@ -1720,13 +1720,13 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_12" type="checkbox" id="__nav_3_12" checked>
       
       <label class="md-nav__link" for="__nav_3_12">
-        Photo Library
+        Storage
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Photo Library" data-md-level="2">
+      <nav class="md-nav" aria-label="Storage" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_12">
           <span class="md-nav__icon md-icon"></span>
-          Photo Library
+          Storage
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1735,8 +1735,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../importing/" class="md-nav__link">
-        Importing
+      <a href="../import/" class="md-nav__link">
+        Import
       </a>
     </li>
   
@@ -1747,8 +1747,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../storage/" class="md-nav__link">
-        Storage
+      <a href="../abstraction/" class="md-nav__link">
+        Abstraction
       </a>
     </li>
   
@@ -1781,18 +1781,6 @@
             
   
   
-  
-    <li class="md-nav__item">
-      <a href="../heif/" class="md-nav__link">
-        High Efficiency Image File Format
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
     
   
   
@@ -1801,24 +1789,20 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Thumbnails
+          High Efficiency Image File Format
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Thumbnails
+        High Efficiency Image File Format
       </a>
       
         
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">
@@ -1828,8 +1812,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#preview-sizes" class="md-nav__link">
-    Preview Sizes
+  <a href="#todo" class="md-nav__link">
+    Todo
   </a>
   
 </li>
@@ -1845,6 +1829,18 @@
   
 </nav>
       
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../thumbnails/" class="md-nav__link">
+        Thumbnails
+      </a>
     </li>
   
 
@@ -1878,11 +1874,101 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_13" type="checkbox" id="__nav_3_13" >
       
       <label class="md-nav__link" for="__nav_3_13">
+        Security
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Security" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_13">
+          <span class="md-nav__icon md-icon"></span>
+          Security
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../security/policy/" class="md-nav__link">
+        Policy
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../security/checklist/" class="md-nav__link">
+        Checklist
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_14" type="checkbox" id="__nav_3_14" >
+      
+      <label class="md-nav__link" for="__nav_3_14">
+        Clients
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Clients" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_14">
+          <span class="md-nav__icon md-icon"></span>
+          Clients
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../clients/go/" class="md-nav__link">
+        Go
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_15" type="checkbox" id="__nav_3_15" >
+      
+      <label class="md-nav__link" for="__nav_3_15">
         Metadata
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Metadata" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_13">
+        <label class="md-nav__title" for="__nav_3_15">
           <span class="md-nav__icon md-icon"></span>
           Metadata
         </label>
@@ -1986,14 +2072,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_14" type="checkbox" id="__nav_3_14" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_16" type="checkbox" id="__nav_3_16" >
       
-      <label class="md-nav__link" for="__nav_3_14">
+      <label class="md-nav__link" for="__nav_3_16">
         Technologies
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Technologies" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_14">
+        <label class="md-nav__title" for="__nav_3_16">
           <span class="md-nav__icon md-icon"></span>
           Technologies
         </label>
@@ -2054,45 +2140,6 @@
     <li class="md-nav__item">
       <a href="../../technologies/external-apis/" class="md-nav__link">
         External APIs
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_15" type="checkbox" id="__nav_3_15" >
-      
-      <label class="md-nav__link" for="__nav_3_15">
-        Clients
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Clients" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_15">
-          <span class="md-nav__icon md-icon"></span>
-          Clients
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../clients/go/" class="md-nav__link">
-        Go
       </a>
     </li>
   
@@ -2216,8 +2263,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2226,8 +2271,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#preview-sizes" class="md-nav__link">
-    Preview Sizes
+  <a href="#todo" class="md-nav__link">
+    Todo
   </a>
   
 </li>
@@ -2251,27 +2296,26 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/photoprism/photoprism-docs/tree/master/docs/developer-guide/library/thumbnails.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/photoprism/photoprism-docs/tree/master/docs/developer-guide/storage/heif.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="thumbnail-rendering-settings">Thumbnail Rendering Settings<a class="headerlink" href="#thumbnail-rendering-settings" title="Permanent link">&para;</a></h1>
-<p>The <a href="/user-guide/settings/advanced/">advanced settings user guide</a> explains the
-usage of downscaling filter options and examples of images generated with each.</p>
-<p>We use the <a href="https://github.com/disintegration/imaging">disintegration/imaging</a> package to create thumbnails.</p>
-<h2 id="preview-sizes">Preview Sizes<a class="headerlink" href="#preview-sizes" title="Permanent link">&para;</a></h2>
-<p>These are configured in <a href="https://github.com/photoprism/photoprism/blob/master/internal/thumb/types.go"><code>internal/thumb/types.go</code></a>. A <code>TypeMap</code> defines;</p>
+                  <h1>High Efficiency Image File Format</h1>
+                
+                <p>HEIF is a new image file format employing HEVC (h.265) image coding for the best compression ratios currently possible. Newer iPhones use it for internal photo storage. It is supported on iOS 11 and macOS High Sierra and later.</p>
+<h2 id="todo">Todo<a class="headerlink" href="#todo" title="Permanent link">&para;</a></h2>
 <ul>
-<li>the different dimensions of preview image ('thumbnail') generated</li>
-<li>the corresponding purposes/usages of each</li>
-<li>the source file used to generate each.</li>
+<li>Figure out how to create thumbnails from HEIF files with Go (ideally without using cgo / c++ libraries). HEIF support is currently implemented using heif-convert, which is an external tool.</li>
 </ul>
 <h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Comparison_gallery_of_image_scaling_algorithms">https://en.wikipedia.org/wiki/Comparison_gallery_of_image_scaling_algorithms</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Lanczos_resampling">https://en.wikipedia.org/wiki/Lanczos_resampling</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Image_scaling">https://en.wikipedia.org/wiki/Image_scaling</a></li>
+<li><a href="https://www.idownloadblog.com/2017/10/18/how-to-convert-heif-to-jpeg-imazing-heic-converter/">https://www.idownloadblog.com/2017/10/18/how-to-convert-heif-to-jpeg-imazing-heic-converter/</a> - How to convert HEIF images to JPEGs with iMazing HEIC Converter</li>
+<li><a href="https://github.com/strukturag/libheif">https://github.com/strukturag/libheif</a> - libheif is a ISO/IEC 23008-12:2017 HEIF file format decoder and encoder (C++)</li>
+<li><a href="https://github.com/nokiatech/heif">https://github.com/nokiatech/heif</a> - Reader/Writer Engine is an implementation of the HEIF standard to demonstrate its powerful features and capabilities (C++)</li>
+<li><a href="https://github.com/monostream/tifig">https://github.com/monostream/tifig</a> - A fast HEIF image converter aimed at thumbnailing</li>
+<li><a href="https://github.com/perkeep/perkeep/issues/969">https://github.com/perkeep/perkeep/issues/969</a> - HEIC/HEVC support in Perkeep</li>
+<li><a href="https://github.com/jdeng/goheif/">https://github.com/jdeng/goheif/</a> - A decoder/converter for HEIC based on libde265 (CGO)</li>
 </ul>
                 
               
@@ -2291,7 +2335,7 @@ usage of downscaling filter options and examples of images generated with each.<
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../heif/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../converting/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -2300,19 +2344,19 @@ usage of downscaling filter options and examples of images generated with each.<
               <span class="md-footer__direction">
                 Previous
               </span>
-              High Efficiency Image File Format
+              Converting RAW to JPEG
             </div>
           </div>
         </a>
       
       
-        <a href="../samples/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../thumbnails/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Samples
+              Thumbnails
             </div>
           </div>
           <div class="md-footer__button md-icon">
