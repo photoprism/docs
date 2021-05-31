@@ -16,7 +16,7 @@
         <link rel="canonical" href="https://docs.photoprism.org/user-guide/settings/sync/">
       
       <link rel="icon" href="../../../img/favicon-16.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.5">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.6">
     
     
       
@@ -24,10 +24,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.bde7dde4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.875de78c.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.f1a3b89f.min.css">
         
           
           
@@ -1325,18 +1325,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#manually-upload-files-to-nextcloud" class="md-nav__link">
-    Manually upload files to Nextcloud
+  <a href="#manually-upload-files-to-a-webdav-server" class="md-nav__link">
+    Manually upload files to a WebDAV Server
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#backupsync-files-with-nextcloud" class="md-nav__link">
-    Backup/Sync files with Nextcloud
+  <a href="#backupsync-files-with-your-server" class="md-nav__link">
+    Backup/Sync files with your server
   </a>
   
-    <nav class="md-nav" aria-label="Backup/Sync files with Nextcloud">
+    <nav class="md-nav" aria-label="Backup/Sync files with your server">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1688,13 +1688,13 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_11" type="checkbox" id="__nav_3_11" >
       
       <label class="md-nav__link" for="__nav_3_11">
-        User Interace
+        User Interface
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="User Interace" data-md-level="2">
+      <nav class="md-nav" aria-label="User Interface" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_11">
           <span class="md-nav__icon md-icon"></span>
-          User Interace
+          User Interface
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -2304,18 +2304,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#manually-upload-files-to-nextcloud" class="md-nav__link">
-    Manually upload files to Nextcloud
+  <a href="#manually-upload-files-to-a-webdav-server" class="md-nav__link">
+    Manually upload files to a WebDAV Server
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#backupsync-files-with-nextcloud" class="md-nav__link">
-    Backup/Sync files with Nextcloud
+  <a href="#backupsync-files-with-your-server" class="md-nav__link">
+    Backup/Sync files with your server
   </a>
   
-    <nav class="md-nav" aria-label="Backup/Sync files with Nextcloud">
+    <nav class="md-nav" aria-label="Backup/Sync files with your server">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2348,14 +2348,14 @@
                 
                 
                 <h1 id="sync-settings">Sync Settings<a class="headerlink" href="#sync-settings" title="Permanent link">&para;</a></h1>
-<p>This page describes how PhotoPrism can sync files <em>from</em> an external storage system (like Nextcloud) via WebDAV.</p>
+<p>This page describes how PhotoPrism can sync files <em>from</em> an external storage system (like ownCloud) via WebDAV.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>PhotoPrism can also serve/share files via WebDAV to be browsed on macOS or Windows.
 See <a href="/user-guide/sync/webdav/">instructions</a>.</p>
 </div>
 <h2 id="connect-to-a-webdav-server">Connect to a WebDAV Server<a class="headerlink" href="#connect-to-a-webdav-server" title="Permanent link">&para;</a></h2>
-<p>PhotoPrism may connect with WebDAV servers like Nextcloud,
+<p>PhotoPrism may connect with WebDAV servers like a second PhotoPrism instance or ownCloud,
 so that you can automatically sync your latest pictures.</p>
 <p><strong>To connect:</strong></p>
 <ol>
@@ -2366,25 +2366,25 @@ so that you can automatically sync your latest pictures.</p>
 <li>Fill in your WebDAV server url, username and password</li>
 <li>Click <em>connect</em>
     <img alt="Screenshot" src="../img/sync-2.png" /></li>
-<li>Now your Nextcloud is connected with PhotoPrism</li>
+<li>Now the other WebDAV server is connected with PhotoPrism</li>
 </ol>
-<h2 id="manually-upload-files-to-nextcloud">Manually upload files to Nextcloud<a class="headerlink" href="#manually-upload-files-to-nextcloud" title="Permanent link">&para;</a></h2>
+<h2 id="manually-upload-files-to-a-webdav-server">Manually upload files to a WebDAV Server<a class="headerlink" href="#manually-upload-files-to-a-webdav-server" title="Permanent link">&para;</a></h2>
 <p><strong>To configure manual upload:</strong></p>
 <ol>
 <li>Go to <em>Settings</em></li>
 <li>Open <em>Sync</em> tab</li>
-<li>Click into the upload cell of your Nextcloud server</li>
+<li>Click into the upload cell of your server</li>
 </ol>
 <p><img alt="Screenshot" src="../img/sync-upload-1.png" />
 4. Select the folder to which photos should be uploaded and click <em>save</em></p>
 <p><img alt="Screenshot" src="../img/sync-upload-2.png" /></p>
-<p><strong>To upload files from PhotoPrism to Nextcloud:</strong></p>
+<p><strong>To upload files from PhotoPrism to the WebDAV server:</strong></p>
 <ol>
 <li>Go to <em>Photos</em></li>
 <li>Select photos you want to upload</li>
 <li>Open the context menu</li>
 <li>Click <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.35 10.03A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.03A6.004 6.004 0 0 0 0 14a6 6 0 0 0 6 6h13a5 5 0 0 0 5-5c0-2.64-2.05-4.78-4.65-4.97z"/></svg></span></li>
-<li>Select your nextcloud account and click <em>upload</em></li>
+<li>Select your server account and click <em>upload</em></li>
 </ol>
 <p><img alt="Screenshot" src="../img/upload-3.png" /></p>
 <div class="admonition info">
@@ -2396,24 +2396,24 @@ Support for RAW and video files will be added in a future release.</p>
 <p class="admonition-title">Attention</p>
 <p>Due to problems with some Nextcloud settings it might be that uploading to Nextcloud results in 0 byte files. You find information on how to solve it <a href="https://github.com/photoprism/photoprism/issues/443">here</a>.</p>
 </div>
-<h2 id="backupsync-files-with-nextcloud">Backup/Sync files with Nextcloud<a class="headerlink" href="#backupsync-files-with-nextcloud" title="Permanent link">&para;</a></h2>
+<h2 id="backupsync-files-with-your-server">Backup/Sync files with your server<a class="headerlink" href="#backupsync-files-with-your-server" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Go to <em>Settings</em></li>
 <li>Open <em>Sync</em> tab</li>
-<li>Click into the sync cell of your nextcloud server
+<li>Click into the sync cell of your server
 <img alt="Screenshot" src="../img/sync-sync-1.png" /></li>
 <li>Enable synchronization in the upper right corner</li>
-<li>Choose the folder in which all your photos are located on Nextcloud</li>
+<li>Choose the folder in which all your photos are located</li>
 <li>Select how often you want your files to be synced</li>
 <li>Select the options that are suitable for you and click <em>save</em></li>
 </ol>
 <p><img alt="Screenshot" src="../img/sync-sync-2.png" /></p>
 <h3 id="remote-sync-options">Remote Sync Options<a class="headerlink" href="#remote-sync-options" title="Permanent link">&para;</a></h3>
 <ul>
-<li><em>Download remote files</em> will download all files from your nextcloud that do not yet exist in PhotoPrism</li>
-<li><em>Upload local files</em> will upload all files from PhotoPrism to your nextcloud folder that do not yet exist there</li>
-<li><em>Preserve filenames</em> will keep filenames from Nextcloud without renaming them</li>
-<li><em>Sync raw and video files</em> will upload/download raw and video files alongside with jpegs</li>
+<li><em>Download remote files</em> will download all files from your server that do not yet exist in PhotoPrism</li>
+<li><em>Upload local files</em> will upload all files from PhotoPrism to your server that do not yet exist there</li>
+<li><em>Preserve filenames</em> will keep filenames from your server without renaming them</li>
+<li><em>Sync raw and video files</em> will upload/download raw and video files alongside with JPEGS</li>
 </ul>
                 
               
@@ -2548,7 +2548,7 @@ Support for RAW and video files will be added in a future release.</p>
     <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../../assets/javascripts/workers/search.d351de03.min.js", "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.a1609d9a.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.34eae1b6.min.js"></script>
       
     
   </body>
