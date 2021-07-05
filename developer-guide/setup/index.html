@@ -16,7 +16,7 @@
         <link rel="canonical" href="https://docs.photoprism.org/developer-guide/setup/">
       
       <link rel="icon" href="../../img/favicon-16.png">
-      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.8">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.9">
     
     
       
@@ -67,6 +67,7 @@
   <meta name="twitter:title" content="PhotoPrism - Setup">
   <meta name="twitter:description" content="User Guide">
   <meta name="twitter:image" content="https://dl.photoprism.org/assets/img/preview.jpg">
+  <script async defer data-domain="docs.photoprism.org" src="https://a.photoprism.app/js/plausible.js"></script>
 
   </head>
   
@@ -1516,9 +1517,59 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Setup
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Setup
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#arm64-apple-m1" class="md-nav__link">
+    ARM64 &amp; Apple M1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-multi-arch-images" class="md-nav__link">
+    Building multi-arch images
+  </a>
+  
+    <nav class="md-nav" aria-label="Building multi-arch images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#qemu-quick-start" class="md-nav__link">
+    QEMU Quick Start
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2233,6 +2284,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#arm64-apple-m1" class="md-nav__link">
+    ARM64 &amp; Apple M1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-multi-arch-images" class="md-nav__link">
+    Building multi-arch images
+  </a>
+  
+    <nav class="md-nav" aria-label="Building multi-arch images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#qemu-quick-start" class="md-nav__link">
+    QEMU Quick Start
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2287,6 +2373,19 @@ make watch-js
 <li>If you never used Go before and would like to learn it, you are welcome to <a href="mailto:hello@photoprism.app">reach out</a>. We might start organizing regular learning sessions for beginners in Berlin.</li>
 <li>This guide was not tested on Windows, you might need to change docker-compose.yml to make it work with Windows specific paths.</li>
 </ul>
+<h2 id="arm64-apple-m1">ARM64 &amp; Apple M1<a class="headerlink" href="#arm64-apple-m1" title="Permanent link">&para;</a></h2>
+<p>We now offer multi-arch docker images, which enables you to run photoprism images on ARM64 architectures. Just follow the instructions above. </p>
+<h2 id="building-multi-arch-images">Building multi-arch images<a class="headerlink" href="#building-multi-arch-images" title="Permanent link">&para;</a></h2>
+<p>This works out of the box with Docker Desktop. Just run <code>make docker-development-multiarch</code>. If you want to build those images for different architectures on Linux, 
+you need to setup <code>docker buildx</code> builder instances or setup QEMU on your machine which shall run your builds. 
+More info can be found in the docker docs: <a href="https://docs.docker.com/buildx/working-with-buildx/">Docker Buildx</a>, <a href="https://docs.docker.com/desktop/multi-arch/">Leverage multi-CPU architecture support</a></p>
+<h3 id="qemu-quick-start">QEMU Quick Start<a class="headerlink" href="#qemu-quick-start" title="Permanent link">&para;</a></h3>
+<ol>
+<li>install qemu-user-static from docker hub: <code>docker run --rm --privileged multiarch/qemu-user-static --reset -p yes</code> <a href="https://github.com/multiarch/qemu-user-static">https://github.com/multiarch/qemu-user-static</a></li>
+<li>verify that dockers buildx command is installed <code>docker buildx version</code>. if missing, follow install instructions <a href="https://github.com/docker/buildx">here</a></li>
+<li>create buildx builder: <code>docker buildx create --name multiarch-builder &amp;&amp; docker buildx inspect --builder multiarch-builder --bootstrap</code></li>
+<li>start building: <code>make docker-development-multiarch</code> or <code>make docker-photoprism-multiarch</code></li>
+</ol>
 <h1 id="alternate-development-environments">Alternate Development Environments<a class="headerlink" href="#alternate-development-environments" title="Permanent link">&para;</a></h1>
 <p>The following are setup instructions for development and testing and should be avoided unless Docker is either not supported or not allowed in your environment:</p>
 <ul>
@@ -2424,10 +2523,10 @@ make watch-js
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.b0710199.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.76f349be.min.js"></script>
+      <script src="../../assets/javascripts/bundle.82b56eb2.min.js"></script>
       
     
   </body>
