@@ -2361,7 +2361,7 @@ make build-go
 </code></pre></div>
 <p>You can see a list of all <code>make</code> targets in our <a href="https://github.com/photoprism/photoprism/blob/develop/Makefile">Makefile</a>. For example, <code>make test</code> will run the tests and <code>make install</code> will build a <code>photoprism</code> production binary without debug information and install it in the user's directory including all assets.</p>
 <p><strong>Step 4:</strong> Build the frontend in watch mode:</p>
-<p>The Go webserver will serve static assets in addition to providing the backend API. The static assets can automatically built whenever you change a file. In a new terminal window, outside the Docker container, run:</p>
+<p>The Go webserver will serve static assets in addition to providing the backend API. The static assets can be automatically built whenever you change a file. In a new terminal window, outside the Docker container, run:</p>
 <div class="highlight"><pre><span></span><code>make dep-js
 make watch-js
 </code></pre></div>
